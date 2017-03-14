@@ -10,3 +10,12 @@
 	margin-left: auto;
 	margin-right: auto;
 }
+
+// Footer
+
+@mixin faq-button {
+	width: 30%;
+	border: 1px solid #fff;
+	color: #fff;
+
+}

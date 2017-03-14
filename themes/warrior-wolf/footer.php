@@ -10,8 +10,16 @@
 			</div><!-- #content -->
 
 			<footer id="colophon" class="site-footer" role="contentinfo">
-				<div class="site-info">
-					<a href="<?php echo esc_url( 'https://wordpress.org/' ); ?>"><?php printf( esc_html( 'Proudly powered by %s' ), 'WordPress' ); ?></a>
+				<div class="newsletter-info-wrapper">
+						<a href="#">Sign Up for the Warrior Wolf Newsletter</a>
+						<form class="form-wrapper">
+							<div class="inner-form-wrapper">
+								<input class="newsletter-form" type="email">
+								<button type="submit" class="newsletter-submit-button">Submit</button>
+							</div>
+						</form>
+					</div>
+				<button class="faq-button">faq</button>
 				</div><!-- .site-info -->
 			</footer><!-- #colophon -->
 		</div><!-- #page -->

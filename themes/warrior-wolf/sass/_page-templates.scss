@@ -3,3 +3,31 @@
 --------------------------------------------------------------*/
 
 /* Front page */
+
+/* Footer template */
+
+footer {
+        background-color: $color__background-templates;
+        .newsletter-info-wrapper {
+            input {
+                border-radius: 0;
+            }
+            a {
+                color: $color__white-text;
+                font-size: 0.5rem;
+                text-decoration: none;
+                text-transform: uppercase;
+                letter-spacing: 1px;
+            }
+        }
+        .faq-button {
+        @include faq-button;
+        background: transparent;
+        box-shadow: 0;
+        text-transform: uppercase;
+        }
+        .newsletter-submit-button {
+            background: #b9cad8;
+            color: $color__background-templates;
+        }
+    }
