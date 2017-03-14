@@ -84,6 +84,9 @@ add_filter( 'stylesheet_uri', 'red_starter_minified_css', 10, 2 );
  */
 function red_starter_scripts() {
 	wp_enqueue_style( 'red-starter-style', get_stylesheet_uri() );
+	wp_enqueue_script( 'jquery');
+
+	wp_enqueue_script( 'menu-click', get_template_directory_uri() . '/js/search-toggle.js', array('jquery'), false, true);
 
 	wp_enqueue_script( 'red-starter-skip-link-focus-fix', get_template_directory_uri() . '/build/js/skip-link-focus-fix.min.js', array(), '20130115', true );
 

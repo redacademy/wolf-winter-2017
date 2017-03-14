@@ -25,3 +25,17 @@
     width: 41px;
     outline: none;
 }
+
+.menu-click {
+    position: fixed;
+    top: 106px;
+    right: 0;
+    background-color: rgba(0,0,0, 0.9);
+    height: 100vh;
+    width: 100%;
+}
+
+.nav-overlay {
+    display: flex;
+    flex-direction: column;
+}

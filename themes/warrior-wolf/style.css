@@ -355,15 +355,6 @@ input[type="submit"] {
   font-size: 0.75rem;
   line-height: 1;
   padding: .6rem 1rem .4rem; }
-  button:active, button:focus,
-  input[type="button"]:active,
-  input[type="button"]:focus,
-  input[type="reset"]:active,
-  input[type="reset"]:focus,
-  input[type="submit"]:active,
-  input[type="submit"]:focus {
-    border-color: #aaa #bbb #bbb;
-    box-shadow: inset 0 -1px 0 rgba(255, 255, 255, 0.5), inset 0 2px 5px rgba(0, 0, 0, 0.15); }
 
 /* Fields */
 input[type="text"],
@@ -420,6 +411,20 @@ textarea {
   height: 31px;
   width: 41px;
   outline: none; }
+
+.menu-click {
+  position: fixed;
+  top: 106px;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.9);
+  height: 100vh;
+  width: 100%; }
+
+.nav-overlay {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column; }
 
 /*--------------------------------------------------------------
 # Navigation
