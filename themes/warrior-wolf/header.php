@@ -23,14 +23,16 @@
 			<header id="masthead" class="site-header" role="banner">
 				<div class="header-container">
 					<div class="site-branding">
-						<a href=""><div class="logo"></div></a>
+						<a href="<?php echo esc_url( home_url( '/' ) ); ?>"><div class="logo"></div></a>
 						<h1 class="site-title screen-reader-text"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
 						<p class="site-description screen-reader-text"><?php bloginfo( 'description' ); ?></p>
 					</div><!-- .site-branding -->
 
 
 					<nav id="site-navigation" class="main-navigation" role="navigation">
-						<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html( 'Primary Menu' ); ?></button>
+						<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html( 'Primary Menu' ); ?>
+						<!--<img src="./assets/mobile_hamburger.png">-->
+						</button>
 						<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
 					</nav><!-- #site-navigation -->
 				</div><!-- .header-container -->

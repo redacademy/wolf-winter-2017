@@ -1,17 +1,27 @@
 .site-header {
     height: 60px;
     padding: 0.5rem 1rem;
-    background: $background_blue;
+    background: $color__background-templates;
     .header-container {
         display: flex;
         justify-content: space-between;
         align-items: center;
         .logo {
-            background: url(../../images/logo/ww_logo_white_textless.png);
+            background: url(../../assets/logo/logo-white.no.text.png);
             background-size: contain;
             background-repeat: no-repeat;
             height: 45px;
             width: 50px;
         }
     }
+}
+
+.menu-toggle {
+    background: url(../../assets/mobile_hamburger.png);
+    border: none;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 31px;
+    width: 41px;
+    outline: none;
 }
