@@ -5,7 +5,7 @@
  * @link  http://codex.wordpress.org/Function_Reference/register_post_type
  */
 
-// Register Custom Post Type
+// Register Testimonial Post Type
 function testimonial_post_type() {
 
 	$labels = array(
@@ -60,4 +60,3 @@ function testimonial_post_type() {
 
 }
 add_action( 'init', 'testimonial_post_type', 0 );
-
