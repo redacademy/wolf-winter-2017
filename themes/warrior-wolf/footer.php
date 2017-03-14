@@ -20,6 +20,9 @@
 						</form>
 					</div>
 				<button class="faq-button">faq</button>
+				<div class="social-media-icon-wrapper">
+
+				</div>
 				</div><!-- .site-info -->
 			</footer><!-- #colophon -->
 		</div><!-- #page -->
