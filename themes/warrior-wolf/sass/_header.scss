@@ -1,0 +1,17 @@
+.site-header {
+    height: 60px;
+    padding: 0.5rem 1rem;
+    background: $background_blue;
+    .header-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .logo {
+            background: url(../../images/logo/ww_logo_white_textless.png);
+            background-size: contain;
+            background-repeat: no-repeat;
+            height: 45px;
+            width: 50px;
+        }
+    }
+}

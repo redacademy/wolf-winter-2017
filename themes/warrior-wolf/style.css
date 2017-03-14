@@ -400,6 +400,24 @@ textarea {
   padding-left: 3px;
   width: 100%; }
 
+.site-header {
+  height: 60px;
+  padding: 0.5rem 1rem;
+  background: #4C5A75; }
+  .site-header .header-container {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: justify;
+        justify-content: space-between;
+    -ms-flex-align: center;
+        align-items: center; }
+    .site-header .header-container .logo {
+      background: url(../../images/logo/ww_logo_white_textless.png);
+      background-size: contain;
+      background-repeat: no-repeat;
+      height: 45px;
+      width: 50px; }
+
 /*--------------------------------------------------------------
 # Navigation
 --------------------------------------------------------------*/
