@@ -421,10 +421,10 @@ textarea {
   width: 100%; }
 
 .nav-overlay {
-  display: -ms-flexbox !important;
-  display: flex !important;
-  -ms-flex-direction: column !important;
-      flex-direction: column !important; }
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column; }
 
 /*--------------------------------------------------------------
 # Navigation
