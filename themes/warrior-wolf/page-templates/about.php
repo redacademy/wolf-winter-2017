@@ -17,9 +17,9 @@
 
     <div class="container">
         <div class="inhabitent-about">
-        <h2>Our Story</h2>
+        <h2>Overview</h2>
         <?php echo CFS()->get('overview'); ?>
-        <h2>Our Team</h2>
+        <h2>My Story</h2>
         <?php echo CFS()->get('my_story'); ?>
         </div>
     </div>
