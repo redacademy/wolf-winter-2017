@@ -11,7 +11,7 @@ footer {
     justify-content: center;
         background-color: $color__background-templates;
         .footer-wrapper {
-            max-width: 300px;
+            max-width: 275px;
             margin: 0 auto;
             justify-content: center;
         }
@@ -23,9 +23,9 @@ footer {
             margin-bottom: 2rem;
         .inner-form-wrapper {
             position: relative;
+            width: 250px;
         .newsletter-form {
                 border-radius: 0;
-                width: 300px;
             }
         .newsletter-submit-button {
             position: absolute;
