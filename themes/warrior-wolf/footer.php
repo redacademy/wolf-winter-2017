@@ -10,6 +10,7 @@
 			</div><!-- #content -->
 
 			<footer id="colophon" class="site-footer" role="contentinfo">
+				<div class="footer-wrapper">
 				<div class="newsletter-info-wrapper">
 						<a href="#">Sign Up for the Warrior Wolf Newsletter</a>
 						<form class="form-wrapper">
@@ -19,9 +20,14 @@
 							</div>
 						</form>
 					</div>
-				<button class="faq-button">faq</button>
-				<div class="social-media-icon-wrapper">
-					<a href="#" class="facebook-icon"><img src="../assets/icons/social-media/fb.eps"></a>
+					<div class="button-wrapper">
+					<button class="faq-button">faq</button>
+					</div>
+					<div class="social-media-icons-wrapper">
+					<a href="#"><img class="instagram-icon"></a>
+					<a href="#"><img class="facebook-icon"></a>
+					<a href="#"><img class="vimeo-icon"></a>
+				</div>
 				</div>
 				</div><!-- .site-info -->
 			</footer><!-- #colophon -->
