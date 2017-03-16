@@ -468,7 +468,8 @@ textarea {
   z-index: 1;
   width: 100%;
   top: 0;
-  background: #4C5A75; }
+  background: #4C5A75;
+  border-bottom: 1px solid grey; }
   .site-header .header-container {
     display: -ms-flexbox;
     display: flex;
@@ -490,7 +491,8 @@ textarea {
       display: -ms-flexbox;
       display: flex;
       -ms-flex-pack: center;
-          justify-content: center; }
+          justify-content: center;
+      border-bottom: 1px solid grey; }
       .site-header .header-container .main-navigation:hover {
         cursor: pointer; }
       .site-header .header-container .main-navigation .menu-toggle {
@@ -504,6 +506,9 @@ textarea {
         -ms-flex-item-align: center;
             -ms-grid-row-align: center;
             align-self: center; }
+
+.button-color-change {
+  background-color: rgba(0, 0, 0, 0.7); }
 
 .menu-click {
   position: fixed;
