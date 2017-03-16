@@ -1,5 +1,8 @@
 .site-header {
     height: 60px;
+    position: fixed;
+    width: 100%;
+    top: 0;
     background: $color__background-templates;
     .header-container {
         display: flex;
@@ -39,8 +42,7 @@
 
 .menu-click {
     position: fixed;
-    // top: 60px;
-    top: 106px;
+    top: 60px;
     right: 0;
     background-color: rgba(0, 0, 0, 0.9);
     height: 100vh;

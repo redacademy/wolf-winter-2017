@@ -464,6 +464,9 @@ textarea {
 
 .site-header {
   height: 60px;
+  position: fixed;
+  width: 100%;
+  top: 0;
   background: #4C5A75; }
   .site-header .header-container {
     display: -ms-flexbox;
@@ -503,7 +506,7 @@ textarea {
 
 .menu-click {
   position: fixed;
-  top: 106px;
+  top: 60px;
   right: 0;
   background-color: rgba(0, 0, 0, 0.9);
   height: 100vh;
