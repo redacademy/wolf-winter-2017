@@ -548,38 +548,33 @@ textarea {
 
 .social-icon-menu-item {
   display: block;
-  position: relative;
-  text-indent: -300%;
+  text-indent: -76%;
   white-space: nowrap;
   overflow: hidden;
   color: #212121;
-  width: 45px; }
-  .social-icon-menu-item a {
-    width: 45px;
-    padding: 0;
-    border: 1px solid white;
-    border-radius: 50%;
-    height: 45px;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  background: white; }
+  .social-icon-menu-item a:hover {
     background: white; }
-    .social-icon-menu-item a:hover {
-      background: white; }
 
 .menu-icon-instagram:before, .menu-icon-facebook:before, .menu-icon-vimeo:before {
   font-family: FontAwesome;
   content: "\f16d";
   position: absolute;
   font-size: 2em;
-  right: -99px;
+  right: 1px;
   bottom: -18px; }
 
 .menu-icon-facebook:before {
   content: "\f09a";
-  right: -102px;
+  right: -2px;
   bottom: -19px; }
 
 .menu-icon-vimeo:before {
   content: "\f27d";
-  right: -96px;
+  right: 5px;
   bottom: -20px; }
 
 /*--------------------------------------------------------------
@@ -768,6 +763,7 @@ a {
 .bypostauthor {
   display: block; }
 
+/* Mobile Content */
 /*--------------------------------------------------------------
 # Media
 --------------------------------------------------------------*/

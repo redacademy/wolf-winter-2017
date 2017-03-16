@@ -87,24 +87,19 @@
 }
 
 .social-icon-menu-item {
-    display:block;
-    position:relative;
-    text-indent: -300%;
+    display: block;
+    text-indent: -76%;
     white-space: nowrap;
     overflow: hidden;
     color: #212121;
     width: 45px;
-    a {
-        width: 45px;
-        padding: 0;
-        border: 1px solid white;
-        border-radius: 50%;
-        height: 45px;
-        background: white;
-        &:hover {
+    height: 45px;
+    border-radius: 50%;
+    background: white;
+    a:hover {
             background: white;
-        }
     }
+    
 }
 
 .menu-icon-instagram:before {
@@ -112,20 +107,20 @@
     content: "\f16d";
     position: absolute;
     font-size: 2em;
-    right: -99px;
+    right: 1px;
     bottom: -18px;
 }
 
 .menu-icon-facebook:before {
     @extend .menu-icon-instagram:before;
     content: "\f09a";
-    right: -102px;
+    right: -2px;
     bottom: -19px;
 }
 
 .menu-icon-vimeo:before {
     @extend .menu-icon-instagram:before;
     content: "\f27d";
-    right: -96px;
+    right: 5px;
     bottom: -20px;
 }
