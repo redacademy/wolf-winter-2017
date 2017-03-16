@@ -577,6 +577,12 @@ textarea {
   right: 5px;
   bottom: -20px; }
 
+body #wpadminbar #branding-wrap {
+  top: 28px; }
+
+body #wpadminbar #wrapper {
+  margin-top: 145px; }
+
 /*--------------------------------------------------------------
 # Navigation
 --------------------------------------------------------------*/
