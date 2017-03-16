@@ -5,8 +5,6 @@
         $('.menu').toggleClass('nav-overlay');
     })
 
-
-
     $('#menu-item-38 a').on('click', function (e) {
         e.preventDefault();
         $('#contact-modal').modal({show: true});
@@ -18,11 +16,5 @@
         $('#confirmation-modal').show();
     })
 
-    // $('#confirmation-modal').focus();
-
-    // $('.btn-contact-submit').on('hidden.bs.modal', function (e) {
-    //     e.preventDefault;
-    //     $('#confirmation-modal').focus();
-    // })
 })(jQuery);
 
