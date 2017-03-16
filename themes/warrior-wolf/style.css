@@ -465,6 +465,7 @@ textarea {
 .site-header {
   height: 60px;
   position: fixed;
+  z-index: 1;
   width: 100%;
   top: 0;
   background: #4C5A75; }
@@ -510,8 +511,7 @@ textarea {
   right: 0;
   background-color: rgba(0, 0, 0, 0.9);
   height: 100vh;
-  width: 100%;
-  z-index: 1; }
+  width: 100%; }
   .menu-click .menu-main-menu-container {
     margin-bottom: 3rem; }
   .menu-click .menu-social-menu-container {
