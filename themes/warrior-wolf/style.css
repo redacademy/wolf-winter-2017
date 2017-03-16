@@ -464,7 +464,12 @@ textarea {
 
 .site-header {
   height: 60px;
-  background: #4C5A75; }
+  position: fixed;
+  z-index: 1;
+  width: 100%;
+  top: 0;
+  background: #4C5A75;
+  border-bottom: 1px solid grey; }
   .site-header .header-container {
     display: -ms-flexbox;
     display: flex;
@@ -486,7 +491,8 @@ textarea {
       display: -ms-flexbox;
       display: flex;
       -ms-flex-pack: center;
-          justify-content: center; }
+          justify-content: center;
+      border-bottom: 1px solid grey; }
       .site-header .header-container .main-navigation:hover {
         cursor: pointer; }
       .site-header .header-container .main-navigation .menu-toggle {
@@ -501,14 +507,16 @@ textarea {
             -ms-grid-row-align: center;
             align-self: center; }
 
+.button-color-change {
+  background-color: rgba(0, 0, 0, 0.7); }
+
 .menu-click {
   position: fixed;
-  top: 106px;
+  top: 60px;
   right: 0;
   background-color: rgba(0, 0, 0, 0.9);
   height: 100vh;
-  width: 100%;
-  z-index: 1; }
+  width: 100%; }
   .menu-click .menu-main-menu-container {
     margin-bottom: 3rem; }
   .menu-click .menu-social-menu-container {
@@ -540,39 +548,40 @@ textarea {
 
 .social-icon-menu-item {
   display: block;
-  position: relative;
-  text-indent: -300%;
+  text-indent: -76%;
   white-space: nowrap;
   overflow: hidden;
   color: #212121;
-  width: 45px; }
-  .social-icon-menu-item a {
-    width: 45px;
-    padding: 0;
-    border: 1px solid white;
-    border-radius: 50%;
-    height: 45px;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  background: white; }
+  .social-icon-menu-item a:hover {
     background: white; }
-    .social-icon-menu-item a:hover {
-      background: white; }
 
 .menu-icon-instagram:before, .menu-icon-facebook:before, .menu-icon-vimeo:before {
   font-family: FontAwesome;
   content: "\f16d";
   position: absolute;
   font-size: 2em;
-  right: -99px;
+  right: 1px;
   bottom: -18px; }
 
 .menu-icon-facebook:before {
   content: "\f09a";
-  right: -102px;
+  right: -2px;
   bottom: -19px; }
 
 .menu-icon-vimeo:before {
   content: "\f27d";
-  right: -96px;
+  right: 5px;
   bottom: -20px; }
+
+body #wpadminbar #branding-wrap {
+  top: 28px; }
+
+body #wpadminbar #wrapper {
+  margin-top: 145px; }
 
 /*--------------------------------------------------------------
 # Navigation
@@ -759,6 +768,10 @@ a {
 
 .bypostauthor {
   display: block; }
+
+/* Mobile Content */
+body .site-content {
+  margin-top: 60px; }
 
 /*--------------------------------------------------------------
 # Media

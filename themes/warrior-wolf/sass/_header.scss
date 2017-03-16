@@ -1,6 +1,11 @@
 .site-header {
     height: 60px;
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    top: 0;
     background: $color__background-templates;
+    border-bottom: 1px solid grey;
     .header-container {
         display: flex;
         justify-content: space-between;
@@ -20,6 +25,7 @@
             height: 60px;
             display: flex;
             justify-content: center;
+            border-bottom: 1px solid grey;
             &:hover {
                 cursor: pointer;
             }
@@ -37,15 +43,17 @@
     }
 }
 
+.button-color-change {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
 .menu-click {
     position: fixed;
-    // top: 60px;
-    top: 106px;
+    top: 60px;
     right: 0;
     background-color: rgba(0, 0, 0, 0.9);
     height: 100vh;
     width: 100%;
-    z-index: 1;
     .menu-main-menu-container {
         margin-bottom: 3rem;
     }
@@ -79,24 +87,19 @@
 }
 
 .social-icon-menu-item {
-    display:block;
-    position:relative;
-    text-indent: -300%;
+    display: block;
+    text-indent: -76%;
     white-space: nowrap;
     overflow: hidden;
     color: #212121;
     width: 45px;
-    a {
-        width: 45px;
-        padding: 0;
-        border: 1px solid white;
-        border-radius: 50%;
-        height: 45px;
-        background: white;
-        &:hover {
+    height: 45px;
+    border-radius: 50%;
+    background: white;
+    a:hover {
             background: white;
-        }
     }
+    
 }
 
 .menu-icon-instagram:before {
@@ -104,20 +107,23 @@
     content: "\f16d";
     position: absolute;
     font-size: 2em;
-    right: -99px;
+    right: 1px;
     bottom: -18px;
 }
 
 .menu-icon-facebook:before {
     @extend .menu-icon-instagram:before;
     content: "\f09a";
-    right: -102px;
+    right: -2px;
     bottom: -19px;
 }
 
 .menu-icon-vimeo:before {
     @extend .menu-icon-instagram:before;
     content: "\f27d";
-    right: -96px;
+    right: 5px;
     bottom: -20px;
 }
+
+body #wpadminbar #branding-wrap{top: 28px;} 
+body #wpadminbar #wrapper{margin-top: 145px;}
