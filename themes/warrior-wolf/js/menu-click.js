@@ -5,8 +5,3 @@
         $('.menu').toggleClass('nav-overlay');
     })
 })(jQuery);
-
-(function($) {
-    $( "#tabs" ).tabs();
-  })(jQuery);
-
