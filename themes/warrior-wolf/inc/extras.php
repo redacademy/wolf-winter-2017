@@ -20,3 +20,26 @@ function red_starter_body_classes( $classes ) {
 	return $classes;
 }
 add_filter( 'body_class', 'red_starter_body_classes' );
+
+/**
+ * Changing product archive title.
+ */
+function program_archive_title($title) {
+	if(is_post_type_archive('programs')) {
+		$title = 'My Programs';
+	}
+	return $title;
+}
+add_filter('get_the_archive_title', 'program_archive_title');
+
+/**
+ * Programs Archive page -- changing post order
+ */
+function program_posts( $query ) {
+    if ( is_post_type_archive( 'programs' )){
+		$query->set('orderby', 'date');
+		$query->set('order', 'ASC' );
+        return;
+    }
+}
+add_action( 'pre_get_posts', 'program_posts' );

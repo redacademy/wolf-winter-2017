@@ -725,6 +725,20 @@ a {
 .widget_search .search-submit {
   display: none; }
 
+.banner-container {
+  text-align: center;
+  background: url(../../assets/images/mobile/homepage/fakeBruce.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 80vh;
+  width: 100%;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-pack: justify;
+      justify-content: space-between; }
+
 /*--------------------------------------------------------------
 # Content
 --------------------------------------------------------------*/
