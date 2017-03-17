@@ -2,7 +2,22 @@
 # Page Templates
 --------------------------------------------------------------*/
 
-/* Front page */
+/* About page */
+
+.page-template-about {
+    #tabs {
+    a {
+        padding: 2rem;
+        text-decoration: none;
+        display: inline-block;
+    }
+    a.active {
+        background-color: #b9cad8;
+        color: #fff;
+        display: block;
+    }
+    }
+}
 
 /* Footer template */
 
