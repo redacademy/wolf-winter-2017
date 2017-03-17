@@ -845,15 +845,46 @@ object {
 # Page Templates
 --------------------------------------------------------------*/
 /* About page */
-.page-template-about #tabs a {
-  padding: 2rem;
-  text-decoration: none;
-  display: inline-block; }
+.page-template-about .etabs {
+  margin: 0;
+  padding: 0; }
 
-.page-template-about #tabs a.active {
-  background-color: #b9cad8;
-  color: #fff;
-  display: block; }
+.page-template-about .tab {
+  display: inline-block;
+  zoom: 1;
+  *display: inline;
+  background: #eee;
+  border: solid 1px #999;
+  border-bottom: none;
+  -moz-border-radius: 4px 4px 0 0;
+  -webkit-border-radius: 4px 4px 0 0; }
+
+.page-template-about .tab a {
+  font-size: 14px;
+  line-height: 2em;
+  display: block;
+  padding: 0 10px;
+  outline: none; }
+
+.page-template-about .tab a:hover {
+  text-decoration: underline; }
+
+.page-template-about .tab.active {
+  background: #fff;
+  padding-top: 6px;
+  position: relative;
+  top: 1px;
+  border-color: #666; }
+
+.page-template-about .tab a.active {
+  font-weight: bold; }
+
+.page-template-about .tab-container .panel-container {
+  background: #fff;
+  border: solid #666 1px;
+  padding: 10px;
+  -moz-border-radius: 0 4px 4px 4px;
+  -webkit-border-radius: 0 4px 4px 4px; }
 
 /* Footer template */
 footer {

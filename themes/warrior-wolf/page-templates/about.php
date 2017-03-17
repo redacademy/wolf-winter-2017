@@ -9,22 +9,29 @@
 
 <body>
 
-<ul class='tabs'>
-  <li><a href='#tab1'>Tab 1</a></li>
-  <li><a href='#tab2'>Tab 2</a></li>
-  <li><a href='#tab3'>Tab 3</a></li>
-</ul>
-<div id='tab1'>
-  <p>Hi, this is the first tab.</p>
+<div id="tab-container" class="tab-container">
+  <ul class='etabs'>
+    <li class='tab'><a href="#tabs1-html">HTML Markup</a></li>
+    <li class='tab'><a href="#tabs1-js">Required JS</a></li>
+    <li class='tab'><a href="#tabs1-css">Example CSS</a></li>
+  </ul>
+  <div id="tabs1-html">
+        <div class="inhabitent-about">
+        <h2>Overview</h2>
+        <?php echo CFS()->get('overview'); ?>
+        <h2>My Story</h2>
+        <?php echo CFS()->get('my_story'); ?>
+        </div>
+  </div>
+  <div id="tabs1-js">
+    <h2>JS for these tabs</h2>
+    <!-- content -->
+  </div>
+  <div id="tabs1-css">
+    <h2>CSS Styles for these tabs</h2>
+    <!-- content -->
+  </div>
 </div>
-<div id='tab2'>
-  <p>This is the 2nd tab.</p>
-</div>
-<div id='tab3'>
-  <p>And this is the 3rd tab.</p>
-</div>
-
-
 </body>
 </html>
 
