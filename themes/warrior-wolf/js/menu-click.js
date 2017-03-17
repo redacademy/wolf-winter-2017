@@ -6,3 +6,7 @@
     })
 })(jQuery);
 
+(function($) {
+    $( "#tabs" ).tabs();
+  })(jQuery);
+
