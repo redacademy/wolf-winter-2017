@@ -357,6 +357,10 @@ mark, ins {
 big {
   font-size: 125%; }
 
+/* Front Page */
+.thumbnail-container p {
+  text-transform: uppercase; }
+
 /*--------------------------------------------------------------
 # Elements
 --------------------------------------------------------------*/
@@ -753,10 +757,9 @@ a {
     margin-bottom: 3rem; }
     .programs-container .program-wrapper p {
       position: absolute;
-      top: 7.5rem;
+      top: 6.5rem;
       left: 0;
-      width: 100%;
-      margin: 0; }
+      width: 100%; }
   .programs-container div:first-child .thumbnail-container {
     background: url(../../assets/icons/asl01.blue.svg); }
   .programs-container div:nth-child(2) .thumbnail-container {
@@ -782,11 +785,11 @@ a {
   .programs-container div:nth-child(n+3):nth-child(-n+5) .thumbnail-container, .programs-container div:nth-child(n+7):nth-child(-n+8) .thumbnail-container {
     background-position: 48% 55%; }
     .programs-container div:nth-child(n+3):nth-child(-n+5) .thumbnail-container p, .programs-container div:nth-child(n+7):nth-child(-n+8) .thumbnail-container p {
-      top: 8.5rem; }
+      top: 7.5rem; }
   .programs-container div:nth-child(6) .thumbnail-container {
     background-position: 48% 57%; }
     .programs-container div:nth-child(6) .thumbnail-container p {
-      top: 8rem; }
+      top: 7rem; }
 
 /*--------------------------------------------------------------
 # Content
