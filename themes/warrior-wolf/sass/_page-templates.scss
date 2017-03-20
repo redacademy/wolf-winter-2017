@@ -8,25 +8,28 @@
 /* About page */
 
 .etabs {
+    display: flex;
+    flex-flow: row nowrap;
     margin: 0;
     padding: 0;
+    list-style: none;
      }
 .tab {
-    display: inline-block;
-    zoom:1;
-    *display:inline;
-    background: #eee;
+    background: $color__background-templates;
     border: solid 1px #999;
     border-bottom: none;
-    -moz-border-radius: 4px 4px 0 0;
-    -webkit-border-radius: 4px 4px 0 0;
+    width: 6rem;
+    height: 40px;
+    text-align: center;
+    margin: 0 0.1rem;
     }
 .tab a {
-    font-size: 14px;
-    line-height: 2em;
-    display: block;
-    padding: 0 10px;
+    font-size: 0.8rem;
     outline: none;
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+    text-align: center;
     }
 .tab a:hover {
     text-decoration: underline;
@@ -43,10 +46,8 @@
     }
 .tab-container .panel-container {
     background: #b9cad8;
-    border: solid #666 1px;
-    padding: 10px;
-    -moz-border-radius: 0 4px 4px 4px;
-    -webkit-border-radius: 0 4px 4px 4px;
+    margin-left: auto;
+    margin-right: auto;
     }
 
 /* Footer template */
