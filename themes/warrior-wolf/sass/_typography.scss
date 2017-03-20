@@ -68,15 +68,41 @@ big {
 }
 
 /* Front Page */
-.banner-container {
-	text-transform: $font__text-style;
-	h2, p {
-		color: $color__background-body;
+.home {
+	h2 {
+		text-transform: $font__text-style;
+		letter-spacing: 2px;
+	}
+	.banner-container {
+		text-transform: $font__text-style;
+		h2, p {
+			color: $color__background-body;
+		}
+	}
+	.thumbnail-container {
+		p {
+			text-transform: $font__text-style;
+		}
 	}
 }
 
-.thumbnail-container {
-	p {
+.homepage-credentials-container {
+	.location-container {
 		text-transform: $font__text-style;
+	}
+	a {
+		color: $color__background-body;
+		text-transform: $font__text-style;
+		text-decoration: none;
+		&:visited {
+			color: $color__background-body;
+		}
+	}
+	.credentials-widgets-container {
+		.textwidget {
+			color: $color__background-body;
+			text-transform: $font__text-style;
+			font-size: 0.9rem;
+		}
 	}
 }
