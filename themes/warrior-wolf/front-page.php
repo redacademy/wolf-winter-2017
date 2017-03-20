@@ -32,9 +32,14 @@ get_header(); ?>
 				<div class="credentials-widgets-container credentials-container">
 					<?php get_sidebar(); ?>
 				</div>
-				<div class="button-container">
+				<div class="button-container bio-button">
 					<a href="<?php echo get_page_link(30); ?>">learn more</a>
 				</div>
+			</div>
+
+			<div class="quote-container">
+				<p>"Courage, above all things, is the first quality of a warrior"</p>
+				<p>—  Sun</p>
 			</div>
 
 			<!-- PROGRAMS PANEL -->
@@ -51,6 +56,10 @@ get_header(); ?>
                 	</div>
             	<?php endforeach; ?>
         	</div>
+
+			<div class="button-container programs-button">
+					<a href="">view programs</a>
+				</div>
 
 		</main><!-- #main -->
 	</div><!-- #primary -->

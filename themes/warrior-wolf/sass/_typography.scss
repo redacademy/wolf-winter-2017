@@ -84,12 +84,6 @@ big {
 			text-transform: $font__text-style;
 		}
 	}
-}
-
-.homepage-credentials-container {
-	.location-container {
-		text-transform: $font__text-style;
-	}
 	a {
 		color: $color__background-body;
 		text-transform: $font__text-style;
@@ -98,11 +92,29 @@ big {
 			color: $color__background-body;
 		}
 	}
+}
+
+.homepage-credentials-container {
+	.location-container {
+		text-transform: $font__text-style;
+	}
 	.credentials-widgets-container {
 		.textwidget {
 			color: $color__background-body;
 			text-transform: $font__text-style;
 			font-size: 0.9rem;
 		}
+	}
+}
+
+.quote-container {
+	p:last-child {
+		text-transform: $font__text-style;
+	}
+}
+
+.program-wrapper{
+	p {
+		color: #172944;
 	}
 }
