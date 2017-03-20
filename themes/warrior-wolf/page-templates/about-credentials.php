@@ -5,27 +5,18 @@
     * @package Inhabitent Theme
     */
     get_header(); ?>
-    <div id="primary" class="content-area">
-    <main id="main" class="site-main" role="main">
+<div id="tab-container" class="tab-container">
+  <ul class='etabs'>
+    <li class='tab'><a href="<?php echo get_template_directory_uri(); ?>/page-templates/about.php">Bio</a></li>
+    <li class='tab'><a href="<?php echo get_template_directory_uri(); ?>/page-templates/about-credentials.php">Credentials</a></li>
+    <li class='tab'><a href="<?php echo get_template_directory_uri(); ?>/../about-method.php">Method</a></li>
+    <li class='tab'><a href="<?php echo get_template_directory_uri(); ?>/../about-mission.php">Mission</a></li>
+  </ul>
 
-    <header class="entry-header">
-        <div class="container">
-        <?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
-        </div>
-        </div>
-    </header>
+<h2>Overview</h2>
+<?php echo CFS()->get('overview'); ?>
 
-    <div class="container">
-        <div class="inhabitent-about">
-        <h2>Our Story</h2>
-        <?php echo CFS()->get('about_our_story'); ?>
-        <h2>Our Team</h2>
-        <?php echo CFS()->get('about_our_team'); ?>
-        </div>
-    </div>
+<h2>My Story</h2>
+<?php echo CFS()->get('my_story'); ?>
 
-
-
-    </main>
-    </div>
-    <?php get_footer(); ?>
+<?php get_footer(); ?>
