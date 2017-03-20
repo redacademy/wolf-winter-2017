@@ -20,12 +20,15 @@ get_header(); ?>
 
 			<!-- PROGRAMS PANEL -->
         	<?php $programs = get_posts(array( 'post_type' => 'programs', 'order' => 'ASC', 'numberposts' => '-1')); ?>
+			<h2>My Programs</h2>
         	<div class="programs-container">
-				<h2>My Programs</h2>
             	<?php foreach ( $programs as $program ): ?>
-                	<div class="program-wrapper">
-                    	<img src="<?php echo get_the_post_thumbnail_url($program); ?>">
-                    	<a href='<?php echo get_permalink($program);?>'><?php echo get_the_title($program); ?></a>
+					<div class="program-wrapper">
+						<a href='<?php echo get_permalink($program);?>'>
+                    		<div class="thumbnail-container">
+                    			<p><?php echo get_the_title($program); ?></p>
+							</div>
+						</a>
                 	</div>
             	<?php endforeach; ?>
         	</div>

@@ -1,3 +1,9 @@
+.home {
+    h2 {
+        text-align: center;
+    }
+}
+
 .banner-container {
     text-align: center;
     background: url(../../assets/images/mobile/homepage/fakeBruce.jpg);
@@ -8,4 +14,91 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+}
+
+.programs-container {
+    text-align: center;
+    .program-wrapper {
+        position: relative;
+        width: 175px;
+        height: 185px;
+        margin: 0 auto;
+        border: 1px solid black;
+        margin-bottom: 3rem;
+        p {
+            position: absolute;
+            top: 7.5rem;
+            left: 0;
+            width: 100%;
+            margin: 0;
+        }
+    } 
+    div:first-child {
+        .thumbnail-container {
+            background: url(../../assets/icons/asl01.blue.svg);
+        }
+    }
+    div:nth-child(2) {
+        .thumbnail-container {
+            background: url(../../assets/icons/asl02.blue.svg);
+        }
+    }
+    div:nth-child(3) {
+        .thumbnail-container {
+            background: url(../../assets/icons/kayak.blue.svg);
+        }
+    }
+    div:nth-child(4) {
+        .thumbnail-container {
+            background: url(../../assets/icons/paddleboard.blue.svg);
+        }
+    }
+    div:nth-child(5) {
+        .thumbnail-container {
+            background: url(../../assets/icons/decision.making.blue.svg);
+        }
+    }
+    div:nth-child(6) {
+        .thumbnail-container {
+            background: url(../../assets/icons/destination.blue.svg);
+        }
+    }
+    div:nth-child(7) {
+        .thumbnail-container {
+            background: url(../../assets/icons/hiking.blue.svg);
+        }
+    }
+    div:last-child {
+        .thumbnail-container {
+            background: url(../../assets/icons/skiing.blue.svg);
+        }
+    }
+    div:nth-child(-n+8) {
+        .thumbnail-container {
+            width: 100%;
+            height: 100%;
+            background-size: 25rem;
+        }
+    }
+    div:nth-child(-n+2) {
+        .thumbnail-container {
+            background-position: 48% 60%;
+        }
+    }
+    div:nth-child(n+3):nth-child(-n+5), div:nth-child(n+7):nth-child(-n+8) {
+        .thumbnail-container {
+            background-position: 48% 55%;
+            p {
+                top: 8.5rem;
+            }
+        }
+    }
+    div:nth-child(6) {
+        .thumbnail-container {
+            background-position: 48% 57%;
+            p {
+                top: 8rem;
+            }
+        }
+    }   
 }
