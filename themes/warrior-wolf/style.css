@@ -502,8 +502,7 @@ textarea {
   z-index: 1;
   width: 100%;
   top: 0;
-  background: #4C5A75;
-  border-bottom: 1px solid grey; }
+  background: #4C5A75; }
   .site-header .header-container {
     display: -ms-flexbox;
     display: flex;
@@ -525,8 +524,7 @@ textarea {
       display: -ms-flexbox;
       display: flex;
       -ms-flex-pack: center;
-          justify-content: center;
-      border-bottom: 1px solid grey; }
+          justify-content: center; }
       .site-header .header-container .main-navigation:hover {
         cursor: pointer; }
       .site-header .header-container .main-navigation .menu-toggle {
@@ -542,7 +540,11 @@ textarea {
             align-self: center; }
 
 .button-color-change {
-  background-color: rgba(0, 0, 0, 0.7); }
+  background-color: rgba(0, 0, 0, 0.7);
+  border-bottom: 1px solid grey; }
+
+.header-border-change {
+  border-bottom: 1px solid grey; }
 
 .menu-click {
   position: fixed;
