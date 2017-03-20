@@ -68,8 +68,15 @@ big {
 }
 
 /* Front Page */
+.banner-container {
+	text-transform: $font__text-style;
+	h2, p {
+		color: $color__background-body;
+	}
+}
+
 .thumbnail-container {
 	p {
-		text-transform: uppercase;
+		text-transform: $font__text-style;
 	}
 }

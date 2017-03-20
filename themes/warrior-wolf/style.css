@@ -358,6 +358,11 @@ big {
   font-size: 125%; }
 
 /* Front Page */
+.banner-container {
+  text-transform: uppercase; }
+  .banner-container h2, .banner-container p {
+    color: #fff; }
+
 .thumbnail-container p {
   text-transform: uppercase; }
 
@@ -745,6 +750,9 @@ a {
       flex-direction: column;
   -ms-flex-pack: justify;
       justify-content: space-between; }
+  .banner-container p {
+    width: 58%;
+    margin: 0 auto; }
 
 .programs-container {
   text-align: center; }
