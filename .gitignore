@@ -30,6 +30,9 @@ access_log
 # ========================================================== #
 plugins/*
 !plugins/warrior-wolf-functionality/
+!plugins/certifications-widget/
+!plugins/experience-widget/
+!plugins/skills-widget/
 
 # Ignore everything in "themes" except the active theme. #
 # ====================================================== #
