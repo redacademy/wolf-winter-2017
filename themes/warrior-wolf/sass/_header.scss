@@ -5,18 +5,32 @@
     width: 100%;
     top: 0;
     background: $color__background-templates;
+    @include media($desktop) {
+        background: transparent;
+        position: absolute;
+        padding-top: 0.5rem;
+        height: 135px;
+    }
     .header-container {
         display: flex;
         justify-content: space-between;
         align-items: center;
+        height: 100%;
         .site-branding {
             padding-left: 1.5rem;
             .logo {
-                background: url(../../assets/logo/logo-white.no.text.png);
+                background-image: url(../../assets/logo/logo-white.no.text.png);
                 background-size: contain;
                 background-repeat: no-repeat;
                 height: 45px;
                 width: 50px;
+                @include media($desktop) {
+                    background-image: url(../../assets/logo/logo-white.png);
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                    height: 130px;
+                    width: 180px;
+                }
             }
         }
         .main-navigation {
@@ -24,8 +38,32 @@
             height: 60px;
             display: flex;
             justify-content: center;
+            @include media($tablet) {
+                justify-content: flex-end;
+                padding-right: 1rem;
+            }
+            @include media($desktop) {
+                width: 100%;
+            }
             &:hover {
                 cursor: pointer;
+            }
+            .menu {
+                li:nth-child(n+1):nth-child(-n+3), li:nth-child(5) {
+                    @include media($desktop) {
+                        padding-right: 2.5rem;
+                    }
+                }
+                li:nth-child(4) {
+                    @include media($desktop) {
+                        display: none;
+                    }
+                }
+            }
+            .menu-social-menu-container {
+                @include media($desktop) {
+                    display: none;
+                }
             }
             .menu-toggle {
                 background: url(../../assets/mobile_hamburger.png);

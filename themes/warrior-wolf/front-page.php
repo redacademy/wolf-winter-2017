@@ -9,38 +9,43 @@ get_header(); ?>
 
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
+			<div class="desktop-parallax-container">
+				<div class="banner-container">
+					<div class="intro-text-wrapper">
+						<h2>Bruce Wilson</h2>
+						<h3>Outdoor Adventure Guide &amp; Life Coach</h3>
+					</div>
+					<p>"fight within yourself to be the best person you can be."</p>
+					<a href="">Let's begin</a>
+				</div>
 
-			<div class="banner-container">
-				<div class="intro-text-wrapper">
-					<h2>Bruce Wilson</h2>
-					<h3>Outdoor Adventure Guide &amp; Life Coach</h3>
+				<!--INFO SECTION-->
+				<div class="blah">
+				<h2>Warrior Wolf</h2>
+				<div class="homepage-credentials-container">
+					<div class="location-container credentials-container">
+						<div class="avatar-picture"></div>
+						<p>Bruce Wilson</p>
+						<p>Squamish, BC, Canada</p>
+					</div>
+					<div class="short-info-container credentials-container">
+						<p>As a certified outdoor specialist, I provide avalanche skills training, backcountry tours, sea kayaking trips, life coaching, and much more.</p>
+					</div>
+					<div class="credentials-widgets-container credentials-container">
+						<?php get_sidebar(); ?>
+					</div>
+					<div class="button-container bio-button">
+						<a href="<?php echo get_page_link(30); ?>">learn more</a>
+					</div>
 				</div>
-				<p>"fight within yourself to be the best person you can be."</p>
-			</div>
+				</div>
 
-			<!--INFO SECTION-->
-			<h2>Warrior Wolf</h2>
-			<div class="homepage-credentials-container">
-				<div class="location-container credentials-container">
-					<div class="avatar-picture"></div>
-					<p>Bruce Wilson</p>
-					<p>Squamish, BC, Canada</p>
-				</div>
-				<div class="short-info-container credentials-container">
-					<p>As a certified outdoor specialist, I provide avalanche skills training, backcountry tours, sea kayaking trips, life coaching, and much more.</p>
-				</div>
-				<div class="credentials-widgets-container credentials-container">
-					<?php get_sidebar(); ?>
-				</div>
-				<div class="button-container bio-button">
-					<a href="<?php echo get_page_link(30); ?>">learn more</a>
-				</div>
-			</div>
 
 			<div class="quote-container">
 				<p>"Courage, above all things, is the first quality of a warrior"</p>
 				<p>—  Sun</p>
 			</div>
+			</div> <!--desktop banner container -->
 
 			<!-- PROGRAMS PANEL -->
         	<?php $programs = get_posts(array( 'post_type' => 'programs', 'order' => 'ASC', 'numberposts' => '-1')); ?>

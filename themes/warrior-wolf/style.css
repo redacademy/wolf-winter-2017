@@ -503,21 +503,35 @@ textarea {
   width: 100%;
   top: 0;
   background: #4C5A75; }
+  @media only screen and (min-width: 1024px) {
+    .site-header {
+      background: transparent;
+      position: absolute;
+      padding-top: 0.5rem;
+      height: 135px; } }
   .site-header .header-container {
     display: -ms-flexbox;
     display: flex;
     -ms-flex-pack: justify;
         justify-content: space-between;
     -ms-flex-align: center;
-        align-items: center; }
+        align-items: center;
+    height: 100%; }
     .site-header .header-container .site-branding {
       padding-left: 1.5rem; }
       .site-header .header-container .site-branding .logo {
-        background: url(../../assets/logo/logo-white.no.text.png);
+        background-image: url(../../assets/logo/logo-white.no.text.png);
         background-size: contain;
         background-repeat: no-repeat;
         height: 45px;
         width: 50px; }
+        @media only screen and (min-width: 1024px) {
+          .site-header .header-container .site-branding .logo {
+            background-image: url(../../assets/logo/logo-white.png);
+            background-size: cover;
+            background-repeat: no-repeat;
+            height: 130px;
+            width: 180px; } }
     .site-header .header-container .main-navigation {
       width: 84px;
       height: 60px;
@@ -525,8 +539,25 @@ textarea {
       display: flex;
       -ms-flex-pack: center;
           justify-content: center; }
+      @media only screen and (min-width: 600px) {
+        .site-header .header-container .main-navigation {
+          -ms-flex-pack: end;
+              justify-content: flex-end;
+          padding-right: 1rem; } }
+      @media only screen and (min-width: 1024px) {
+        .site-header .header-container .main-navigation {
+          width: 100%; } }
       .site-header .header-container .main-navigation:hover {
         cursor: pointer; }
+      @media only screen and (min-width: 1024px) {
+        .site-header .header-container .main-navigation .menu li:nth-child(n+1):nth-child(-n+3), .site-header .header-container .main-navigation .menu li:nth-child(5) {
+          padding-right: 2.5rem; } }
+      @media only screen and (min-width: 1024px) {
+        .site-header .header-container .main-navigation .menu li:nth-child(4) {
+          display: none; } }
+      @media only screen and (min-width: 1024px) {
+        .site-header .header-container .main-navigation .menu-social-menu-container {
+          display: none; } }
       .site-header .header-container .main-navigation .menu-toggle {
         background: url(../../assets/mobile_hamburger.png);
         border: none;
@@ -666,7 +697,7 @@ a {
 .main-navigation.toggled ul {
   display: block; }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1024px) {
   .menu-toggle {
     display: none; }
   .main-navigation ul {
@@ -764,43 +795,103 @@ a {
 .home h2 {
   text-align: center; }
 
+@media only screen and (min-width: 1024px) {
+  .desktop-parallax-container {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.45) 0%, rgba(0, 0, 0, 0.45)), url(../../assets/images/desktop/homepage/fakeBruce.jpg) no-repeat fixed;
+    background-size: cover;
+    min-height: 100vh;
+    position: relative; } }
+
 .banner-container {
   text-align: center;
-  background: url(../../assets/images/mobile/homepage/fakeBruce.jpg);
+  background-image: url(../../assets/images/mobile/homepage/fakeBruce.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-  height: 80vh;
-  width: 100%;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-direction: column;
       flex-direction: column;
   -ms-flex-pack: justify;
-      justify-content: space-between; }
+      justify-content: space-between;
+  height: 100vh;
+  width: 100%;
+  position: relative; }
   @media only screen and (min-width: 600px) {
     .banner-container {
-      background: url(../../assets/images/tablet/homepage/fakeBruce.jpg);
-      background-size: cover;
-      background-repeat: no-repeat;
+      background-image: url(../../assets/images/tablet/homepage/fakeBruce.jpg);
       height: 155vh; } }
   @media only screen and (min-width: 1024px) {
     .banner-container {
-      background: url(../../assets/images/desktop/homepage/fakeBruce.jpg);
-      min-height: 100vh;
-      background-attachment: fixed;
-      background-position: center;
-      background-repeat: no-repeat;
-      background-size: cover; } }
+      background: none;
+      height: 100vh; } }
+  .banner-container .intro-text-wrapper {
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    top: 1rem; }
+    .banner-container .intro-text-wrapper h2, .banner-container .intro-text-wrapper h3 {
+      margin: 0; }
+    @media only screen and (min-width: 600px) {
+      .banner-container .intro-text-wrapper {
+        top: 6rem; } }
+    @media only screen and (min-width: 1024px) {
+      .banner-container .intro-text-wrapper {
+        position: absolute;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-direction: column;
+            flex-direction: column;
+        right: 3rem;
+        top: 11rem;
+        left: auto; }
+        .banner-container .intro-text-wrapper h2 {
+          border-top: 1px solid white;
+          border-bottom: 1px solid white; } }
   .banner-container p {
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    bottom: 87px;
     width: 58%;
     margin: 0 auto; }
+  .banner-container a {
+    display: none; }
+    @media only screen and (min-width: 1024px) {
+      .banner-container a {
+        display: block;
+        padding: .7rem 2.5rem;
+        border: 3px solid #172944;
+        background: rgba(23, 41, 68, 0.36);
+        width: 200px;
+        position: absolute;
+        margin-left: auto;
+        margin-right: auto;
+        left: 0;
+        right: 0;
+        bottom: 0; } }
+
+@media only screen and (min-width: 1024px) {
+  .blah {
+    background-image: linear-gradient(to right, #fff 20%, rgba(255, 255, 255, 0) 20%);
+    background-size: 1205px 2.5px;
+    background-repeat: repeat-x; } }
 
 .homepage-credentials-container {
   background-color: #F4F5F6;
   border: 1px solid #979797;
   width: 90%;
+  max-width: 700px;
   margin: 0 auto;
   padding: 2rem 0; }
+  @media only screen and (min-width: 1024px) {
+    .homepage-credentials-container {
+      border: none;
+      background-color: transparent;
+      max-width: none; } }
   .homepage-credentials-container .credentials-container {
     margin-bottom: 2rem; }
 
@@ -861,6 +952,12 @@ a {
       flex-wrap: wrap;
   -ms-flex-direction: column;
       flex-direction: column; }
+  @media only screen and (min-width: 1024px) {
+    .quote-container {
+      background: transparent;
+      background-image: linear-gradient(to right, #fff 20%, rgba(255, 255, 255, 0) 20%);
+      background-size: 1205px 2.5px;
+      background-repeat: repeat-x; } }
   .quote-container p {
     margin: 0; }
   .quote-container p:last-child {
@@ -963,6 +1060,9 @@ a {
 /* Mobile Content */
 body .site-content {
   margin-top: 60px; }
+  @media only screen and (min-width: 600px) {
+    body .site-content {
+      margin: 0; } }
 
 /*--------------------------------------------------------------
 # Media

@@ -52,4 +52,7 @@
 
 body .site-content {
 	margin-top: 60px;
+	@include media($tablet) {
+		margin: 0;
+	}
 }
