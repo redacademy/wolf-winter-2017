@@ -8,7 +8,7 @@
 <section class="about-header-wrapper">
 <div class="about-background-image">
   <div class="name-wrapper">
-    <p>Bruce Wilson</p>
+    <h1>Bruce Wilson</h1>
   </div>
 </div>
 <div class="bruce-feature">
