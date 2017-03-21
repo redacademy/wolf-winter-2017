@@ -4,6 +4,7 @@
     }
 }
 
+// HERO BANNER SECTION
 .banner-container {
     text-align: center;
     background: url(../../assets/images/mobile/homepage/fakeBruce.jpg);
@@ -14,8 +15,97 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    p {
+        width: 58%;
+        margin: 0 auto;
+    }
 }
 
+// CREDENTIALS SECTION
+.homepage-credentials-container {
+    background-color: #F4F5F6;
+    border: 1px solid #979797;
+    width: 90%;
+    margin: 0 auto;
+    padding: 2rem 0;
+    .credentials-container {
+        margin-bottom: 2rem;
+    }
+}
+
+.location-container {
+    text-align: center;
+    .avatar-picture {
+        background: url(../../assets/images/mobile/homepage/brucePic.png);
+        background-position: 29% 29%;
+        height: 130px;
+        width: 130px;
+        border-radius: 50%;
+        margin: 0 auto
+    }
+    p {
+        margin: 0;
+    }
+}
+
+.short-info-container {
+    width: 55%;
+    margin: 0 auto;
+    p {
+        border-top: 1px solid black;
+        border-bottom: 1px solid black;
+        padding: 1rem 0;
+    }
+}
+
+.credentials-widgets-container {
+    .widget-area {
+        display: flex;
+        justify-content: space-around;
+        width: 93%;
+        margin: 0 auto;
+        .widget {
+            position: relative;
+            width: 100px;
+            height: 100px;
+            border: 1px solid #172944;
+            background: #172944;
+            border-radius: 50%;
+            .textwidget {
+                position: absolute;
+                top: 35%;
+                left: 9%;
+                line-height: 1;
+                text-align: center;
+                width: 5rem;
+            }
+        }
+        .certifications-widget-class .textwidget {
+            top: 27%;
+        }
+    }
+}
+
+// QUOTE SECTION
+.quote-container {
+    width: 100%;
+    height: 167px;
+    background: url(../../assets/images/mobile/homepage/beach-sunset.jpg);
+    background-size: cover;
+    margin-top: 2rem;
+    padding: 1rem 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    p {
+        margin: 0;
+    }
+    p:last-child {
+        align-self: flex-end;
+    }
+}
+
+// PROGRAMS SECTION
 .programs-container {
     text-align: center;
     .program-wrapper {
@@ -100,4 +190,17 @@
             }
         }
     }   
+}
+
+.button-container {
+    text-align: center;
+    a {
+        padding: 0.7rem 2.5rem;
+        border: 3px solid #172944;
+        background: rgba(23, 41, 68, 0.36);
+    }
+}
+
+.programs-button {
+    margin-bottom: 4rem;
 }

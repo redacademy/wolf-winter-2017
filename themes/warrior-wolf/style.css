@@ -358,8 +358,38 @@ big {
   font-size: 125%; }
 
 /* Front Page */
-.thumbnail-container p {
+.home h2 {
+  text-transform: uppercase;
+  letter-spacing: 2px; }
+
+.home .banner-container {
   text-transform: uppercase; }
+  .home .banner-container h2, .home .banner-container p {
+    color: #fff; }
+
+.home .thumbnail-container p {
+  text-transform: uppercase; }
+
+.home a {
+  color: #fff;
+  text-transform: uppercase;
+  text-decoration: none; }
+  .home a:visited {
+    color: #fff; }
+
+.homepage-credentials-container .location-container {
+  text-transform: uppercase; }
+
+.homepage-credentials-container .credentials-widgets-container .textwidget {
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 0.9rem; }
+
+.quote-container p:last-child {
+  text-transform: uppercase; }
+
+.program-wrapper p {
+  color: #172944; }
 
 /*--------------------------------------------------------------
 # Elements
@@ -472,8 +502,7 @@ textarea {
   z-index: 1;
   width: 100%;
   top: 0;
-  background: #4C5A75;
-  border-bottom: 1px solid grey; }
+  background: #4C5A75; }
   .site-header .header-container {
     display: -ms-flexbox;
     display: flex;
@@ -495,8 +524,7 @@ textarea {
       display: -ms-flexbox;
       display: flex;
       -ms-flex-pack: center;
-          justify-content: center;
-      border-bottom: 1px solid grey; }
+          justify-content: center; }
       .site-header .header-container .main-navigation:hover {
         cursor: pointer; }
       .site-header .header-container .main-navigation .menu-toggle {
@@ -512,7 +540,11 @@ textarea {
             align-self: center; }
 
 .button-color-change {
-  background-color: rgba(0, 0, 0, 0.7); }
+  background-color: rgba(0, 0, 0, 0.7);
+  border-bottom: 1px solid grey; }
+
+.header-border-change {
+  border-bottom: 1px solid grey; }
 
 .menu-click {
   position: fixed;
@@ -745,6 +777,81 @@ a {
       flex-direction: column;
   -ms-flex-pack: justify;
       justify-content: space-between; }
+  .banner-container p {
+    width: 58%;
+    margin: 0 auto; }
+
+.homepage-credentials-container {
+  background-color: #F4F5F6;
+  border: 1px solid #979797;
+  width: 90%;
+  margin: 0 auto;
+  padding: 2rem 0; }
+  .homepage-credentials-container .credentials-container {
+    margin-bottom: 2rem; }
+
+.location-container {
+  text-align: center; }
+  .location-container .avatar-picture {
+    background: url(../../assets/images/mobile/homepage/brucePic.png);
+    background-position: 29% 29%;
+    height: 130px;
+    width: 130px;
+    border-radius: 50%;
+    margin: 0 auto; }
+  .location-container p {
+    margin: 0; }
+
+.short-info-container {
+  width: 55%;
+  margin: 0 auto; }
+  .short-info-container p {
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    padding: 1rem 0; }
+
+.credentials-widgets-container .widget-area {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 93%;
+  margin: 0 auto; }
+  .credentials-widgets-container .widget-area .widget {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    border: 1px solid #172944;
+    background: #172944;
+    border-radius: 50%; }
+    .credentials-widgets-container .widget-area .widget .textwidget {
+      position: absolute;
+      top: 35%;
+      left: 9%;
+      line-height: 1;
+      text-align: center;
+      width: 5rem; }
+  .credentials-widgets-container .widget-area .certifications-widget-class .textwidget {
+    top: 27%; }
+
+.quote-container {
+  width: 100%;
+  height: 167px;
+  background: url(../../assets/images/mobile/homepage/beach-sunset.jpg);
+  background-size: cover;
+  margin-top: 2rem;
+  padding: 1rem 2rem;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-direction: column;
+      flex-direction: column; }
+  .quote-container p {
+    margin: 0; }
+  .quote-container p:last-child {
+    -ms-flex-item-align: end;
+        align-self: flex-end; }
 
 .programs-container {
   text-align: center; }
@@ -790,6 +897,16 @@ a {
     background-position: 48% 57%; }
     .programs-container div:nth-child(6) .thumbnail-container p {
       top: 7rem; }
+
+.button-container {
+  text-align: center; }
+  .button-container a {
+    padding: 0.7rem 2.5rem;
+    border: 3px solid #172944;
+    background: rgba(23, 41, 68, 0.36); }
+
+.programs-button {
+  margin-bottom: 4rem; }
 
 /*--------------------------------------------------------------
 # Content
