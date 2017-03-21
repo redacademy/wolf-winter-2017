@@ -1014,6 +1014,50 @@ object {
 # Page Templates
 --------------------------------------------------------------*/
 /* About page */
+.about-header-wrapper {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  margin-top: 8rem;
+  -ms-flex-align: center;
+      align-items: center;
+  position: relative;
+  margin-bottom: 6rem;
+  height: 35vh; }
+
+.name-wrapper {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
+  color: #fff;
+  margin: auto 0; }
+
+.about-background-image {
+  background: url("../../assets/images/desktop/about/background-about-me.jpg") no-repeat;
+  height: 480px;
+  width: 100%; }
+
+.bruce-feature {
+  position: absolute;
+  background: url("../../assets/images/desktop/homepage/bruce-oval.jpg");
+  height: 120px;
+  width: 120px;
+  border-radius: 50%;
+  bottom: 3rem;
+  background-position: 44% 39%; }
+  .bruce-feature img {
+    object-fit: cover; }
+
+.about-nav-wrapper {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center; }
+
 .etabs {
   display: -ms-flexbox;
   display: flex;
@@ -1038,7 +1082,8 @@ object {
   text-decoration: none;
   color: #fff;
   text-transform: uppercase;
-  text-align: center; }
+  text-align: center;
+  line-height: 2rem; }
 
 .tab a:hover {
   text-decoration: underline; }

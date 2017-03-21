@@ -7,6 +7,47 @@
         // <?php echo CFS()->get('my_story'); ?>
 /* About page */
 
+.about-header-wrapper {
+    display: flex;
+    justify-content: center;
+    margin-top: 8rem;
+    align-items: center;
+    position: relative;
+    margin-bottom: 6rem;
+    height: 35vh;
+}
+
+.name-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    margin: auto 0;
+}
+
+.about-background-image {
+    background: url("../../assets/images/desktop/about/background-about-me.jpg") no-repeat;
+    height: 480px;
+    width: 100%;
+}
+
+.bruce-feature {
+    position: absolute;
+    background: url("../../assets/images/desktop/homepage/bruce-oval.jpg");
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+    bottom: 3rem;
+    background-position: 44% 39%;
+    img {
+    object-fit: cover;
+    }
+}
+
+.about-nav-wrapper {
+    display: flex;
+    justify-content: center;
+}
 .etabs {
     display: flex;
     flex-flow: row nowrap;
@@ -30,6 +71,7 @@
     color: #fff;
     text-transform: uppercase;
     text-align: center;
+    line-height: 2rem;
     }
 .tab a:hover {
     text-decoration: underline;
