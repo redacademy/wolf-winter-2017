@@ -10,7 +10,7 @@
 .about-header-wrapper {
     display: flex;
     justify-content: center;
-    margin-top: -3rem;
+    margin-top: 8rem;
     align-items: center;
     position: relative;
     margin-bottom: 6rem;
@@ -27,10 +27,8 @@
 
 .about-background-image {
     background: url("../../assets/images/desktop/about/background-about-me.jpg") no-repeat;
-    height: 22vh;
+    height: 480px;
     width: 100%;
-    object-fit: contain;
-
 }
 
 .bruce-feature {
@@ -39,9 +37,10 @@
     height: 120px;
     width: 120px;
     border-radius: 50%;
-    bottom: 0px;
+    bottom: 3rem;
+    background-position: 44% 39%;
     img {
-    object-fit: contain;
+    object-fit: cover;
     }
 }
 

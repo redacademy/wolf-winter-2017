@@ -1019,7 +1019,7 @@ object {
   display: flex;
   -ms-flex-pack: center;
       justify-content: center;
-  margin-top: -3rem;
+  margin-top: 8rem;
   -ms-flex-align: center;
       align-items: center;
   position: relative;
@@ -1038,9 +1038,8 @@ object {
 
 .about-background-image {
   background: url("../../assets/images/desktop/about/background-about-me.jpg") no-repeat;
-  height: 22vh;
-  width: 100%;
-  object-fit: contain; }
+  height: 480px;
+  width: 100%; }
 
 .bruce-feature {
   position: absolute;
@@ -1048,9 +1047,10 @@ object {
   height: 120px;
   width: 120px;
   border-radius: 50%;
-  bottom: 0px; }
+  bottom: 3rem;
+  background-position: 44% 39%; }
   .bruce-feature img {
-    object-fit: contain; }
+    object-fit: cover; }
 
 .about-nav-wrapper {
   display: -ms-flexbox;
