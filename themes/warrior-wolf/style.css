@@ -777,6 +777,20 @@ a {
       flex-direction: column;
   -ms-flex-pack: justify;
       justify-content: space-between; }
+  @media only screen and (min-width: 600px) {
+    .banner-container {
+      background: url(../../assets/images/tablet/homepage/fakeBruce.jpg);
+      background-size: cover;
+      background-repeat: no-repeat;
+      height: 155vh; } }
+  @media only screen and (min-width: 1024px) {
+    .banner-container {
+      background: url(../../assets/images/desktop/homepage/fakeBruce.jpg);
+      min-height: 100vh;
+      background-attachment: fixed;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover; } }
   .banner-container p {
     width: 58%;
     margin: 0 auto; }
