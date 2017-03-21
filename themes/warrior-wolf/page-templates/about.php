@@ -14,7 +14,6 @@
 <div class="bruce-feature">
 </div>
 </section>
-<section>
 <div id="tab-container" class="tab-container">
   <div class="about-nav-wrapper">
     <ul class='etabs'>
@@ -25,8 +24,7 @@
     </ul>
   </div>
 </div>
-</section>
-<section>
+<section class="content-wrapper">
 <h2>Overview</h2>
 <?php echo CFS()->get('overview'); ?>
 

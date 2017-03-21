@@ -1041,12 +1041,12 @@ object {
   height: 35vh; }
 
 .name-wrapper {
-  position: absolute;
-  right: 150px;
-  bottom: 180px;
+  text-align: center;
   color: #fff;
   margin: auto 0;
   text-transform: uppercase; }
+  .name-wrapper h1 {
+    margin-top: 6rem; }
 
 .about-background-image {
   background: url("../../assets/images/desktop/about/background-about-me.jpg") no-repeat;
@@ -1056,11 +1056,12 @@ object {
 .bruce-feature {
   position: absolute;
   background: url("../../assets/images/desktop/homepage/bruce-oval.jpg");
-  height: 120px;
-  width: 120px;
+  height: 130px;
+  width: 130px;
   border-radius: 50%;
-  bottom: 2.9rem;
-  background-position: 44% 39%; }
+  bottom: 50px;
+  background-position: 43% 37%;
+  border: 1px solid #fff; }
   .bruce-feature img {
     object-fit: cover; }
 
@@ -1077,13 +1078,14 @@ object {
       flex-flow: row nowrap;
   margin: 0;
   padding: 0;
-  list-style: none; }
+  list-style: none;
+  width: 375px; }
 
 .tab {
   background: #4C5A75;
   border: solid 1px #999;
   border-bottom: none;
-  width: 6rem;
+  width: 6.8rem;
   height: 40px;
   text-align: center;
   margin: 0 0.1rem; }
@@ -1095,7 +1097,7 @@ object {
   color: #fff;
   text-transform: uppercase;
   text-align: center;
-  line-height: 2rem; }
+  line-height: 2.5rem; }
 
 .tab a:hover {
   text-decoration: underline; }
@@ -1112,6 +1114,12 @@ object {
 
 .tab-container .panel-container {
   background: #b9cad8;
+  margin-left: auto;
+  margin-right: auto; }
+
+.content-wrapper {
+  background: rgba(0, 0, 0, 0.05);
+  width: 85%;
   margin-left: auto;
   margin-right: auto; }
 
