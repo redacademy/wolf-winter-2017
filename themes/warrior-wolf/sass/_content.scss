@@ -50,9 +50,6 @@
 
 /* Mobile Content */
 
-body .site-content {
+.site-content {
 	margin-top: 60px;
-	@include media($tablet) {
-		margin: 0;
-	}
 }

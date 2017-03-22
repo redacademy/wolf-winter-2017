@@ -6,6 +6,20 @@
  */
 
 get_header(); ?>
+	<?php the_post_navigation(); ?>
+	
+	<?php $programs = get_posts(array( 'post_type' => 'programs', 'order' => 'ASC', 'numberposts' => '-1')); ?>
+        	<div class="programs-container">
+            	<?php foreach ( $programs as $program ): ?>
+					<div>
+						<a href='<?php echo get_permalink($program);?>'>
+                    		<div>
+                    			<p><?php echo get_the_title($program); ?></p>
+							</div>
+						</a>
+                	</div>
+            	<?php endforeach; ?>
+        	</div>
 
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
@@ -14,19 +28,8 @@ get_header(); ?>
 
 			<?php get_template_part( 'template-parts/content', 'single' ); ?>
 
-			<?php the_post_navigation(); ?>
-
-			<?php
-				// If comments are open or we have at least one comment, load up the comment template.
-				if ( comments_open() || get_comments_number() ) :
-					comments_template();
-				endif;
-			?>
-
 		<?php endwhile; // End of the loop. ?>
 
 		</main><!-- #main -->
 	</div><!-- #primary -->
-
-<?php get_sidebar(); ?>
 <?php get_footer(); ?>

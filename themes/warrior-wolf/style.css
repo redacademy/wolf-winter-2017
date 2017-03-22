@@ -511,7 +511,6 @@ textarea {
     .site-header {
       background: transparent;
       position: absolute;
-      padding-top: 0.5rem;
       height: 135px; } }
   .site-header .header-container {
     display: -ms-flexbox;
@@ -520,7 +519,8 @@ textarea {
         justify-content: space-between;
     -ms-flex-align: center;
         align-items: center;
-    height: 100%; }
+    height: 100%;
+    padding-top: 0.5rem; }
     .site-header .header-container .site-branding {
       padding-left: 1.5rem; }
       .site-header .header-container .site-branding .logo {
@@ -554,10 +554,10 @@ textarea {
       .site-header .header-container .main-navigation:hover {
         cursor: pointer; }
       @media only screen and (min-width: 1024px) {
-        .site-header .header-container .main-navigation .menu li:nth-child(n+1):nth-child(-n+3), .site-header .header-container .main-navigation .menu li:nth-child(5) {
+        .site-header .header-container .main-navigation .menu li:nth-child(n+2):nth-child(-n+3), .site-header .header-container .main-navigation .menu li:nth-child(5) {
           padding-right: 2.5rem; } }
       @media only screen and (min-width: 1024px) {
-        .site-header .header-container .main-navigation .menu li:nth-child(4) {
+        .site-header .header-container .main-navigation .menu li:first-child, .site-header .header-container .main-navigation .menu li:nth-child(4) {
           display: none; } }
       @media only screen and (min-width: 1024px) {
         .site-header .header-container .main-navigation .menu-social-menu-container {
@@ -1068,45 +1068,39 @@ a {
   top: 5px;
   z-index: 2; }
 
-.slice1 {
+.slice1 .slice1-inside {
+  background-color: transparent;
   position: absolute;
   top: 0px;
   left: 0px;
   width: 662px;
   height: 662px;
   border-radius: 662px;
-  clip: rect(0px 662px 662px 331px);
-  z-index: 3; }
-  .slice1 .slice1-inside {
-    background-color: transparent;
+  clip: rect(0px 331px 662px 0px);
+  transform: rotate(45deg); }
+  .slice1 .slice1-inside a {
+    width: 154px;
+    height: 141px;
     position: absolute;
-    top: 0px;
-    left: 0px;
-    width: 662px;
-    height: 662px;
-    border-radius: 662px;
-    clip: rect(0px 331px 662px 0px);
-    transform: rotate(45deg); }
-    .slice1 .slice1-inside a {
-      width: 154px;
-      height: 141px;
+    left: 11rem;
+    top: 2.3rem; }
+    .slice1 .slice1-inside a .icon {
       position: absolute;
-      left: 11rem;
-      top: 2.3rem; }
-      .slice1 .slice1-inside a .icon {
-        background-image: url(../../assets/icons/asl02.blue.svg);
-        background-position: 88% 23%;
-        background-size: 150%;
-        width: 161%;
-        height: 166%;
-        transform: rotate(90deg); }
-      .slice1 .slice1-inside a p {
-        position: absolute;
-        width: 100%;
-        left: 3rem;
-        top: 1.5rem;
-        transform: rotate(-90deg);
-        color: #00008b; }
+      top: -8rem;
+      left: -7rem;
+      background-image: url(../../assets/icons/asl02.blue.svg);
+      background-position: 71% 24%;
+      background-size: 150%;
+      width: 161%;
+      height: 166%;
+      transform: rotate(-45deg); }
+    .slice1 .slice1-inside a p {
+      position: absolute;
+      width: 100%;
+      left: 2rem;
+      top: 4.5rem;
+      transform: rotate(-45deg);
+      color: #00008b; }
 
 .slice2 {
   position: absolute;
@@ -1379,17 +1373,17 @@ a {
       top: 2.3rem; }
       .slice8 .slice8-inside a .icon {
         background-image: url(../../assets/icons/asl01.blue.svg);
-        background-position: 88% 23%;
+        background-position: 98% 81%;
         background-size: 150%;
         width: 161%;
         height: 166%;
-        transform: rotate(90deg); }
+        transform: rotate(0deg); }
       .slice8 .slice8-inside a p {
         position: absolute;
         width: 100%;
-        left: 3rem;
-        top: 1.5rem;
-        transform: rotate(-90deg);
+        left: 0rem;
+        top: 4.5rem;
+        transform: rotate(0deg);
         color: #00008b; }
 
 /*--------------------------------------------------------------
@@ -1431,11 +1425,8 @@ a {
   display: block; }
 
 /* Mobile Content */
-body .site-content {
+.site-content {
   margin-top: 60px; }
-  @media only screen and (min-width: 600px) {
-    body .site-content {
-      margin: 0; } }
 
 /*--------------------------------------------------------------
 # Media
@@ -1497,6 +1488,25 @@ object {
 .gallery-caption {
   display: block; }
 
+.single-programs .programs-container {
+  display: none; }
+  @media only screen and (min-width: 1024px) {
+    .single-programs .programs-container {
+      display: block;
+      height: 128px;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-pack: distribute;
+          justify-content: space-around; } }
+
+@media only screen and (min-width: 1024px) {
+  .single-programs .site .site-header .header-container .site-branding .logo {
+    background-image: url(../../assets/logo/logo.png); }
+  .single-programs .site-content {
+    margin-top: 10rem; }
+  .single-programs .nav-links {
+    display: none; } }
+
 /*--------------------------------------------------------------
 # Page Templates
 --------------------------------------------------------------*/
@@ -1506,7 +1516,7 @@ object {
   display: flex;
   -ms-flex-pack: center;
       justify-content: center;
-  margin-top: 8rem;
+  margin-top: 7rem;
   -ms-flex-align: center;
       align-items: center;
   position: relative;
@@ -1534,7 +1544,7 @@ object {
   border-radius: 50%;
   bottom: 50px;
   background-position: 43% 37%;
-  border: 1px solid #fff; }
+  border: 2px solid #fff; }
   .bruce-feature img {
     object-fit: cover; }
 

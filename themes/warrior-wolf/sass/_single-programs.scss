@@ -1,0 +1,24 @@
+.single-programs {
+    .programs-container {
+        display: none;
+        @include media($desktop) {
+            display: block;
+            height: 128px;
+            display: flex;
+            justify-content: space-around;
+        }
+    }
+    @include media($desktop) {
+        .site {
+            .site-header .header-container .site-branding .logo {
+                background-image: url(../../assets/logo/logo.png);
+            }
+        }
+        .site-content {
+		    margin-top: 10rem;
+	    }
+        .nav-links {
+            display: none;
+        }
+    }
+}

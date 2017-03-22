@@ -22,110 +22,107 @@ get_header(); ?>
 				<!--INFO SECTION-->
 				<div class="blah">
 				<h2>Warrior Wolf</h2>
-				<div class="homepage-credentials-container">
-					<div class="location-container credentials-container">
-						<div class="avatar-picture"></div>
-						<p>Bruce Wilson</p>
-						<p>Squamish, BC, Canada</p>
+					<div class="homepage-credentials-container">
+						<div class="location-container credentials-container">
+							<div class="avatar-picture"></div>
+							<p>Bruce Wilson</p>
+							<p>Squamish, BC, Canada</p>
+						</div>
+						<div class="short-info-container credentials-container">
+							<p>As a certified outdoor specialist, I provide avalanche skills training, backcountry tours, sea kayaking trips, life coaching, and much more.</p>
+						</div>
+						<div class="credentials-widgets-container credentials-container">
+							<?php get_sidebar(); ?>
+						</div>
+						<div class="button-container bio-button">
+							<a href="<?php echo get_page_link(30); ?>">learn more</a>
+						</div>
 					</div>
-					<div class="short-info-container credentials-container">
-						<p>As a certified outdoor specialist, I provide avalanche skills training, backcountry tours, sea kayaking trips, life coaching, and much more.</p>
+				</div> <!-- .blah -->
+
+
+				<div class="quote-container">
+					<p>"Courage, above all things, is the first quality of a warrior"</p>
+					<p>—  Sun</p>
+				</div>
+			</div> <!-- .desktop-parallax-container -->
+			
+			<div class="testtest">
+				<div class="mrpie">
+					<div class="slice1">
+						<div class="slice1-inside">
+							<a href="<?php echo get_page_link(20); ?>">
+								<div class="icon"></div>
+								<p>Avalanche Skills Training (level 2)</p>
+							</a>
+						</div>
 					</div>
-					<div class="credentials-widgets-container credentials-container">
-						<?php get_sidebar(); ?>
+
+					<div class="slice2">
+						<div class="slice2-inside">
+							<a href="<?php echo get_page_link(30); ?>">
+								<div class="icon"></div>
+								<p>Sea Kayaking</p>
+							</a>
+						</div>
 					</div>
-					<div class="button-container bio-button">
-						<a href="<?php echo get_page_link(30); ?>">learn more</a>
+
+					<div class="slice3">
+						<div class="slice3-inside">
+							<a href="<?php echo get_page_link(40); ?>">
+								<div class="icon"></div>
+								<p>Paddleboarding</p>
+							</a>
+						</div>
 					</div>
-				</div>
-				</div>
 
+					<div class="slice4">
+						<div class="slice4-inside">
+							<a href="<?php echo get_page_link(50); ?>">
+								<div class="icon"></div>
+								<p>Life Coaching</p>
+							</a>
+						</div>
+					</div>
 
-			<div class="quote-container">
-				<p>"Courage, above all things, is the first quality of a warrior"</p>
-				<p>—  Sun</p>
+					<div class="slice5">
+						<div class="slice5-inside">
+							<a href="<?php echo get_page_link(60); ?>">
+								<div class="icon"></div>
+								<p>Travel Expeditions (long-term)</p>
+							</a>
+						</div>
+					</div>
+
+					<div class="slice6">
+						<div class="slice6-inside">
+							<a href="<?php echo get_page_link(70); ?>">
+								<div class="icon"></div>
+								<p>Hiking</p>
+							</a>
+						</div>
+					</div>
+
+					<div class="slice7">
+						<div class="slice7-inside">
+							<a href="<?php echo get_page_link(80); ?>">
+								<div class="icon"></div>
+								<p>Backcountry Ski Tour</p>
+							</a>
+						</div>
+					</div>
+
+					<div class="slice8">
+						<div class="slice8-inside">
+							<a href="<?php echo get_page_link(90); ?>">
+								<div class="icon"></div>
+								<p>Avalanche Skills Training (level 1)</p>
+							</a>
+						</div>
+					</div>
+				</div> <!-- .mrpie -->
+				<div class="pie"></div>
 			</div>
-			</div> <!--desktop banner container -->
-		
-		<div class="testtest">
-
-		<div class="mrpie">
-
-			<div class="slice1">
-				<div class="slice1-inside">
-					<a href="">
-						<div class="icon"></div>
-						<p>Avalanche Skills Training (level 2)</p>
-					</a>
-				</div>
-			</div>
-
-			<div class="slice2">
-				<div class="slice2-inside">
-					<a href="">
-						<div class="icon"></div>
-						<p>Sea Kayaking</p>
-					</a>
-				</div>
-			</div>
-
-			<div class="slice3">
-				<div class="slice3-inside">
-					<a href="">
-						<div class="icon"></div>
-						<p>Paddleboarding</p>
-					</a>
-				</div>
-			</div>
-
-			<div class="slice4">
-				<div class="slice4-inside">
-					<a href="">
-						<div class="icon"></div>
-						<p>Life Coaching</p>
-					</a>
-				</div>
-			</div>
-
-			<div class="slice5">
-				<div class="slice5-inside">
-					<a href="">
-						<div class="icon"></div>
-						<p>Travel Expeditions (long-term)</p>
-					</a>
-				</div>
-			</div>
-
-			<div class="slice6">
-				<div class="slice6-inside">
-					<a href="">
-						<div class="icon"></div>
-						<p>Hiking</p>
-					</a>
-				</div>
-			</div>
-
-			<div class="slice7">
-				<div class="slice7-inside">
-					<a href="">
-						<div class="icon"></div>
-						<p>Backcountry Ski Tour</p>
-					</a>
-				</div>
-			</div>
-
-			<div class="slice8">
-				<div class="slice8-inside">
-					<a href="">
-						<div class="icon"></div>
-						<p>Avalanche Skills Training (level 1)</p>
-					</a>
-				</div>
-			</div>
-		</div>
-
-		<div class="pie"></div>
-		</div>
 
 			<!-- PROGRAMS PANEL -->
         	<?php $programs = get_posts(array( 'post_type' => 'programs', 'order' => 'ASC', 'numberposts' => '-1')); ?>
@@ -143,8 +140,8 @@ get_header(); ?>
         	</div>
 
 			<div class="button-container programs-button">
-					<a href="">view programs</a>
-				</div>
+				<a href="">view programs</a>
+			</div>
 
 		</main><!-- #main -->
 	</div><!-- #primary -->

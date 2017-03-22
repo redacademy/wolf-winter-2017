@@ -8,7 +8,6 @@
     @include media($desktop) {
         background: transparent;
         position: absolute;
-        padding-top: 0.5rem;
         height: 135px;
     }
     .header-container {
@@ -16,6 +15,7 @@
         justify-content: space-between;
         align-items: center;
         height: 100%;
+        padding-top: 0.5rem;
         .site-branding {
             padding-left: 1.5rem;
             .logo {
@@ -49,12 +49,12 @@
                 cursor: pointer;
             }
             .menu {
-                li:nth-child(n+1):nth-child(-n+3), li:nth-child(5) {
+                li:nth-child(n+2):nth-child(-n+3), li:nth-child(5) {
                     @include media($desktop) {
                         padding-right: 2.5rem;
                     }
                 }
-                li:nth-child(4) {
+                li:first-child, li:nth-child(4) {
                     @include media($desktop) {
                         display: none;
                     }

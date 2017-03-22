@@ -321,14 +321,14 @@
 }
 
 .slice1 {
-    position: absolute; 
-    top: 0px; 
-    left: 0px; 
-    width: 662px; 
-    height: 662px; 
-    border-radius: 662px; 
-    clip: rect(0px 662px 662px 331px);
-    z-index: 3;
+    // position: absolute; 
+    // top: 0px; 
+    // left: 0px; 
+    // width: 662px; 
+    // height: 662px; 
+    // border-radius: 662px; 
+    // clip: rect(0px 662px 662px 331px);
+    // z-index: 3;
     .slice1-inside {
         background-color: transparent; 
         position: absolute; 
@@ -346,19 +346,22 @@
             left: 11rem;
             top: 2.3rem;
             .icon {
+                position: absolute;
+                top: -8rem;
+                left: -7rem;
                 background-image: url(../../assets/icons/asl02.blue.svg);
-                background-position: 88% 23%;
+                background-position: 71% 24%;
                 background-size: 150%;
                 width: 161%;
                 height: 166%;
-                transform: rotate(90deg);
+                transform: rotate(-45deg);
             }
             p {
                 position: absolute;
                 width: 100%;
-                left: 3rem;
-                top: 1.5rem;
-                transform: rotate(-90deg);
+                left: 2rem;
+                top: 4.5rem;
+                transform: rotate(-45deg);
                 color: #00008b;
             }
         }
@@ -666,18 +669,18 @@
             top: 2.3rem;
             .icon {
                 background-image: url(../../assets/icons/asl01.blue.svg);
-                background-position: 88% 23%;
+                background-position: 98% 81%;
                 background-size: 150%;
                 width: 161%;
                 height: 166%;
-                transform: rotate(90deg);
+                transform: rotate(0deg);
             }
             p {
                 position: absolute;
                 width: 100%;
-                left: 3rem;
-                top: 1.5rem;
-                transform: rotate(-90deg);
+                left: 0rem;
+                top: 4.5rem;
+                transform: rotate(0deg);
                 color: #00008b;
             }
         }
