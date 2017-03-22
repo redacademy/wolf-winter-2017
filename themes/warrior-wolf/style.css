@@ -1555,12 +1555,10 @@ object {
   display: flex;
   -ms-flex-pack: center;
       justify-content: center;
-  margin-top: 7rem;
   -ms-flex-align: center;
       align-items: center;
   position: relative;
-  margin-bottom: -1rem;
-  height: 35vh; }
+  margin-top: -3rem; }
 
 .name-wrapper {
   text-align: center;
@@ -1572,7 +1570,7 @@ object {
 
 .about-background-image {
   background: url("../../assets/images/desktop/about/background-about-me.jpg") no-repeat;
-  height: 480px;
+  height: 32vh;
   width: 100%; }
 
 .bruce-feature {
@@ -1581,7 +1579,7 @@ object {
   height: 130px;
   width: 130px;
   border-radius: 50%;
-  bottom: 50px;
+  bottom: -60px;
   background-position: 43% 37%;
   border: 2px solid #fff; }
   .bruce-feature img {
@@ -1591,7 +1589,8 @@ object {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: center;
-      justify-content: center; }
+      justify-content: center;
+  margin-top: 4.75rem; }
 
 .etabs {
   display: -ms-flexbox;

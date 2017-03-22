@@ -6,11 +6,9 @@
 .about-header-wrapper {
     display: flex;
     justify-content: center;
-    margin-top: 7rem;
     align-items: center;
     position: relative;
-    margin-bottom: -1rem;
-    height: 35vh;
+    margin-top: -3rem;
 }
 .name-wrapper {
     text-align: center;
@@ -23,7 +21,7 @@
 }
 .about-background-image {
     background: url('../../assets/images/desktop/about/background-about-me.jpg') no-repeat;
-    height: 480px;
+    height: 32vh;
     width: 100%;
 }
 .bruce-feature {
@@ -32,7 +30,7 @@
     height: 130px;
     width: 130px;
     border-radius: 50%;
-    bottom: 50px;
+    bottom: -60px;
     background-position: 43% 37%;
     border: 2px solid #fff;
     img {
@@ -42,6 +40,7 @@
 .about-nav-wrapper {
     display: flex;
     justify-content: center;
+    margin-top: 4.75rem;
     }
 .etabs {
     display: flex;
@@ -49,7 +48,7 @@
     margin: 0;
     padding: 0;
     list-style: none;
-    width: 375px
+    width: 375px;
     }
 .tab {
     background: $color__background-templates;
