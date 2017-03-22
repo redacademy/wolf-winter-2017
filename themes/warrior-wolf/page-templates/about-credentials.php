@@ -35,10 +35,9 @@
 */
 $fields = CFS()->get( 'credential' );
 foreach ( $fields as $field ) {?>
-    <li>
-    <?php echo $field['credential_title']; ?>
-    <?php echo $field['credential_date']; ?>
-          </li>
+    <li><?php echo $field['credential_title']; ?></li>
+    <li><?php echo $field['credential_date']; ?></li>
+
 <?php } ?>
 
 
