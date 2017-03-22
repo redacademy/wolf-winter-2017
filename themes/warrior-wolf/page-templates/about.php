@@ -18,7 +18,7 @@
   <div class="about-nav-wrapper">
     <ul class='etabs'>
       <li class='tab'><a href="<?php echo get_template_directory_uri(); ?>/page-templates/about.php">Bio</a></li>
-      <li class='tab'><a href="<?php echo get_template_directory_uri(); ?>/page-templates/about-credentials.php">Credentials</a></li>
+      <li class='tab'><a href="//localhost:3000/warrior-wolf/about/credentials">Credentials</a></li>
       <li class='tab'><a href="<?php echo get_template_directory_uri(); ?>/about-method.php">Method</a></li>
       <li class='tab'><a href="<?php echo get_template_directory_uri(); ?>/about-mission.php">Mission</a></li>
     </ul>
