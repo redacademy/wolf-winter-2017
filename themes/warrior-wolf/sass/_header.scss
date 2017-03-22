@@ -9,13 +9,13 @@
         background: transparent;
         position: absolute;
         height: 135px;
+        padding-top: 0.5rem;
     }
     .header-container {
         display: flex;
         justify-content: space-between;
         align-items: center;
         height: 100%;
-        padding-top: 0.5rem;
         .site-branding {
             padding-left: 1.5rem;
             .logo {

@@ -108,14 +108,14 @@ require get_template_directory() . '/inc/template-tags.php';
  */
 require get_template_directory() . '/inc/extras.php';
 
-add_filter( 'tc_singular_nav_next_text' , 'my_nav_buttons_text' );
-add_filter( 'tc_singular_nav_previous_text' , 'my_nav_buttons_text' );
- 
-function my_nav_buttons_text() {
-  switch ( current_filter() ) {
-    case 'tc_singular_nav_previous_text':
-      return 'previous post &larr;'; // <= your custom text here
-    case 'tc_singular_nav_next_text':
-      return '&rarr; next post'; // <= your custom text here
-  }
+add_filter( 'beans_previous_text_post_navigation_output', 'example_previous_text_post_navigation' );
+
+function example_previous_text_post_navigation() {
+
+	if ( $nav_text = prev_text() ) {
+		$text = 'lalala';
+	}
+
+	return $text;
+
 }
