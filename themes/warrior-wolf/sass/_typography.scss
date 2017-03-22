@@ -76,7 +76,7 @@ big {
 	.banner-container {
 		text-transform: $font__text-style;
 		h2, p {
-			color: $color__background-body;
+			color: $color__white-text;
 		}
 	}
 	.thumbnail-container {
@@ -85,12 +85,18 @@ big {
 		}
 	}
 	a {
-		color: $color__background-body;
+		color: $color__white-text;
 		text-transform: $font__text-style;
 		text-decoration: none;
 		&:visited {
 			color: $color__background-body;
 		}
+	}
+}
+
+.desktop-parallax-container {
+	@include media($desktop) {
+		color: $color__white-text;
 	}
 }
 
@@ -100,7 +106,7 @@ big {
 	}
 	.credentials-widgets-container {
 		.textwidget {
-			color: $color__background-body;
+			color: $color__white-text;
 			text-transform: $font__text-style;
 			font-size: 0.9rem;
 		}

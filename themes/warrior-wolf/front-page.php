@@ -46,6 +46,86 @@ get_header(); ?>
 				<p>—  Sun</p>
 			</div>
 			</div> <!--desktop banner container -->
+		
+		<div class="testtest">
+
+		<div class="mrpie">
+
+			<div class="slice1">
+				<div class="slice1-inside">
+					<a href="">
+						<div class="icon"></div>
+						<p>Avalanche Skills Training (level 2)</p>
+					</a>
+				</div>
+			</div>
+
+			<div class="slice2">
+				<div class="slice2-inside">
+					<a href="">
+						<div class="icon"></div>
+						<p>Sea Kayaking</p>
+					</a>
+				</div>
+			</div>
+
+			<div class="slice3">
+				<div class="slice3-inside">
+					<a href="">
+						<div class="icon"></div>
+						<p>Paddleboarding</p>
+					</a>
+				</div>
+			</div>
+
+			<div class="slice4">
+				<div class="slice4-inside">
+					<a href="">
+						<div class="icon"></div>
+						<p>Life Coaching</p>
+					</a>
+				</div>
+			</div>
+
+			<div class="slice5">
+				<div class="slice5-inside">
+					<a href="">
+						<div class="icon"></div>
+						<p>Travel Expeditions (long-term)</p>
+					</a>
+				</div>
+			</div>
+
+			<div class="slice6">
+				<div class="slice6-inside">
+					<a href="">
+						<div class="icon"></div>
+						<p>Hiking</p>
+					</a>
+				</div>
+			</div>
+
+			<div class="slice7">
+				<div class="slice7-inside">
+					<a href="">
+						<div class="icon"></div>
+						<p>Backcountry Ski Tour</p>
+					</a>
+				</div>
+			</div>
+
+			<div class="slice8">
+				<div class="slice8-inside">
+					<a href="">
+						<div class="icon"></div>
+						<p>Avalanche Skills Training (level 1)</p>
+					</a>
+				</div>
+			</div>
+		</div>
+
+		<div class="pie"></div>
+		</div>
 
 			<!-- PROGRAMS PANEL -->
         	<?php $programs = get_posts(array( 'post_type' => 'programs', 'order' => 'ASC', 'numberposts' => '-1')); ?>

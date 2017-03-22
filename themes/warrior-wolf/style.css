@@ -377,6 +377,10 @@ big {
   .home a:visited {
     color: #fff; }
 
+@media only screen and (min-width: 1024px) {
+  .desktop-parallax-container {
+    color: #fff; } }
+
 .homepage-credentials-container .location-container {
   text-transform: uppercase; }
 
@@ -914,6 +918,9 @@ a {
     border-top: 1px solid black;
     border-bottom: 1px solid black;
     padding: 1rem 0; }
+    @media only screen and (min-width: 1024px) {
+      .short-info-container p {
+        border: none; } }
 
 .credentials-widgets-container .widget-area {
   display: -ms-flexbox;
@@ -929,13 +936,20 @@ a {
     border: 1px solid #172944;
     background: #172944;
     border-radius: 50%; }
+    @media only screen and (min-width: 1024px) {
+      .credentials-widgets-container .widget-area .widget {
+        border: none;
+        background: transparent;
+        border-radius: none; } }
     .credentials-widgets-container .widget-area .widget .textwidget {
       position: absolute;
+      margin-left: auto;
+      margin-right: auto;
+      left: 0;
+      right: 0;
       top: 35%;
-      left: 9%;
       line-height: 1;
-      text-align: center;
-      width: 5rem; }
+      text-align: center; }
   .credentials-widgets-container .widget-area .certifications-widget-class .textwidget {
     top: 27%; }
 
@@ -966,6 +980,9 @@ a {
 
 .programs-container {
   text-align: center; }
+  @media only screen and (min-width: 1024px) {
+    .programs-container {
+      display: none; } }
   .programs-container .program-wrapper {
     position: relative;
     width: 175px;
@@ -1018,6 +1035,362 @@ a {
 
 .programs-button {
   margin-bottom: 4rem; }
+
+.pie {
+  background-image: url(../../assets/images/desktop/homepage/pie.png);
+  width: 664px;
+  height: 664px;
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  top: 0; }
+
+.testtest {
+  display: none; }
+  @media only screen and (min-width: 1024px) {
+    .testtest {
+      display: block;
+      background-image: url(../../assets/images/desktop/homepage/beach-sunset.jpg);
+      height: 100vh;
+      position: relative; } }
+
+.mrpie {
+  width: 662px;
+  height: 662px;
+  position: absolute;
+  border-radius: 662px;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  top: 5px;
+  z-index: 2; }
+
+.slice1 {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 662px;
+  height: 662px;
+  border-radius: 662px;
+  clip: rect(0px 662px 662px 331px);
+  z-index: 3; }
+  .slice1 .slice1-inside {
+    background-color: transparent;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 662px;
+    height: 662px;
+    border-radius: 662px;
+    clip: rect(0px 331px 662px 0px);
+    transform: rotate(45deg); }
+    .slice1 .slice1-inside a {
+      width: 154px;
+      height: 141px;
+      position: absolute;
+      left: 11rem;
+      top: 2.3rem; }
+      .slice1 .slice1-inside a .icon {
+        background-image: url(../../assets/icons/asl02.blue.svg);
+        background-position: 88% 23%;
+        background-size: 150%;
+        width: 161%;
+        height: 166%;
+        transform: rotate(90deg); }
+      .slice1 .slice1-inside a p {
+        position: absolute;
+        width: 100%;
+        left: 3rem;
+        top: 1.5rem;
+        transform: rotate(-90deg);
+        color: #00008b; }
+
+.slice2 {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 662px;
+  height: 662px;
+  border-radius: 662px;
+  clip: rect(0px 662px 662px 331px);
+  transform: rotate(45deg);
+  z-index: 4; }
+  .slice2 .slice2-inside {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 662px;
+    height: 662px;
+    border-radius: 662px;
+    clip: rect(0px 331px 662px 0px);
+    transform: rotate(45deg); }
+    .slice2 .slice2-inside a {
+      width: 154px;
+      height: 141px;
+      position: absolute;
+      left: 11rem;
+      top: 2.3rem; }
+      .slice2 .slice2-inside a .icon {
+        background-image: url(../../assets/icons/kayak.blue.svg);
+        background-position: 88% 23%;
+        background-size: 150%;
+        width: 161%;
+        height: 166%;
+        transform: rotate(90deg); }
+      .slice2 .slice2-inside a p {
+        position: absolute;
+        width: 100%;
+        left: 3rem;
+        top: 1.5rem;
+        transform: rotate(-90deg);
+        color: #00008b; }
+
+.slice3 {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 662px;
+  height: 662px;
+  border-radius: 662px;
+  clip: rect(0px 662px 662px 331px);
+  transform: rotate(90deg);
+  z-index: 5; }
+  .slice3 .slice3-inside {
+    background-color: transparent;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 662px;
+    height: 662px;
+    border-radius: 662px;
+    clip: rect(0px 331px 662px 0px);
+    transform: rotate(45deg); }
+    .slice3 .slice3-inside a {
+      width: 154px;
+      height: 141px;
+      position: absolute;
+      left: 10rem;
+      top: 2.3rem;
+      transform: rotate(-45deg); }
+      .slice3 .slice3-inside a .icon {
+        background-image: url(../../assets/icons/paddleboard.blue.svg);
+        background-position: 88% 23%;
+        background-size: 150%;
+        width: 161%;
+        height: 166%;
+        transform: rotate(90deg); }
+      .slice3 .slice3-inside a p {
+        position: absolute;
+        width: 100%;
+        left: 3rem;
+        top: 2.5rem;
+        transform: rotate(-90deg);
+        color: #00008b; }
+
+.slice4 {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 662px;
+  height: 662px;
+  border-radius: 662px;
+  clip: rect(0px 662px 662px 331px);
+  transform: rotate(135deg);
+  z-index: 6; }
+  .slice4 .slice4-inside {
+    background-color: transparent;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 662px;
+    height: 662px;
+    border-radius: 662px;
+    clip: rect(0px 331px 662px 0px);
+    transform: rotate(45deg); }
+    .slice4 .slice4-inside a {
+      width: 154px;
+      height: 141px;
+      position: absolute;
+      left: 11rem;
+      top: 2.3rem; }
+      .slice4 .slice4-inside a .icon {
+        background-image: url(../../assets/icons/decision.making.blue.svg);
+        background-position: 10% 42%;
+        background-size: 150%;
+        width: 161%;
+        height: 166%;
+        transform: rotate(180deg); }
+      .slice4 .slice4-inside a p {
+        position: absolute;
+        width: 100%;
+        left: -1rem;
+        top: 0.5rem;
+        transform: rotate(-180deg);
+        color: #00008b; }
+
+.slice5 {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 662px;
+  height: 662px;
+  border-radius: 662px;
+  clip: rect(0px 662px 662px 331px);
+  transform: rotate(180deg);
+  z-index: 7; }
+  .slice5 .slice5-inside {
+    background-color: transparent;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 662px;
+    height: 662px;
+    border-radius: 662px;
+    clip: rect(0px 331px 662px 0px);
+    transform: rotate(45deg); }
+    .slice5 .slice5-inside a {
+      width: 154px;
+      height: 141px;
+      position: absolute;
+      left: 11rem;
+      top: 2.3rem; }
+      .slice5 .slice5-inside a .icon {
+        background-image: url(../../assets/icons/destination.blue.svg);
+        background-position: 38% 36%;
+        background-size: 150%;
+        width: 161%;
+        height: 166%;
+        transform: rotate(135deg); }
+      .slice5 .slice5-inside a p {
+        position: absolute;
+        width: 100%;
+        left: -4rem;
+        top: 0.5rem;
+        transform: rotate(-225deg);
+        color: #00008b; }
+
+.slice6 {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 662px;
+  height: 662px;
+  border-radius: 662px;
+  clip: rect(0px 662px 662px 331px);
+  transform: rotate(225deg); }
+  .slice6 .slice6-inside {
+    background-color: transparent;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 662px;
+    height: 662px;
+    border-radius: 662px;
+    clip: rect(0px 331px 662px 0px);
+    transform: rotate(45deg); }
+    .slice6 .slice6-inside a {
+      width: 154px;
+      height: 141px;
+      position: absolute;
+      left: 11rem;
+      top: 2.3rem; }
+      .slice6 .slice6-inside a .icon {
+        background-image: url(../../assets/icons/hiking.blue.svg);
+        background-position: 19% 66%;
+        background-size: 150%;
+        width: 161%;
+        height: 166%;
+        transform: rotate(-90deg); }
+      .slice6 .slice6-inside a p {
+        position: absolute;
+        width: 100%;
+        left: -4rem;
+        top: 6rem;
+        transform: rotate(90deg);
+        color: #00008b; }
+
+.slice7 {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 662px;
+  height: 662px;
+  border-radius: 662px;
+  clip: rect(0px 662px 662px 331px);
+  transform: rotate(270deg); }
+  .slice7 .slice7-inside {
+    background-color: transparent;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 662px;
+    height: 662px;
+    border-radius: 662px;
+    clip: rect(0px 331px 662px 0px);
+    transform: rotate(45deg); }
+    .slice7 .slice7-inside a {
+      width: 154px;
+      height: 141px;
+      position: absolute;
+      left: 11rem;
+      top: 2.3rem; }
+      .slice7 .slice7-inside a .icon {
+        background-image: url(../../assets/icons/skiing.blue.svg);
+        background-position: 104% 53%;
+        background-size: 150%;
+        width: 161%;
+        height: 166%;
+        transform: rotate(45deg); }
+      .slice7 .slice7-inside a p {
+        position: absolute;
+        width: 100%;
+        left: -2rem;
+        top: 6.5rem;
+        transform: rotate(45deg);
+        color: #00008b; }
+
+.slice8 {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 662px;
+  height: 662px;
+  border-radius: 662px;
+  clip: rect(0px 662px 662px 331px);
+  transform: rotate(315deg); }
+  .slice8 .slice8-inside {
+    background-color: transparent;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 662px;
+    height: 662px;
+    border-radius: 662px;
+    clip: rect(0px 331px 662px 0px);
+    transform: rotate(45deg); }
+    .slice8 .slice8-inside a {
+      width: 154px;
+      height: 141px;
+      position: absolute;
+      left: 11rem;
+      top: 2.3rem; }
+      .slice8 .slice8-inside a .icon {
+        background-image: url(../../assets/icons/asl01.blue.svg);
+        background-position: 88% 23%;
+        background-size: 150%;
+        width: 161%;
+        height: 166%;
+        transform: rotate(90deg); }
+      .slice8 .slice8-inside a p {
+        position: absolute;
+        width: 100%;
+        left: 3rem;
+        top: 1.5rem;
+        transform: rotate(-90deg);
+        color: #00008b; }
 
 /*--------------------------------------------------------------
 # Content
