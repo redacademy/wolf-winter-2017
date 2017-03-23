@@ -108,14 +108,27 @@ require get_template_directory() . '/inc/template-tags.php';
  */
 require get_template_directory() . '/inc/extras.php';
 
-add_filter( 'beans_previous_text_post_navigation_output', 'example_previous_text_post_navigation' );
-
-function example_previous_text_post_navigation() {
-
-	if ( $nav_text = prev_text() ) {
-		$text = 'lalala';
-	}
-
-	return $text;
-
+/**
+* Ininite navigation looping
+*/
+function infinite_navigation() {
+	if( get_adjacent_post(false, '', true)  ) { 
+		previous_post_link('%link', '<img class="nav-buttons" src="' . get_stylesheet_directory_uri() . '/assets/arrow-left.png"/>');
+	} else { 
+    	$first = new WP_Query('posts_per_page=1&order=DESC&post_type=programs'); $first->the_post();
+    	echo '<a href="' . get_permalink() . '">
+			<img class="nav-buttons" src="' . get_stylesheet_directory_uri() . '/assets/arrow-left.png"/>
+		</a>';
+  		wp_reset_query();
+	}; 
+    
+	if( get_adjacent_post(false, '', false) ) { 
+		next_post_link('%link', '<img class="nav-buttons" src="' . get_stylesheet_directory_uri() . '/assets/arrow-right.png"/>');
+	} else { 
+		$last = new WP_Query('posts_per_page=1&order=ASC&post_type=programs'); $last->the_post();
+    	echo '<a href="' . get_permalink() . '">
+			<img class="nav-buttons" src="' . get_stylesheet_directory_uri() . '/assets/arrow-right.png"/>
+		</a>';
+    	wp_reset_query();
+	};
 }

@@ -1447,33 +1447,35 @@ object {
     width: 100%;
     height: 100%;
     display: table-cell; }
+  .single-programs .hero-container .program-icon {
+    width: 65px;
+    height: 47px;
+    top: 22px;
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0; }
   .single-programs .hero-container h2 {
     position: absolute;
-    top: 60px; }
-  .single-programs .hero-container .post-navigation {
+    top: 60px;
+    text-align: center;
+    width: 100%;
+    color: #FFF;
+    text-transform: uppercase; }
+  .single-programs .hero-container .loop-nav-container {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: justify;
+        justify-content: space-between;
     position: absolute;
-    top: 32%;
-    z-index: 1; }
-
-.single-programs .nav-next {
-  width: 50px;
-  height: 50px;
-  text-align: center;
-  border: 1px solid black; }
-  .single-programs .nav-next:before {
-    font-family: FontAwesome;
-    content: "\f16d";
-    position: absolute;
-    font-size: 2em;
-    right: 10px;
-    z-index: -1; }
-  .single-programs .nav-next a {
-    color: transparent;
-    position: absolute;
-    right: 0.1rem;
-    width: 50px;
-    height: 50px;
-    overflow: hidden; }
+    width: 100%;
+    top: 3rem; }
+    .single-programs .hero-container .loop-nav-container a {
+      padding: 0 1rem; }
+      .single-programs .hero-container .loop-nav-container a img {
+        width: 15px;
+        height: 40px; }
 
 .single-programs .programs-container {
   display: none; }
@@ -1508,6 +1510,10 @@ object {
   .single-programs .full-program-container .container, .single-programs .full-important-container .container {
     background-color: #F6F6F7;
     padding: 30px 25px;
+    margin-bottom: 1.5rem; }
+  .single-programs .full-program-container .day-programs-container, .single-programs .full-important-container .day-programs-container {
+    width: 100%;
+    text-align: center;
     margin-bottom: 1.5rem; }
   .single-programs .full-program-container .goals-container .goals-list-container, .single-programs .full-important-container .goals-container .goals-list-container {
     padding: 0 1rem; }

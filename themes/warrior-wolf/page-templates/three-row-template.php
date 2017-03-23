@@ -1,6 +1,6 @@
 <?php
 /*
-Template Name: Avalanche Page
+Template Name: Three Rows Page
 Template Post Type: programs
 */
 
@@ -23,8 +23,9 @@ get_header(); ?>
 
 		<div class="hero-container">
 			<?php echo get_the_post_thumbnail(); ?>
+			<img class="program-icon" src="<?php echo CFS()->get('program_icon'); ?>" alt="<?php echo get_the_title(); ?> icon">
 			<h2><?php echo get_the_title(); ?></h2>
-			<?php the_post_navigation(); ?>
+			<div class="loop-nav-container"><?php infinite_navigation(); ?></div>
 		</div>
 		<div class="full-program-container">
 			<h2>Overview</h2>
