@@ -979,7 +979,10 @@ a {
   .button-container a {
     padding: 0.7rem 2.5rem;
     border: 3px solid #172944;
-    background: rgba(23, 41, 68, 0.36); }
+    background: rgba(23, 41, 68, 0.36);
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #fff; }
 
 .programs-button {
   margin-bottom: 4rem; }
@@ -1655,8 +1658,42 @@ ul {
   width: 85%;
   margin-left: auto;
   margin-right: auto; }
-  .credential-wrapper li:nth-child(2n+1) {
-    background: rgba(0, 0, 0, 0.05); }
+  .credential-wrapper li {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: justify;
+        justify-content: space-between;
+    font-size: 12px; }
+    .credential-wrapper li:nth-child(2n+1) {
+      background: rgba(0, 0, 0, 0.07); }
+    .credential-wrapper li .credential-title-wrapper {
+      max-width: 75%;
+      margin: .5rem; }
+      .credential-wrapper li .credential-title-wrapper p {
+        margin: 0; }
+    .credential-wrapper li .credential-date-wrapper {
+      width: 20%;
+      margin: auto 0; }
+
+.credential-wrapper, .content-wrapper {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  width: 85%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 1rem;
+  background: rgba(0, 0, 0, 0.05); }
+  .credential-wrapper .button-container, .content-wrapper .button-container {
+    padding: 2rem 0;
+    background: #fff; }
+  .credential-wrapper h2, .content-wrapper h2 {
+    text-align: center;
+    margin-bottom: 0; }
+  .credential-wrapper p, .content-wrapper p {
+    line-height: 2;
+    margin-top: 1rem; }
 
 /* Footer template */
 footer {
