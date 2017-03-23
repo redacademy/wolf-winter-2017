@@ -25,20 +25,7 @@
   </div>
 </div>
 <section class="content-wrapper">
-
-<ul>
-  <?php
-/*
-    A loop field named "gallery" with sub-fields "slide_title" and "upload"
-    Loop fields return an associative array containing *ALL* sub-fields and their values
-    NOTE: Values of sub-loop fields are returned when using get() on the parent loop!
-*/
-$fields = CFS()->get( 'credential' );
-foreach ( $fields as $field ) {?>
-    <li><?php echo $field['credential_title']; ?></li>
-
-<?php } ?>
-</ul>
+<div class="credential-wrapper">
 <ul>
 <?php
 /*
@@ -48,9 +35,16 @@ foreach ( $fields as $field ) {?>
 */
 $fields = CFS()->get( 'credential' );
 foreach ( $fields as $field ) {?>
-    <li><?php echo $field['credential_date']; ?></li>
-
+    <li>
+      <div class="credential-title-wrapper">
+        <?php echo $field['credential_info']; ?>
+      </div>
+      <div class="credential-div-wrapper">
+        <?php echo $field['credential_date']; ?>
+      </div>
+    </li>
 <?php } ?>
 </ul>
+</div>
 </section>
 <?php get_footer(); ?>
