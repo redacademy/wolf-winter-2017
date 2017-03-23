@@ -219,83 +219,31 @@ td,
 th {
   padding: 0; }
 
-/*--------------------------------------------------------------
-# Embedded Fonts
---------------------------------------------------------------*/
 @font-face {
   font-family: 'Archivo Black';
-  src: url("archivoblack-regular.eot");
-  src: url("archivoblack-regular.eot?#iefix") format("embedded-opentype"), url("archivoblack-regular.woff2") format("woff2"), url("archivoblack-regular.ttf") format("truetype"), url("archivoblack-regular.svg#archivo_blackregular") format("svg");
+  src: url("./../../assets/fonts/archivoblack-regular-webfont.eot");
+  src: url("./../../assets/fonts/archivoblack-regular-webfont.eot?#iefix") format("embedded-opentype"), url("./../../assets/fonts/archivoblack-regular-webfont.woff2") format("woff2"), url("./../../assets/fonts/archivoblack-regular-webfont.ttf") format("truetype"), url("./../../assets/fonts/archivoblack-regular-webfont.svg#archivo_blackregular") format("svg");
   font-weight: normal;
   font-style: normal; }
 
 @font-face {
   font-family: 'Arimo';
-  src: url("arimo-bold.eot");
-  src: url("arimo-bold.eot?#iefix") format("embedded-opentype"), url("arimo-bold.woff2") format("woff2"), url("arimo-bold.ttf") format("truetype"), url("arimo-bold.svg#arimobold") format("svg");
+  src: url("./../../assets/fonts/arimo-bold-webfont.eot");
+  src: url("./../../assets/fonts/arimo-bold-webfont.eot?#iefix") format("embedded-opentype"), url("./../../assets/fonts/arimo-bold-webfont.woff2") format("woff2"), url("./../../assets/fonts/arimo-bold-webfont.ttf") format("truetype"), url("./../../assets/fonts/arimo-bold-webfont.svg#arimobold") format("svg");
   font-weight: bold;
   font-style: normal; }
 
 @font-face {
-  font-family: 'Arimo';
-  src: url("arimo-bolditalic.eot");
-  src: url("arimo-bolditalic.eot?#iefix") format("embedded-opentype"), url("arimo-bolditalic.woff2") format("woff2"), url("arimo-bolditalic.ttf") format("truetype"), url("arimo-bolditalic.svg#arimobold_italic") format("svg");
-  font-weight: bold;
-  font-style: italic; }
-
-@font-face {
-  font-family: 'Arimo';
-  src: url("arimo-italic.eot");
-  src: url("arimo-italic.eot?#iefix") format("embedded-opentype"), url("arimo-italic.woff2") format("woff2"), url("arimo-italic.ttf") format("truetype"), url("arimo-italic.svg#arimoitalic") format("svg");
-  font-weight: normal;
-  font-style: italic; }
-
-@font-face {
-  font-family: 'Arimo';
-  src: url("arimo-regular.eot");
-  src: url("arimo-regular.eot?#iefix") format("embedded-opentype"), url("arimo-regular.woff2") format("woff2"), url("arimo-regular.ttf") format("truetype"), url("arimo-regular.svg#arimoregular") format("svg");
+  font-family: 'Crimson Text Roman';
+  src: url("./../../assets/fonts/crimsontext-roman-webfont.eot");
+  src: url("./../../assets/fonts/crimsontext-roman-webfont.eot?#iefix") format("embedded-opentype"), url("./../../assets/fonts/crimsontext-roman-webfont.woff2") format("woff2"), url("./../../assets/fonts/crimsontext-roman-webfont.ttf") format("truetype"), url("./../../assets/fonts/crimsontext-roman-webfont.svg#crimson_textroman") format("svg");
   font-weight: normal;
   font-style: normal; }
 
 @font-face {
-  font-family: 'Crimson Text';
-  src: url("crimsontext-bold.eot");
-  src: url("crimsontext-bold.eot?#iefix") format("embedded-opentype"), url("crimsontext-bold.woff2") format("woff2"), url("crimsontext-bold.ttf") format("truetype"), url("crimsontext-bold.svg#crimson_textbold") format("svg");
-  font-weight: bold;
-  font-style: normal; }
-
-@font-face {
-  font-family: 'Crimson Text';
-  src: url("crimsontext-bolditalic.eot");
-  src: url("crimsontext-bolditalic.eot?#iefix") format("embedded-opentype"), url("crimsontext-bolditalic.woff2") format("woff2"), url("crimsontext-bolditalic.ttf") format("truetype"), url("crimsontext-bolditalic.svg#crimson_textbold_italic") format("svg");
-  font-weight: bold;
-  font-style: italic; }
-
-@font-face {
-  font-family: 'Crimson Text';
-  src: url("crimsontext-italic.eot");
-  src: url("crimsontext-italic.eot?#iefix") format("embedded-opentype"), url("crimsontext-italic.woff2") format("woff2"), url("crimsontext-italic.ttf") format("truetype"), url("crimsontext-italic.svg#crimson_textitalic") format("svg");
-  font-weight: normal;
-  font-style: italic; }
-
-@font-face {
-  font-family: 'crimson_textroman';
-  src: url("crimsontext-roman.eot");
-  src: url("crimsontext-roman.eot?#iefix") format("embedded-opentype"), url("crimsontext-roman.woff2") format("woff2"), url("crimsontext-roman.ttf") format("truetype"), url("crimsontext-roman.svg#crimson_textroman") format("svg");
-  font-weight: normal;
-  font-style: normal; }
-
-@font-face {
-  font-family: 'crimson_textsemibold';
-  src: url("crimsontext-semibold.eot");
-  src: url("crimsontext-semibold.eot?#iefix") format("embedded-opentype"), url("crimsontext-semibold.woff2") format("woff2"), url("crimsontext-semibold.ttf") format("truetype"), url("crimsontext-semibold.svg#crimson_textsemibold") format("svg");
-  font-weight: normal;
-  font-style: normal; }
-
-@font-face {
-  font-family: 'crimson_textsemibold_italic';
-  src: url("crimsontext-semibolditalic.eot");
-  src: url("crimsontext-semibolditalic.eot?#iefix") format("embedded-opentype"), url("crimsontext-semibolditalic.woff2") format("woff2"), url("crimsontext-semibolditalic.ttf") format("truetype"), url("crimsontext-semibolditalic.svg#crimson_textsemibold_italic") format("svg");
+  font-family: 'Crimson Text Semibold';
+  src: url("./../../assets/fonts/crimsontext-semibold-webfont.eot");
+  src: url("./../../assets/fonts/crimsontext-semibold-webfont.eot?#iefix") format("embedded-opentype"), url("./../../assets/fonts/crimsontext-semibold-webfont.woff2") format("woff2"), url("./../../assets/fonts/crimsontext-semibold-webfont.ttf") format("truetype"), url("./../../assets/fonts/crimsontext-semibold-webfont.svg#crimson_textsemibold") format("svg");
   font-weight: normal;
   font-style: normal; }
 
@@ -503,7 +451,7 @@ textarea {
 .site-header {
   height: 60px;
   position: fixed;
-  z-index: 1;
+  z-index: 10;
   width: 100%;
   top: 0;
   background: #4C5A75; }
@@ -1537,6 +1485,57 @@ object {
       display: flex;
       -ms-flex-pack: distribute;
           justify-content: space-around; } }
+
+.single-programs .full-program-container {
+  padding: 0 1.5rem; }
+
+.single-programs .full-program-container, .single-programs .full-important-container {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-pack: center;
+      justify-content: center; }
+  .single-programs .full-program-container h2, .single-programs .full-program-container h4, .single-programs .full-program-container .short-overview-container, .single-programs .full-important-container h2, .single-programs .full-important-container h4, .single-programs .full-important-container .short-overview-container {
+    width: 100%;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 1.5rem; }
+    .single-programs .full-program-container h2 p, .single-programs .full-program-container h4 p, .single-programs .full-program-container .short-overview-container p, .single-programs .full-important-container h2 p, .single-programs .full-important-container h4 p, .single-programs .full-important-container .short-overview-container p {
+      margin: 0; }
+  .single-programs .full-program-container .container, .single-programs .full-important-container .container {
+    background-color: #F6F6F7;
+    padding: 30px 25px;
+    margin-bottom: 1.5rem; }
+  .single-programs .full-program-container .goals-container .goals-list-container, .single-programs .full-important-container .goals-container .goals-list-container {
+    padding: 0 1rem; }
+    .single-programs .full-program-container .goals-container .goals-list-container ul, .single-programs .full-important-container .goals-container .goals-list-container ul {
+      padding: 0;
+      margin: 0;
+      list-style-image: url("../../assets/circle.png"); }
+      .single-programs .full-program-container .goals-container .goals-list-container ul li, .single-programs .full-important-container .goals-container .goals-list-container ul li {
+        padding: 0.5rem 0; }
+  .single-programs .full-program-container .goals-container p, .single-programs .full-important-container .goals-container p {
+    text-align: center;
+    width: 80%;
+    margin: 0 auto; }
+
+.single-programs .number-circle {
+  width: 100px;
+  height: 100px;
+  border: 1px solid #8796A4;
+  border-radius: 50%;
+  display: table;
+  margin: 0 auto;
+  background-color: #FFF; }
+  .single-programs .number-circle h3 {
+    vertical-align: middle;
+    text-align: center;
+    display: table-cell;
+    color: #8796A4;
+    font-size: 4rem; }
 
 @media only screen and (min-width: 1024px) {
   .single-programs .site .site-header .header-container .site-branding .logo {

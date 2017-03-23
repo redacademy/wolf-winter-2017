@@ -49,6 +49,63 @@
             justify-content: space-around;
         }
     }
+    .full-program-container {
+        padding: 0 1.5rem;
+    }
+    .full-program-container, .full-important-container {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        h2, h4, .short-overview-container {
+            width: 100%;
+            text-align: center;
+            text-transform: $font__text-style;
+            margin-bottom: 1.5rem;
+            p {
+                margin: 0;
+            }
+        }
+        .container {
+            background-color: #F6F6F7;
+            padding: 30px 25px;
+            margin-bottom: 1.5rem;
+        }
+        .goals-container {
+            .goals-list-container {
+                padding: 0 1rem;
+                ul {
+                    padding: 0;
+                    margin: 0;
+                    list-style-image: url('../../assets/circle.png');
+                    li {
+                        padding: 0.5rem 0;
+                    }
+                }
+            }
+            p {
+                text-align: center;
+                width: 80%;
+                margin: 0 auto;
+            }
+        }
+    }
+    .number-circle {
+        width: 100px;
+        height: 100px;
+        border: 1px solid #8796A4;
+        border-radius: 50%;
+        display: table;
+        margin: 0 auto;
+        background-color: #FFF;
+        h3 {
+            vertical-align: middle;
+            text-align: center;
+            display: table-cell;
+            color: #8796A4;
+            font-size: 4rem;
+        }
+    }
     @include media($desktop) {
         .site {
             .site-header .header-container .site-branding .logo {
