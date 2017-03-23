@@ -1521,6 +1521,8 @@ object {
     text-align: center;
     width: 80%;
     margin: 0 auto; }
+  .single-programs .full-program-container .equipment-container, .single-programs .full-important-container .equipment-container {
+    text-align: center; }
 
 .single-programs .number-circle {
   width: 100px;

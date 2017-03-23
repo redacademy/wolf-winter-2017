@@ -49,7 +49,16 @@ get_header(); ?>
 
 			<h2>required equipment</h2>
 
-			<div class="equipment-container"></div>
+			<div class="equipment-container">
+				<?php $photos = CFS()->get( 'equipment' );
+					$count = count($photos);
+					for($i = 0; $i < $count; $i++) {
+						echo '<img src="' . $photos[$i]['equipment_photo'] . '">';
+						if ($i < ($count - 1)) {
+						echo '<p>+</p>';
+						}
+					} ?>
+			</div>
 		</div> <!-- .full-program-container -->
 
 		<div class="full-important-container">
