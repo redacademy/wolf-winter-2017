@@ -1,9 +1,8 @@
 <?php
-/**
- * The template for displaying all single posts.
- *
- * @package RED_Starter_Theme
- */
+/*
+Template Name: Avalanche Page
+Template Post Type: programs
+*/
 
 get_header(); ?>
 	<?php $programs = get_posts(array( 'post_type' => 'programs', 'order' => 'ASC', 'numberposts' => '-1')); ?>
@@ -45,6 +44,7 @@ get_header(); ?>
 						<?php } ?>
 					</ul>
 				</div>
+                <p><?php echo CFS()->get('price'); ?></p>
 			</div>
 
 			<h2>required equipment</h2>
