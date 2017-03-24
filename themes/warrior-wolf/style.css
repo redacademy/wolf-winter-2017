@@ -1448,9 +1448,9 @@ object {
     height: 100%;
     display: table-cell; }
   .single-programs .hero-container .program-icon {
-    width: 65px;
-    height: 47px;
-    top: 22px;
+    width: 95px;
+    height: 80px;
+    top: 8px;
     position: absolute;
     margin-left: auto;
     margin-right: auto;
@@ -1552,6 +1552,20 @@ object {
     margin-top: 10rem; }
   .single-programs .nav-links {
     display: none; } }
+
+.postid-53 .hero-container, .postid-54 .hero-container {
+  background-image: url(../../assets/images/mobile/ast-1/avalanche-bar.jpg);
+  background-size: cover;
+  height: 150px; }
+  .postid-53 .hero-container .program-icon, .postid-54 .hero-container .program-icon {
+    background-size: 310%;
+    background-position: 50% 50%; }
+
+.postid-53 .program-icon {
+  background-image: url(../../assets/icons/asl01.white.svg); }
+
+.postid-54 .program-icon {
+  background-image: url(../../assets/icons/asl02.white.svg); }
 
 /*--------------------------------------------------------------
 # Page Templates

@@ -40,10 +40,10 @@ get_header(); ?>
 				<div class="day-programs-container">
                     <h3><?php echo CFS()->get('full_day_title'); ?></h3>
                     <div class="full-day-info"><?php echo CFS()->get('full_day'); ?></div>
-                    <p>cost: <?php echo CFS()->get('full_price'); ?></p>
+                    <p>cost: <?php echo CFS()->get('full_day_price'); ?></p>
                     <h3><?php echo CFS()->get('half_day_title'); ?></h3>
                     <div class="half-day-info"><?php echo CFS()->get('half_day'); ?></div>
-                    <p>cost: <?php echo CFS()->get('half_price'); ?></p>
+                    <p>cost: <?php echo CFS()->get('half_day_price'); ?></p>
 				</div>
             </div>
 		</main><!-- #main -->

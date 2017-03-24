@@ -23,7 +23,7 @@ get_header(); ?>
 
 		<div class="hero-container">
 			<?php echo get_the_post_thumbnail(); ?>
-			<img class="program-icon" src="<?php echo CFS()->get('program_icon'); ?>" alt="<?php echo get_the_title(); ?> icon">
+			<div class="program-icon"></div>
 			<h2><?php echo get_the_title(); ?></h2>
 			<div class="loop-nav-container"><?php infinite_navigation(); ?></div>
 		</div>
@@ -31,8 +31,8 @@ get_header(); ?>
 			<h2>Overview</h2>
 
 			<div class="short-overview-container">
-				<p>Duration: <?php echo CFS()->get('duration'); ?></p>
-				<p>Location: <?php echo CFS()->get('location'); ?></p>
+				<p>Duration: <?php echo CFS()->get('avalanche_program_duration'); ?></p>
+				<p>Location: <?php echo CFS()->get('avalanche_program_location'); ?></p>
 			</div>
 
 			<div class="goals-container container">
@@ -45,7 +45,7 @@ get_header(); ?>
 						<?php } ?>
 					</ul>
 				</div>
-                <p><?php echo CFS()->get('price'); ?></p>
+                <p><?php echo CFS()->get('avalanche_program_price'); ?></p>
 			</div>
 
 			<h2>required equipment</h2>
@@ -78,7 +78,7 @@ get_header(); ?>
 					<h3>2</h3>
 				</div>
 				<h4>snow conditions</h4>
-				<p><?php echo CFS()->get('conditions'); ?></p>
+				<p><?php echo CFS()->get('avalanche_program_conditions'); ?></p>
 			</div>
 
 			<div class="location-info-container container">
@@ -86,7 +86,7 @@ get_header(); ?>
 					<h3>3</h3>
 				</div>
 				<h4>location</h4>
-				<p><?php echo CFS()->get('location_info'); ?></p>
+				<p><?php echo CFS()->get('avalanche_location_info'); ?></p>
 			</div>
 		</div>
 

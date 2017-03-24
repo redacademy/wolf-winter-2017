@@ -9,9 +9,9 @@
             display: table-cell;
         }
         .program-icon {
-            width: 65px;
-            height: 47px;
-            top: 22px;
+            width: 95px;
+            height: 80px;
+            top: 8px;
             @include absolute-center-position;
         }
         h2 {
@@ -124,4 +124,24 @@
             display: none;
         }
     }
+}
+
+.postid-53, .postid-54 {
+    .hero-container {
+        background-image: url(../../assets/images/mobile/ast-1/avalanche-bar.jpg);
+        background-size: cover;
+        height: 150px;
+        .program-icon {
+            background-size: 310%;
+            background-position: 50% 50%;
+        }
+    }
+}
+
+.postid-53 .program-icon {
+    background-image: url(../../assets/icons/asl01.white.svg);
+}
+
+.postid-54 .program-icon {
+    background-image: url(../../assets/icons/asl02.white.svg);
 }
