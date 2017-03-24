@@ -40,7 +40,14 @@
 .about-nav-wrapper {
     display: flex;
     justify-content: center;
-    margin-top: 4.75rem;
+    padding-top: 4.75rem;
+    @include media($tablet) {
+        border-top: 1px solid #fff;
+        background-color: $color__background-templates;
+    }
+    @include media($desktop) {
+        background: none;
+    }
     }
 .etabs {
     display: flex;
@@ -49,10 +56,20 @@
     padding: 0;
     list-style: none;
     width: 375px;
+    @include media($tablet) {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        background-color: $color__background-templates;
+        width: 85%;
+        max-width: 1030;
+    }
+    @include media($desktop) {
+        background: none;
+    }
     }
 .tab {
     background: $color__background-templates;
-    border: solid 1px #999;
     border-bottom: none;
     width: 6.8rem;
     height: 40px;
@@ -96,6 +113,7 @@ ul {
     width: 85%;
     margin-left: auto;
     margin-right: auto;
+    max-width: 895px;
     li {
         display: flex;
         justify-content: space-between;
@@ -104,7 +122,7 @@ ul {
             background: rgba(0, 0, 0, 0.07);
         }
         .credential-title-wrapper {
-            max-width: 75%;
+            width: 75%;
             margin: .5rem;
             p {
                 margin: 0;
