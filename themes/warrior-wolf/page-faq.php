@@ -10,14 +10,26 @@ get_header(); ?>
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
 
-			<?php while ( have_posts() ) : the_post(); ?>
+			<div class="hero-container">
+				<h2><?php echo get_the_title(); ?></h2>
+			</div>
 
-				<?php get_template_part( 'template-parts/content', 'page' ); ?>
+			<div class='faq-container'>
+				<?php $faq_items = CFS()->get( 'faq_items' );
+				if(!empty($faq_items)) { 
+					foreach ( $faq_items as $item ) { ?>
+    					<div class='question-wrapper'>
+							<span>+</span>
+							<p><?php echo $item['faq_question'];?></p>
+						</div>
+						<div class='answer-wrapper'>
+							<p><?php echo $item['faq_answer'];?></p>
+						</div>
+					<?php } 
+				} ?>
+			</div>
 
-			<?php endwhile; // End of the loop. ?>
 
 		</main><!-- #main -->
 	</div><!-- #primary -->
-
-<?php get_sidebar(); ?>
 <?php get_footer(); ?>

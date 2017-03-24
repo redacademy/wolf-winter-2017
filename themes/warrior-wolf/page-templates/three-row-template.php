@@ -22,7 +22,6 @@ get_header(); ?>
 		<main id="main" class="site-main" role="main">
 
 		<div class="hero-container">
-			<?php echo get_the_post_thumbnail(); ?>
 			<div class="program-icon"></div>
 			<h2><?php echo get_the_title(); ?></h2>
 			<div class="loop-nav-container"><?php infinite_navigation(); ?></div>

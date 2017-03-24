@@ -1,23 +1,23 @@
 .home {
     h2 {
         text-align: center;
-        text-transform: $font__text-style;
+        text-transform: $font__text-uppercase-style;
 		letter-spacing: 2px;
     }
     .banner-container {
-		text-transform: $font__text-style;
+		text-transform: $font__text-uppercase-style;
 		h2, p {
 			color: $color__white-text;
 		}
 	}
 	.thumbnail-container {
 		p {
-			text-transform: $font__text-style;
+			text-transform: $font__text-uppercase-style;
 		}
 	}
 	a {
 		color: $color__white-text;
-		text-transform: $font__text-style;
+		text-transform: $font__text-uppercase-style;
 		text-decoration: none;
 		&:visited {
 			color: $color__background-body;
@@ -123,7 +123,7 @@
 
 .location-container {
     text-align: center;
-    text-transform: $font__text-style;
+    text-transform: $font__text-uppercase-style;
     .avatar-picture {
         background: url(../../assets/images/mobile/homepage/brucePic.png);
         background-position: 29% 29%;
@@ -174,7 +174,7 @@
                 line-height: 1;
                 text-align: center;
                 color: $color__white-text;
-			    text-transform: $font__text-style;
+			    text-transform: $font__text-uppercase-style;
 			    font-size: 0.9rem;
             }
         }
@@ -204,7 +204,7 @@
     }
     p:last-child {
         align-self: flex-end;
-        text-transform: $font__text-style;
+        text-transform: $font__text-uppercase-style;
     }
 }
 

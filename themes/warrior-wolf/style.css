@@ -1546,17 +1546,17 @@ object {
   .single-programs .nav-links {
     display: none; } }
 
-.travel-info-container .expedition-wrapper {
+.program-info-container .info-wrapper {
   padding: 0 25px; }
 
-.travel-info-container .travel-info-wrapper {
+.program-info-container .travel-info-wrapper {
   display: -ms-flexbox;
   display: flex;
   padding: 0 3rem; }
-  .travel-info-container .travel-info-wrapper h3 {
+  .program-info-container .travel-info-wrapper h3 {
     margin: 0; }
 
-.travel-info-container .container-separator {
+.program-info-container .container-separator {
   text-align: center; }
 
 .postid-53 .hero-container, .postid-54 .hero-container {
@@ -1597,6 +1597,30 @@ object {
   background-image: url(../../assets/images/mobile/backcountry/backcountry-bar.jpg); }
   .postid-60 .hero-container .program-icon {
     background-image: url(../../assets/icons/skiing.white.svg); }
+
+.page-id-28 .hero-container {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  background-size: cover;
+  height: 150px;
+  background-image: url(../../assets/images/mobile/faq/forest-bar.jpg); }
+
+.faq-container {
+  padding: 30px 25px;
+  line-height: 3;
+  text-transform: uppercase; }
+  .faq-container span {
+    padding-right: 1rem; }
+  .faq-container .question-wrapper {
+    display: table;
+    line-height: 1.5; }
+    .faq-container .question-wrapper p {
+      display: table-cell;
+      margin: 0; }
+  .faq-container .answer-wrapper {
+    display: none;
+    padding-left: 1.6rem; }
 
 /*--------------------------------------------------------------
 # Page Templates

@@ -61,7 +61,7 @@
         h2, h3, h4, .short-overview-container {
             width: 100%;
             text-align: center;
-            text-transform: $font__text-style;
+            text-transform: $font__text-uppercase-style;
             margin-bottom: 1.5rem;
             p {
                 margin: 0;
@@ -130,8 +130,8 @@
     }
 }
 
-.travel-info-container {
-    .expedition-wrapper {
+.program-info-container {
+    .info-wrapper {
         padding: 0 25px;
     }
     .travel-info-wrapper {

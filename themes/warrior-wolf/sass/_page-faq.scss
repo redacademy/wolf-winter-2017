@@ -1,0 +1,31 @@
+.page-id-28 {
+    .hero-container {
+        width: 100%;
+        height: 100%;
+        position: relative;
+        background-size: cover;
+        height: 150px;
+        background-image: url(../../assets/images/mobile/faq/forest-bar.jpg);
+    }
+}
+
+.faq-container {
+    padding: 30px 25px;
+    line-height: 3;
+    text-transform: $font__text-uppercase-style;
+    span {
+        padding-right: 1rem;
+    }
+    .question-wrapper {
+        display: table;
+        line-height: 1.5;
+        p {
+            display: table-cell;
+            margin: 0;
+        }
+    }
+    .answer-wrapper {
+        display: none;
+        padding-left: 1.6rem;
+    }
+}

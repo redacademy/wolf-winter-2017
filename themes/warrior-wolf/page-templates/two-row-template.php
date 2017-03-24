@@ -22,7 +22,6 @@ get_header(); ?>
 		<main id="main" class="site-main" role="main">
 
 			<div class="hero-container">
-				<?php echo get_the_post_thumbnail(); ?>
 				<div class="program-icon"></div>
 				<h2><?php echo get_the_title(); ?></h2>
 				<div class="loop-nav-container"><?php infinite_navigation(); ?></div>
@@ -84,10 +83,10 @@ get_header(); ?>
 				if(!empty($travel_expeditions)) { ?>
 					<h2><?php echo CFS()->get('yearly_travel_expedition'); ?></h2>
 
-					<div class="travel-info-container">
+					<div class="program-info-container">
 						<?php $count = count($travel_expeditions);
 						for($i = 0; $i < $count; $i++) {
-							echo '<div class="expedition-wrapper">';
+							echo '<div class="info-wrapper">';
 							echo '<h3>' . $travel_expeditions[$i]['travel_location'] . '</h3>';
 							echo '<div class="travel-info-wrapper"><h3>( ' . $travel_expeditions[$i]['travel_duration'] . ' )</h3><h3>' . $travel_expeditions[$i]['expedition_availability'] . '</h3></div>';
 							echo '<h4>' . $travel_expeditions[$i]['travel_timeframe'] . '</h4>';
@@ -103,10 +102,10 @@ get_header(); ?>
 				if(!empty($lifecoach_quests)) { ?>
 					<h2>Life Coaching Programs</h2>
 
-					<!--<div class="travel-info-container">-->
+					<div class='program-info-container'>
 						<?php $count = count($lifecoach_quests);
 						for($i = 0; $i < $count; $i++) {
-							echo '<div class="quest-wrapper">';
+							echo '<div class="info-wrapper">';
 							echo '<h3>' . $lifecoach_quests[$i]['lifecoach_quest_name'] . '</h3>';
 							echo '<h3>( ' . $lifecoach_quests[$i]['quest_duration'] . ' )</h3>';
 							echo '<div>' . $lifecoach_quests[$i]['quest_description'] . '</div></div>';
@@ -114,7 +113,7 @@ get_header(); ?>
 								echo '<p class="container-separator">_________________</p>';
 							}
 						} ?>
-					<!--</div>-->
+					</div>
 				<?php } ?>
 
         	</div> <!-- .full-program-container -->
