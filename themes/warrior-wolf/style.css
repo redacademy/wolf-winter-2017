@@ -1642,7 +1642,14 @@ object {
   display: flex;
   -ms-flex-pack: center;
       justify-content: center;
-  margin-top: 4.75rem; }
+  padding-top: 4.75rem; }
+  @media only screen and (min-width: 600px) {
+    .about-nav-wrapper {
+      border-top: 1px solid #fff;
+      background-color: #4C5A75; } }
+  @media only screen and (min-width: 1024px) {
+    .about-nav-wrapper {
+      background: none; } }
 
 .etabs {
   display: -ms-flexbox;
@@ -1653,10 +1660,23 @@ object {
   padding: 0;
   list-style: none;
   width: 375px; }
+  @media only screen and (min-width: 600px) {
+    .etabs {
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-direction: row;
+          flex-direction: row;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
+      background-color: #4C5A75;
+      width: 85%;
+      max-width: 1030; } }
+  @media only screen and (min-width: 1024px) {
+    .etabs {
+      background: none; } }
 
 .tab {
   background: #4C5A75;
-  border: solid 1px #999;
   border-bottom: none;
   width: 6.8rem;
   height: 40px;
@@ -1699,7 +1719,8 @@ ul {
   background: rgba(0, 0, 0, 0.05);
   width: 85%;
   margin-left: auto;
-  margin-right: auto; }
+  margin-right: auto;
+  max-width: 895px; }
   .credential-wrapper li {
     display: -ms-flexbox;
     display: flex;
@@ -1709,7 +1730,7 @@ ul {
     .credential-wrapper li:nth-child(2n+1) {
       background: rgba(0, 0, 0, 0.07); }
     .credential-wrapper li .credential-title-wrapper {
-      max-width: 75%;
+      width: 75%;
       margin: .5rem; }
       .credential-wrapper li .credential-title-wrapper p {
         margin: 0; }
