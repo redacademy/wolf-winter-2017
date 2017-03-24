@@ -1645,9 +1645,10 @@ object {
     margin-top: 6rem; }
 
 .about-background-image {
-  background: url("../../assets/images/desktop/about/background-about-me.jpg") no-repeat;
+  background: url("../../assets/images/desktop/about/background-about-me.jpg") no-repeat bottom;
   height: 32vh;
-  width: 100%; }
+  width: 100%;
+  object-fit: contain; }
 
 .bruce-feature {
   position: absolute;
@@ -1671,9 +1672,6 @@ object {
     .about-nav-wrapper {
       border-top: 1px solid #fff;
       background-color: #4C5A75; } }
-  @media only screen and (min-width: 1024px) {
-    .about-nav-wrapper {
-      background: none; } }
 
 .etabs {
   display: -ms-flexbox;
@@ -1697,7 +1695,9 @@ object {
       max-width: 1030; } }
   @media only screen and (min-width: 1024px) {
     .etabs {
-      background: none; } }
+      background-color: #4C5A75;
+      width: 85%;
+      max-width: 1030; } }
 
 .tab {
   background: #4C5A75;
@@ -1771,7 +1771,8 @@ ul {
   margin-left: auto;
   margin-right: auto;
   margin-top: 1rem;
-  background: rgba(0, 0, 0, 0.05); }
+  background: rgba(0, 0, 0, 0.05);
+  position: relative; }
   .credential-wrapper .button-container, .content-wrapper .button-container {
     padding: 2rem 0;
     background: #fff; }
@@ -1781,6 +1782,13 @@ ul {
   .credential-wrapper p, .content-wrapper p {
     line-height: 2;
     margin-top: 1rem; }
+  @media only screen and (min-width: 600px) {
+    .credential-wrapper, .content-wrapper {
+      background: transparent; }
+      .credential-wrapper .wolf-background, .content-wrapper .wolf-background {
+        background: url(../../assets/logo/logo-grey.no.png) no-repeat fixed;
+        background-size: contain;
+        background-position: 50% 50%; } }
 
 /* Footer template */
 footer {

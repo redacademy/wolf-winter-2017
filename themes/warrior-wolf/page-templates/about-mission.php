@@ -25,6 +25,7 @@
   </div>
 </div>
 <section class="content-wrapper">
+<div class="wolf-background">
 <?php echo the_post_thumbnail(); ?>
 <div class="text-content-wrapper">
 <h2><?php echo CFS()->get('mission_title'); ?></h2>
@@ -33,5 +34,6 @@
 	<div class="button-container">
 		<a href="">view programs</a>
 	</div>
+  </div>
 </section>
 <?php get_footer(); ?>

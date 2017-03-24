@@ -25,6 +25,7 @@
   </div>
 </div>
 <section class="credential-wrapper">
+<div class="wolf-background">
 <ul>
 <?php
 $fields = CFS()->get( 'credential' );
@@ -42,5 +43,6 @@ foreach ( $fields as $field ) {?>
 	<div class="button-container">
 		<a href="">view programs</a>
 	</div>
+  </div>
 </section>
 <?php get_footer(); ?>

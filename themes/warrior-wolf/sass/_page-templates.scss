@@ -20,9 +20,10 @@
     }
 }
 .about-background-image {
-    background: url('../../assets/images/desktop/about/background-about-me.jpg') no-repeat;
+    background: url('../../assets/images/desktop/about/background-about-me.jpg') no-repeat bottom;
     height: 32vh;
     width: 100%;
+    object-fit: contain;
 }
 .bruce-feature {
     position: absolute;
@@ -45,9 +46,6 @@
         border-top: 1px solid #fff;
         background-color: $color__background-templates;
     }
-    @include media($desktop) {
-        background: none;
-    }
     }
 .etabs {
     display: flex;
@@ -65,7 +63,9 @@
         max-width: 1030;
     }
     @include media($desktop) {
-        background: none;
+        background-color: $color__background-templates;
+        width: 85%;
+        max-width: 1030;
     }
     }
 .tab {
@@ -143,18 +143,31 @@ ul {
     margin-right: auto;
     margin-top: 1rem;
     background: rgba(0, 0, 0, 0.05);
+    position:relative;
     .button-container {
         padding: 2rem 0;
         background: #fff;
     }
-        h2{
-            text-align: center;
-            margin-bottom: 0;
+    h2 {
+        text-align: center;
+        margin-bottom: 0;
+    }
+    p {
+        line-height: 2;
+        margin-top: 1rem;
+    }
+    @include media($tablet) {
+        background: transparent;
+        .wolf-background {
+        background: url(../../assets/logo/logo-grey.no.png) no-repeat fixed;
+        // height: 100vh;
+        background-size: contain;
+        background-position: 50% 50%;
         }
-        p{
-            line-height: 2;
-            margin-top: 1rem;
-        }
+    }
+    @include media($desktop) {
+
+    }
 }
 
 

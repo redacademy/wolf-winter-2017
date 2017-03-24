@@ -25,6 +25,7 @@
   </div>
 </div>
 <section class="content-wrapper">
+<div class="wolf-background">
   <h2>Overview</h2>
   <?php echo CFS()->get('overview'); ?>
   <h2>My Story</h2>
@@ -32,5 +33,6 @@
 	<div class="button-container">
 		<a href="">view programs</a>
 	</div>
+  </div>
 </section>
 <?php get_footer(); ?>

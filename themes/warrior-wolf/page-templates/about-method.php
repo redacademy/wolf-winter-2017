@@ -25,10 +25,12 @@
   </div>
 </div>
 <section class="content-wrapper">
+<div class="wolf-background">
 <?php echo the_post_thumbnail(); ?>
 <?php echo CFS()->get('method'); ?>
 	<div class="button-container">
 		<a href="">view programs</a>
 	</div>
+  </div>
 </section>
 <?php get_footer(); ?>
