@@ -200,7 +200,7 @@
             left: 0;
             width: 100%;
         }
-    } 
+    }
     div:first-child {
         .thumbnail-container {
             background: url(../../assets/icons/asl01.blue.svg);
@@ -268,7 +268,7 @@
                 top: 7rem;
             }
         }
-    }   
+    }
 }
 
 .button-container {
@@ -277,6 +277,9 @@
         padding: 0.7rem 2.5rem;
         border: 3px solid #172944;
         background: rgba(23, 41, 68, 0.36);
+        text-decoration: none;
+        text-transform: uppercase;
+        color: #fff;
     }
 }
 
@@ -307,11 +310,11 @@
 }
 
 .mrpie {
-    width: 662px; 
-    height: 662px; 
-    position: absolute; 
-    border-radius: 662px; 
-    
+    width: 662px;
+    height: 662px;
+    position: absolute;
+    border-radius: 662px;
+
     margin-left: auto;
     margin-right: auto;
     left: 0;
@@ -321,23 +324,23 @@
 }
 
 .slice1 {
-    // position: absolute; 
-    // top: 0px; 
-    // left: 0px; 
-    // width: 662px; 
-    // height: 662px; 
-    // border-radius: 662px; 
+    // position: absolute;
+    // top: 0px;
+    // left: 0px;
+    // width: 662px;
+    // height: 662px;
+    // border-radius: 662px;
     // clip: rect(0px 662px 662px 331px);
     // z-index: 3;
     .slice1-inside {
-        background-color: transparent; 
-        position: absolute; 
-        top: 0px; 
-        left: 0px; 
-        width: 662px; 
-        height: 662px; 
-        border-radius: 662px; 
-        clip: rect(0px 331px 662px 0px); 
+        background-color: transparent;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        width: 662px;
+        height: 662px;
+        border-radius: 662px;
+        clip: rect(0px 331px 662px 0px);
         transform: rotate(45deg);
         a {
             width: 154px;
@@ -369,23 +372,23 @@
 }
 
 .slice2 {
-    position: absolute; 
-    top: 0px; 
-    left: 0px; 
-    width: 662px; 
-    height: 662px; 
-    border-radius: 662px; 
-    clip: rect(0px 662px 662px 331px); 
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 662px;
+    height: 662px;
+    border-radius: 662px;
+    clip: rect(0px 662px 662px 331px);
     transform: rotate(45deg);
     z-index: 4;
     .slice2-inside {
-        position: absolute; 
-        top: 0px; 
-        left: 0px; 
-        width: 662px; 
-        height: 662px; 
-        border-radius: 662px; 
-        clip: rect(0px 331px 662px 0px); 
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        width: 662px;
+        height: 662px;
+        border-radius: 662px;
+        clip: rect(0px 331px 662px 0px);
         transform: rotate(45deg);
         a {
             width: 154px;
@@ -414,24 +417,24 @@
 }
 
 .slice3 {
-    position: absolute; 
-    top: 0px; 
-    left: 0px; 
-    width: 662px; 
-    height: 662px; 
-    border-radius: 662px; 
-    clip: rect(0px 662px 662px 331px); 
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 662px;
+    height: 662px;
+    border-radius: 662px;
+    clip: rect(0px 662px 662px 331px);
     transform: rotate(90deg);
     z-index: 5;
     .slice3-inside {
-        background-color: transparent; 
-        position: absolute; 
-        top: 0px; 
-        left: 0px; 
-        width: 662px; 
-        height: 662px; 
-        border-radius: 662px; 
-        clip: rect(0px 331px 662px 0px); 
+        background-color: transparent;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        width: 662px;
+        height: 662px;
+        border-radius: 662px;
+        clip: rect(0px 331px 662px 0px);
         transform: rotate(45deg);
         a {
             width: 154px;
@@ -461,24 +464,24 @@
 }
 
 .slice4 {
-    position: absolute; 
-    top: 0px; 
-    left: 0px; 
-    width: 662px; 
-    height: 662px; 
-    border-radius: 662px; 
-    clip: rect(0px 662px 662px 331px); 
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 662px;
+    height: 662px;
+    border-radius: 662px;
+    clip: rect(0px 662px 662px 331px);
     transform: rotate(135deg);
     z-index: 6;
     .slice4-inside {
-        background-color: transparent; 
-        position: absolute; 
-        top: 0px; 
-        left: 0px; 
-        width: 662px; 
-        height: 662px; 
-        border-radius: 662px; 
-        clip: rect(0px 331px 662px 0px); 
+        background-color: transparent;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        width: 662px;
+        height: 662px;
+        border-radius: 662px;
+        clip: rect(0px 331px 662px 0px);
         transform: rotate(45deg);
         a {
             width: 154px;
@@ -507,24 +510,24 @@
 }
 
 .slice5 {
-    position: absolute; 
-    top: 0px; 
-    left: 0px; 
-    width: 662px; 
-    height: 662px; 
-    border-radius: 662px; 
-    clip: rect(0px 662px 662px 331px); 
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 662px;
+    height: 662px;
+    border-radius: 662px;
+    clip: rect(0px 662px 662px 331px);
     transform: rotate(180deg);
     z-index: 7;
     .slice5-inside {
-        background-color: transparent; 
-        position: absolute; 
-        top: 0px; 
-        left: 0px; 
-        width: 662px; 
-        height: 662px; 
-        border-radius: 662px; 
-        clip: rect(0px 331px 662px 0px); 
+        background-color: transparent;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        width: 662px;
+        height: 662px;
+        border-radius: 662px;
+        clip: rect(0px 331px 662px 0px);
         transform: rotate(45deg);
         a {
             width: 154px;
@@ -553,23 +556,23 @@
 }
 
 .slice6 {
-    position: absolute; 
-    top: 0px; 
-    left: 0px; 
-    width: 662px; 
-    height: 662px; 
-    border-radius: 662px; 
-    clip: rect(0px 662px 662px 331px); 
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 662px;
+    height: 662px;
+    border-radius: 662px;
+    clip: rect(0px 662px 662px 331px);
     transform: rotate(225deg);
     .slice6-inside {
-        background-color: transparent; 
-        position: absolute; 
-        top: 0px; 
-        left: 0px; 
-        width: 662px; 
-        height: 662px; 
-        border-radius: 662px; 
-        clip: rect(0px 331px 662px 0px); 
+        background-color: transparent;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        width: 662px;
+        height: 662px;
+        border-radius: 662px;
+        clip: rect(0px 331px 662px 0px);
         transform: rotate(45deg);
         a {
             width: 154px;
@@ -598,23 +601,23 @@
 }
 
 .slice7 {
-    position: absolute; 
-    top: 0px; 
-    left: 0px; 
-    width: 662px; 
-    height: 662px; 
-    border-radius: 662px; 
-    clip: rect(0px 662px 662px 331px); 
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 662px;
+    height: 662px;
+    border-radius: 662px;
+    clip: rect(0px 662px 662px 331px);
     transform: rotate(270deg);
     .slice7-inside {
-        background-color: transparent; 
-        position: absolute; 
-        top: 0px; 
-        left: 0px; 
-        width: 662px; 
-        height: 662px; 
-        border-radius: 662px; 
-        clip: rect(0px 331px 662px 0px); 
+        background-color: transparent;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        width: 662px;
+        height: 662px;
+        border-radius: 662px;
+        clip: rect(0px 331px 662px 0px);
         transform: rotate(45deg);
         a {
             width: 154px;
@@ -643,23 +646,23 @@
 }
 
 .slice8 {
-    position: absolute; 
-    top: 0px; 
-    left: 0px; 
-    width: 662px; 
-    height: 662px; 
-    border-radius: 662px; 
-    clip: rect(0px 662px 662px 331px); 
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 662px;
+    height: 662px;
+    border-radius: 662px;
+    clip: rect(0px 662px 662px 331px);
     transform: rotate(315deg);
     .slice8-inside {
-        background-color: transparent; 
-        position: absolute; 
-        top: 0px; 
-        left: 0px; 
-        width: 662px; 
-        height: 662px; 
-        border-radius: 662px; 
-        clip: rect(0px 331px 662px 0px); 
+        background-color: transparent;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        width: 662px;
+        height: 662px;
+        border-radius: 662px;
+        clip: rect(0px 331px 662px 0px);
         transform: rotate(45deg);
         a {
             width: 154px;
