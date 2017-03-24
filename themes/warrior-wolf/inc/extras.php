@@ -35,11 +35,10 @@ add_filter('get_the_archive_title', 'program_archive_title');
 /**
  * Programs Archive page -- changing post order
  */
-function program_posts( $query ) {
-    if ( is_post_type_archive( 'programs' )){
-		$query->set('orderby', 'date');
-		$query->set('order', 'ASC' );
-        return;
-    }
+function wolf_program_posts( $query ) {
+  if ( is_post_type_archive( 'programs' ) && $query->is_main_query() ){
+    $query->set('orderby', 'date');
+    $query->set('order', 'ASC' );
+  }
 }
-add_action( 'pre_get_posts', 'program_posts' );
+add_action( 'pre_get_posts', 'wolf_program_posts' );

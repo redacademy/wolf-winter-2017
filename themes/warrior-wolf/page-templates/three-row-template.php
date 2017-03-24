@@ -30,64 +30,96 @@ get_header(); ?>
 		<div class="full-program-container">
 			<h2>Overview</h2>
 
-			<div class="short-overview-container">
-				<p>Duration: <?php echo CFS()->get('avalanche_program_duration'); ?></p>
-				<p>Location: <?php echo CFS()->get('avalanche_program_location'); ?></p>
-			</div>
-
-			<div class="goals-container container">
-				<h4>At the end of the course, students will be able to:</h4>
-				<div class="goals-list-container">
-					<ul>
-						<?php $goals = CFS()->get( 'course_goals' );
-						foreach ( $goals as $goal ) { ?>
-    						<li> <?php echo $goal['goals'];?> </li>
-						<?php } ?>
-					</ul>
+			<?php $avalanche_duration_info = CFS()->get( 'avalanche_program_duration' );
+				if(!empty($avalanche_duration_info)) { ?>
+				<div class="short-overview-container">
+					<p>Duration: <?php echo $avalanche_duration_info; ?></p>
+					<p>Location: <?php echo CFS()->get('avalanche_program_location'); ?></p>
 				</div>
-                <p><?php echo CFS()->get('avalanche_program_price'); ?></p>
-			</div>
+			<?php } ?>
 
-			<h2>required equipment</h2>
+			<?php $hiking_duration_info = CFS()->get( 'hiking_duration' );
+				if(!empty($hiking_duration_info)) { ?>
+					<div class="short-overview-container">
+					<p>Duration: <?php echo $hiking_duration_info; ?></p>
+					<p>Location: <?php echo CFS()->get('hiking_location'); ?></p>
+					</div>
+				<?php } ?>
 
-			<div class="equipment-container">
-				<?php $photos = CFS()->get( 'equipment' );
-					$count = count($photos);
+			<?php $goals = CFS()->get( 'course_goals' );
+				if(!empty($goals)) { ?>
+					<div class="goals-container container">
+						<h4>At the end of the course, students will be able to:</h4>
+						<div class="list-container">
+							<ul>
+								<?php foreach ( $goals as $goal ) { ?>
+    								<li> <?php echo $goal['goals'];?> </li>
+								<?php } ?>
+							</ul>
+						</div>
+                		<p><?php echo CFS()->get('avalanche_program_price'); ?></p>
+					</div>
+				<?php } ?>
+
+			<?php $hiking_tips = CFS()->get( 'hiking_basic_guide' );
+				if(!empty($hiking_tips)) { ?>
+					<div class="hiking-tips-container container">
+						<h4>Please note that the following equipment list is to be used as a basic guide. Keep gear as minimal as possible without sacrificing comfort:</h4>
+						<div class="list-container">
+							<ul>
+								<?php foreach ( $hiking_tips as $tip ) { ?>
+    								<li> <?php echo $tip['hiking_list'];?> </li>
+								<?php } ?>
+							</ul>
+						</div>
+					</div>
+				<?php } ?>
+
+			<?php $photos = CFS()->get( 'equipment' );
+			if(!empty($photos)) { ?>
+				<h2>required equipment</h2>
+
+				<div class="equipment-container">
+					<?php $count = count($photos);
 					for($i = 0; $i < $count; $i++) {
 						echo '<img src="' . $photos[$i]['equipment_photo'] . '">';
 						if ($i < ($count - 1)) {
-						echo '<p>+</p>';
+							echo '<p>+</p>';
 						}
 					} ?>
-			</div>
+				</div>
+			<?php } ?>
 		</div> <!-- .full-program-container -->
 
 		<div class="full-important-container">
-			<h2>important</h2>
+			<?php $skills_requirement_info = CFS()->get( 'skill_requirements' );
+			if(!empty($skills_requirement_info)) { ?>
+				<h2>important</h2>
 
-			<div class="skills-container container">
-				<div class="number-circle">
-					<h3>1</h3>
+				<div class="skills-container container">
+					<div class="number-circle">
+						<h3>1</h3>
+					</div>
+					<h4>skills requirements</h4>
+					<p><?php echo $skills_requirement_info; ?></p>
 				</div>
-				<h4>skills requirements</h4>
-				<p><?php echo CFS()->get('skill_requirements'); ?></p>
-			</div>
 
-			<div class="conditions-container container">
-				<div class="number-circle">
-					<h3>2</h3>
+				<div class="conditions-container container">
+					<div class="number-circle">
+						<h3>2</h3>
+					</div>
+					<h4>snow conditions</h4>
+					<p><?php echo CFS()->get('avalanche_program_conditions'); ?></p>
 				</div>
-				<h4>snow conditions</h4>
-				<p><?php echo CFS()->get('avalanche_program_conditions'); ?></p>
-			</div>
 
-			<div class="location-info-container container">
-				<div class="number-circle">
-					<h3>3</h3>
+				<div class="location-info-container container">
+					<div class="number-circle">
+						<h3>3</h3>
+					</div>
+					<h4>location</h4>
+					<p><?php echo CFS()->get('avalanche_location_info'); ?></p>
 				</div>
-				<h4>location</h4>
-				<p><?php echo CFS()->get('avalanche_location_info'); ?></p>
-			</div>
+			<?php }?>
 		</div>
 
 		</main><!-- #main -->

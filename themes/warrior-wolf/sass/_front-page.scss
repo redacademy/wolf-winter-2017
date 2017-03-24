@@ -1,7 +1,28 @@
 .home {
     h2 {
         text-align: center;
+        text-transform: $font__text-style;
+		letter-spacing: 2px;
     }
+    .banner-container {
+		text-transform: $font__text-style;
+		h2, p {
+			color: $color__white-text;
+		}
+	}
+	.thumbnail-container {
+		p {
+			text-transform: $font__text-style;
+		}
+	}
+	a {
+		color: $color__white-text;
+		text-transform: $font__text-style;
+		text-decoration: none;
+		&:visited {
+			color: $color__background-body;
+		}
+	}
 }
 
 // HERO BANNER SECTION
@@ -11,6 +32,7 @@
         background-size: cover;
         min-height: 100vh;
         position: relative;
+        color: $color__white-text;
     }
 }
 
@@ -101,6 +123,7 @@
 
 .location-container {
     text-align: center;
+    text-transform: $font__text-style;
     .avatar-picture {
         background: url(../../assets/images/mobile/homepage/brucePic.png);
         background-position: 29% 29%;
@@ -150,6 +173,9 @@
                 top: 35%;
                 line-height: 1;
                 text-align: center;
+                color: $color__white-text;
+			    text-transform: $font__text-style;
+			    font-size: 0.9rem;
             }
         }
         .certifications-widget-class .textwidget {
@@ -178,6 +204,7 @@
     }
     p:last-child {
         align-self: flex-end;
+        text-transform: $font__text-style;
     }
 }
 
@@ -199,6 +226,7 @@
             top: 6.5rem;
             left: 0;
             width: 100%;
+            color: #172944;
         }
     }
     div:first-child {

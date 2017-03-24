@@ -3,6 +3,8 @@
         width: 100%;
         height: 100%;
         position: relative;
+        background-size: cover;
+        height: 150px;
         img {
             width: 100%;
             height: 100%;
@@ -12,6 +14,8 @@
             width: 95px;
             height: 80px;
             top: 8px;
+            background-size: 310%;
+            background-position: 50% 50%;
             @include absolute-center-position;
         }
         h2 {
@@ -54,7 +58,7 @@
         flex-wrap: wrap;
         align-items: center;
         justify-content: center;
-        h2, h4, .short-overview-container {
+        h2, h3, h4, .short-overview-container {
             width: 100%;
             text-align: center;
             text-transform: $font__text-style;
@@ -73,8 +77,8 @@
             text-align: center;
             margin-bottom: 1.5rem;
         }
-        .goals-container {
-            .goals-list-container {
+        .goals-container, .hiking-tips-container {
+            .list-container {
                 padding: 0 1rem;
                 ul {
                     padding: 0;
@@ -126,15 +130,25 @@
     }
 }
 
+.travel-info-container {
+    .expedition-wrapper {
+        padding: 0 25px;
+    }
+    .travel-info-wrapper {
+        display: flex;
+        padding: 0 3rem;
+        h3 {
+            margin: 0;
+        }
+    }
+    .container-separator {
+        text-align: center;
+    }
+}
+
 .postid-53, .postid-54 {
     .hero-container {
         background-image: url(../../assets/images/mobile/ast-1/avalanche-bar.jpg);
-        background-size: cover;
-        height: 150px;
-        .program-icon {
-            background-size: 310%;
-            background-position: 50% 50%;
-        }
     }
 }
 
@@ -144,4 +158,58 @@
 
 .postid-54 .program-icon {
     background-image: url(../../assets/icons/asl02.white.svg);
+}
+
+.postid-55 {
+    .hero-container {
+        background-image: url(../../assets/images/mobile/kayaking/sea-kayaking-bar.jpg);
+        .program-icon {
+            background-image: url(../../assets/icons/kayak.white.svg);
+        }
+    }
+}
+
+.postid-56 {
+    .hero-container {
+        background-image: url(../../assets/images/mobile/paddleboarding/paddleboarding-bar.jpg);
+        .program-icon {
+            background-image: url(../../assets/icons/paddleboard.white.svg);
+        }
+    }
+}
+
+.postid-57{
+    .hero-container {
+        background-image: url(../../assets/images/mobile/life-coaching/rocky-cliff-bar.jpg);
+        .program-icon {
+            background-image: url(../../assets/icons/decision.making.white.svg);
+        }
+    }
+}
+
+.postid-58 {
+    .hero-container {
+        background-image: url(../../assets/images/mobile/travel/maps-bar.jpg);
+        .program-icon {
+            background-image: url(../../assets/icons/destination.white.svg);
+        }
+    }
+}
+
+.postid-59 {
+    .hero-container {
+        background-image: url(../../assets/images/mobile/life-coaching/rocky-cliff-bar.jpg);
+        .program-icon {
+            background-image: url(../../assets/icons/hiking.white.svg);
+        }
+    }
+}
+
+.postid-60 {
+    .hero-container {
+        background-image: url(../../assets/images/mobile/backcountry/backcountry-bar.jpg);
+        .program-icon {
+            background-image: url(../../assets/icons/skiing.white.svg);
+        }
+    }
 }
