@@ -1770,25 +1770,15 @@ ul {
   width: 85%;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 1rem;
-  background: rgba(0, 0, 0, 0.05);
-  position: relative; }
+  background: rgba(0, 0, 0, 0.05); }
   .credential-wrapper .button-container, .content-wrapper .button-container {
-    padding: 2rem 0;
-    background: #fff; }
+    padding: 2rem 0; }
   .credential-wrapper h2, .content-wrapper h2 {
     text-align: center;
     margin-bottom: 0; }
   .credential-wrapper p, .content-wrapper p {
     line-height: 2;
     margin-top: 1rem; }
-  @media only screen and (min-width: 600px) {
-    .credential-wrapper, .content-wrapper {
-      background: transparent; }
-      .credential-wrapper .wolf-background, .content-wrapper .wolf-background {
-        background: url(../../assets/logo/logo-grey.no.png) no-repeat fixed;
-        background-size: contain;
-        background-position: 50% 50%; } }
 
 /* Footer template */
 footer {

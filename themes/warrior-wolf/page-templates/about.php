@@ -17,7 +17,7 @@
 <div id="tab-container" class="tab-container">
   <div class="about-nav-wrapper">
     <ul class='etabs'>
-      <li class='tab'><a href="<?php echo get_template_directory_uri(); ?>/page-templates/about.php">Bio</a></li>
+      <li class='tab'><a href="//localhost:3000/warrior-wolf/about">Bio</a></li>
       <li class='tab'><a href="//localhost:3000/warrior-wolf/about/credentials">Credentials</a></li>
       <li class='tab'><a href="//localhost:3000/warrior-wolf/about/method">Method</a></li>
       <li class='tab'><a href="//localhost:3000/warrior-wolf/about/mission">Mission</a></li>
@@ -26,10 +26,14 @@
 </div>
 <section class="content-wrapper">
 <div class="wolf-background">
+  <div class="overview-wrapper">
   <h2>Overview</h2>
   <?php echo CFS()->get('overview'); ?>
+  </div>
+  <div class="my-story-wrapper">
   <h2>My Story</h2>
   <?php echo CFS()->get('my_story'); ?>
+  </div>
 	<div class="button-container">
 		<a href="">view programs</a>
 	</div>

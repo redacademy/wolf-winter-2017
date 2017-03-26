@@ -141,12 +141,9 @@ ul {
     width: 85%;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 1rem;
     background: rgba(0, 0, 0, 0.05);
-    position:relative;
     .button-container {
         padding: 2rem 0;
-        background: #fff;
     }
     h2 {
         text-align: center;
@@ -156,18 +153,19 @@ ul {
         line-height: 2;
         margin-top: 1rem;
     }
-    @include media($tablet) {
-        background: transparent;
-        .wolf-background {
-        background: url(../../assets/logo/logo-grey.no.png) no-repeat fixed;
-        // height: 100vh;
-        background-size: contain;
-        background-position: 50% 50%;
-        }
-    }
-    @include media($desktop) {
+    // @include media($tablet) {
+    //     display: flex;
+    //     background: transparent;
+    //     .wolf-background {
+    //     background: url(../../assets/logo/logo-grey.no.png) no-repeat fixed;
+    //     background-size: contain;
+    //     display: flex;
+    //     flex-direction: row;
+    //     }
+    // }
+    // @include media($desktop) {
 
-    }
+    // }
 }
 
 
