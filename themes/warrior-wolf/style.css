@@ -1740,7 +1740,6 @@ ul {
   padding: 0; }
 
 .credential-wrapper {
-  background: rgba(0, 0, 0, 0.05);
   width: 85%;
   margin-left: auto;
   margin-right: auto;
@@ -1774,11 +1773,43 @@ ul {
   .credential-wrapper .button-container, .content-wrapper .button-container {
     padding: 2rem 0; }
   .credential-wrapper h2, .content-wrapper h2 {
-    text-align: center;
-    margin-bottom: 0; }
+    text-align: center; }
   .credential-wrapper p, .content-wrapper p {
     line-height: 2;
     margin-top: 1rem; }
+  @media only screen and (min-width: 600px) {
+    .credential-wrapper, .content-wrapper {
+      background: transparent;
+      height: 900px; }
+      .credential-wrapper .wolf-background, .content-wrapper .wolf-background {
+        background: url(../../assets/logo/logo-grey.no.png) no-repeat fixed;
+        background-position: 50% 50%;
+        background-size: contain; }
+      .credential-wrapper .about-text-wrapper, .content-wrapper .about-text-wrapper {
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+        font-size: 10px; }
+        .credential-wrapper .about-text-wrapper h2, .content-wrapper .about-text-wrapper h2 {
+          text-align: left; }
+        .credential-wrapper .about-text-wrapper p, .content-wrapper .about-text-wrapper p {
+          line-height: 1.2rem; }
+        .credential-wrapper .about-text-wrapper .overview-wrapper, .content-wrapper .about-text-wrapper .overview-wrapper {
+          width: 250px;
+          margin-right: 6rem; }
+        .credential-wrapper .about-text-wrapper .my-story-wrapper h2, .content-wrapper .about-text-wrapper .my-story-wrapper h2 {
+          margin-left: 1rem; }
+        .credential-wrapper .about-text-wrapper .my-story-wrapper .my-story-entry, .content-wrapper .about-text-wrapper .my-story-wrapper .my-story-entry {
+          display: -ms-flexbox;
+          display: flex;
+          -ms-flex-flow: column wrap;
+              flex-flow: column wrap;
+          width: 225px;
+          height: 750px; }
+          .credential-wrapper .about-text-wrapper .my-story-wrapper .my-story-entry p.p1, .content-wrapper .about-text-wrapper .my-story-wrapper .my-story-entry p.p1 {
+            width: 100%;
+            margin: 0 .5rem .5rem 1rem; } }
 
 /* Footer template */
 footer {

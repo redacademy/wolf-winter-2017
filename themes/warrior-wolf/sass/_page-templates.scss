@@ -109,7 +109,6 @@ ul {
     padding: 0;
 }
 .credential-wrapper {
-    background: rgba(0, 0, 0, 0.05);
     width: 85%;
     margin-left: auto;
     margin-right: auto;
@@ -147,25 +146,53 @@ ul {
     }
     h2 {
         text-align: center;
-        margin-bottom: 0;
     }
     p {
         line-height: 2;
         margin-top: 1rem;
     }
-    // @include media($tablet) {
-    //     display: flex;
-    //     background: transparent;
-    //     .wolf-background {
-    //     background: url(../../assets/logo/logo-grey.no.png) no-repeat fixed;
-    //     background-size: contain;
-    //     display: flex;
-    //     flex-direction: row;
-    //     }
-    // }
-    // @include media($desktop) {
+    @include media($tablet) {
+        background: transparent;
+        height: 900px;
+        .wolf-background {
+        background: url(../../assets/logo/logo-grey.no.png) no-repeat fixed;
+        background-position: 50% 50%;
+        background-size: contain;
+        }
+        .about-text-wrapper {
+            display: flex;
+            flex-wrap: wrap;
+            font-size: 10px;
+            h2 {
+                text-align: left;
+            }
+            p {
+                line-height: 1.2rem;
+            }
+            .overview-wrapper {
+                width: 250px;
+                margin-right: 6rem
+            }
+            .my-story-wrapper {
+                h2 {
+                    margin-left: 1rem;
+                }
+                .my-story-entry {
+                    display: flex;
+                    flex-flow: column wrap;
+                    width: 225px;
+                    height: 750px;
+                    p.p1 {
+                        width: 100%;
+                        margin: 0 .5rem .5rem 1rem;
+                    }
+                }
+            }
+        }
+    }
+    @include media($desktop) {
 
-    // }
+    }
 }
 
 

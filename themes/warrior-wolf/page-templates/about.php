@@ -26,17 +26,21 @@
 </div>
 <section class="content-wrapper">
 <div class="wolf-background">
-  <div class="overview-wrapper">
-  <h2>Overview</h2>
-  <?php echo CFS()->get('overview'); ?>
-  </div>
-  <div class="my-story-wrapper">
-  <h2>My Story</h2>
-  <?php echo CFS()->get('my_story'); ?>
-  </div>
-	<div class="button-container">
-		<a href="">view programs</a>
-	</div>
+  <div class="about-text-wrapper">
+    <div class="overview-wrapper">
+      <h2>Overview</h2>
+      <?php echo CFS()->get('overview'); ?>
+    </div>
+    <div class="my-story-wrapper">
+      <h2>My Story</h2>
+      <div class="my-story-entry">
+          <?php echo CFS()->get('my_story'); ?>
+        </div>
+        </div>
+    </div>
+    <div class="button-container">
+      <a href="">view programs</a>
+    </div>
   </div>
 </section>
 <?php get_footer(); ?>
