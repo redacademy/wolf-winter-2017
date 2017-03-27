@@ -16,7 +16,7 @@
     margin: auto 0;
     text-transform: uppercase;
     h1 {
-        margin-top: 6rem;
+        margin-top: 5.4rem;
     }
 }
 .about-background-image {
@@ -33,7 +33,7 @@
     border-radius: 50%;
     bottom: -60px;
     background-position: 43% 37%;
-    border: 2px solid #fff;
+    border: 1px solid #fff;
     img {
     object-fit: cover;
     }
@@ -89,7 +89,6 @@
     text-decoration: underline;
     }
 .tab.active {
-    background: magenta;
     padding-top: 6px;
     position: relative;
     top: 1px;
@@ -133,7 +132,8 @@ ul {
         }
     }
 }
-
+.page-template-about {
+        color: $color__about-text;
 .credential-wrapper, .content-wrapper {
     display: flex;
     flex-direction: column;
@@ -142,7 +142,7 @@ ul {
     margin-right: auto;
     background: rgba(0, 0, 0, 0.05);
     .button-container {
-        padding: 2rem 0;
+        padding: 2rem 2rem;
     }
     h2 {
         text-align: center;
@@ -151,7 +151,7 @@ ul {
         line-height: 2;
         margin-top: 1rem;
     }
-    @include media($tablet) {
+    @include media($desktop) {
         background: transparent;
         height: 900px;
         .wolf-background {
@@ -162,16 +162,16 @@ ul {
         .about-text-wrapper {
             display: flex;
             flex-wrap: wrap;
-            font-size: 10px;
+            font-size: 11px;
             h2 {
                 text-align: left;
             }
             p {
-                line-height: 1.2rem;
+                line-height: 1.1rem;
             }
             .overview-wrapper {
                 width: 250px;
-                margin-right: 6rem
+                margin-right: 2rem
             }
             .my-story-wrapper {
                 h2 {
@@ -180,21 +180,138 @@ ul {
                 .my-story-entry {
                     display: flex;
                     flex-flow: column wrap;
-                    width: 225px;
-                    height: 750px;
+                    width: 250px;
+                    height: 700px;
                     p.p1 {
                         width: 100%;
-                        margin: 0 .5rem .5rem 1rem;
+                        margin: 0 .5rem 1rem 1rem;
                     }
                 }
             }
         }
     }
-    @include media($desktop) {
+}
+}
 
+/* Method template */
+
+.page-template-about-method {
+    color: $color__about-text;
+    .featured-content {
+        text-align: center;
+        background-color: rgba(0, 0, 0, 0.03);
+        padding-top: 2rem;
+        margin-top: 1rem;
+        width: 85%;
+        max-width: 600px;
+        margin-right: auto;
+        margin-left: auto;
+        color: $color__about-text;
+        .featured-image {
+            border-radius: 50%;
+            img {
+                height: 130px;
+                width: 130px;
+            }
+        }
+        .featured-text {
+            flex-direction: column;
+            justify-content: center;
+            text-align: left;
+            margin-left: 1.2rem;
+            margin-right: 0.8rem;
+            letter-spacing: 1px;
+            font-size: 11px;
+            line-height: 1.5rem;
+            text-transform: uppercase;
+            h2 {
+                text-align: center;
+            }
+        }
+    }
+        .personal-method {
+            width: 70%;
+            max-width: 580px;
+            margin-right: auto;
+            margin-left: auto;
+            padding-bottom: 1rem;
+            margin-bottom: 4rem;
+        }
+    @include media($desktop) {
+        .featured-content {
+            background-color: #C9CDD1;
+            width: 600px;
+            margin-bottom: 2rem;
+            padding-bottom: 0.5rem;
+        }
+        .personal-method {
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: center;
+            max-width: 1280px;
+            .p1 {
+                width: 200px;
+                height: 100px;
+            }
+        }
     }
 }
 
+/* Mission Template */
+
+.page-template-about-mission {
+    .featured-content {
+        background-color: rgba(0, 0, 0, 0.03);
+        padding-top: 2rem;
+        margin-top: 1rem;
+        width: 85%;
+        margin-right: auto;
+        margin-left: auto;
+        .featured-image {
+            border-radius: 50%;
+            text-align: center;
+            img {
+                height: 130px;
+                width: 130px;
+            }
+        }
+        .featured-text {
+            flex-direction: column;
+            justify-content: center;
+            margin-left: 1.2rem;
+            margin-right: 0.8rem;
+            letter-spacing: 1px;
+            font-size: 11px;
+            line-height: 1.5rem;
+            text-transform: uppercase;
+        }
+    }
+    h2 {
+        text-align: center;
+    }
+    .mission-statement {
+        width: 70%;
+        margin-right: auto;
+        margin-left: auto;
+        padding-bottom: 1rem;
+    }
+    @include media($desktop) {
+        .featured-content {
+            background-color: transparent;
+            width: 600px;
+            padding-bottom: 0.5rem;
+        }
+        .mission-statement {
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: center;
+            max-width: 1280px;
+            .p1 {
+                max-width: 500px;
+            }
+        }
+    }
+}
 
 /* Footer template */
 
@@ -202,6 +319,7 @@ footer {
     display: flex;
     justify-content: center;
     background-color: $color__background-templates;
+    margin-top: 2rem;
         .footer-wrapper {
             max-width: 275px;
             margin: 0 auto;

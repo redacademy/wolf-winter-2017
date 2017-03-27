@@ -25,18 +25,23 @@
   </div>
 </div>
 <section class='content-wrapper'>
-<div class='wolf-background'>
-  <div class='featured-content-wrapper'>
-<?php echo CFS()->get('wolf_logo'); ?>
-<?php echo CFS()->get('featured_quote'); ?>
-</div>
-<div class='text-content-wrapper'>
-<h2><?php echo CFS()->get('mission_title'); ?></h2>
-<?php echo CFS()->get('mission_statement'); ?>
-</div>
-	<div class='button-container'>
-		<a href=''>view programs</a>
-	</div>
+  <div class='wolf-background'>
+    <div class='featured-content'>
+      <div class='featured-image'>
+        <?php the_post_thumbnail(); ?>
+      </div>
+      <div class='featured-text'>
+        <?php echo CFS()->get('featured_quote'); ?>
+      </div>
+    </div>
+    <h2><?php echo CFS()->get('mission_title'); ?></h2>
+      <div class='mission-statement'>
+        <?php echo CFS()->get('mission_statement'); ?>
+      </div>
+    </div>
+    <div class='button-container'>
+      <a href=''>view programs</a>
+    </div>
   </div>
 </section>
 <?php get_footer(); ?>

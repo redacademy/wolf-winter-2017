@@ -1642,7 +1642,7 @@ object {
   margin: auto 0;
   text-transform: uppercase; }
   .name-wrapper h1 {
-    margin-top: 6rem; }
+    margin-top: 5.4rem; }
 
 .about-background-image {
   background: url("../../assets/images/desktop/about/background-about-me.jpg") no-repeat bottom;
@@ -1658,7 +1658,7 @@ object {
   border-radius: 50%;
   bottom: -60px;
   background-position: 43% 37%;
-  border: 2px solid #fff; }
+  border: 1px solid #fff; }
   .bruce-feature img {
     object-fit: cover; }
 
@@ -1720,7 +1720,6 @@ object {
   text-decoration: underline; }
 
 .tab.active {
-  background: magenta;
   padding-top: 6px;
   position: relative;
   top: 1px;
@@ -1761,55 +1760,165 @@ ul {
       width: 20%;
       margin: auto 0; }
 
-.credential-wrapper, .content-wrapper {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-direction: column;
-      flex-direction: column;
-  width: 85%;
-  margin-left: auto;
-  margin-right: auto;
-  background: rgba(0, 0, 0, 0.05); }
-  .credential-wrapper .button-container, .content-wrapper .button-container {
-    padding: 2rem 0; }
-  .credential-wrapper h2, .content-wrapper h2 {
-    text-align: center; }
-  .credential-wrapper p, .content-wrapper p {
-    line-height: 2;
-    margin-top: 1rem; }
-  @media only screen and (min-width: 600px) {
-    .credential-wrapper, .content-wrapper {
-      background: transparent;
-      height: 900px; }
-      .credential-wrapper .wolf-background, .content-wrapper .wolf-background {
-        background: url(../../assets/logo/logo-grey.no.png) no-repeat fixed;
-        background-position: 50% 50%;
-        background-size: contain; }
-      .credential-wrapper .about-text-wrapper, .content-wrapper .about-text-wrapper {
-        display: -ms-flexbox;
-        display: flex;
-        -ms-flex-wrap: wrap;
-            flex-wrap: wrap;
-        font-size: 10px; }
-        .credential-wrapper .about-text-wrapper h2, .content-wrapper .about-text-wrapper h2 {
-          text-align: left; }
-        .credential-wrapper .about-text-wrapper p, .content-wrapper .about-text-wrapper p {
-          line-height: 1.2rem; }
-        .credential-wrapper .about-text-wrapper .overview-wrapper, .content-wrapper .about-text-wrapper .overview-wrapper {
-          width: 250px;
-          margin-right: 6rem; }
-        .credential-wrapper .about-text-wrapper .my-story-wrapper h2, .content-wrapper .about-text-wrapper .my-story-wrapper h2 {
-          margin-left: 1rem; }
-        .credential-wrapper .about-text-wrapper .my-story-wrapper .my-story-entry, .content-wrapper .about-text-wrapper .my-story-wrapper .my-story-entry {
+.page-template-about {
+  color: #172944; }
+  .page-template-about .credential-wrapper, .page-template-about .content-wrapper {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+        flex-direction: column;
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+    background: rgba(0, 0, 0, 0.05); }
+    .page-template-about .credential-wrapper .button-container, .page-template-about .content-wrapper .button-container {
+      padding: 2rem 2rem; }
+    .page-template-about .credential-wrapper h2, .page-template-about .content-wrapper h2 {
+      text-align: center; }
+    .page-template-about .credential-wrapper p, .page-template-about .content-wrapper p {
+      line-height: 2;
+      margin-top: 1rem; }
+    @media only screen and (min-width: 1024px) {
+      .page-template-about .credential-wrapper, .page-template-about .content-wrapper {
+        background: transparent;
+        height: 900px; }
+        .page-template-about .credential-wrapper .wolf-background, .page-template-about .content-wrapper .wolf-background {
+          background: url(../../assets/logo/logo-grey.no.png) no-repeat fixed;
+          background-position: 50% 50%;
+          background-size: contain; }
+        .page-template-about .credential-wrapper .about-text-wrapper, .page-template-about .content-wrapper .about-text-wrapper {
           display: -ms-flexbox;
           display: flex;
-          -ms-flex-flow: column wrap;
-              flex-flow: column wrap;
-          width: 225px;
-          height: 750px; }
-          .credential-wrapper .about-text-wrapper .my-story-wrapper .my-story-entry p.p1, .content-wrapper .about-text-wrapper .my-story-wrapper .my-story-entry p.p1 {
-            width: 100%;
-            margin: 0 .5rem .5rem 1rem; } }
+          -ms-flex-wrap: wrap;
+              flex-wrap: wrap;
+          font-size: 11px; }
+          .page-template-about .credential-wrapper .about-text-wrapper h2, .page-template-about .content-wrapper .about-text-wrapper h2 {
+            text-align: left; }
+          .page-template-about .credential-wrapper .about-text-wrapper p, .page-template-about .content-wrapper .about-text-wrapper p {
+            line-height: 1.1rem; }
+          .page-template-about .credential-wrapper .about-text-wrapper .overview-wrapper, .page-template-about .content-wrapper .about-text-wrapper .overview-wrapper {
+            width: 250px;
+            margin-right: 2rem; }
+          .page-template-about .credential-wrapper .about-text-wrapper .my-story-wrapper h2, .page-template-about .content-wrapper .about-text-wrapper .my-story-wrapper h2 {
+            margin-left: 1rem; }
+          .page-template-about .credential-wrapper .about-text-wrapper .my-story-wrapper .my-story-entry, .page-template-about .content-wrapper .about-text-wrapper .my-story-wrapper .my-story-entry {
+            display: -ms-flexbox;
+            display: flex;
+            -ms-flex-flow: column wrap;
+                flex-flow: column wrap;
+            width: 250px;
+            height: 700px; }
+            .page-template-about .credential-wrapper .about-text-wrapper .my-story-wrapper .my-story-entry p.p1, .page-template-about .content-wrapper .about-text-wrapper .my-story-wrapper .my-story-entry p.p1 {
+              width: 100%;
+              margin: 0 .5rem 1rem 1rem; } }
+
+/* Method template */
+.page-template-about-method {
+  color: #172944; }
+  .page-template-about-method .featured-content {
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.03);
+    padding-top: 2rem;
+    margin-top: 1rem;
+    width: 85%;
+    max-width: 600px;
+    margin-right: auto;
+    margin-left: auto;
+    color: #172944; }
+    .page-template-about-method .featured-content .featured-image {
+      border-radius: 50%; }
+      .page-template-about-method .featured-content .featured-image img {
+        height: 130px;
+        width: 130px; }
+    .page-template-about-method .featured-content .featured-text {
+      -ms-flex-direction: column;
+          flex-direction: column;
+      -ms-flex-pack: center;
+          justify-content: center;
+      text-align: left;
+      margin-left: 1.2rem;
+      margin-right: 0.8rem;
+      letter-spacing: 1px;
+      font-size: 11px;
+      line-height: 1.5rem;
+      text-transform: uppercase; }
+      .page-template-about-method .featured-content .featured-text h2 {
+        text-align: center; }
+  .page-template-about-method .personal-method {
+    width: 70%;
+    max-width: 580px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-bottom: 1rem;
+    margin-bottom: 4rem; }
+  @media only screen and (min-width: 1024px) {
+    .page-template-about-method .featured-content {
+      background-color: #C9CDD1;
+      width: 600px;
+      margin-bottom: 2rem;
+      padding-bottom: 0.5rem; }
+    .page-template-about-method .personal-method {
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+      -ms-flex-pack: center;
+          justify-content: center;
+      max-width: 1280px; }
+      .page-template-about-method .personal-method .p1 {
+        width: 200px;
+        height: 100px; } }
+
+/* Mission Template */
+.page-template-about-mission .featured-content {
+  background-color: rgba(0, 0, 0, 0.03);
+  padding-top: 2rem;
+  margin-top: 1rem;
+  width: 85%;
+  margin-right: auto;
+  margin-left: auto; }
+  .page-template-about-mission .featured-content .featured-image {
+    border-radius: 50%;
+    text-align: center; }
+    .page-template-about-mission .featured-content .featured-image img {
+      height: 130px;
+      width: 130px; }
+  .page-template-about-mission .featured-content .featured-text {
+    -ms-flex-direction: column;
+        flex-direction: column;
+    -ms-flex-pack: center;
+        justify-content: center;
+    margin-left: 1.2rem;
+    margin-right: 0.8rem;
+    letter-spacing: 1px;
+    font-size: 11px;
+    line-height: 1.5rem;
+    text-transform: uppercase; }
+
+.page-template-about-mission h2 {
+  text-align: center; }
+
+.page-template-about-mission .mission-statement {
+  width: 70%;
+  margin-right: auto;
+  margin-left: auto;
+  padding-bottom: 1rem; }
+
+@media only screen and (min-width: 1024px) {
+  .page-template-about-mission .featured-content {
+    background-color: transparent;
+    width: 600px;
+    padding-bottom: 0.5rem; }
+  .page-template-about-mission .mission-statement {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-flow: row wrap;
+        flex-flow: row wrap;
+    -ms-flex-pack: center;
+        justify-content: center;
+    max-width: 1280px; }
+    .page-template-about-mission .mission-statement .p1 {
+      max-width: 500px; } }
 
 /* Footer template */
 footer {
@@ -1817,7 +1926,8 @@ footer {
   display: flex;
   -ms-flex-pack: center;
       justify-content: center;
-  background-color: #4C5A75; }
+  background-color: #4C5A75;
+  margin-top: 2rem; }
   footer .footer-wrapper {
     max-width: 275px;
     margin: 0 auto;
