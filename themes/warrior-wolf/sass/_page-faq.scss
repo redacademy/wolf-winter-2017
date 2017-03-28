@@ -1,31 +1,76 @@
 .page-id-28 {
+    a {
+        @include media($desktop) {
+            @include desktop-nav-style;
+        }
+    }
+    .button-container {
+        @include media($desktop) {
+            display: none;
+        }
+    }
     .hero-container {
         width: 100%;
-        height: 100%;
         position: relative;
-        background-size: cover;
         height: 150px;
-        background-image: url(../../assets/images/mobile/faq/forest-bar.jpg);
+        background: linear-gradient(to bottom, rgba(0, 0, 0, 0.45) 0%, rgba(0, 0, 0, 0.45)), url(../../assets/images/mobile/faq/faq-banner.jpg);
+        background-size: cover;
+        @include media($desktop) {
+            height: 411px;
+        }
+        h2 {
+            @include absolute-center-position;
+            top: 2rem;
+            color: $color__white-text;
+            text-align: center;
+            font-size: 25px;
+            @include media($tablet) {
+                font-size: 40px;
+                top: 1rem;
+            }
+            @include media($desktop) {
+                top: 6rem;
+                font-size: 74px;
+            }
+        }
     }
 }
 
 .faq-container {
     padding: 30px 25px;
-    line-height: 3;
     text-transform: $font__text-uppercase-style;
+    color: $color__about-text;
+    font-family: $font__text-subheadings;
+    font-weight: normal;
+    @include media($tablet) {
+        padding: 30px 80px;
+    }
+    @include media($desktop) {
+        font-size: 24px;
+        padding: 40px 150px;
+    }
     span {
         padding-right: 1rem;
+        font-size: 2rem;
+        font-weight: bold;
+        color: #8796a4;
     }
-    .question-wrapper {
-        display: table;
-        line-height: 1.5;
-        p {
-            display: table-cell;
-            margin: 0;
-        }
+}
+
+.question-wrapper {
+    display: table;
+    margin-bottom: 1rem;
+    &:hover {
+        cursor: pointer;
     }
-    .answer-wrapper {
-        display: none;
-        padding-left: 1.6rem;
+    p {
+        display: table-cell;
     }
+}
+    
+.answer-wrapper {
+    display: none;
+    padding-left: 1.6rem;
+    font-style: italic;
+    color: #4c5a75;
 }

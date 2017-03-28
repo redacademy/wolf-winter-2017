@@ -24,7 +24,7 @@ get_header(); ?>
 			<div class="hero-container">
 				<div class="program-icon"></div>
 				<h2><?php echo get_the_title(); ?></h2>
-				<div class="loop-nav-container"><?php infinite_navigation(); ?></div>
+				<div class="loop-nav-container"><?php wolf_infinite_navigation(); ?></div>
 			</div>
 
 			<div class="full-program-container">
@@ -117,6 +117,11 @@ get_header(); ?>
 				<?php } ?>
 
         	</div> <!-- .full-program-container -->
+
+			<div class="button-container">
+				<a href="">Register Here</a>
+			</div>
+			
 		</main><!-- #main -->
 	</div><!-- #primary -->
 <?php get_footer(); ?>

@@ -60,7 +60,7 @@
 //Styling for desktop program thumbnails
 @mixin desktop-thumbnail-size {
   background-size: 430px 480px;
-  background-position: 51% 52%;
+  background-position: 51% 62%;
 }
 
 //Styling for desktop program larger thumbnails
@@ -72,12 +72,60 @@
 //Styling for desktop program titles
 @mixin desktop-program-header-right-position {
 	position: absolute;
-  top: 8rem;
-  left: 1.5rem;
+  top: 6.5rem;
+  left: 1rem;
+  width: 85%; 
+  text-align: center;
 }
 
 //Stying for standard desktop program titles
 @mixin desktop-program-header-standard-position {
 	position: absolute;
   top: 8rem;
+}
+
+//Desktop nav menu font styling
+@mixin desktop-nav-style {
+	color: $color__white-text;
+	text-transform: $font__text-uppercase-style;
+	text-decoration: none;
+  font-family: $font__text-subheadings;
+  font-size: 15px;
+  font-weight: bold;
+	&:visited {
+			color: $color__background-body;
+		}
+}
+
+//Flex column center styling
+@mixin flex-column-center {
+	display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+//Desktop button style
+@mixin desktop-button-dimension {
+	width: 215px;
+  height: 60px;
+}
+
+//Syling for light colored button
+@mixin light-button-style {
+	background: rgba(185,202,216,0.36);
+  border: 3px solid #B9CAD8;
+}
+
+//Mobile and Tablet button style
+@mixin small-button-dimension {
+	width: 150px;
+	height: 45px;
+}
+
+//Styling for dark colored button
+@mixin dark-button-style {
+	border: 3px solid #172944;
+  background: rgba(23, 41, 68, 0.36);
 }

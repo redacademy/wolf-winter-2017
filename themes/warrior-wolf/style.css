@@ -228,6 +228,13 @@ th {
 
 @font-face {
   font-family: 'Arimo';
+  src: url("./../../arimo-regular-webfont.eot");
+  src: url("./../../arimo-regular-webfont.eot?#iefix") format("embedded-opentype"), url("./../../arimo-regular-webfont.woff2") format("woff2"), url("./../../arimo-regular-webfont.ttf") format("truetype"), url("./../../arimo-regular-webfont.svg#arimoregular") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Arimo';
   src: url("./../../assets/fonts/arimo-bold-webfont.eot");
   src: url("./../../assets/fonts/arimo-bold-webfont.eot?#iefix") format("embedded-opentype"), url("./../../assets/fonts/arimo-bold-webfont.woff2") format("woff2"), url("./../../assets/fonts/arimo-bold-webfont.ttf") format("truetype"), url("./../../assets/fonts/arimo-bold-webfont.svg#arimobold") format("svg");
   font-weight: bold;
@@ -717,6 +724,25 @@ a {
   @media only screen and (min-width: 600px) {
     .home h2 {
       font-size: 35px; } }
+  @media only screen and (min-width: 1024px) {
+    .home h2 {
+      font-size: 80px;
+      color: #fff;
+      letter-spacing: 3px;
+      margin-bottom: 0; } }
+
+.home h4 {
+  display: none; }
+  @media only screen and (min-width: 1024px) {
+    .home h4 {
+      display: block;
+      text-align: center;
+      font-size: 37px;
+      text-transform: uppercase;
+      margin: 0;
+      line-height: 0.5;
+      letter-spacing: 9px;
+      font-family: "Archivo Black", "Arial", sans-serif; } }
 
 .home .banner-container {
   text-transform: uppercase; }
@@ -731,15 +757,22 @@ a {
     font-family: "Arimo", "Arial", sans-serif; }
   .home .banner-container h3 {
     color: #172944; }
+    @media only screen and (min-width: 1024px) {
+      .home .banner-container h3 {
+        color: #fff;
+        font-size: 22px;
+        width: 71%; } }
 
-.home a {
-  color: #fff;
-  text-transform: uppercase;
-  text-decoration: none;
-  font-family: "Arimo", "Arial", sans-serif;
-  font-size: 15px; }
-  .home a:visited {
-    color: #fff; }
+@media only screen and (min-width: 1024px) {
+  .home a {
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-family: "Arimo", "Arial", sans-serif;
+    font-size: 15px;
+    font-weight: bold; }
+    .home a:visited {
+      color: #fff; } }
 
 @media only screen and (min-width: 1024px) {
   .desktop-parallax-container {
@@ -766,7 +799,7 @@ a {
       height: 100vh; } }
   .banner-container h3 {
     letter-spacing: 2px;
-    width: 75%;
+    width: 71%;
     margin: 0 auto;
     font-size: 12px; }
     @media only screen and (min-width: 600px) {
@@ -782,7 +815,7 @@ a {
     bottom: 87px;
     width: 50%;
     margin: 0 auto;
-    letter-spacing: 1px;
+    letter-spacing: 2px;
     line-height: 20px;
     font-size: 12px; }
     @media only screen and (min-width: 600px) {
@@ -790,6 +823,11 @@ a {
         font-size: 28px;
         line-height: 1.5;
         width: 56%; } }
+    @media only screen and (min-width: 1024px) {
+      .banner-container p {
+        width: 100%;
+        font-weight: bold;
+        font-size: 27px; } }
   .banner-container .intro-text-wrapper {
     position: absolute;
     margin-left: auto;
@@ -814,27 +852,34 @@ a {
         left: auto; }
         .banner-container .intro-text-wrapper h2 {
           border-top: 1px solid white;
-          border-bottom: 1px solid white; } }
-  .banner-container a {
+          border-bottom: 1px solid white;
+          width: 86%;
+          margin: 0 auto;
+          letter-spacing: 7px; } }
+  .banner-container button {
     color: transparent;
-    background-image: url(../../assets/arrow-down.png);
+    font-size: 20px;
+    background: url(../../assets/arrow-down.png);
     background-repeat: no-repeat;
     background-position: 50%;
     width: 100px;
     bottom: 2rem;
+    outline: none;
+    border: none;
+    text-transform: uppercase;
     position: absolute;
     margin-left: auto;
     margin-right: auto;
     left: 0;
     right: 0; }
     @media only screen and (min-width: 1024px) {
-      .banner-container a {
+      .banner-container button {
         display: block;
-        padding: .7rem 2.5rem;
-        border: 3px solid #172944;
-        background: rgba(23, 41, 68, 0.36);
-        width: 200px;
         color: #fff;
+        background: rgba(185, 202, 216, 0.36);
+        border: 3px solid #B9CAD8;
+        width: 215px;
+        height: 60px;
         position: absolute;
         margin-left: auto;
         margin-right: auto;
@@ -860,7 +905,8 @@ a {
     .homepage-credentials-container {
       border: none;
       background-color: transparent;
-      max-width: none; } }
+      max-width: none;
+      color: #fff; } }
   .homepage-credentials-container .credentials-container {
     margin-bottom: 2rem; }
 
@@ -868,12 +914,19 @@ a {
   text-align: center;
   text-transform: uppercase;
   font-family: "Arimo", "Arial", sans-serif; }
+  @media only screen and (min-width: 1024px) {
+    .location-container {
+      letter-spacing: 1px;
+      font-weight: bold; } }
   .location-container p {
     margin: 0;
     font-size: 15px; }
     @media only screen and (min-width: 600px) {
       .location-container p {
         font-size: 20px; } }
+    @media only screen and (min-width: 1024px) {
+      .location-container p {
+        font-size: 27px; } }
   .location-container p:last-child {
     font-size: 12px; }
     @media only screen and (min-width: 600px) {
@@ -892,6 +945,10 @@ a {
 .short-info-container {
   width: 55%;
   margin: 0 auto; }
+  @media only screen and (min-width: 1024px) {
+    .short-info-container {
+      width: 86%;
+      text-align: center; } }
   .short-info-container p {
     border-top: 1px solid black;
     border-bottom: 1px solid black;
@@ -904,7 +961,11 @@ a {
         font-size: 17px; } }
     @media only screen and (min-width: 1024px) {
       .short-info-container p {
-        border: none; } }
+        border: none;
+        font-family: "Archivo Black", "Arial", sans-serif;
+        font-size: 22px;
+        letter-spacing: 2px;
+        line-height: 1.5; } }
 
 .widget-area {
   display: -ms-flexbox;
@@ -924,7 +985,8 @@ a {
     .widget {
       border: none;
       background: transparent;
-      border-radius: none; } }
+      border-radius: 0;
+      width: 100%; } }
 
 .textwidget {
   position: absolute;
@@ -938,21 +1000,39 @@ a {
   color: #fff;
   text-transform: uppercase;
   font-family: "Arimo", "Arial", sans-serif; }
+  @media only screen and (min-width: 1024px) {
+    .textwidget {
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+      -ms-flex-direction: column;
+          flex-direction: column; } }
 
 .widget-input {
   font-size: 11px; }
   @media only screen and (min-width: 600px) {
     .widget-input {
       font-size: 12px; } }
+  @media only screen and (min-width: 1024px) {
+    .widget-input {
+      font-size: 35px;
+      font-weight: bold; } }
 
 .widget-heading {
   font-size: 8px; }
   @media only screen and (min-width: 600px) {
     .widget-heading {
       font-size: 10px; } }
+  @media only screen and (min-width: 1024px) {
+    .widget-heading {
+      font-size: 20px; } }
 
 .certifications-widget-class .textwidget {
   top: 27%; }
+  @media only screen and (min-width: 1024px) {
+    .certifications-widget-class .textwidget {
+      margin-top: 0.5rem; } }
 
 .skills-widget-class .textwidget {
   display: -ms-flexbox;
@@ -964,6 +1044,9 @@ a {
   -ms-flex-align: center;
       align-items: center;
   line-height: 1.8; }
+  @media only screen and (min-width: 1024px) {
+    .skills-widget-class .textwidget {
+      line-height: 1; } }
 
 .quote-container {
   height: 167px;
@@ -986,22 +1069,30 @@ a {
   @media only screen and (min-width: 1024px) {
     .quote-container {
       background: transparent;
+      color: #fff;
+      font-weight: 100;
+      text-align: center;
+      font-size: 46px;
       background-image: linear-gradient(to right, #fff 20%, rgba(255, 255, 255, 0) 20%);
       background-size: 1205px 2.5px;
       background-repeat: repeat-x; } }
   .quote-container .quote-author {
     font-weight: normal;
     font-style: normal;
-    font-size: 10px; }
-    @media only screen and (min-width: 600px) {
-      .quote-container .quote-author {
-        font-size: 15px; } }
-  .quote-container p {
-    margin: 0; }
-  .quote-container p:last-child {
+    font-size: 10px;
     -ms-flex-item-align: end;
         align-self: flex-end;
     text-transform: uppercase; }
+    @media only screen and (min-width: 600px) {
+      .quote-container .quote-author {
+        font-size: 15px; } }
+    @media only screen and (min-width: 1024px) {
+      .quote-container .quote-author {
+        font-size: 30px;
+        text-transform: none;
+        padding-right: 1rem; } }
+  .quote-container p {
+    margin: 0; }
 
 @media only screen and (min-width: 1024px) {
   .programs-header {
@@ -1015,6 +1106,9 @@ a {
   @media only screen and (min-width: 600px) {
     .thumbnail-container p, .desktop-thumbnail-container p {
       font-size: 15px; } }
+  @media only screen and (min-width: 1024px) {
+    .thumbnail-container p, .desktop-thumbnail-container p {
+      font-size: 13.5px; } }
 
 .thumbnail-container p {
   margin: 1.5rem 0; }
@@ -1074,7 +1168,8 @@ a {
     .programs-desktop-container {
       display: block;
       background-image: url(../../assets/images/desktop/homepage/beach-sunset.jpg);
-      height: 110vh;
+      background-size: cover;
+      height: 120vh;
       position: relative; }
       .programs-desktop-container h2 {
         margin: 0;
@@ -1092,55 +1187,65 @@ a {
   .thumbnails-wrapper div:first-child .desktop-thumbnail-container {
     background: url(../../assets/icons/asl01.blue.svg);
     background-size: 430px 480px;
-    background-position: 51% 52%;
+    background-position: 51% 62%;
     left: 10rem; }
     .thumbnails-wrapper div:first-child .desktop-thumbnail-container:hover {
       background-image: url(../../assets/icons/asl01.ps.svg); }
     .thumbnails-wrapper div:first-child .desktop-thumbnail-container p {
       position: absolute;
-      top: 8rem;
-      left: 1.5rem; }
+      top: 6.5rem;
+      left: 1rem;
+      width: 85%;
+      text-align: center; }
   .thumbnails-wrapper div:nth-child(2) .desktop-thumbnail-container {
     background: url(../../assets/icons/asl02.blue.svg);
     background-size: 430px 480px;
-    background-position: 51% 52%;
+    background-position: 51% 62%;
     left: 21rem; }
     .thumbnails-wrapper div:nth-child(2) .desktop-thumbnail-container:hover {
       background-image: url(../../assets/icons/asl02.ps.svg); }
     .thumbnails-wrapper div:nth-child(2) .desktop-thumbnail-container p {
       position: absolute;
-      top: 8rem;
-      left: 1.5rem; }
+      top: 6.5rem;
+      left: 1rem;
+      width: 85%;
+      text-align: center;
+      left: 0.5rem; }
   .thumbnails-wrapper div:nth-child(3) .desktop-thumbnail-container {
     background: url(../../assets/icons/kayak.blue.svg);
     background-size: 430px 480px;
-    background-position: 51% 52%;
+    background-position: 51% 62%;
     left: 30rem;
     top: 9.5rem; }
     .thumbnails-wrapper div:nth-child(3) .desktop-thumbnail-container:hover {
       background-image: url(../../assets/icons/kayak.ps.svg); }
     .thumbnails-wrapper div:nth-child(3) .desktop-thumbnail-container p {
       position: absolute;
-      top: 8rem;
-      left: 3rem; }
+      top: 6.5rem;
+      left: 1rem;
+      width: 85%;
+      text-align: center; }
   .thumbnails-wrapper div:nth-child(4) .desktop-thumbnail-container {
     background: url(../../assets/icons/paddleboard.blue.svg);
     background-size: 430px 480px;
-    background-position: 51% 52%;
+    background-position: 51% 62%;
     left: 29.5rem;
     top: 21rem; }
     .thumbnails-wrapper div:nth-child(4) .desktop-thumbnail-container:hover {
       background-image: url(../../assets/icons/paddleboard.ps.svg); }
     .thumbnails-wrapper div:nth-child(4) .desktop-thumbnail-container p {
       position: absolute;
-      top: 8rem;
-      left: 1.5rem; }
+      top: 6.5rem;
+      left: 1rem;
+      width: 85%;
+      text-align: center;
+      left: 0.5rem; }
   .thumbnails-wrapper div:nth-child(5) .desktop-thumbnail-container {
     background: url(../../assets/icons/decision.making.blue.svg);
     background-size: 430px 535px;
     background-position: 51% 52%;
     left: 21rem;
-    top: 28.5rem; }
+    top: 27.5rem; }
     .thumbnails-wrapper div:nth-child(5) .desktop-thumbnail-container:hover {
       background-image: url(../../assets/icons/decision.making.ps.svg); }
     .thumbnails-wrapper div:nth-child(5) .desktop-thumbnail-container p {
@@ -1152,7 +1257,7 @@ a {
     background-size: 430px 535px;
     background-position: 51% 52%;
     left: 9.5rem;
-    top: 28rem; }
+    top: 27rem; }
     .thumbnails-wrapper div:nth-child(6) .desktop-thumbnail-container:hover {
       background-image: url(../../assets/icons/destination.ps.svg); }
     .thumbnails-wrapper div:nth-child(6) .desktop-thumbnail-container p {
@@ -1165,7 +1270,7 @@ a {
     background-size: 430px 535px;
     background-position: 51% 52%;
     left: 1.5rem;
-    top: 21rem; }
+    top: 20rem; }
     .thumbnails-wrapper div:nth-child(7) .desktop-thumbnail-container:hover {
       background-image: url(../../assets/icons/hiking.ps.svg); }
     .thumbnails-wrapper div:nth-child(7) .desktop-thumbnail-container p {
@@ -1177,7 +1282,7 @@ a {
     background-size: 430px 535px;
     background-position: 51% 52%;
     left: 1rem;
-    top: 9rem; }
+    top: 8rem; }
     .thumbnails-wrapper div:last-child .desktop-thumbnail-container:hover {
       background-image: url(../../assets/icons/skiing.ps.svg); }
     .thumbnails-wrapper div:last-child .desktop-thumbnail-container p {
@@ -1193,7 +1298,7 @@ a {
     width: 664px;
     height: 664px;
     margin-top: 4rem;
-    top: 0;
+    top: 70px;
     position: absolute;
     margin-left: auto;
     margin-right: auto;
@@ -1203,18 +1308,27 @@ a {
 .button-container {
   text-align: center; }
   .button-container a {
-    padding: 0.7rem 2.5rem;
+    width: 150px;
+    height: 45px;
     border: 3px solid #172944;
     background: rgba(23, 41, 68, 0.36);
     text-decoration: none;
-    color: #fff; }
+    color: #fff;
+    text-transform: uppercase;
+    outline: none;
+    padding: 0.9rem 2rem; }
+    @media only screen and (min-width: 1024px) {
+      .button-container a {
+        background: rgba(185, 202, 216, 0.36);
+        border: 3px solid #B9CAD8;
+        width: 215px;
+        height: 60px;
+        font-size: 20px; } }
 
-.programs-button {
-  margin: 4rem 0; }
-  @media only screen and (min-width: 1024px) {
-    .programs-button {
-      padding: 8rem 0;
-      margin: 0; } }
+@media only screen and (min-width: 1024px) {
+  .programs-button {
+    padding: 8rem 0;
+    margin: 0; } }
 
 /*--------------------------------------------------------------
 # Content
@@ -1516,29 +1630,119 @@ object {
   .postid-60 .hero-container .program-icon {
     background-image: url(../../assets/icons/skiing.white.svg); }
 
+@media only screen and (min-width: 1024px) {
+  .page-id-28 a {
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-family: "Arimo", "Arial", sans-serif;
+    font-size: 15px;
+    font-weight: bold; }
+    .page-id-28 a:visited {
+      color: #fff; } }
+
+@media only screen and (min-width: 1024px) {
+  .page-id-28 .button-container {
+    display: none; } }
+
 .page-id-28 .hero-container {
   width: 100%;
-  height: 100%;
   position: relative;
-  background-size: cover;
   height: 150px;
-  background-image: url(../../assets/images/mobile/faq/forest-bar.jpg); }
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.45) 0%, rgba(0, 0, 0, 0.45)), url(../../assets/images/mobile/faq/faq-banner.jpg);
+  background-size: cover; }
+  @media only screen and (min-width: 1024px) {
+    .page-id-28 .hero-container {
+      height: 411px; } }
+  .page-id-28 .hero-container h2 {
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    top: 2rem;
+    color: #fff;
+    text-align: center;
+    font-size: 25px; }
+    @media only screen and (min-width: 600px) {
+      .page-id-28 .hero-container h2 {
+        font-size: 40px;
+        top: 1rem; } }
+    @media only screen and (min-width: 1024px) {
+      .page-id-28 .hero-container h2 {
+        top: 6rem;
+        font-size: 74px; } }
 
 .faq-container {
   padding: 30px 25px;
-  line-height: 3;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  color: #172944;
+  font-family: "Arimo", "Arial", sans-serif;
+  font-weight: normal; }
+  @media only screen and (min-width: 600px) {
+    .faq-container {
+      padding: 30px 80px; } }
+  @media only screen and (min-width: 1024px) {
+    .faq-container {
+      font-size: 24px;
+      padding: 40px 150px; } }
   .faq-container span {
-    padding-right: 1rem; }
-  .faq-container .question-wrapper {
-    display: table;
-    line-height: 1.5; }
-    .faq-container .question-wrapper p {
-      display: table-cell;
-      margin: 0; }
-  .faq-container .answer-wrapper {
-    display: none;
-    padding-left: 1.6rem; }
+    padding-right: 1rem;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #8796a4; }
+
+.question-wrapper {
+  display: table;
+  margin-bottom: 1rem; }
+  .question-wrapper:hover {
+    cursor: pointer; }
+  .question-wrapper p {
+    display: table-cell; }
+
+.answer-wrapper {
+  display: none;
+  padding-left: 1.6rem;
+  font-style: italic;
+  color: #4c5a75; }
+
+@media only screen and (min-width: 1024px) {
+  .error404 a {
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-family: "Arimo", "Arial", sans-serif;
+    font-size: 15px;
+    font-weight: bold; }
+    .error404 a:visited {
+      color: #fff; } }
+
+.error-container {
+  background-image: url(../../assets/images/mobile/404-background.png);
+  height: 100vh;
+  background-size: cover;
+  color: #fff;
+  font-family: "Archivo Black", "Arial", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center; }
+  .error-container h2 {
+    font-size: 82px;
+    margin: 0; }
+  .error-container h3 {
+    text-align: center;
+    font-size: 12px;
+    margin: 0;
+    width: 73%; }
 
 /*--------------------------------------------------------------
 # Page Templates

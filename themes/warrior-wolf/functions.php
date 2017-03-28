@@ -115,7 +115,7 @@ require get_template_directory() . '/inc/extras.php';
 /**
 * Ininite navigation looping
 */
-function infinite_navigation() {
+function wolf_infinite_navigation() {
 	if( get_adjacent_post(false, '', true)  ) { 
 		previous_post_link('%link', '<img class="nav-buttons" src="' . get_stylesheet_directory_uri() . '/assets/arrow-left.png"/>');
 	} else { 

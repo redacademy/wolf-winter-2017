@@ -7,42 +7,47 @@
 
 get_header(); ?>
 
-	<div id="primary" class="content-area">
-		<main id="main" class="site-main" role="main">
-			<div class="desktop-parallax-container">
-				<div class="banner-container">
-					<div class="intro-text-wrapper">
+	<div id='primary' class='content-area'>
+		<main id='main' class='site-main' role='main'>
+			<div class='desktop-parallax-container'>
+				<div class='banner-container'>
+					<div class='intro-text-wrapper'>
 						<h2>Bruce Wilson</h2>
 						<h3>Outdoor Adventure Guide &amp; Life Coach</h3>
 					</div>
-					<p>"fight within yourself to be the best person you can be."</p>
-					<a href="">Let's begin</a>
+					<p>'fight within yourself to be the best person you can be.'</p>
+					<button>Let's begin</button>
 				</div>
 
 				<!--INFO SECTION-->
 				<div class='info-section-container'>
-				<h2>Warrior Wolf</h2>
-					<div class="homepage-credentials-container">
-						<div class="location-container credentials-container">
-							<div class="avatar-picture"></div>
+					<h2>Warrior Wolf</h2>
+					<h4>Guide Services</h4>
+					<div class='homepage-credentials-container'>
+						<div class='location-container credentials-container'>
+							<div class='avatar-picture'></div>
 							<p>Bruce Wilson</p>
 							<p>Squamish, BC, Canada</p>
 						</div>
-						<div class="short-info-container credentials-container">
+
+						<div class='short-info-container credentials-container'>
 							<p>As a certified outdoor specialist, I provide avalanche skills training, backcountry tours, sea kayaking trips, life coaching, and much more.</p>
 						</div>
-						<div class="credentials-widgets-container credentials-container">
+
+						<div class='credentials-widgets-container credentials-container'>
 							<?php get_sidebar(); ?>
 						</div>
-						<div class="button-container bio-button">
-							<a href="<?php echo get_page_link(30); ?>">learn more</a>
+
+						<div class='button-container bio-button'>
+							<a href='<?php echo get_page_link(30); ?>'>learn more</a>
 						</div>
+						
 					</div>
-				</div> <!-- .blah -->
+				</div> <!-- .info-section-container -->
 
 
-				<div class="quote-container">
-					<p>"Courage, above all things, is the first quality of a warrior"</p>
+				<div class='quote-container'>
+					<p>'Courage, above all things, is the first quality of a warrior'</p>
 					<p class='quote-author'>—  Sun Tzu</p>
 				</div>
 			
@@ -53,9 +58,9 @@ get_header(); ?>
 				<div class='pie'></div>
 				<div class='thumbnails-wrapper'>
 				<?php foreach ( $programs as $program ): ?>
-					<div class="program-wrapper">
+					<div class='program-wrapper'>
 						<a href='<?php echo get_permalink($program);?>'>
-                    		<div class="desktop-thumbnail-container">
+                    		<div class='desktop-thumbnail-container'>
                     			<p><?php echo get_the_title($program); ?></p>
 							</div>
 						</a>
@@ -66,11 +71,11 @@ get_header(); ?>
 
 			<!-- PROGRAMS PANEL -->
 			<h2 class='programs-header'>My Programs</h2>
-        	<div class="programs-container">
+        	<div class='programs-container'>
             	<?php foreach ( $programs as $program ): ?>
-					<div class="program-wrapper">
+					<div class='program-wrapper'>
 						<a href='<?php echo get_permalink($program);?>'>
-                    		<div class="thumbnail-container">
+                    		<div class='thumbnail-container'>
                     			<p><?php echo get_the_title($program); ?></p>
 							</div>
 						</a>
@@ -78,8 +83,8 @@ get_header(); ?>
             	<?php endforeach; ?>
         	</div>
 
-			<div class="button-container programs-button">
-				<a href="">view programs</a>
+			<div class='button-container programs-button'>
+				<a href='<?php echo get_page_link(53); ?>'>view programs</a>
 			</div>
 		</div> <!-- .desktop-parallax-container -->
 

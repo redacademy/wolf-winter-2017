@@ -24,7 +24,7 @@ get_header(); ?>
 		<div class="hero-container">
 			<div class="program-icon"></div>
 			<h2><?php echo get_the_title(); ?></h2>
-			<div class="loop-nav-container"><?php infinite_navigation(); ?></div>
+			<div class="loop-nav-container"><?php wolf_infinite_navigation(); ?></div>
 		</div>
 		<div class="full-program-container">
 			<h2>Overview</h2>
@@ -119,6 +119,10 @@ get_header(); ?>
 					<p><?php echo CFS()->get('avalanche_location_info'); ?></p>
 				</div>
 			<?php }?>
+		</div>
+
+		<div class="button-container">
+			<a href="">Register Here</a>
 		</div>
 
 		</main><!-- #main -->

@@ -1,0 +1,28 @@
+.error404 {
+    a {
+        @include media($desktop) {
+            @include desktop-nav-style;
+        }
+    }
+}
+
+.error-container {
+    background-image: url(../../assets/images/mobile/404-background.png);
+    height: 100vh;
+    background-size: cover;
+    color: $color__white-text;
+    font-family: $font__text-headings;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    @include flex-column-center;
+    h2 {
+        font-size: 82px;
+        margin: 0;
+    }
+    h3 {
+        text-align: center;
+        font-size: 12px;
+        margin: 0;
+        width: 73%;
+    }
+}

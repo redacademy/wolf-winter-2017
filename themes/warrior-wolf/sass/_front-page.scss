@@ -10,7 +10,26 @@
         @include media($tablet) {
             font-size: 35px;
         }
+        @include media($desktop) {
+            font-size: 80px;
+            color: $color__white-text;
+            letter-spacing: 3px;
+            margin-bottom: 0;
+        }
     }
+    h4 {
+            display: none;
+            @include media($desktop) {
+                display: block;
+                text-align: center;
+                font-size: 37px;
+                text-transform: uppercase;
+                margin: 0;
+                line-height: 0.5;
+                letter-spacing: 9px;
+                font-family: $font__text-headings;
+            }
+        }
     .banner-container {
 		text-transform: $font__text-uppercase-style;
 		h2, p {
@@ -27,17 +46,18 @@
         }
         h3 {
             color: $color__about-text;
+            @include media($desktop) {
+                color: $color__white-text;
+                font-size: 22px;
+                width: 71%;
+            }
         }
+
 	}
 	a {
-		color: $color__white-text;
-		text-transform: $font__text-uppercase-style;
-		text-decoration: none;
-        font-family: $font__text-subheadings;
-        font-size: 15px;
-		&:visited {
-			color: $color__background-body;
-		}
+        @include media($desktop) {
+            @include desktop-nav-style;
+        }
 	}
 }
 
@@ -69,7 +89,7 @@
     }
     h3 {
         letter-spacing: 2px;
-        width: 75%;
+        width: 71%;
         margin: 0 auto;
         font-size: 12px;
         @include media($tablet) {
@@ -82,13 +102,18 @@
         bottom: 87px;
         width: 50%;
         margin: 0 auto;
-        letter-spacing: 1px;
+        letter-spacing: 2px;
         line-height: 20px;
         font-size: 12px;
         @include media($tablet) {
             font-size: 28px;
             line-height: 1.5;
             width: 56%;
+        }
+        @include media($desktop) {
+            width: 100%;
+            font-weight: bold;;
+            font-size: 27px;
         }
     }
     .intro-text-wrapper {
@@ -110,24 +135,29 @@
             h2 {
                 border-top: 1px solid white;
                 border-bottom: 1px solid white;
+                width: 86%;
+                margin: 0 auto;
+                letter-spacing: 7px;
             }
         }
     }
-    a {
+    button {
         color: transparent;
-        background-image: url(../../assets/arrow-down.png);
+        font-size: 20px;
+        background: url(../../assets/arrow-down.png);
         background-repeat: no-repeat;
         background-position: 50%;
         width: 100px;
         bottom: 2rem;
+        outline: none;
+        border: none;
+        text-transform: $font__text-uppercase-style;
         @include absolute-center-position;
         @include media($desktop) {
             display: block;
-            padding: .7rem 2.5rem;
-            border: 3px solid #172944;
-            background: rgba(23,41,68,.36);
-            width: 200px;
             color: $color__white-text;
+            @include light-button-style;
+            @include desktop-button-dimension;
             @include absolute-center-position;
             bottom: 0;
         }
@@ -153,6 +183,8 @@
         border: none;
         background-color: transparent;
         max-width: none;
+        color: $color__white-text;
+
     }
     .credentials-container {
         margin-bottom: 2rem;
@@ -163,11 +195,18 @@
     text-align: center;
     text-transform: $font__text-uppercase-style;
     font-family: $font__text-subheadings;
+    @include media($desktop) {
+        letter-spacing: 1px;
+        font-weight: bold;
+    }
     p {
         margin: 0;
         font-size: 15px;
         @include media($tablet) {
             font-size: 20px;
+        }
+        @include media($desktop) {
+            font-size: 27px;
         }
     }
     p:last-child {
@@ -191,6 +230,10 @@
 .short-info-container {
     width: 55%;
     margin: 0 auto;
+    @include media($desktop) {
+        width: 86%;
+        text-align: center;
+    }
     p {
         border-top: 1px solid black;
         border-bottom: 1px solid black;
@@ -203,6 +246,10 @@
         }
         @include media($desktop) {
             border: none;
+            font-family: $font__text-headings;
+            font-size: 22px;
+            letter-spacing: 2px;
+            line-height: 1.5;
         }
     }
 }
@@ -223,7 +270,8 @@
     @include media($desktop) {
         border: none;
         background: transparent;
-        border-radius: none;
+        border-radius: 0;
+        width: 100%;
     }
 }
     
@@ -235,12 +283,21 @@
     color: $color__white-text;
 	text-transform: $font__text-uppercase-style;
     font-family: $font__text-subheadings;
+    @include media($desktop) {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
 }
 
 .widget-input {
     font-size: 11px;
     @include media($tablet) {
         font-size: 12px;
+    }
+    @include media($desktop) {
+        font-size: 35px;
+        font-weight: bold;
     }
 }
 
@@ -249,10 +306,16 @@
     @include media($tablet) {
         font-size: 10px;
     }
+    @include media($desktop) {
+        font-size: 20px;
+    }
 }
 
 .certifications-widget-class .textwidget {
     top: 27%;
+    @include media($desktop) {
+        margin-top: 0.5rem;
+    }
 }
 
 .skills-widget-class .textwidget {
@@ -261,6 +324,9 @@
     justify-content: center;
     align-items: center;
     line-height: 1.8;
+    @include media($desktop) {
+        line-height: 1;
+    }
 }
 
 // QUOTE SECTION
@@ -282,22 +348,29 @@
     }
     @include media($desktop) {
         background: transparent;
+        color: $color__white-text;
+        font-weight: 100;
+        text-align: center;
+        font-size: 46px;
         @include corner-border-style;
     }
     .quote-author {
         font-weight: normal;
         font-style: normal;
         font-size: 10px;
+        align-self: flex-end;
+        text-transform: $font__text-uppercase-style;
         @include media($tablet) {
             font-size: 15px;
+        }
+        @include media($desktop) {
+            font-size: 30px;
+            text-transform: none;
+            padding-right: 1rem;
         }
     }
     p {
         margin: 0;
-    }
-    p:last-child {
-        align-self: flex-end;
-        text-transform: $font__text-uppercase-style;
     }
 }
 
@@ -316,6 +389,9 @@
             font-size: 12px;
             @include media($tablet) {
                 font-size: 15px;
+            }
+            @include media($desktop) {
+                font-size: 13.5px;
             }
 		}
 	}
@@ -419,7 +495,8 @@
     @include media($desktop) {
         display: block;
         background-image: url(../../assets/images/desktop/homepage/beach-sunset.jpg);
-        height: 110vh;
+        background-size: cover;
+        height: 120vh;
         position: relative;
         h2 {
             margin: 0;
@@ -462,6 +539,7 @@
             left: 21rem;
             p {
                 @include desktop-program-header-right-position;
+                left: 0.5rem;
             }
         }
     }
@@ -475,8 +553,7 @@
             left: 30rem;
             top: 9.5rem;
             p {
-                @include desktop-program-header-standard-position;
-                left: 3rem;
+                @include desktop-program-header-right-position;
             }
         }
     }
@@ -491,6 +568,7 @@
             top: 21rem;
             p {
                 @include desktop-program-header-right-position;
+                left: 0.5rem;
             }
         }
     }
@@ -502,7 +580,7 @@
                 background-image: url(../../assets/icons/decision.making.ps.svg);
             }
             left: 21rem;
-            top: 28.5rem;
+            top: 27.5rem;
             p {
                 @include desktop-program-header-standard-position;
                 left: 2.5rem;
@@ -517,7 +595,7 @@
                 background-image: url(../../assets/icons/destination.ps.svg);
             }
             left: 9.5rem;
-            top: 28rem;
+            top: 27rem;
             p {
                 @include desktop-program-header-standard-position;
                 left: 0rem;
@@ -533,7 +611,7 @@
                 background-image: url(../../assets/icons/hiking.ps.svg);
             }
             left: 1.5rem;
-            top: 21rem;
+            top: 20rem;
             p {
                 @include desktop-program-header-standard-position;
                 left: 60px;
@@ -548,7 +626,7 @@
                 background-image: url(../../assets/icons/skiing.ps.svg);
             }
             left: 1rem;
-            top: 9rem;
+            top: 8rem;
             p {
                 @include desktop-program-header-standard-position;
                 left: 7px;
@@ -565,7 +643,7 @@
     width: 664px;
     height: 664px;
     margin-top: 4rem;
-    top: 0;
+    top: 70px;
     @include absolute-center-position;
     }
 }
@@ -573,16 +651,22 @@
 .button-container {
     text-align: center;
     a {
-        padding: 0.7rem 2.5rem;
-        border: 3px solid #172944;
-        background: rgba(23, 41, 68, 0.36);
+        @include small-button-dimension;
+        @include dark-button-style;
         text-decoration: none;
         color: #fff;
+        text-transform: $font__text-uppercase-style;
+        outline: none;
+        padding: 0.9rem 2rem;
+        @include media($desktop) {
+            @include light-button-style;
+            @include desktop-button-dimension;
+            font-size: 20px;
+        }
     }
 }
 
 .programs-button {
-    margin: 4rem 0;
     @include media($desktop) {
         padding: 8rem 0;
         margin: 0;

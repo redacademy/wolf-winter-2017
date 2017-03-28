@@ -7,10 +7,10 @@
 
 get_header(); ?>
 
-	<div id="primary" class="content-area">
-		<main id="main" class="site-main" role="main">
+	<div id='primary' class='content-area'>
+		<main id='main' class='site-main' role='main'>
 
-			<div class="hero-container">
+			<div class='hero-container'>
 				<h2><?php echo get_the_title(); ?></h2>
 			</div>
 
@@ -29,6 +29,9 @@ get_header(); ?>
 				} ?>
 			</div>
 
+			<div class='button-container'>
+				<a href='<?php echo get_page_link(53); ?>'>View Programs</a>
+			</div>
 
 		</main><!-- #main -->
 	</div><!-- #primary -->
