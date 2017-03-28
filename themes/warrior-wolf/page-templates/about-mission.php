@@ -39,9 +39,9 @@
         <?php echo CFS()->get('mission_statement'); ?>
       </div>
     </div>
-    <div class='button-container'>
-      <a href=''>view programs</a>
-    </div>
+	<div class='about-button-container'>
+		<button href=''>view programs</button>
+	</div>
   </div>
 </section>
 <?php get_footer(); ?>

@@ -368,8 +368,6 @@ table {
 # Forms
 --------------------------------------------------------------*/
 /* Buttons */
-button,
-input[type="button"],
 input[type="reset"],
 input[type="submit"] {
   border: 1px solid;
@@ -1543,7 +1541,8 @@ object {
 /*--------------------------------------------------------------
 # Page Templates
 --------------------------------------------------------------*/
-/* About page */
+/* All About Pages */
+/* About Global Page */
 .about-header-wrapper {
   display: -ms-flexbox;
   display: flex;
@@ -1634,18 +1633,6 @@ object {
   text-align: center;
   line-height: 2.5rem; }
 
-.tab a:hover {
-  text-decoration: underline; }
-
-.tab.active {
-  padding-top: 6px;
-  position: relative;
-  top: 1px;
-  border-color: #666; }
-
-.tab a.active {
-  font-weight: bold; }
-
 .tab-container .panel-container {
   background: #b9cad8;
   margin-left: auto;
@@ -1656,11 +1643,17 @@ ul {
   margin: 0;
   padding: 0; }
 
+.about-button-container {
+  margin-top: 3rem;
+  margin-bottom: 3rem; }
+
+/* Credential Template */
 .credential-wrapper {
   width: 85%;
   margin-left: auto;
   margin-right: auto;
-  max-width: 895px; }
+  max-width: 895px;
+  padding-top: 4rem; }
   .credential-wrapper li {
     display: -ms-flexbox;
     display: flex;
@@ -1678,71 +1671,93 @@ ul {
       width: 20%;
       margin: auto 0; }
 
-.page-template-about {
-  color: #172944; }
-  .page-template-about .credential-wrapper, .page-template-about .content-wrapper {
+.about-button-container {
+  text-align: center; }
+  .about-button-container button {
+    padding: 0.7rem 2.5rem;
+    border: 3px solid #172944;
+    background: rgba(23, 41, 68, 0.36);
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #fff;
+    margin-bottom: 3rem;
+    margin-top: 3rem; }
+
+@media only screen and (min-width: 1024px) {
+  .wolf-background {
+    background: url(../../assets/logo/logo-grey.no.png) no-repeat fixed;
+    background-position: 50% 100%;
+    background-size: contain;
+    height: 100%; } }
+
+/* Bio Template */
+.page-template-page-templatesabout-php {
+  color: #172944;
+  margin-top: 3rem; }
+  .page-template-page-templatesabout-php .about-text-wrapper {
     display: -ms-flexbox;
     display: flex;
     -ms-flex-direction: column;
         flex-direction: column;
-    width: 85%;
     margin-left: auto;
     margin-right: auto;
+    margin-top: 2rem;
+    width: 600px;
     background: rgba(0, 0, 0, 0.05); }
-    .page-template-about .credential-wrapper .button-container, .page-template-about .content-wrapper .button-container {
-      padding: 2rem 2rem; }
-    .page-template-about .credential-wrapper h2, .page-template-about .content-wrapper h2 {
+    .page-template-page-templatesabout-php .about-text-wrapper h2 {
       text-align: center; }
-    .page-template-about .credential-wrapper p, .page-template-about .content-wrapper p {
+    .page-template-page-templatesabout-php .about-text-wrapper p {
       line-height: 2;
-      margin-top: 1rem; }
+      margin-top: 1rem;
+      padding-right: 1.5rem;
+      padding-left: 1.5rem; }
     @media only screen and (min-width: 1024px) {
-      .page-template-about .credential-wrapper, .page-template-about .content-wrapper {
+      .page-template-page-templatesabout-php .about-text-wrapper {
         background: transparent;
         height: 900px; }
-        .page-template-about .credential-wrapper .wolf-background, .page-template-about .content-wrapper .wolf-background {
+        .page-template-page-templatesabout-php .about-text-wrapper .wolf-background {
           background: url(../../assets/logo/logo-grey.no.png) no-repeat fixed;
           background-position: 50% 50%;
           background-size: contain; }
-        .page-template-about .credential-wrapper .about-text-wrapper, .page-template-about .content-wrapper .about-text-wrapper {
+        .page-template-page-templatesabout-php .about-text-wrapper .about-text-wrapper {
           display: -ms-flexbox;
           display: flex;
           -ms-flex-wrap: wrap;
               flex-wrap: wrap;
           font-size: 11px; }
-          .page-template-about .credential-wrapper .about-text-wrapper h2, .page-template-about .content-wrapper .about-text-wrapper h2 {
+          .page-template-page-templatesabout-php .about-text-wrapper .about-text-wrapper h2 {
             text-align: left; }
-          .page-template-about .credential-wrapper .about-text-wrapper p, .page-template-about .content-wrapper .about-text-wrapper p {
+          .page-template-page-templatesabout-php .about-text-wrapper .about-text-wrapper p {
             line-height: 1.1rem; }
-          .page-template-about .credential-wrapper .about-text-wrapper .overview-wrapper, .page-template-about .content-wrapper .about-text-wrapper .overview-wrapper {
+          .page-template-page-templatesabout-php .about-text-wrapper .about-text-wrapper .overview-wrapper {
             width: 250px;
             margin-right: 2rem; }
-          .page-template-about .credential-wrapper .about-text-wrapper .my-story-wrapper h2, .page-template-about .content-wrapper .about-text-wrapper .my-story-wrapper h2 {
+          .page-template-page-templatesabout-php .about-text-wrapper .about-text-wrapper .my-story-wrapper h2 {
             margin-left: 1rem; }
-          .page-template-about .credential-wrapper .about-text-wrapper .my-story-wrapper .my-story-entry, .page-template-about .content-wrapper .about-text-wrapper .my-story-wrapper .my-story-entry {
+          .page-template-page-templatesabout-php .about-text-wrapper .about-text-wrapper .my-story-wrapper .my-story-entry {
             display: -ms-flexbox;
             display: flex;
             -ms-flex-flow: column wrap;
                 flex-flow: column wrap;
             width: 250px;
             height: 700px; }
-            .page-template-about .credential-wrapper .about-text-wrapper .my-story-wrapper .my-story-entry p.p1, .page-template-about .content-wrapper .about-text-wrapper .my-story-wrapper .my-story-entry p.p1 {
+            .page-template-page-templatesabout-php .about-text-wrapper .about-text-wrapper .my-story-wrapper .my-story-entry p.p1 {
               width: 100%;
               margin: 0 .5rem 1rem 1rem; } }
 
-/* Method template */
+/* Method Template */
 .page-template-about-method {
   color: #172944; }
   .page-template-about-method .featured-content {
     text-align: center;
     background-color: rgba(0, 0, 0, 0.03);
-    padding-top: 2rem;
-    margin-top: 1rem;
+    padding-top: 3rem;
     width: 85%;
     max-width: 600px;
     margin-right: auto;
     margin-left: auto;
-    color: #172944; }
+    color: #172944;
+    border-radius: 10px; }
     .page-template-about-method .featured-content .featured-image {
       border-radius: 50%; }
       .page-template-about-method .featured-content .featured-image img {
@@ -1767,8 +1782,7 @@ ul {
     max-width: 580px;
     margin-right: auto;
     margin-left: auto;
-    padding-bottom: 1rem;
-    margin-bottom: 4rem; }
+    padding-bottom: 1rem; }
   @media only screen and (min-width: 1024px) {
     .page-template-about-method .featured-content {
       background-color: #C9CDD1;
@@ -1785,14 +1799,16 @@ ul {
       max-width: 1280px; }
       .page-template-about-method .personal-method .p1 {
         width: 200px;
-        height: 100px; } }
+        height: 100px;
+        padding-left: 0.35rem;
+        padding-right: 0.35rem; } }
 
 /* Mission Template */
 .page-template-about-mission .featured-content {
   background-color: rgba(0, 0, 0, 0.03);
-  padding-top: 2rem;
-  margin-top: 1rem;
+  padding-top: 3rem;
   width: 85%;
+  max-width: 600px;
   margin-right: auto;
   margin-left: auto; }
   .page-template-about-mission .featured-content .featured-image {
@@ -1822,10 +1838,9 @@ ul {
   margin-left: auto;
   padding-bottom: 1rem; }
 
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 600px) {
   .page-template-about-mission .featured-content {
     background-color: transparent;
-    width: 600px;
     padding-bottom: 0.5rem; }
   .page-template-about-mission .mission-statement {
     display: -ms-flexbox;
@@ -1834,38 +1849,35 @@ ul {
         flex-flow: row wrap;
     -ms-flex-pack: center;
         justify-content: center;
-    max-width: 1280px; }
+    width: 580px; }
     .page-template-about-mission .mission-statement .p1 {
-      max-width: 500px; } }
+      max-width: 75%; } }
 
 /* Footer template */
-footer {
+.site-footer {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: center;
       justify-content: center;
-  background-color: #4C5A75;
-  margin-top: 2rem; }
-  footer .footer-wrapper {
+  background-color: #4C5A75; }
+  .site-footer .footer-wrapper {
     max-width: 275px;
-    margin: 0 auto;
-    -ms-flex-pack: center;
-        justify-content: center; }
-  footer .newsletter-info-wrapper {
+    margin: 0 auto; }
+  .site-footer .newsletter-info-wrapper {
     display: -ms-flexbox;
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     -ms-flex-pack: center;
         justify-content: center;
-    margin-top: 2rem;
+    padding-top: 2rem;
     margin-bottom: 2rem; }
-    footer .newsletter-info-wrapper .inner-form-wrapper {
+    .site-footer .newsletter-info-wrapper .inner-form-wrapper {
       position: relative;
       width: 250px; }
-      footer .newsletter-info-wrapper .inner-form-wrapper .newsletter-form {
+      .site-footer .newsletter-info-wrapper .inner-form-wrapper .newsletter-form {
         border-radius: 0; }
-      footer .newsletter-info-wrapper .inner-form-wrapper .newsletter-submit-button {
+      .site-footer .newsletter-info-wrapper .inner-form-wrapper .newsletter-submit-button {
         position: absolute;
         right: 0;
         top: 0;
@@ -1873,18 +1885,18 @@ footer {
         height: 2rem;
         background: #b9cad8;
         color: #4C5A75; }
-    footer .newsletter-info-wrapper a {
+    .site-footer .newsletter-info-wrapper a {
       color: #fff;
       font-size: 0.5rem;
       text-decoration: none;
       text-transform: uppercase;
       letter-spacing: 1px; }
-  footer .button-wrapper {
+  .site-footer .button-wrapper {
     display: -ms-flexbox;
     display: flex;
     -ms-flex-pack: center;
         justify-content: center; }
-    footer .button-wrapper .faq-button {
+    .site-footer .button-wrapper .faq-button {
       text-align: center;
       width: 30%;
       border: 1px solid #fff;
@@ -1894,18 +1906,24 @@ footer {
       text-transform: uppercase;
       margin-bottom: 2rem;
       font-size: 1.25rem; }
-  footer .social-media-icons-wrapper {
+  .site-footer .social-media-icons-wrapper {
     display: -ms-flexbox;
     display: flex;
     -ms-flex-pack: distribute;
         justify-content: space-around;
-    margin-bottom: 2rem; }
-  footer img {
+    padding-bottom: 2rem; }
+  .site-footer img {
     height: 50px;
     width: 50px; }
-  footer .instagram-icon {
+  .site-footer .instagram-icon {
     background: url(../../assets/icons/social-media/instagram.svg) no-repeat; }
-  footer .facebook-icon {
+  .site-footer .facebook-icon {
     background: url(../../assets/icons/social-media/fb.svg) no-repeat; }
-  footer .vimeo-icon {
+  .site-footer .vimeo-icon {
     background: url(../../assets/icons/social-media/vimeo.svg) no-repeat; }
+  @media only screen and (min-width: 600px) {
+    .site-footer {
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-pack: justify;
+          justify-content: space-between; } }

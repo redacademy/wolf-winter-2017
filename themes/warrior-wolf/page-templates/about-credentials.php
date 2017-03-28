@@ -40,8 +40,8 @@ foreach ( $fields as $field ) {?>
     </li>
 <?php } ?>
 </ul>
-	<div class="button-container">
-		<a href="">view programs</a>
+	<div class='about-button-container'>
+		<button href=''>view programs</button>
 	</div>
   </div>
 </section>

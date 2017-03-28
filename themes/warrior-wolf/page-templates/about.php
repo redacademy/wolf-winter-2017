@@ -38,8 +38,8 @@
         </div>
         </div>
     </div>
-    <div class="button-container">
-      <a href="">view programs</a>
+    <div class='about-button-container'>
+      <button href=''>view programs</button>
     </div>
   </div>
 </section>

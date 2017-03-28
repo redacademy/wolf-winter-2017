@@ -26,7 +26,7 @@
   }
 }
 
-// Absolute center position 
+// Absolute center position
 @mixin absolute-center-position {
 	position: absolute;
 	margin-left: auto;
@@ -41,6 +41,7 @@
   background-size: 1205px 2.5px;
   background-repeat: repeat-x;
 }
+<<<<<<< HEAD
 
 // Button template
 @mixin button-template {
@@ -81,3 +82,5 @@
 	position: absolute;
   top: 8rem;
 }
+=======
+>>>>>>> Finished about me functionality

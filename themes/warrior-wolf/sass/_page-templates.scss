@@ -1,7 +1,10 @@
 /*--------------------------------------------------------------
 # Page Templates
 --------------------------------------------------------------*/
-/* About page */
+/* All About Pages */
+
+
+/* About Global Page */
 
 .about-header-wrapper {
     display: flex;
@@ -85,18 +88,6 @@
     text-align: center;
     line-height: 2.5rem;
     }
-.tab a:hover {
-    text-decoration: underline;
-    }
-.tab.active {
-    padding-top: 6px;
-    position: relative;
-    top: 1px;
-    border-color: #666;
-    }
-.tab a.active {
-    font-weight: bold;
-    }
 .tab-container .panel-container {
     background: #b9cad8;
     margin-left: auto;
@@ -107,11 +98,19 @@ ul {
     margin: 0;
     padding: 0;
 }
+.about-button-container {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+
+/* Credential Template */
+
 .credential-wrapper {
     width: 85%;
     margin-left: auto;
     margin-right: auto;
     max-width: 895px;
+    padding-top: 4rem;
     li {
         display: flex;
         justify-content: space-between;
@@ -132,25 +131,42 @@ ul {
         }
     }
 }
-.page-template-about {
-        color: $color__about-text;
-.credential-wrapper, .content-wrapper {
+.about-button-container {
+    @include button-template;
+}
+    @include media($desktop) {
+        .wolf-background {
+        background: url(../../assets/logo/logo-grey.no.png) no-repeat fixed;
+        background-position: 50% 100%;
+        background-size: contain;
+        height: 100%;
+        }
+    }
+
+
+/* Bio Template */
+
+.page-template-page-templatesabout-php {
+    color: $color__about-text;
+    margin-top: 3rem;
+.about-text-wrapper {
     display: flex;
     flex-direction: column;
-    width: 85%;
     margin-left: auto;
     margin-right: auto;
+    margin-top: 2rem;
+    width: 600px;
     background: rgba(0, 0, 0, 0.05);
-    .button-container {
-        padding: 2rem 2rem;
-    }
     h2 {
         text-align: center;
     }
     p {
         line-height: 2;
         margin-top: 1rem;
+        padding-right: 1.5rem;
+        padding-left: 1.5rem;
     }
+
     @include media($desktop) {
         background: transparent;
         height: 900px;
@@ -193,20 +209,20 @@ ul {
 }
 }
 
-/* Method template */
+/* Method Template */
 
 .page-template-about-method {
     color: $color__about-text;
     .featured-content {
         text-align: center;
         background-color: rgba(0, 0, 0, 0.03);
-        padding-top: 2rem;
-        margin-top: 1rem;
+        padding-top: 3rem;
         width: 85%;
         max-width: 600px;
         margin-right: auto;
         margin-left: auto;
         color: $color__about-text;
+        border-radius: 10px;
         .featured-image {
             border-radius: 50%;
             img {
@@ -235,7 +251,6 @@ ul {
             margin-right: auto;
             margin-left: auto;
             padding-bottom: 1rem;
-            margin-bottom: 4rem;
         }
     @include media($desktop) {
         .featured-content {
@@ -252,6 +267,8 @@ ul {
             .p1 {
                 width: 200px;
                 height: 100px;
+                padding-left: 0.35rem;
+                padding-right: 0.35rem;
             }
         }
     }
@@ -262,9 +279,9 @@ ul {
 .page-template-about-mission {
     .featured-content {
         background-color: rgba(0, 0, 0, 0.03);
-        padding-top: 2rem;
-        margin-top: 1rem;
+        padding-top: 3rem;
         width: 85%;
+        max-width: 600px;
         margin-right: auto;
         margin-left: auto;
         .featured-image {
@@ -295,19 +312,18 @@ ul {
         margin-left: auto;
         padding-bottom: 1rem;
     }
-    @include media($desktop) {
+    @include media($tablet) {
         .featured-content {
             background-color: transparent;
-            width: 600px;
             padding-bottom: 0.5rem;
         }
         .mission-statement {
             display: flex;
             flex-flow: row wrap;
             justify-content: center;
-            max-width: 1280px;
+            width: 580px;
             .p1 {
-                max-width: 500px;
+                max-width: 75%;
             }
         }
     }
@@ -315,21 +331,19 @@ ul {
 
 /* Footer template */
 
-footer {
+.site-footer {
     display: flex;
     justify-content: center;
     background-color: $color__background-templates;
-    margin-top: 2rem;
         .footer-wrapper {
             max-width: 275px;
             margin: 0 auto;
-            justify-content: center;
         }
         .newsletter-info-wrapper {
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
-            margin-top: 2rem;
+            padding-top: 2rem;
             margin-bottom: 2rem;
         .inner-form-wrapper {
             position: relative;
@@ -371,7 +385,7 @@ footer {
         .social-media-icons-wrapper {
             display: flex;
             justify-content: space-around;
-            margin-bottom: 2rem;
+            padding-bottom: 2rem;
         }
         img {
             height: 50px;
@@ -385,5 +399,9 @@ footer {
         }
         .vimeo-icon {
             background: url(../../assets/icons/social-media/vimeo.svg) no-repeat;
+        }
+        @include media($tablet) {
+            display: flex;
+            justify-content: space-between;
         }
     }
