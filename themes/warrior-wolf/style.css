@@ -408,6 +408,51 @@ textarea {
   padding-left: 3px;
   width: 100%; }
 
+/* Contact Forms */
+/* The Modal (background) */
+.modal {
+  display: none;
+  /* Hidden by default */
+  position: fixed;
+  /* Stay in place */
+  z-index: 1;
+  /* Sit on top */
+  padding-top: 100px;
+  /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%;
+  /* Full width */
+  height: 100%;
+  /* Full height */
+  overflow: auto;
+  /* Enable scroll if needed */
+  background-color: black;
+  /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4);
+  /* Black w/ opacity */ }
+
+/* Modal Content */
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%; }
+
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold; }
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer; }
+
 .site-header {
   height: 60px;
   position: fixed;
@@ -1634,23 +1679,21 @@ object {
     .etabs {
       background-color: #4C5A75;
       width: 85%; } }
-
-.tab {
-  background: #4C5A75;
-  border-bottom: none;
-  width: 6.8rem;
-  height: 40px;
-  text-align: center;
-  margin: 0 0.1rem; }
-
-.tab a {
-  font-size: 0.8rem;
-  outline: none;
-  text-decoration: none;
-  color: #fff;
-  text-transform: uppercase;
-  text-align: center;
-  line-height: 2.5rem; }
+  .etabs .page_item {
+    background: #4C5A75;
+    border-bottom: none;
+    width: 6.8rem;
+    height: 40px;
+    text-align: center;
+    margin: 0 0.1rem; }
+    .etabs .page_item a {
+      font-size: 0.8rem;
+      outline: none;
+      text-decoration: none;
+      color: #fff;
+      text-transform: uppercase;
+      text-align: center;
+      line-height: 2.5rem; }
 
 .tab-container .panel-container {
   background: #b9cad8;
@@ -1661,34 +1704,6 @@ ul {
   list-style: none;
   margin: 0;
   padding: 0; }
-
-.about-button-container {
-  margin-top: 3rem;
-  margin-bottom: 3rem; }
-
-/* Credential Template */
-.credential-wrapper {
-  width: 85%;
-  margin-left: auto;
-  margin-right: auto;
-  max-width: 895px;
-  padding-top: 4rem; }
-  .credential-wrapper li {
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-pack: justify;
-        justify-content: space-between;
-    font-size: 12px; }
-    .credential-wrapper li:nth-child(2n+1) {
-      background: rgba(0, 0, 0, 0.07); }
-    .credential-wrapper li .credential-title-wrapper {
-      width: 75%;
-      margin: .5rem; }
-      .credential-wrapper li .credential-title-wrapper p {
-        margin: 0; }
-    .credential-wrapper li .credential-date-wrapper {
-      width: 20%;
-      margin: auto 0; }
 
 /* Bio Template */
 .page-template-page-templatesabout-php {
@@ -1717,34 +1732,61 @@ ul {
       display: flex;
       -ms-flex-flow: row wrap;
           flex-flow: row wrap;
+      margin-left: 0;
+      margin-right: 0;
       font-size: 11px;
       background: transparent;
-      max-width: none;
-      max-height: 900px;
+      max-width: 1280px;
+      height: 900px;
       margin-top: 0; }
       .page-template-page-templatesabout-php .about-text-wrapper h2 {
         text-align: left; }
       .page-template-page-templatesabout-php .about-text-wrapper p {
+        padding-right: 0;
         padding-left: 0;
+        margin-right: 0;
         line-height: 1.1rem; }
       .page-template-page-templatesabout-php .about-text-wrapper .overview-wrapper {
-        width: 250px;
-        margin-right: 1rem;
-        margin-left: 13%; }
+        width: 250px; }
       .page-template-page-templatesabout-php .about-text-wrapper .my-story-wrapper {
-        margin-right: auto; }
+        max-height: 1000px;
+        overflow-wrap: normal; }
         .page-template-page-templatesabout-php .about-text-wrapper .my-story-wrapper h2 {
           margin-left: 1rem; }
         .page-template-page-templatesabout-php .about-text-wrapper .my-story-wrapper .my-story-entry {
           display: -ms-flexbox;
           display: flex;
-          -ms-flex-flow: column wrap;
-              flex-flow: column wrap;
+          -ms-flex-flow: row wrap;
+              flex-flow: row wrap;
           width: 250px;
-          height: 80%; }
+          max-height: 100%; }
           .page-template-page-templatesabout-php .about-text-wrapper .my-story-wrapper .my-story-entry p.p1 {
             width: 100%;
-            margin: 0 .5rem 1rem 1rem; } }
+            margin: 0 0 1rem 1rem; } }
+
+/* Credential Template */
+.credential-wrapper {
+  width: 85%;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 895px;
+  padding-top: 4rem; }
+  .credential-wrapper li {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: justify;
+        justify-content: space-between;
+    font-size: 12px; }
+    .credential-wrapper li:nth-child(2n+1) {
+      background: rgba(0, 0, 0, 0.07); }
+    .credential-wrapper li .credential-title-wrapper {
+      width: 75%;
+      margin: .5rem; }
+      .credential-wrapper li .credential-title-wrapper p {
+        margin: 0; }
+    .credential-wrapper li .credential-date-wrapper {
+      width: 20%;
+      margin: auto 0; }
 
 /* Method Template */
 .page-template-about-method {
