@@ -35,9 +35,11 @@
 			<nav id="site-navigation" class="main-navigation" role="navigation">
 				<div class="mobile-menu">
 					<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
+					<a href="#openModal">Contact</a>
 					<?php wp_nav_menu( array( 'theme_location' => 'social', 'menu_id' => 'social-menu' ) ); ?>
 				</div>
-				<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html( 'Primary Menu' ); ?>
+				<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false">
+					<?php esc_html( 'Primary Menu' ); ?>
 				</button>
 			</nav><!-- #site-navigation -->
 		</div><!-- .header-container -->

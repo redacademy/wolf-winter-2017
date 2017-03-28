@@ -32,8 +32,17 @@
 				</div><!-- .site-info -->
 			</footer><!-- #colophon -->
 		</div><!-- #page -->
-
 		<?php wp_footer(); ?>
-
+<div id="openModal" class="modalDialog">
+    <div>
+		<a href="#close" title="Close" class="close">X</a>
+        	<h2>Modal Box</h2>
+			<form>
+				<input type="email">
+				<input type="subject">
+				<textarea>asdfasd</textarea>
+			</form>
+	</div>
+</div>
 	</body>
 </html>
