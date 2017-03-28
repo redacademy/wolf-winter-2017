@@ -561,13 +561,11 @@ textarea {
 --------------------------------------------------------------*/
 /* Links */
 a {
-  color: royalblue; }
+  color: #fff; }
   a:visited {
-    color: purple; }
+    color: #fff; }
   a:hover, a:focus, a:active {
-    color: midnightblue; }
-  a:focus {
-    outline: thin dotted; }
+    color: #fff; }
   a:hover, a:active {
     outline: 0; }
 
@@ -1541,8 +1539,30 @@ object {
 /*--------------------------------------------------------------
 # Page Templates
 --------------------------------------------------------------*/
-/* All About Pages */
-/* About Global Page */
+/*--------------------------------------------------------------
+# About Pages
+--------------------------------------------------------------*/
+/* Globals */
+.about-button-container {
+  text-align: center; }
+  .about-button-container button {
+    padding: 0.7rem 2.5rem;
+    border: 3px solid #172944;
+    background: rgba(23, 41, 68, 0.36);
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #fff;
+    margin-bottom: 3rem;
+    margin-top: 3rem; }
+
+@media only screen and (min-width: 1024px) {
+  .wolf-background {
+    background: url(../../assets/logo/logo-grey.no.png) no-repeat fixed;
+    background-position: 50% 100%;
+    background-size: contain;
+    height: 100%; } }
+
+/* About Landing Page */
 .about-header-wrapper {
   display: -ms-flexbox;
   display: flex;
@@ -1609,12 +1629,11 @@ object {
           justify-content: space-around;
       background-color: #4C5A75;
       width: 85%;
-      max-width: 1030; } }
+      max-width: 1030px; } }
   @media only screen and (min-width: 1024px) {
     .etabs {
       background-color: #4C5A75;
-      width: 85%;
-      max-width: 1030; } }
+      width: 85%; } }
 
 .tab {
   background: #4C5A75;
@@ -1671,25 +1690,6 @@ ul {
       width: 20%;
       margin: auto 0; }
 
-.about-button-container {
-  text-align: center; }
-  .about-button-container button {
-    padding: 0.7rem 2.5rem;
-    border: 3px solid #172944;
-    background: rgba(23, 41, 68, 0.36);
-    text-decoration: none;
-    text-transform: uppercase;
-    color: #fff;
-    margin-bottom: 3rem;
-    margin-top: 3rem; }
-
-@media only screen and (min-width: 1024px) {
-  .wolf-background {
-    background: url(../../assets/logo/logo-grey.no.png) no-repeat fixed;
-    background-position: 50% 100%;
-    background-size: contain;
-    height: 100%; } }
-
 /* Bio Template */
 .page-template-page-templatesabout-php {
   color: #172944;
@@ -1701,8 +1701,8 @@ ul {
         flex-direction: column;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 2rem;
-    width: 600px;
+    max-width: 600px;
+    margin-top: 3rem;
     background: rgba(0, 0, 0, 0.05); }
     .page-template-page-templatesabout-php .about-text-wrapper h2 {
       text-align: center; }
@@ -1711,39 +1711,40 @@ ul {
       margin-top: 1rem;
       padding-right: 1.5rem;
       padding-left: 1.5rem; }
-    @media only screen and (min-width: 1024px) {
-      .page-template-page-templatesabout-php .about-text-wrapper {
-        background: transparent;
-        height: 900px; }
-        .page-template-page-templatesabout-php .about-text-wrapper .wolf-background {
-          background: url(../../assets/logo/logo-grey.no.png) no-repeat fixed;
-          background-position: 50% 50%;
-          background-size: contain; }
-        .page-template-page-templatesabout-php .about-text-wrapper .about-text-wrapper {
+  @media only screen and (min-width: 1024px) {
+    .page-template-page-templatesabout-php .about-text-wrapper {
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+      font-size: 11px;
+      background: transparent;
+      max-width: none;
+      max-height: 900px;
+      margin-top: 0; }
+      .page-template-page-templatesabout-php .about-text-wrapper h2 {
+        text-align: left; }
+      .page-template-page-templatesabout-php .about-text-wrapper p {
+        padding-left: 0;
+        line-height: 1.1rem; }
+      .page-template-page-templatesabout-php .about-text-wrapper .overview-wrapper {
+        width: 250px;
+        margin-right: 1rem;
+        margin-left: 13%; }
+      .page-template-page-templatesabout-php .about-text-wrapper .my-story-wrapper {
+        margin-right: auto; }
+        .page-template-page-templatesabout-php .about-text-wrapper .my-story-wrapper h2 {
+          margin-left: 1rem; }
+        .page-template-page-templatesabout-php .about-text-wrapper .my-story-wrapper .my-story-entry {
           display: -ms-flexbox;
           display: flex;
-          -ms-flex-wrap: wrap;
-              flex-wrap: wrap;
-          font-size: 11px; }
-          .page-template-page-templatesabout-php .about-text-wrapper .about-text-wrapper h2 {
-            text-align: left; }
-          .page-template-page-templatesabout-php .about-text-wrapper .about-text-wrapper p {
-            line-height: 1.1rem; }
-          .page-template-page-templatesabout-php .about-text-wrapper .about-text-wrapper .overview-wrapper {
-            width: 250px;
-            margin-right: 2rem; }
-          .page-template-page-templatesabout-php .about-text-wrapper .about-text-wrapper .my-story-wrapper h2 {
-            margin-left: 1rem; }
-          .page-template-page-templatesabout-php .about-text-wrapper .about-text-wrapper .my-story-wrapper .my-story-entry {
-            display: -ms-flexbox;
-            display: flex;
-            -ms-flex-flow: column wrap;
-                flex-flow: column wrap;
-            width: 250px;
-            height: 700px; }
-            .page-template-page-templatesabout-php .about-text-wrapper .about-text-wrapper .my-story-wrapper .my-story-entry p.p1 {
-              width: 100%;
-              margin: 0 .5rem 1rem 1rem; } }
+          -ms-flex-flow: column wrap;
+              flex-flow: column wrap;
+          width: 250px;
+          height: 80%; }
+          .page-template-page-templatesabout-php .about-text-wrapper .my-story-wrapper .my-story-entry p.p1 {
+            width: 100%;
+            margin: 0 .5rem 1rem 1rem; } }
 
 /* Method Template */
 .page-template-about-method {
