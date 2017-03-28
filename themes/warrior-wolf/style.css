@@ -709,20 +709,35 @@ a {
 .home h2 {
   text-align: center;
   text-transform: uppercase;
-  letter-spacing: 2px; }
+  letter-spacing: 2px;
+  font-family: "Archivo Black", "Arial", sans-serif;
+  font-weight: normal;
+  font-size: 25px;
+  color: #172944; }
+  @media only screen and (min-width: 600px) {
+    .home h2 {
+      font-size: 35px; } }
 
 .home .banner-container {
   text-transform: uppercase; }
   .home .banner-container h2, .home .banner-container p {
     color: #fff; }
-
-.home .thumbnail-container p {
-  text-transform: uppercase; }
+  .home .banner-container h2 {
+    font-size: 28px; }
+    @media only screen and (min-width: 600px) {
+      .home .banner-container h2 {
+        font-size: 40px; } }
+  .home .banner-container h3, .home .banner-container p {
+    font-family: "Arimo", "Arial", sans-serif; }
+  .home .banner-container h3 {
+    color: #172944; }
 
 .home a {
   color: #fff;
   text-transform: uppercase;
-  text-decoration: none; }
+  text-decoration: none;
+  font-family: "Arimo", "Arial", sans-serif;
+  font-size: 15px; }
   .home a:visited {
     color: #fff; }
 
@@ -739,14 +754,7 @@ a {
   background-image: url(../../assets/images/mobile/homepage/fakeBruce.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-direction: column;
-      flex-direction: column;
-  -ms-flex-pack: justify;
-      justify-content: space-between;
   height: 100vh;
-  width: 100%;
   position: relative; }
   @media only screen and (min-width: 600px) {
     .banner-container {
@@ -756,6 +764,32 @@ a {
     .banner-container {
       background: none;
       height: 100vh; } }
+  .banner-container h3 {
+    letter-spacing: 2px;
+    width: 75%;
+    margin: 0 auto;
+    font-size: 12px; }
+    @media only screen and (min-width: 600px) {
+      .banner-container h3 {
+        font-size: 28px;
+        width: 61%; } }
+  .banner-container p {
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    bottom: 87px;
+    width: 50%;
+    margin: 0 auto;
+    letter-spacing: 1px;
+    line-height: 20px;
+    font-size: 12px; }
+    @media only screen and (min-width: 600px) {
+      .banner-container p {
+        font-size: 28px;
+        line-height: 1.5;
+        width: 56%; } }
   .banner-container .intro-text-wrapper {
     position: absolute;
     margin-left: auto;
@@ -763,11 +797,11 @@ a {
     left: 0;
     right: 0;
     top: 1rem; }
-    .banner-container .intro-text-wrapper h2, .banner-container .intro-text-wrapper h3 {
+    .banner-container .intro-text-wrapper h2 {
       margin: 0; }
     @media only screen and (min-width: 600px) {
       .banner-container .intro-text-wrapper {
-        top: 6rem; } }
+        top: 1.5rem; } }
     @media only screen and (min-width: 1024px) {
       .banner-container .intro-text-wrapper {
         position: absolute;
@@ -781,17 +815,18 @@ a {
         .banner-container .intro-text-wrapper h2 {
           border-top: 1px solid white;
           border-bottom: 1px solid white; } }
-  .banner-container p {
+  .banner-container a {
+    color: transparent;
+    background-image: url(../../assets/arrow-down.png);
+    background-repeat: no-repeat;
+    background-position: 50%;
+    width: 100px;
+    bottom: 2rem;
     position: absolute;
     margin-left: auto;
     margin-right: auto;
     left: 0;
-    right: 0;
-    bottom: 87px;
-    width: 58%;
-    margin: 0 auto; }
-  .banner-container a {
-    display: none; }
+    right: 0; }
     @media only screen and (min-width: 1024px) {
       .banner-container a {
         display: block;
@@ -799,6 +834,7 @@ a {
         border: 3px solid #172944;
         background: rgba(23, 41, 68, 0.36);
         width: 200px;
+        color: #fff;
         position: absolute;
         margin-left: auto;
         margin-right: auto;
@@ -807,7 +843,7 @@ a {
         bottom: 0; } }
 
 @media only screen and (min-width: 1024px) {
-  .blah {
+  .info-section-container {
     background-image: linear-gradient(to right, #fff 20%, rgba(255, 255, 255, 0) 20%);
     background-size: 1205px 2.5px;
     background-repeat: repeat-x; } }
@@ -818,7 +854,8 @@ a {
   width: 90%;
   max-width: 700px;
   margin: 0 auto;
-  padding: 2rem 0; }
+  padding: 2rem 0;
+  color: #172944; }
   @media only screen and (min-width: 1024px) {
     .homepage-credentials-container {
       border: none;
@@ -829,16 +866,28 @@ a {
 
 .location-container {
   text-align: center;
-  text-transform: uppercase; }
-  .location-container .avatar-picture {
-    background: url(../../assets/images/mobile/homepage/brucePic.png);
-    background-position: 29% 29%;
-    height: 130px;
-    width: 130px;
-    border-radius: 50%;
-    margin: 0 auto; }
+  text-transform: uppercase;
+  font-family: "Arimo", "Arial", sans-serif; }
   .location-container p {
-    margin: 0; }
+    margin: 0;
+    font-size: 15px; }
+    @media only screen and (min-width: 600px) {
+      .location-container p {
+        font-size: 20px; } }
+  .location-container p:last-child {
+    font-size: 12px; }
+    @media only screen and (min-width: 600px) {
+      .location-container p:last-child {
+        font-size: 15px; } }
+
+.avatar-picture {
+  background: url(../../assets/images/mobile/homepage/brucePic.png);
+  background-position: 29% 29%;
+  height: 130px;
+  width: 130px;
+  border-radius: 50%;
+  margin: 0 auto;
+  margin-bottom: 1rem; }
 
 .short-info-container {
   width: 55%;
@@ -846,47 +895,77 @@ a {
   .short-info-container p {
     border-top: 1px solid black;
     border-bottom: 1px solid black;
-    padding: 1rem 0; }
+    padding: 1rem 0;
+    font-family: "Crimson Text Roman", "Times New Roman", serif;
+    font-size: 12px;
+    line-height: 20px; }
+    @media only screen and (min-width: 600px) {
+      .short-info-container p {
+        font-size: 17px; } }
     @media only screen and (min-width: 1024px) {
       .short-info-container p {
         border: none; } }
 
-.credentials-widgets-container .widget-area {
+.widget-area {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  width: 93%;
   margin: 0 auto; }
-  .credentials-widgets-container .widget-area .widget {
-    position: relative;
-    width: 100px;
-    height: 100px;
-    border: 1px solid #172944;
-    background: #172944;
-    border-radius: 50%; }
-    @media only screen and (min-width: 1024px) {
-      .credentials-widgets-container .widget-area .widget {
-        border: none;
-        background: transparent;
-        border-radius: none; } }
-    .credentials-widgets-container .widget-area .widget .textwidget {
-      position: absolute;
-      margin-left: auto;
-      margin-right: auto;
-      left: 0;
-      right: 0;
-      top: 35%;
-      line-height: 1;
-      text-align: center;
-      color: #fff;
-      text-transform: uppercase;
-      font-size: 0.9rem; }
-  .credentials-widgets-container .widget-area .certifications-widget-class .textwidget {
-    top: 27%; }
+
+.widget {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  border: 1px solid #172944;
+  background: #172944;
+  border-radius: 50%; }
+  @media only screen and (min-width: 1024px) {
+    .widget {
+      border: none;
+      background: transparent;
+      border-radius: none; } }
+
+.textwidget {
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  top: 35%;
+  line-height: 1;
+  text-align: center;
+  color: #fff;
+  text-transform: uppercase;
+  font-family: "Arimo", "Arial", sans-serif; }
+
+.widget-input {
+  font-size: 11px; }
+  @media only screen and (min-width: 600px) {
+    .widget-input {
+      font-size: 12px; } }
+
+.widget-heading {
+  font-size: 8px; }
+  @media only screen and (min-width: 600px) {
+    .widget-heading {
+      font-size: 10px; } }
+
+.certifications-widget-class .textwidget {
+  top: 27%; }
+
+.skills-widget-class .textwidget {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
+  line-height: 1.8; }
 
 .quote-container {
-  width: 100%;
   height: 167px;
   background: url(../../assets/images/mobile/homepage/beach-sunset.jpg);
   background-size: cover;
@@ -894,22 +973,51 @@ a {
   padding: 1rem 2rem;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
   -ms-flex-direction: column;
-      flex-direction: column; }
+      flex-direction: column;
+  font-family: "Crimson Text Roman", "Times New Roman", serif;
+  font-weight: 600;
+  font-style: italic;
+  font-size: 17px;
+  color: #172944; }
+  @media only screen and (min-width: 600px) {
+    .quote-container {
+      font-size: 24px; } }
   @media only screen and (min-width: 1024px) {
     .quote-container {
       background: transparent;
       background-image: linear-gradient(to right, #fff 20%, rgba(255, 255, 255, 0) 20%);
       background-size: 1205px 2.5px;
       background-repeat: repeat-x; } }
+  .quote-container .quote-author {
+    font-weight: normal;
+    font-style: normal;
+    font-size: 10px; }
+    @media only screen and (min-width: 600px) {
+      .quote-container .quote-author {
+        font-size: 15px; } }
   .quote-container p {
     margin: 0; }
   .quote-container p:last-child {
     -ms-flex-item-align: end;
         align-self: flex-end;
     text-transform: uppercase; }
+
+@media only screen and (min-width: 1024px) {
+  .programs-header {
+    display: none; } }
+
+.thumbnail-container p, .desktop-thumbnail-container p {
+  text-transform: uppercase;
+  color: #172944;
+  font-family: "Arimo", "Arial", sans-serif;
+  font-size: 12px; }
+  @media only screen and (min-width: 600px) {
+    .thumbnail-container p, .desktop-thumbnail-container p {
+      font-size: 15px; } }
+
+.thumbnail-container p {
+  margin: 1.5rem 0; }
 
 .programs-container {
   text-align: center; }
@@ -960,6 +1068,138 @@ a {
     .programs-container div:nth-child(6) .thumbnail-container p {
       top: 7rem; }
 
+.programs-desktop-container {
+  display: none; }
+  @media only screen and (min-width: 1024px) {
+    .programs-desktop-container {
+      display: block;
+      background-image: url(../../assets/images/desktop/homepage/beach-sunset.jpg);
+      height: 110vh;
+      position: relative; }
+      .programs-desktop-container h2 {
+        margin: 0;
+        padding: 1rem; } }
+
+.thumbnails-wrapper {
+  position: relative;
+  width: 664px;
+  height: 664px;
+  margin: 0 auto; }
+  .thumbnails-wrapper .desktop-thumbnail-container {
+    width: 175px;
+    height: 185px;
+    position: absolute; }
+  .thumbnails-wrapper div:first-child .desktop-thumbnail-container {
+    background: url(../../assets/icons/asl01.blue.svg);
+    background-size: 430px 480px;
+    background-position: 51% 52%;
+    left: 10rem; }
+    .thumbnails-wrapper div:first-child .desktop-thumbnail-container:hover {
+      background-image: url(../../assets/icons/asl01.ps.svg); }
+    .thumbnails-wrapper div:first-child .desktop-thumbnail-container p {
+      position: absolute;
+      top: 8rem;
+      left: 1.5rem; }
+  .thumbnails-wrapper div:nth-child(2) .desktop-thumbnail-container {
+    background: url(../../assets/icons/asl02.blue.svg);
+    background-size: 430px 480px;
+    background-position: 51% 52%;
+    left: 21rem; }
+    .thumbnails-wrapper div:nth-child(2) .desktop-thumbnail-container:hover {
+      background-image: url(../../assets/icons/asl02.ps.svg); }
+    .thumbnails-wrapper div:nth-child(2) .desktop-thumbnail-container p {
+      position: absolute;
+      top: 8rem;
+      left: 1.5rem; }
+  .thumbnails-wrapper div:nth-child(3) .desktop-thumbnail-container {
+    background: url(../../assets/icons/kayak.blue.svg);
+    background-size: 430px 480px;
+    background-position: 51% 52%;
+    left: 30rem;
+    top: 9.5rem; }
+    .thumbnails-wrapper div:nth-child(3) .desktop-thumbnail-container:hover {
+      background-image: url(../../assets/icons/kayak.ps.svg); }
+    .thumbnails-wrapper div:nth-child(3) .desktop-thumbnail-container p {
+      position: absolute;
+      top: 8rem;
+      left: 3rem; }
+  .thumbnails-wrapper div:nth-child(4) .desktop-thumbnail-container {
+    background: url(../../assets/icons/paddleboard.blue.svg);
+    background-size: 430px 480px;
+    background-position: 51% 52%;
+    left: 29.5rem;
+    top: 21rem; }
+    .thumbnails-wrapper div:nth-child(4) .desktop-thumbnail-container:hover {
+      background-image: url(../../assets/icons/paddleboard.ps.svg); }
+    .thumbnails-wrapper div:nth-child(4) .desktop-thumbnail-container p {
+      position: absolute;
+      top: 8rem;
+      left: 1.5rem; }
+  .thumbnails-wrapper div:nth-child(5) .desktop-thumbnail-container {
+    background: url(../../assets/icons/decision.making.blue.svg);
+    background-size: 430px 535px;
+    background-position: 51% 52%;
+    left: 21rem;
+    top: 28.5rem; }
+    .thumbnails-wrapper div:nth-child(5) .desktop-thumbnail-container:hover {
+      background-image: url(../../assets/icons/decision.making.ps.svg); }
+    .thumbnails-wrapper div:nth-child(5) .desktop-thumbnail-container p {
+      position: absolute;
+      top: 8rem;
+      left: 2.5rem; }
+  .thumbnails-wrapper div:nth-child(6) .desktop-thumbnail-container {
+    background: url(../../assets/icons/destination.blue.svg);
+    background-size: 430px 535px;
+    background-position: 51% 52%;
+    left: 9.5rem;
+    top: 28rem; }
+    .thumbnails-wrapper div:nth-child(6) .desktop-thumbnail-container:hover {
+      background-image: url(../../assets/icons/destination.ps.svg); }
+    .thumbnails-wrapper div:nth-child(6) .desktop-thumbnail-container p {
+      position: absolute;
+      top: 8rem;
+      left: 0rem;
+      text-align: center; }
+  .thumbnails-wrapper div:nth-child(7) .desktop-thumbnail-container {
+    background: url(../../assets/icons/hiking.blue.svg);
+    background-size: 430px 535px;
+    background-position: 51% 52%;
+    left: 1.5rem;
+    top: 21rem; }
+    .thumbnails-wrapper div:nth-child(7) .desktop-thumbnail-container:hover {
+      background-image: url(../../assets/icons/hiking.ps.svg); }
+    .thumbnails-wrapper div:nth-child(7) .desktop-thumbnail-container p {
+      position: absolute;
+      top: 8rem;
+      left: 60px; }
+  .thumbnails-wrapper div:last-child .desktop-thumbnail-container {
+    background: url(../../assets/icons/skiing.blue.svg);
+    background-size: 430px 535px;
+    background-position: 51% 52%;
+    left: 1rem;
+    top: 9rem; }
+    .thumbnails-wrapper div:last-child .desktop-thumbnail-container:hover {
+      background-image: url(../../assets/icons/skiing.ps.svg); }
+    .thumbnails-wrapper div:last-child .desktop-thumbnail-container p {
+      position: absolute;
+      top: 8rem;
+      left: 7px;
+      width: 150px;
+      text-align: center; }
+
+@media only screen and (min-width: 1024px) {
+  .pie {
+    background-image: url(../../assets/images/desktop/homepage/pie.png);
+    width: 664px;
+    height: 664px;
+    margin-top: 4rem;
+    top: 0;
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0; } }
+
 .button-container {
   text-align: center; }
   .button-container a {
@@ -967,361 +1207,14 @@ a {
     border: 3px solid #172944;
     background: rgba(23, 41, 68, 0.36);
     text-decoration: none;
-    text-transform: uppercase;
     color: #fff; }
 
 .programs-button {
-  margin-bottom: 4rem; }
-
-.pie {
-  background-image: url(../../assets/images/desktop/homepage/pie.png);
-  width: 664px;
-  height: 664px;
-  position: absolute;
-  margin-left: auto;
-  margin-right: auto;
-  left: 0;
-  right: 0;
-  top: 0; }
-
-.testtest {
-  display: none; }
+  margin: 4rem 0; }
   @media only screen and (min-width: 1024px) {
-    .testtest {
-      display: block;
-      background-image: url(../../assets/images/desktop/homepage/beach-sunset.jpg);
-      height: 100vh;
-      position: relative; } }
-
-.mrpie {
-  width: 662px;
-  height: 662px;
-  position: absolute;
-  border-radius: 662px;
-  margin-left: auto;
-  margin-right: auto;
-  left: 0;
-  right: 0;
-  top: 5px;
-  z-index: 2; }
-
-.slice1 .slice1-inside {
-  background-color: transparent;
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  width: 662px;
-  height: 662px;
-  border-radius: 662px;
-  clip: rect(0px 331px 662px 0px);
-  transform: rotate(45deg); }
-  .slice1 .slice1-inside a {
-    width: 154px;
-    height: 141px;
-    position: absolute;
-    left: 11rem;
-    top: 2.3rem; }
-    .slice1 .slice1-inside a .icon {
-      position: absolute;
-      top: -8rem;
-      left: -7rem;
-      background-image: url(../../assets/icons/asl02.blue.svg);
-      background-position: 71% 24%;
-      background-size: 150%;
-      width: 161%;
-      height: 166%;
-      transform: rotate(-45deg); }
-    .slice1 .slice1-inside a p {
-      position: absolute;
-      width: 100%;
-      left: 2rem;
-      top: 4.5rem;
-      transform: rotate(-45deg);
-      color: #00008b; }
-
-.slice2 {
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  width: 662px;
-  height: 662px;
-  border-radius: 662px;
-  clip: rect(0px 662px 662px 331px);
-  transform: rotate(45deg);
-  z-index: 4; }
-  .slice2 .slice2-inside {
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    width: 662px;
-    height: 662px;
-    border-radius: 662px;
-    clip: rect(0px 331px 662px 0px);
-    transform: rotate(45deg); }
-    .slice2 .slice2-inside a {
-      width: 154px;
-      height: 141px;
-      position: absolute;
-      left: 11rem;
-      top: 2.3rem; }
-      .slice2 .slice2-inside a .icon {
-        background-image: url(../../assets/icons/kayak.blue.svg);
-        background-position: 88% 23%;
-        background-size: 150%;
-        width: 161%;
-        height: 166%;
-        transform: rotate(90deg); }
-      .slice2 .slice2-inside a p {
-        position: absolute;
-        width: 100%;
-        left: 3rem;
-        top: 1.5rem;
-        transform: rotate(-90deg);
-        color: #00008b; }
-
-.slice3 {
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  width: 662px;
-  height: 662px;
-  border-radius: 662px;
-  clip: rect(0px 662px 662px 331px);
-  transform: rotate(90deg);
-  z-index: 5; }
-  .slice3 .slice3-inside {
-    background-color: transparent;
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    width: 662px;
-    height: 662px;
-    border-radius: 662px;
-    clip: rect(0px 331px 662px 0px);
-    transform: rotate(45deg); }
-    .slice3 .slice3-inside a {
-      width: 154px;
-      height: 141px;
-      position: absolute;
-      left: 10rem;
-      top: 2.3rem;
-      transform: rotate(-45deg); }
-      .slice3 .slice3-inside a .icon {
-        background-image: url(../../assets/icons/paddleboard.blue.svg);
-        background-position: 88% 23%;
-        background-size: 150%;
-        width: 161%;
-        height: 166%;
-        transform: rotate(90deg); }
-      .slice3 .slice3-inside a p {
-        position: absolute;
-        width: 100%;
-        left: 3rem;
-        top: 2.5rem;
-        transform: rotate(-90deg);
-        color: #00008b; }
-
-.slice4 {
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  width: 662px;
-  height: 662px;
-  border-radius: 662px;
-  clip: rect(0px 662px 662px 331px);
-  transform: rotate(135deg);
-  z-index: 6; }
-  .slice4 .slice4-inside {
-    background-color: transparent;
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    width: 662px;
-    height: 662px;
-    border-radius: 662px;
-    clip: rect(0px 331px 662px 0px);
-    transform: rotate(45deg); }
-    .slice4 .slice4-inside a {
-      width: 154px;
-      height: 141px;
-      position: absolute;
-      left: 11rem;
-      top: 2.3rem; }
-      .slice4 .slice4-inside a .icon {
-        background-image: url(../../assets/icons/decision.making.blue.svg);
-        background-position: 10% 42%;
-        background-size: 150%;
-        width: 161%;
-        height: 166%;
-        transform: rotate(180deg); }
-      .slice4 .slice4-inside a p {
-        position: absolute;
-        width: 100%;
-        left: -1rem;
-        top: 0.5rem;
-        transform: rotate(-180deg);
-        color: #00008b; }
-
-.slice5 {
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  width: 662px;
-  height: 662px;
-  border-radius: 662px;
-  clip: rect(0px 662px 662px 331px);
-  transform: rotate(180deg);
-  z-index: 7; }
-  .slice5 .slice5-inside {
-    background-color: transparent;
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    width: 662px;
-    height: 662px;
-    border-radius: 662px;
-    clip: rect(0px 331px 662px 0px);
-    transform: rotate(45deg); }
-    .slice5 .slice5-inside a {
-      width: 154px;
-      height: 141px;
-      position: absolute;
-      left: 11rem;
-      top: 2.3rem; }
-      .slice5 .slice5-inside a .icon {
-        background-image: url(../../assets/icons/destination.blue.svg);
-        background-position: 38% 36%;
-        background-size: 150%;
-        width: 161%;
-        height: 166%;
-        transform: rotate(135deg); }
-      .slice5 .slice5-inside a p {
-        position: absolute;
-        width: 100%;
-        left: -4rem;
-        top: 0.5rem;
-        transform: rotate(-225deg);
-        color: #00008b; }
-
-.slice6 {
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  width: 662px;
-  height: 662px;
-  border-radius: 662px;
-  clip: rect(0px 662px 662px 331px);
-  transform: rotate(225deg); }
-  .slice6 .slice6-inside {
-    background-color: transparent;
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    width: 662px;
-    height: 662px;
-    border-radius: 662px;
-    clip: rect(0px 331px 662px 0px);
-    transform: rotate(45deg); }
-    .slice6 .slice6-inside a {
-      width: 154px;
-      height: 141px;
-      position: absolute;
-      left: 11rem;
-      top: 2.3rem; }
-      .slice6 .slice6-inside a .icon {
-        background-image: url(../../assets/icons/hiking.blue.svg);
-        background-position: 19% 66%;
-        background-size: 150%;
-        width: 161%;
-        height: 166%;
-        transform: rotate(-90deg); }
-      .slice6 .slice6-inside a p {
-        position: absolute;
-        width: 100%;
-        left: -4rem;
-        top: 6rem;
-        transform: rotate(90deg);
-        color: #00008b; }
-
-.slice7 {
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  width: 662px;
-  height: 662px;
-  border-radius: 662px;
-  clip: rect(0px 662px 662px 331px);
-  transform: rotate(270deg); }
-  .slice7 .slice7-inside {
-    background-color: transparent;
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    width: 662px;
-    height: 662px;
-    border-radius: 662px;
-    clip: rect(0px 331px 662px 0px);
-    transform: rotate(45deg); }
-    .slice7 .slice7-inside a {
-      width: 154px;
-      height: 141px;
-      position: absolute;
-      left: 11rem;
-      top: 2.3rem; }
-      .slice7 .slice7-inside a .icon {
-        background-image: url(../../assets/icons/skiing.blue.svg);
-        background-position: 104% 53%;
-        background-size: 150%;
-        width: 161%;
-        height: 166%;
-        transform: rotate(45deg); }
-      .slice7 .slice7-inside a p {
-        position: absolute;
-        width: 100%;
-        left: -2rem;
-        top: 6.5rem;
-        transform: rotate(45deg);
-        color: #00008b; }
-
-.slice8 {
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  width: 662px;
-  height: 662px;
-  border-radius: 662px;
-  clip: rect(0px 662px 662px 331px);
-  transform: rotate(315deg); }
-  .slice8 .slice8-inside {
-    background-color: transparent;
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    width: 662px;
-    height: 662px;
-    border-radius: 662px;
-    clip: rect(0px 331px 662px 0px);
-    transform: rotate(45deg); }
-    .slice8 .slice8-inside a {
-      width: 154px;
-      height: 141px;
-      position: absolute;
-      left: 11rem;
-      top: 2.3rem; }
-      .slice8 .slice8-inside a .icon {
-        background-image: url(../../assets/icons/asl01.blue.svg);
-        background-position: 98% 81%;
-        background-size: 150%;
-        width: 161%;
-        height: 166%;
-        transform: rotate(0deg); }
-      .slice8 .slice8-inside a p {
-        position: absolute;
-        width: 100%;
-        left: 0rem;
-        top: 4.5rem;
-        transform: rotate(0deg);
-        color: #00008b; }
+    .programs-button {
+      padding: 8rem 0;
+      margin: 0; } }
 
 /*--------------------------------------------------------------
 # Content
@@ -1434,6 +1327,9 @@ object {
   position: relative;
   background-size: cover;
   height: 150px; }
+  @media only screen and (min-width: 1024px) {
+    .single-programs .hero-container {
+      height: 101px; } }
   .single-programs .hero-container img {
     width: 100%;
     height: 100%;
@@ -1561,6 +1457,9 @@ object {
 
 .postid-53 .hero-container, .postid-54 .hero-container {
   background-image: url(../../assets/images/mobile/ast-1/avalanche-bar.jpg); }
+  @media only screen and (min-width: 1024px) {
+    .postid-53 .hero-container, .postid-54 .hero-container {
+      background-image: url(../../assets/images/tablet/ast-1/Avalanche-bar.jpg); } }
 
 .postid-53 .program-icon {
   background-image: url(../../assets/icons/asl01.white.svg); }
@@ -1570,31 +1469,50 @@ object {
 
 .postid-55 .hero-container {
   background-image: url(../../assets/images/mobile/kayaking/sea-kayaking-bar.jpg); }
+  @media only screen and (min-width: 1024px) {
+    .postid-55 .hero-container {
+      background: linear-gradient(to bottom, rgba(0, 0, 0, 0.45) 0%, rgba(0, 0, 0, 0.45)), url(../../assets/images/desktop/kayaking/sea-kayaking-bar.jpg); } }
   .postid-55 .hero-container .program-icon {
     background-image: url(../../assets/icons/kayak.white.svg); }
 
 .postid-56 .hero-container {
   background-image: url(../../assets/images/mobile/paddleboarding/paddleboarding-bar.jpg); }
+  @media only screen and (min-width: 1024px) {
+    .postid-56 .hero-container {
+      background-image: url(../../assets/images/desktop/paddleboarding/paddleboarding-bar.jpg); } }
   .postid-56 .hero-container .program-icon {
     background-image: url(../../assets/icons/paddleboard.white.svg); }
 
 .postid-57 .hero-container {
   background-image: url(../../assets/images/mobile/life-coaching/rocky-cliff-bar.jpg); }
+  @media only screen and (min-width: 1024px) {
+    .postid-57 .hero-container {
+      background: linear-gradient(to bottom, rgba(0, 0, 0, 0.45) 0%, rgba(0, 0, 0, 0.45)), url(../../assets/images/desktop/life-coaching/life-coaching.jpg); } }
   .postid-57 .hero-container .program-icon {
     background-image: url(../../assets/icons/decision.making.white.svg); }
 
 .postid-58 .hero-container {
   background-image: url(../../assets/images/mobile/travel/maps-bar.jpg); }
+  @media only screen and (min-width: 1024px) {
+    .postid-58 .hero-container {
+      background-image: url(../../assets/images/desktop/travel/Maps.jpg); } }
   .postid-58 .hero-container .program-icon {
     background-image: url(../../assets/icons/destination.white.svg); }
 
 .postid-59 .hero-container {
-  background-image: url(../../assets/images/mobile/life-coaching/rocky-cliff-bar.jpg); }
+  background-image: url(../../assets/images/mobile/hiking/hiking-background.png); }
+  @media only screen and (min-width: 1024px) {
+    .postid-59 .hero-container {
+      background: linear-gradient(to bottom, rgba(0, 0, 0, 0.45) 0%, rgba(0, 0, 0, 0.45)), url(../../assets/images/desktop/hiking/hiking-bar.jpg); } }
   .postid-59 .hero-container .program-icon {
     background-image: url(../../assets/icons/hiking.white.svg); }
 
 .postid-60 .hero-container {
   background-image: url(../../assets/images/mobile/backcountry/backcountry-bar.jpg); }
+  @media only screen and (min-width: 1024px) {
+    .postid-60 .hero-container {
+      background-image: url(../../assets/images/desktop/backcountry/backcountry-bar.jpg);
+      background-position-x: 77%; } }
   .postid-60 .hero-container .program-icon {
     background-image: url(../../assets/icons/skiing.white.svg); }
 

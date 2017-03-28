@@ -41,3 +41,43 @@
   background-size: 1205px 2.5px;
   background-repeat: repeat-x;
 }
+
+// Button template
+@mixin button-template {
+    text-align: center;
+    button {
+    	padding: 0.7rem 2.5rem;
+      border: 3px solid #172944 ;
+      background: rgba(23, 41, 68, 0.36);
+      text-decoration: none;
+      text-transform: uppercase;
+      color: #fff;
+      margin-bottom: 3rem;
+      margin-top: 3rem;
+    }
+}
+
+//Styling for desktop program thumbnails
+@mixin desktop-thumbnail-size {
+  background-size: 430px 480px;
+  background-position: 51% 52%;
+}
+
+//Styling for desktop program larger thumbnails
+@mixin desktop-thumbnail-larger-size {
+	background-size: 430px 535px;
+  background-position: 51% 52%;
+} 
+
+//Styling for desktop program titles
+@mixin desktop-program-header-right-position {
+	position: absolute;
+  top: 8rem;
+  left: 1.5rem;
+}
+
+//Stying for standard desktop program titles
+@mixin desktop-program-header-standard-position {
+	position: absolute;
+  top: 8rem;
+}
