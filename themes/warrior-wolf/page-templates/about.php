@@ -16,12 +16,25 @@
 </section>
 <div id="tab-container" class="tab-container">
   <div class="about-nav-wrapper">
-    <ul class='etabs'>
-      <li class='tab'><a href="//localhost:3000/warrior-wolf/about">Bio</a></li>
-      <li class='tab'><a href="//localhost:3000/warrior-wolf/about/credentials">Credentials</a></li>
-      <li class='tab'><a href="//localhost:3000/warrior-wolf/about/method">Method</a></li>
-      <li class='tab'><a href="//localhost:3000/warrior-wolf/about/mission">Mission</a></li>
+    <?php
+if ( $post->post_parent ) {
+    $children = wp_list_pages( array(
+        'title_li' => '',
+        'child_of' => $post->post_parent,
+        'echo'     => 0
+    ) );
+} else {
+    $children = wp_list_pages( array(
+        'title_li' => '',
+        'child_of' => $post->ID,
+        'echo'     => 0
+    ) );
+}
+if ( $children ) : ?>
+    <ul class="etabs">
+        <?php echo $children; ?>
     </ul>
+<?php endif; ?>
   </div>
 </div>
 <section class="content-wrapper">
@@ -38,8 +51,8 @@
         </div>
         </div>
     </div>
-    <div class="button-container">
-      <a href="">view programs</a>
+    <div class='about-button-container'>
+      <button href=''>view programs</button>
     </div>
   </div>
 </section>

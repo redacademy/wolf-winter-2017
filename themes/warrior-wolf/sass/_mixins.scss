@@ -26,7 +26,7 @@
   }
 }
 
-// Absolute center position 
+// Absolute center position
 @mixin absolute-center-position {
 	position: absolute;
 	margin-left: auto;
@@ -67,7 +67,7 @@
 @mixin desktop-thumbnail-larger-size {
 	background-size: 430px 535px;
   background-position: 51% 52%;
-} 
+}
 
 //Styling for desktop program titles
 @mixin desktop-program-header-right-position {
