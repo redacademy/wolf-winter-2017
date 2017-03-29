@@ -3,7 +3,7 @@
 Template Name: Three Rows Page
 Template Post Type: programs
 */
-
+$allowed_html = array('br' => array());
 get_header(); ?>
 	<?php $programs = get_posts(array( 'post_type' => 'programs', 'order' => 'ASC', 'numberposts' => '-1')); ?>
         	<nav class="program-menu-container">
@@ -34,7 +34,7 @@ get_header(); ?>
 			<?php $avalanche_duration_info = CFS()->get( 'avalanche_program_duration' );
 				if(!empty($avalanche_duration_info)) { ?>
 				<div class="short-overview-container">
-					<p><span>Duration:</span> <?php echo $avalanche_duration_info; ?></p>
+					<p><span>Duration:</span> <?php echo wp_kses($avalanche_duration_info, $allowed_html); ?></p>
 					<p><span>Location:</span> <?php echo CFS()->get('avalanche_program_location'); ?></p>
 				</div>
 			<?php } ?>
