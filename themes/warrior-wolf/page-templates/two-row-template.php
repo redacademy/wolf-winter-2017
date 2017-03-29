@@ -47,7 +47,7 @@ get_header(); ?>
 						if(!empty($lifecoach_approach)) { ?>
 							<h4>The Warrior Wolf Approach</h4>
 							<div><?php echo $lifecoach_approach; ?></div>
-						<?php } ?>	
+						<?php } ?>
                 	</div>
             	<?php endwhile; // End of the loop. ?>
 
@@ -74,7 +74,7 @@ get_header(); ?>
 				</div> <!-- desktop-right-panel -->
 
 				<div class='desktop-bottom-panel'>
-				
+
 				<div class='photo-holder-left'></div>
 
 				<?php $full_day = CFS()->get( 'full_day_title' );
@@ -85,7 +85,7 @@ get_header(); ?>
 						<h3><?php echo $full_day; ?></h3>
                 		<div class="full-day-info"><?php echo CFS()->get('full_day'); ?></div>
                 		<p class='price-title'>cost: <?php echo CFS()->get('full_day_price'); ?></p>
-            
+
 						<?php $half_day = CFS()->get( 'half_day_title' );
 						if(!empty($half_day)) { ?>
                 			<h3><?php echo $half_day; ?></h3>
@@ -114,7 +114,7 @@ get_header(); ?>
 						} ?>
 						</div>
 					</div>
-					
+
 					<div class='reverse-photo-holder-right'></div>
 				<?php } ?>
 
@@ -141,9 +141,9 @@ get_header(); ?>
         	</div> <!-- .full-program-container -->
 
 			<div class="button-container">
-				<a href="">Register Here</a>
+				<a href="#openModal3">Register Here</a>
 			</div>
-			
+
 		</main><!-- #main -->
 	</div><!-- #primary -->
 <?php get_footer(); ?>
