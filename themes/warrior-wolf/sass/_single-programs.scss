@@ -1,4 +1,20 @@
 .single-programs {
+    h2 {
+        font-family: $font__text-headings;
+        letter-spacing: 2px;
+    }
+    .main-navigation a {
+        @include media($desktop) {
+            @include desktop-nav-style-dark;
+        }
+    }
+    .button-container a {
+        @include desktop-button-dimension;
+        @include grey-button-style;
+    }
+}
+
+.single-programs {
     .hero-container {
         width: 100%;
         height: 100%;
@@ -20,14 +36,23 @@
             background-size: 310%;
             background-position: 50% 50%;
             @include absolute-center-position;
+            @include media($desktop) {
+                display: none;
+            }
         }
         h2 {
-            position: absolute;
-            top: 60px;
+            @include absolute-center-position;
+            top: 83px;
             text-align: center;
-            width: 100%;
+            width: 95%;
             color: #FFF;
             text-transform: uppercase;
+            font-size: 15px;
+            @include media($desktop) {
+                top: 0.5rem;
+                font-size: 30px;
+                letter-spacing: 6px;
+            }
         }
         .loop-nav-container {
             display: flex;
@@ -35,7 +60,10 @@
             position: absolute;
             width: 100%;
             top: 3rem;
-            a{
+            @include media($desktop) {
+                display: none;
+            }
+            a {
                 padding: 0 1rem;
                 img {
                     width: 15px;
@@ -44,62 +72,18 @@
             }
         }
     }
-    .programs-container {
-        display: none;
-        @include media($desktop) {
-            display: block;
-            height: 128px;
-            display: flex;
-            justify-content: space-around;
-        }
-    }
     .full-program-container {
-        padding: 0 1.5rem;
-    }
-    .full-program-container, .full-important-container {
-        display: flex;
-        flex-wrap: wrap;
-        align-items: center;
-        justify-content: center;
-        h2, h3, h4, .short-overview-container {
-            width: 100%;
-            text-align: center;
-            text-transform: $font__text-uppercase-style;
-            margin-bottom: 1.5rem;
-            p {
-                margin: 0;
-            }
+        padding: 0 1.5rem 2rem;
+        flex-direction: column;
+        @include media($desktop) {
+            padding: 1rem 0;
+            justify-content: space-between;
+            flex-direction: row;
         }
         .container {
-            background-color: #F6F6F7;
-            padding: 30px 25px;
-            margin-bottom: 1.5rem;
-        }
-        .day-programs-container {
-            width: 100%;
-            text-align: center;
-            margin-bottom: 1.5rem;
-        }
-        .goals-container, .hiking-tips-container {
-            .list-container {
-                padding: 0 1rem;
-                ul {
-                    padding: 0;
-                    margin: 0;
-                    list-style-image: url('../../assets/circle.png');
-                    li {
-                        padding: 0.5rem 0;
-                    }
-                }
-            }
-            p {
-                text-align: center;
-                width: 80%;
-                margin: 0 auto;
-            }
-        }
-        .equipment-container {
-            text-align: center;
+            font-family: $font__text-body;
+            font-size: 18px;
+            color: $color__about-text;
         }
     }
     .number-circle {
@@ -125,7 +109,7 @@
             }
         }
         .site-content {
-		    margin-top: 10rem;
+		    margin-top: 7rem;
 	    }
         .nav-links {
             display: none;
@@ -133,9 +117,341 @@
     }
 }
 
+
+.full-program-container {
+    .desktop-left-panel {
+        @include media($desktop) {
+            flex-basis: 32%;
+            // margin: 0 2rem;
+            h2 {
+                @include media($desktop) {
+                    text-align: left;
+                }
+            }
+        }
+    }
+    .desktop-right-panel {
+        @include media($desktop) {
+            flex-basis: 58%;
+        }
+    }
+    .desktop-bottom-panel {
+        @include media($desktop) {
+            display: flex;
+            width: 100%;
+            margin: 1.5rem 0;
+        }
+    }
+}
+
+.day-programs-box {
+    @include media($desktop) {
+        width: 40%;
+    }
+}
+
+.desktop-tips {
+    display: none;
+    @include media($desktop) {
+        display: block;
+        font-family: $font__text-subheadings;
+        text-transform: $font__text-uppercase-style;
+        font-weight: bold;
+        color: $color__about-text;
+        text-align: center;
+        margin-top: 0;
+    }
+}
+
+.desktop-cost-title {
+    display: none;
+    @include media($desktop) {
+        display: inline-block;
+        margin-right: 0.5rem;
+    }
+}
+
+.program-menu-container {
+    display: none;
+    @include media($desktop) {
+        display: block;
+        height: 128px;
+        background-color: $color__background-templates;
+        ul {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: space-around;
+            padding: 0 1rem;
+        }
+        li {
+            min-width: 10%;
+            max-width: 130px;
+        }
+        a {
+            color: $color__white-text;
+            text-decoration: none;
+            text-transform: $font__text-uppercase-style;
+            text-align: center;
+            font-size: 14px;
+            &:visited {
+                color: $color__white-text;
+            }
+            p {
+                margin-top: 0.5rem;
+                margin-bottom: 0;
+                font-size: 12px;
+            }
+        }
+    }
+}
+
+.full-program-container, .full-important-container {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        h2, h3, h4, .short-overview-container {
+            width: 100%;
+            text-align: center;
+            text-transform: $font__text-uppercase-style;
+            margin-bottom: 1.5rem;
+            color: $color__about-text;
+            p {
+                margin: 0;
+            }
+        }
+        .short-overview-container {
+            @include media($desktop) {
+                text-align: left;
+            }
+        }
+        h2 {
+            letter-spacing: 4px;
+            font-size: 25px;
+            @include media($desktop) {
+                font-size: 35px;
+                margin-bottom: 0;
+            }
+        }
+        h3 {
+            font-family: $font__text-body;
+            font-size: 51px;
+            font-weight: normal;
+        }
+        h4 {
+            font-family: $font__text-subheadings;
+        }
+        .container {
+            background-color: #F6F6F7;
+            padding: 30px 25px;
+            margin-bottom: 1.5rem;
+            @include media($desktop) {
+                background: transparent;
+                padding: 0;
+                h4 {
+                    text-align: left;
+                    font-size: 17px;
+                }
+                .container-content {
+                    width: 60%;
+                    p {
+                        margin: 0;
+                    }
+                }
+            }
+        }
+        .day-programs-container {
+            width: 100%;
+            text-align: center;
+            margin-bottom: 1.5rem;
+            h3, .price-title {
+                font-family: $font__text-subheadings;
+                font-size: 15px;
+                font-weight: bold;
+                text-transform: $font__text-uppercase-style;
+            }
+            p {
+                font-family: $font__text-body;
+                color: $color__about-text;
+            }
+        }
+        .goals-container, .hiking-tips-container {
+            .list-container {
+                padding: 0 1rem;
+                font-family: $font__text-body;
+                @include media($desktop) {
+                    font-size: 20px;
+                }
+                ul {
+                    padding: 0;
+                    margin: 0;
+                    list-style-image: url('../../assets/circle.png');
+                    @include media($desktop) {
+                        list-style-image: url('../../assets/circle-bigger.png');
+                    }
+                    li {
+                        padding: 0.5rem 0;
+                    }
+                }
+            }
+            p {
+                text-align: center;
+                width: 80%;
+                margin: 0 auto;
+                font-family: $font__text-subheadings;
+                font-weight: bold;
+                text-transform: $font__text-uppercase-style;
+                @include media($desktop) {
+                    text-align: left;
+                    margin: 0;
+                }
+            }
+        }
+        .equipment-container {
+            text-align: center;
+            @include media($desktop) {
+                display: flex;
+                justify-content: space-around;
+                margin-bottom: 1rem;
+            }
+            p {
+                font-family: $font__text-body;
+                font-size: 60px;
+                font-weight: bold;
+                color: $color__about-text;
+                margin: 1rem 0;
+                @include media($desktop) {
+                    display: none;
+                }
+            }
+        }
+    }
+
+.full-important-container {
+    @include media($desktop) {
+        background-color: #f6f6f7;
+        width: 90%;
+        margin: 0 auto;
+        margin-bottom: 3rem;
+        border-radius: 20px;
+        justify-content: flex-start;
+        padding: 0 9rem;
+        .container h4 {
+            margin: 0;
+        }
+    }
+}
+
+.desktop-program:first-child() {
+    div {
+        background-image: url(../../assets/icons/asl01.white.svg);
+        @include double-line-title;
+    }
+}
+
+.desktop-program:nth-child(2) {
+    div {
+        background-image: url(../../assets/icons/asl02.white.svg);
+        @include double-line-title;
+    }
+}
+
+.desktop-program:nth-child(3) {
+    div {
+        background-image: url(../../assets/icons/kayak.white.svg);
+        @include single-line-title;
+    }
+}
+
+.desktop-program:nth-child(4) {
+    div {
+        background-image: url(../../assets/icons/paddleboard.white.svg);
+        @include single-line-title;
+    }
+}
+
+.desktop-program:nth-child(5) {
+    div {
+        background-image: url(../../assets/icons/decision.making.white.svg);
+        height: 154px;
+        @include desktop-standard-program-position;
+    }
+}
+
+.desktop-program:nth-child(6) {
+    div {
+        background-image: url(../../assets/icons/destination.white.svg);
+        @include double-line-title;
+    }
+}
+
+.desktop-program:nth-child(7) {
+    div {
+        background-image: url(../../assets/icons/hiking.white.svg);
+        @include single-line-title;
+    }
+}
+
+.desktop-program:nth-child(8) {
+    div {
+        background-image: url(../../assets/icons/skiing.white.svg);
+        @include double-line-title;
+    }
+}
+
+.short-overview-container {
+    font-family: $font__text-subheadings;
+    font-weight: bold;
+    p:first-child() {
+        font-size: 15px;
+        @include media($desktop) {
+            font-size: 17px;
+        }
+        span {
+            padding-right: 1rem;
+        }
+    }
+    p:last-child() {
+        font-size: 12px;
+        @include media($desktop) {
+            font-size: 15px;
+        }
+        span {
+            padding-right: 3.5rem;
+        }
+    }
+}
+
+.skills-container, .conditions-container, .location-info-container, .goals-container {
+    color: $color__about-text;
+    .container-content {
+        font-family: $font__text-body;
+    }
+}
+
+.skills-container, .conditions-container, .location-info-container {
+    @include media($desktop) {
+        display: flex;
+        .container-right-content {
+            margin-left: 1rem;
+        }
+    }
+}
+
 .program-info-container {
     .info-wrapper {
         padding: 0 25px;
+        color: $color__about-text;
+        h3 {
+            font-family: $font__text-subheadings;
+            font-size: 18px;
+            font-weight: bold;
+            margin: 0;
+        }
+        p {
+            font-family: $font__text-body;
+        }
     }
     .travel-info-wrapper {
         display: flex;
@@ -143,9 +459,15 @@
         h3 {
             margin: 0;
         }
+        h3:last-child() {
+            color: #8996a2;
+        }
     }
     .container-separator {
         text-align: center;
+        @include media($desktop) {
+            display: none;
+        }
     }
 }
 
@@ -156,24 +478,90 @@
             background-image: url(../../assets/images/tablet/ast-1/Avalanche-bar.jpg);
         }
     }
+    .desktop-left-panel {
+        @include media($desktop) {
+            margin: 0 2rem;
+        }
+    }
 }
 
-.postid-53 .program-icon {
-    background-image: url(../../assets/icons/asl01.white.svg);
+.postid-53 {    
+    .program-icon {
+        background-image: url(../../assets/icons/asl01.white.svg);
+    }
+    .photo-holder-right {
+        display: none;
+        @include media($desktop) {
+            display: block;
+            background-image: url(../../assets/images/desktop/ast-1/mountain-3.jpg);
+            width: 100%;
+            height: 403px;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+    }
 }
 
-.postid-54 .program-icon {
-    background-image: url(../../assets/icons/asl02.white.svg);
+.postid-54 {
+    .program-icon {
+        background-image: url(../../assets/icons/asl02.white.svg);
+    }
+    .photo-holder-right {
+        display: none;
+        @include media($desktop) {
+            display: block;
+            background-image: url(../../assets/images/desktop/ast-2/Mountain-1.jpg);
+            width: 100%;
+            height: 403px;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+    }
 }
 
 .postid-55 {
     .hero-container {
-        background-image: url(../../assets/images/mobile/kayaking/sea-kayaking-bar.jpg);
+        background-image: url(../../assets/images/mobile/kayaking/sea-kayak-bar.png);
         @include media($desktop) {
             background: linear-gradient(to bottom, rgba(0, 0, 0, 0.45) 0%, rgba(0, 0, 0, 0.45)), url(../../assets/images/desktop/kayaking/sea-kayaking-bar.jpg);
+            background-size: cover;
         }
         .program-icon {
             background-image: url(../../assets/icons/kayak.white.svg);
+            top: 22px
+        }
+    }
+    .photo-holder-right {
+        display: none;
+        @include media($desktop) {
+            display: block;
+            background-image: url(../../assets/images/desktop/kayaking/sea-kayaking-2.png);
+            width: 100%;
+            height: 503px;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+    }
+    .photo-holder-left {
+        display: none;
+        @include media($desktop) {
+            display: block;
+            background-image: url(../../assets/images/desktop/kayaking/sea-kayaking-1.png);
+            width: 100%;
+            height: 503px;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+    }
+    .day-programs-box {
+        @include media($desktop) {
+            width: 67%;
+            font-size: 18px;
+        }
+    }
+    .desktop-left-panel {
+        @include media($desktop) {
+            margin: 0 2rem;
         }
     }
 }
@@ -186,19 +574,116 @@
         }
         .program-icon {
             background-image: url(../../assets/icons/paddleboard.white.svg);
+            top: 22px
+        }
+    }
+    .photo-holder-right {
+        display: none;
+        @include media($desktop) {
+            display: block;
+            background-image: url(../../assets/images/desktop/paddleboarding/paddleboarding-1.jpg);
+            width: 100%;
+            height: 503px;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+    }
+    .photo-holder-left {
+        display: none;
+        @include media($desktop) {
+            display: block;
+            background-image: url(../../assets/images/desktop/paddleboarding/paddleboarding-2.png);
+            width: 100%;
+            height: 503px;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+    }
+    .desktop-left-panel {
+        @include media($desktop) {
+            margin: 0 2rem;
         }
     }
 }
 
 .postid-57{
+    .desktop-bottom-panel {
+        @include media($desktop) {
+            position: relative;
+        }
+    }
     .hero-container {
         background-image: url(../../assets/images/mobile/life-coaching/rocky-cliff-bar.jpg);
         @include media($desktop) {
             background: linear-gradient(to bottom, rgba(0, 0, 0, 0.45) 0%, rgba(0, 0, 0, 0.45)), url(../../assets/images/desktop/life-coaching/life-coaching.jpg);
+            background-size: cover;
         }
         .program-icon {
             background-image: url(../../assets/icons/decision.making.white.svg);
+            top: 22px
         }
+    }
+    .photo-holder-right {
+        display: none;
+        @include media($desktop) {
+            display: block;
+            background-image: url(../../assets/images/desktop/life-coaching/mountains-4.png);
+            width: 100%;
+            height: 503px;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+    }
+    .photo-holder-left {
+        display: none;
+        @include media($desktop) {
+            display: block;
+            background-image: url(../../assets/images/desktop/life-coaching/Camping.png);
+            width: 100%;
+            height: 578px;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+    }
+    .program-info-container {
+        .info-wrapper:nth-of-type(2) {
+            @include media($desktop) {
+                background: #F6F6F7;
+                position: absolute;
+                left: 0;
+                bottom: 0;
+                width: 59.5%;
+                column-count: 2;
+                height: 35%;
+                padding: 1rem;
+                border-radius: 15px;
+                overflow: scroll;
+            }
+        }
+    }
+    .desktop-left-panel {
+        @include media($desktop) {
+            margin: 0 2rem;
+        }
+    }
+}
+
+.life-quest-box {
+    @include media($desktop) {
+        width: 68%;
+    }
+}
+
+.program-info-container {
+    @include media($desktop) {
+        flex-basis: 70%;
+    }
+}
+
+.travel-info-box {
+    @include media($desktop) {
+        display: flex;
+        justify-content: space-around;
     }
 }
 
@@ -210,6 +695,55 @@
         }
         .program-icon {
             background-image: url(../../assets/icons/destination.white.svg);
+            top: 22px
+        }
+    }
+    .reverse-photo-holder-right {
+        display: none;
+        @include media($desktop) {
+            display: block;
+            background-image: url(../../assets/images/desktop/travel/kayaking-3.png);
+            width: 100%;
+            height: 543px;
+            background-repeat: no-repeat;
+            background-size: cover;
+            flex-basis: 30%;
+        }
+    }
+    .reverse-photo-holder-left {
+        display: none;
+        @include media($desktop) {
+            display: block;
+            background-image: url(../../assets/images/desktop/travel/kayaking-4.png);
+            width: 100%;
+            height: 342px;
+            background-repeat: no-repeat;
+            flex-basis: 65%;
+            background-size: cover;
+        }
+    }
+    .desktop-left-panel {
+        @include media($desktop) {
+            display: flex;
+            flex-basis: 100%;
+        }
+    }
+    .intro-box {
+        @include media($desktop) {
+            flex-basis: 40%;
+            margin: 0 0.5rem;
+            h2 {
+                margin: 0;
+            }
+        }
+    }
+    .info-wrapper {
+        @include media($desktop) {
+            background-color: #F6F6F7;
+            border-radius: 15px;
+            padding: 1rem;
+            margin: 0 0.5rem;
+            width: 450px;
         }
     }
 }
@@ -222,6 +756,26 @@
         }
         .program-icon {
             background-image: url(../../assets/icons/hiking.white.svg);
+            top: 22px
+        }
+    }
+    .photo-holder-right {
+        display: none;
+        @include media($desktop) {
+            display: block;
+            background-image: url(../../assets/images/desktop/hiking/hiking.png);
+            width: 100%;
+            height: 403px;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+    }
+    .desktop-tips {
+        display: none;
+    }
+    .desktop-left-panel {
+        @include media($desktop) {
+            margin: 0 2rem;
         }
     }
 }
@@ -230,11 +784,40 @@
     .hero-container {
         background-image: url(../../assets/images/mobile/backcountry/backcountry-bar.jpg);
         @include media($desktop) {
-            background-image: url(../../assets/images/desktop/backcountry/backcountry-bar.jpg);
+            background: linear-gradient(to bottom, rgba(0, 0, 0, 0.45) 0%, rgba(0, 0, 0, 0.45)), url(../../assets/images/desktop/backcountry/backcountry-bar.jpg);
             background-position-x: 77%;
+            background-size: cover;
         }
         .program-icon {
             background-image: url(../../assets/icons/skiing.white.svg);
+            top: 22px
+        }
+    }
+    .photo-holder-left {
+        display: none;
+        @include media($desktop) {
+            display: block;
+            background-image: url(../../assets/images/desktop/backcountry/backcountry-1.png);
+            width: 59.4%;
+            height: 503px;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+    }
+    .desktop-left-panel {
+        @include media($desktop) {
+            margin: 0 2rem;
+        }
+    }
+}
+
+.postid-55, .postid-56, .postid-57, .postid-58, .postid-59, .postid-60 {
+    h2 {
+        top: 100px;
+        @include media($desktop) {
+            top: 0;
+            font-size: 35px;
+            letter-spacing: 6px;
         }
     }
 }

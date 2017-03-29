@@ -6,17 +6,18 @@ Template Post Type: programs
 
 get_header(); ?>
 	<?php $programs = get_posts(array( 'post_type' => 'programs', 'order' => 'ASC', 'numberposts' => '-1')); ?>
-        	<div class="programs-container">
+        	<nav class="program-menu-container">
+				<ul>
             	<?php foreach ( $programs as $program ): ?>
-					<div>
+					<li class='desktop-program'>
 						<a href='<?php echo get_permalink($program);?>'>
-                    		<div>
-                    			<p><?php echo get_the_title($program); ?></p>
-							</div>
+							<p><?php echo get_the_title($program); ?></p>
+                    		<div class='desktop-program-icon'></div>
 						</a>
-                	</div>
+                	</li>
             	<?php endforeach; ?>
-        	</div>
+				</ul>
+        	</nav>
 
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
@@ -28,6 +29,9 @@ get_header(); ?>
 			</div>
 
 			<div class="full-program-container">
+				<div class='desktop-left-panel'>
+				<div class='reverse-photo-holder-left'></div>
+				<div class='intro-box'>
 				<h2>Overview</h2>
 
             	<?php while ( have_posts() ) : the_post(); ?>
@@ -47,6 +51,11 @@ get_header(); ?>
                 	</div>
             	<?php endwhile; // End of the loop. ?>
 
+				</div>
+				</div> <!-- .desktop-left-panel -->
+
+				<div class='desktop-right-panel'>
+
 				<?php $photos = CFS()->get( 'equipment' );
 				if(!empty($photos)) { ?>
 					<h2>required equipment</h2>
@@ -61,29 +70,37 @@ get_header(); ?>
 						}?>
 					</div>
 				<?php } ?>
+				<div class='photo-holder-right'></div>
+				</div> <!-- desktop-right-panel -->
+
+				<div class='desktop-bottom-panel'>
+				
+				<div class='photo-holder-left'></div>
 
 				<?php $full_day = CFS()->get( 'full_day_title' );
 				if(!empty($full_day)) { ?>
+				<div class='day-programs-box'>
 					<h2>Programs</h2>
 					<div class="day-programs-container">
 						<h3><?php echo $full_day; ?></h3>
                 		<div class="full-day-info"><?php echo CFS()->get('full_day'); ?></div>
-                		<p>cost: <?php echo CFS()->get('full_day_price'); ?></p>
+                		<p class='price-title'>cost: <?php echo CFS()->get('full_day_price'); ?></p>
             
 						<?php $half_day = CFS()->get( 'half_day_title' );
 						if(!empty($half_day)) { ?>
                 			<h3><?php echo $half_day; ?></h3>
                 			<div class="half-day-info"><?php echo CFS()->get('half_day'); ?></div>
-                			<p>cost: <?php echo CFS()->get('half_day_price'); ?></p>
+                			<p class='price-title'>cost: <?php echo CFS()->get('half_day_price'); ?></p>
 						<?php } ?>
 					</div>
+				</div>
 				<?php } ?>
 
 				<?php $travel_expeditions = CFS()->get( 'expeditions' );
 				if(!empty($travel_expeditions)) { ?>
-					<h2><?php echo CFS()->get('yearly_travel_expedition'); ?></h2>
-
 					<div class="program-info-container">
+					<h2><?php echo CFS()->get('yearly_travel_expedition'); ?></h2>
+						<div class='travel-info-box'>
 						<?php $count = count($travel_expeditions);
 						for($i = 0; $i < $count; $i++) {
 							echo '<div class="info-wrapper">';
@@ -95,11 +112,15 @@ get_header(); ?>
 								echo '<p class="container-separator">_________________</p>';
 							}
 						} ?>
+						</div>
 					</div>
+					
+					<div class='reverse-photo-holder-right'></div>
 				<?php } ?>
 
 				<?php $lifecoach_quests = CFS()->get( 'lifecoach_quests' );
 				if(!empty($lifecoach_quests)) { ?>
+					<div class='life-quest-box'>
 					<h2>Life Coaching Programs</h2>
 
 					<div class='program-info-container'>
@@ -114,8 +135,9 @@ get_header(); ?>
 							}
 						} ?>
 					</div>
+					</div>
 				<?php } ?>
-
+				</div> <!-- desktop-bottom-panel -->
         	</div> <!-- .full-program-container -->
 
 			<div class="button-container">

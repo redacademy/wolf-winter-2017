@@ -92,8 +92,22 @@
   font-family: $font__text-subheadings;
   font-size: 15px;
   font-weight: bold;
+  letter-spacing: 3px;
 	&:visited {
 			color: $color__background-body;
+		}
+}
+
+@mixin desktop-nav-style-dark {
+  color: $color__about-text;
+	text-transform: $font__text-uppercase-style;
+	text-decoration: none;
+  font-family: $font__text-subheadings;
+  font-size: 15px;
+  font-weight: bold;
+  letter-spacing: 3px;
+	&:visited {
+			color: $color__about-text;
 		}
 }
 
@@ -118,6 +132,12 @@
   border: 3px solid #B9CAD8;
 }
 
+//Styling for grey colored button
+@mixin grey-button-style {
+  background: rgba(23,41,68,.36);
+  border: 3px solid #172944;
+}
+
 //Mobile and Tablet button style
 @mixin small-button-dimension {
 	width: 150px;
@@ -128,4 +148,24 @@
 @mixin dark-button-style {
 	border: 3px solid #172944;
   background: rgba(23, 41, 68, 0.36);
+}
+
+//Styling for desktop program nav menu with 2 line titles
+@mixin double-line-title {
+  height: 140px;
+  background-position: 47% 65%;
+  background-size: 178% 255%;
+}
+
+//Styling for desktop program nav menu with single line titles
+@mixin single-line-title {
+  height: 140px;
+  background-position: 47% 58%;
+  background-size: 178% 255%;
+}
+
+//Styling for desktop program nav menu background dimensions
+@mixin desktop-standard-program-position {
+  background-position: 47% 60%;
+  background-size: 178% 255%;
 }

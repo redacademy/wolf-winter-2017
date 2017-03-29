@@ -764,14 +764,15 @@ a {
         width: 71%; } }
 
 @media only screen and (min-width: 1024px) {
-  .home a {
+  .home .main-navigation a {
     color: #fff;
     text-transform: uppercase;
     text-decoration: none;
     font-family: "Arimo", "Arial", sans-serif;
     font-size: 15px;
-    font-weight: bold; }
-    .home a:visited {
+    font-weight: bold;
+    letter-spacing: 3px; }
+    .home .main-navigation a:visited {
       color: #fff; } }
 
 @media only screen and (min-width: 1024px) {
@@ -1169,7 +1170,7 @@ a {
       display: block;
       background-image: url(../../assets/images/desktop/homepage/beach-sunset.jpg);
       background-size: cover;
-      height: 120vh;
+      height: 124vh;
       position: relative; }
       .programs-desktop-container h2 {
         margin: 0;
@@ -1435,6 +1436,28 @@ object {
 .gallery-caption {
   display: block; }
 
+.single-programs h2 {
+  font-family: "Archivo Black", "Arial", sans-serif;
+  letter-spacing: 2px; }
+
+@media only screen and (min-width: 1024px) {
+  .single-programs .main-navigation a {
+    color: #172944;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-family: "Arimo", "Arial", sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    letter-spacing: 3px; }
+    .single-programs .main-navigation a:visited {
+      color: #172944; } }
+
+.single-programs .button-container a {
+  width: 215px;
+  height: 60px;
+  background: rgba(23, 41, 68, 0.36);
+  border: 3px solid #172944; }
+
 .single-programs .hero-container {
   width: 100%;
   height: 100%;
@@ -1459,13 +1482,26 @@ object {
     margin-right: auto;
     left: 0;
     right: 0; }
+    @media only screen and (min-width: 1024px) {
+      .single-programs .hero-container .program-icon {
+        display: none; } }
   .single-programs .hero-container h2 {
     position: absolute;
-    top: 60px;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    top: 83px;
     text-align: center;
-    width: 100%;
+    width: 95%;
     color: #FFF;
-    text-transform: uppercase; }
+    text-transform: uppercase;
+    font-size: 15px; }
+    @media only screen and (min-width: 1024px) {
+      .single-programs .hero-container h2 {
+        top: 0.5rem;
+        font-size: 30px;
+        letter-spacing: 6px; } }
   .single-programs .hero-container .loop-nav-container {
     display: -ms-flexbox;
     display: flex;
@@ -1474,64 +1510,30 @@ object {
     position: absolute;
     width: 100%;
     top: 3rem; }
+    @media only screen and (min-width: 1024px) {
+      .single-programs .hero-container .loop-nav-container {
+        display: none; } }
     .single-programs .hero-container .loop-nav-container a {
       padding: 0 1rem; }
       .single-programs .hero-container .loop-nav-container a img {
         width: 15px;
         height: 40px; }
 
-.single-programs .programs-container {
-  display: none; }
-  @media only screen and (min-width: 1024px) {
-    .single-programs .programs-container {
-      display: block;
-      height: 128px;
-      display: -ms-flexbox;
-      display: flex;
-      -ms-flex-pack: distribute;
-          justify-content: space-around; } }
-
 .single-programs .full-program-container {
-  padding: 0 1.5rem; }
-
-.single-programs .full-program-container, .single-programs .full-important-container {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -ms-flex-align: center;
-      align-items: center;
-  -ms-flex-pack: center;
-      justify-content: center; }
-  .single-programs .full-program-container h2, .single-programs .full-program-container h3, .single-programs .full-program-container h4, .single-programs .full-program-container .short-overview-container, .single-programs .full-important-container h2, .single-programs .full-important-container h3, .single-programs .full-important-container h4, .single-programs .full-important-container .short-overview-container {
-    width: 100%;
-    text-align: center;
-    text-transform: uppercase;
-    margin-bottom: 1.5rem; }
-    .single-programs .full-program-container h2 p, .single-programs .full-program-container h3 p, .single-programs .full-program-container h4 p, .single-programs .full-program-container .short-overview-container p, .single-programs .full-important-container h2 p, .single-programs .full-important-container h3 p, .single-programs .full-important-container h4 p, .single-programs .full-important-container .short-overview-container p {
-      margin: 0; }
-  .single-programs .full-program-container .container, .single-programs .full-important-container .container {
-    background-color: #F6F6F7;
-    padding: 30px 25px;
-    margin-bottom: 1.5rem; }
-  .single-programs .full-program-container .day-programs-container, .single-programs .full-important-container .day-programs-container {
-    width: 100%;
-    text-align: center;
-    margin-bottom: 1.5rem; }
-  .single-programs .full-program-container .goals-container .list-container, .single-programs .full-program-container .hiking-tips-container .list-container, .single-programs .full-important-container .goals-container .list-container, .single-programs .full-important-container .hiking-tips-container .list-container {
-    padding: 0 1rem; }
-    .single-programs .full-program-container .goals-container .list-container ul, .single-programs .full-program-container .hiking-tips-container .list-container ul, .single-programs .full-important-container .goals-container .list-container ul, .single-programs .full-important-container .hiking-tips-container .list-container ul {
-      padding: 0;
-      margin: 0;
-      list-style-image: url("../../assets/circle.png"); }
-      .single-programs .full-program-container .goals-container .list-container ul li, .single-programs .full-program-container .hiking-tips-container .list-container ul li, .single-programs .full-important-container .goals-container .list-container ul li, .single-programs .full-important-container .hiking-tips-container .list-container ul li {
-        padding: 0.5rem 0; }
-  .single-programs .full-program-container .goals-container p, .single-programs .full-program-container .hiking-tips-container p, .single-programs .full-important-container .goals-container p, .single-programs .full-important-container .hiking-tips-container p {
-    text-align: center;
-    width: 80%;
-    margin: 0 auto; }
-  .single-programs .full-program-container .equipment-container, .single-programs .full-important-container .equipment-container {
-    text-align: center; }
+  padding: 0 1.5rem 2rem;
+  -ms-flex-direction: column;
+      flex-direction: column; }
+  @media only screen and (min-width: 1024px) {
+    .single-programs .full-program-container {
+      padding: 1rem 0;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+      -ms-flex-direction: row;
+          flex-direction: row; } }
+  .single-programs .full-program-container .container {
+    font-family: "Crimson Text Roman", "Times New Roman", serif;
+    font-size: 18px;
+    color: #172944; }
 
 .single-programs .number-circle {
   width: 100px;
@@ -1552,12 +1554,290 @@ object {
   .single-programs .site .site-header .header-container .site-branding .logo {
     background-image: url(../../assets/logo/logo.png); }
   .single-programs .site-content {
-    margin-top: 10rem; }
+    margin-top: 7rem; }
   .single-programs .nav-links {
     display: none; } }
 
+@media only screen and (min-width: 1024px) {
+  .full-program-container .desktop-left-panel {
+    -ms-flex-preferred-size: 32%;
+        flex-basis: 32%; } }
+  @media only screen and (min-width: 1024px) and (min-width: 1024px) {
+    .full-program-container .desktop-left-panel h2 {
+      text-align: left; } }
+
+@media only screen and (min-width: 1024px) {
+  .full-program-container .desktop-right-panel {
+    -ms-flex-preferred-size: 58%;
+        flex-basis: 58%; } }
+
+@media only screen and (min-width: 1024px) {
+  .full-program-container .desktop-bottom-panel {
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    margin: 1.5rem 0; } }
+
+@media only screen and (min-width: 1024px) {
+  .day-programs-box {
+    width: 40%; } }
+
+.desktop-tips {
+  display: none; }
+  @media only screen and (min-width: 1024px) {
+    .desktop-tips {
+      display: block;
+      font-family: "Arimo", "Arial", sans-serif;
+      text-transform: uppercase;
+      font-weight: bold;
+      color: #172944;
+      text-align: center;
+      margin-top: 0; } }
+
+.desktop-cost-title {
+  display: none; }
+  @media only screen and (min-width: 1024px) {
+    .desktop-cost-title {
+      display: inline-block;
+      margin-right: 0.5rem; } }
+
+.program-menu-container {
+  display: none; }
+  @media only screen and (min-width: 1024px) {
+    .program-menu-container {
+      display: block;
+      height: 128px;
+      background-color: #4C5A75; }
+      .program-menu-container ul {
+        width: 100%;
+        height: 100%;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-pack: distribute;
+            justify-content: space-around;
+        padding: 0 1rem; }
+      .program-menu-container li {
+        min-width: 10%;
+        max-width: 130px; }
+      .program-menu-container a {
+        color: #fff;
+        text-decoration: none;
+        text-transform: uppercase;
+        text-align: center;
+        font-size: 14px; }
+        .program-menu-container a:visited {
+          color: #fff; }
+        .program-menu-container a p {
+          margin-top: 0.5rem;
+          margin-bottom: 0;
+          font-size: 12px; } }
+
+.full-program-container, .full-important-container {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-pack: center;
+      justify-content: center; }
+  .full-program-container h2, .full-program-container h3, .full-program-container h4, .full-program-container .short-overview-container, .full-important-container h2, .full-important-container h3, .full-important-container h4, .full-important-container .short-overview-container {
+    width: 100%;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 1.5rem;
+    color: #172944; }
+    .full-program-container h2 p, .full-program-container h3 p, .full-program-container h4 p, .full-program-container .short-overview-container p, .full-important-container h2 p, .full-important-container h3 p, .full-important-container h4 p, .full-important-container .short-overview-container p {
+      margin: 0; }
+  @media only screen and (min-width: 1024px) {
+    .full-program-container .short-overview-container, .full-important-container .short-overview-container {
+      text-align: left; } }
+  .full-program-container h2, .full-important-container h2 {
+    letter-spacing: 4px;
+    font-size: 25px; }
+    @media only screen and (min-width: 1024px) {
+      .full-program-container h2, .full-important-container h2 {
+        font-size: 35px;
+        margin-bottom: 0; } }
+  .full-program-container h3, .full-important-container h3 {
+    font-family: "Crimson Text Roman", "Times New Roman", serif;
+    font-size: 51px;
+    font-weight: normal; }
+  .full-program-container h4, .full-important-container h4 {
+    font-family: "Arimo", "Arial", sans-serif; }
+  .full-program-container .container, .full-important-container .container {
+    background-color: #F6F6F7;
+    padding: 30px 25px;
+    margin-bottom: 1.5rem; }
+    @media only screen and (min-width: 1024px) {
+      .full-program-container .container, .full-important-container .container {
+        background: transparent;
+        padding: 0; }
+        .full-program-container .container h4, .full-important-container .container h4 {
+          text-align: left;
+          font-size: 17px; }
+        .full-program-container .container .container-content, .full-important-container .container .container-content {
+          width: 60%; }
+          .full-program-container .container .container-content p, .full-important-container .container .container-content p {
+            margin: 0; } }
+  .full-program-container .day-programs-container, .full-important-container .day-programs-container {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 1.5rem; }
+    .full-program-container .day-programs-container h3, .full-program-container .day-programs-container .price-title, .full-important-container .day-programs-container h3, .full-important-container .day-programs-container .price-title {
+      font-family: "Arimo", "Arial", sans-serif;
+      font-size: 15px;
+      font-weight: bold;
+      text-transform: uppercase; }
+    .full-program-container .day-programs-container p, .full-important-container .day-programs-container p {
+      font-family: "Crimson Text Roman", "Times New Roman", serif;
+      color: #172944; }
+  .full-program-container .goals-container .list-container, .full-program-container .hiking-tips-container .list-container, .full-important-container .goals-container .list-container, .full-important-container .hiking-tips-container .list-container {
+    padding: 0 1rem;
+    font-family: "Crimson Text Roman", "Times New Roman", serif; }
+    @media only screen and (min-width: 1024px) {
+      .full-program-container .goals-container .list-container, .full-program-container .hiking-tips-container .list-container, .full-important-container .goals-container .list-container, .full-important-container .hiking-tips-container .list-container {
+        font-size: 20px; } }
+    .full-program-container .goals-container .list-container ul, .full-program-container .hiking-tips-container .list-container ul, .full-important-container .goals-container .list-container ul, .full-important-container .hiking-tips-container .list-container ul {
+      padding: 0;
+      margin: 0;
+      list-style-image: url("../../assets/circle.png"); }
+      @media only screen and (min-width: 1024px) {
+        .full-program-container .goals-container .list-container ul, .full-program-container .hiking-tips-container .list-container ul, .full-important-container .goals-container .list-container ul, .full-important-container .hiking-tips-container .list-container ul {
+          list-style-image: url("../../assets/circle-bigger.png"); } }
+      .full-program-container .goals-container .list-container ul li, .full-program-container .hiking-tips-container .list-container ul li, .full-important-container .goals-container .list-container ul li, .full-important-container .hiking-tips-container .list-container ul li {
+        padding: 0.5rem 0; }
+  .full-program-container .goals-container p, .full-program-container .hiking-tips-container p, .full-important-container .goals-container p, .full-important-container .hiking-tips-container p {
+    text-align: center;
+    width: 80%;
+    margin: 0 auto;
+    font-family: "Arimo", "Arial", sans-serif;
+    font-weight: bold;
+    text-transform: uppercase; }
+    @media only screen and (min-width: 1024px) {
+      .full-program-container .goals-container p, .full-program-container .hiking-tips-container p, .full-important-container .goals-container p, .full-important-container .hiking-tips-container p {
+        text-align: left;
+        margin: 0; } }
+  .full-program-container .equipment-container, .full-important-container .equipment-container {
+    text-align: center; }
+    @media only screen and (min-width: 1024px) {
+      .full-program-container .equipment-container, .full-important-container .equipment-container {
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-pack: distribute;
+            justify-content: space-around;
+        margin-bottom: 1rem; } }
+    .full-program-container .equipment-container p, .full-important-container .equipment-container p {
+      font-family: "Crimson Text Roman", "Times New Roman", serif;
+      font-size: 60px;
+      font-weight: bold;
+      color: #172944;
+      margin: 1rem 0; }
+      @media only screen and (min-width: 1024px) {
+        .full-program-container .equipment-container p, .full-important-container .equipment-container p {
+          display: none; } }
+
+@media only screen and (min-width: 1024px) {
+  .full-important-container {
+    background-color: #f6f6f7;
+    width: 90%;
+    margin: 0 auto;
+    margin-bottom: 3rem;
+    border-radius: 20px;
+    -ms-flex-pack: start;
+        justify-content: flex-start;
+    padding: 0 9rem; }
+    .full-important-container .container h4 {
+      margin: 0; } }
+
+.desktop-program:first-child div {
+  background-image: url(../../assets/icons/asl01.white.svg);
+  height: 140px;
+  background-position: 47% 65%;
+  background-size: 178% 255%; }
+
+.desktop-program:nth-child(2) div {
+  background-image: url(../../assets/icons/asl02.white.svg);
+  height: 140px;
+  background-position: 47% 65%;
+  background-size: 178% 255%; }
+
+.desktop-program:nth-child(3) div {
+  background-image: url(../../assets/icons/kayak.white.svg);
+  height: 140px;
+  background-position: 47% 58%;
+  background-size: 178% 255%; }
+
+.desktop-program:nth-child(4) div {
+  background-image: url(../../assets/icons/paddleboard.white.svg);
+  height: 140px;
+  background-position: 47% 58%;
+  background-size: 178% 255%; }
+
+.desktop-program:nth-child(5) div {
+  background-image: url(../../assets/icons/decision.making.white.svg);
+  height: 154px;
+  background-position: 47% 60%;
+  background-size: 178% 255%; }
+
+.desktop-program:nth-child(6) div {
+  background-image: url(../../assets/icons/destination.white.svg);
+  height: 140px;
+  background-position: 47% 65%;
+  background-size: 178% 255%; }
+
+.desktop-program:nth-child(7) div {
+  background-image: url(../../assets/icons/hiking.white.svg);
+  height: 140px;
+  background-position: 47% 58%;
+  background-size: 178% 255%; }
+
+.desktop-program:nth-child(8) div {
+  background-image: url(../../assets/icons/skiing.white.svg);
+  height: 140px;
+  background-position: 47% 65%;
+  background-size: 178% 255%; }
+
+.short-overview-container {
+  font-family: "Arimo", "Arial", sans-serif;
+  font-weight: bold; }
+  .short-overview-container p:first-child {
+    font-size: 15px; }
+    @media only screen and (min-width: 1024px) {
+      .short-overview-container p:first-child {
+        font-size: 17px; } }
+    .short-overview-container p:first-child span {
+      padding-right: 1rem; }
+  .short-overview-container p:last-child {
+    font-size: 12px; }
+    @media only screen and (min-width: 1024px) {
+      .short-overview-container p:last-child {
+        font-size: 15px; } }
+    .short-overview-container p:last-child span {
+      padding-right: 3.5rem; }
+
+.skills-container, .conditions-container, .location-info-container, .goals-container {
+  color: #172944; }
+  .skills-container .container-content, .conditions-container .container-content, .location-info-container .container-content, .goals-container .container-content {
+    font-family: "Crimson Text Roman", "Times New Roman", serif; }
+
+@media only screen and (min-width: 1024px) {
+  .skills-container, .conditions-container, .location-info-container {
+    display: -ms-flexbox;
+    display: flex; }
+    .skills-container .container-right-content, .conditions-container .container-right-content, .location-info-container .container-right-content {
+      margin-left: 1rem; } }
+
 .program-info-container .info-wrapper {
-  padding: 0 25px; }
+  padding: 0 25px;
+  color: #172944; }
+  .program-info-container .info-wrapper h3 {
+    font-family: "Arimo", "Arial", sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0; }
+  .program-info-container .info-wrapper p {
+    font-family: "Crimson Text Roman", "Times New Roman", serif; }
 
 .program-info-container .travel-info-wrapper {
   display: -ms-flexbox;
@@ -1565,9 +1845,14 @@ object {
   padding: 0 3rem; }
   .program-info-container .travel-info-wrapper h3 {
     margin: 0; }
+  .program-info-container .travel-info-wrapper h3:last-child {
+    color: #8996a2; }
 
 .program-info-container .container-separator {
   text-align: center; }
+  @media only screen and (min-width: 1024px) {
+    .program-info-container .container-separator {
+      display: none; } }
 
 .postid-53 .hero-container, .postid-54 .hero-container {
   background-image: url(../../assets/images/mobile/ast-1/avalanche-bar.jpg); }
@@ -1575,19 +1860,78 @@ object {
     .postid-53 .hero-container, .postid-54 .hero-container {
       background-image: url(../../assets/images/tablet/ast-1/Avalanche-bar.jpg); } }
 
+@media only screen and (min-width: 1024px) {
+  .postid-53 .desktop-left-panel, .postid-54 .desktop-left-panel {
+    margin: 0 2rem; } }
+
 .postid-53 .program-icon {
   background-image: url(../../assets/icons/asl01.white.svg); }
+
+.postid-53 .photo-holder-right {
+  display: none; }
+  @media only screen and (min-width: 1024px) {
+    .postid-53 .photo-holder-right {
+      display: block;
+      background-image: url(../../assets/images/desktop/ast-1/mountain-3.jpg);
+      width: 100%;
+      height: 403px;
+      background-repeat: no-repeat;
+      background-size: cover; } }
 
 .postid-54 .program-icon {
   background-image: url(../../assets/icons/asl02.white.svg); }
 
+.postid-54 .photo-holder-right {
+  display: none; }
+  @media only screen and (min-width: 1024px) {
+    .postid-54 .photo-holder-right {
+      display: block;
+      background-image: url(../../assets/images/desktop/ast-2/Mountain-1.jpg);
+      width: 100%;
+      height: 403px;
+      background-repeat: no-repeat;
+      background-size: cover; } }
+
 .postid-55 .hero-container {
-  background-image: url(../../assets/images/mobile/kayaking/sea-kayaking-bar.jpg); }
+  background-image: url(../../assets/images/mobile/kayaking/sea-kayak-bar.png); }
   @media only screen and (min-width: 1024px) {
     .postid-55 .hero-container {
-      background: linear-gradient(to bottom, rgba(0, 0, 0, 0.45) 0%, rgba(0, 0, 0, 0.45)), url(../../assets/images/desktop/kayaking/sea-kayaking-bar.jpg); } }
+      background: linear-gradient(to bottom, rgba(0, 0, 0, 0.45) 0%, rgba(0, 0, 0, 0.45)), url(../../assets/images/desktop/kayaking/sea-kayaking-bar.jpg);
+      background-size: cover; } }
   .postid-55 .hero-container .program-icon {
-    background-image: url(../../assets/icons/kayak.white.svg); }
+    background-image: url(../../assets/icons/kayak.white.svg);
+    top: 22px; }
+
+.postid-55 .photo-holder-right {
+  display: none; }
+  @media only screen and (min-width: 1024px) {
+    .postid-55 .photo-holder-right {
+      display: block;
+      background-image: url(../../assets/images/desktop/kayaking/sea-kayaking-2.png);
+      width: 100%;
+      height: 503px;
+      background-repeat: no-repeat;
+      background-size: cover; } }
+
+.postid-55 .photo-holder-left {
+  display: none; }
+  @media only screen and (min-width: 1024px) {
+    .postid-55 .photo-holder-left {
+      display: block;
+      background-image: url(../../assets/images/desktop/kayaking/sea-kayaking-1.png);
+      width: 100%;
+      height: 503px;
+      background-repeat: no-repeat;
+      background-size: cover; } }
+
+@media only screen and (min-width: 1024px) {
+  .postid-55 .day-programs-box {
+    width: 67%;
+    font-size: 18px; } }
+
+@media only screen and (min-width: 1024px) {
+  .postid-55 .desktop-left-panel {
+    margin: 0 2rem; } }
 
 .postid-56 .hero-container {
   background-image: url(../../assets/images/mobile/paddleboarding/paddleboarding-bar.jpg); }
@@ -1595,15 +1939,104 @@ object {
     .postid-56 .hero-container {
       background-image: url(../../assets/images/desktop/paddleboarding/paddleboarding-bar.jpg); } }
   .postid-56 .hero-container .program-icon {
-    background-image: url(../../assets/icons/paddleboard.white.svg); }
+    background-image: url(../../assets/icons/paddleboard.white.svg);
+    top: 22px; }
+
+.postid-56 .photo-holder-right {
+  display: none; }
+  @media only screen and (min-width: 1024px) {
+    .postid-56 .photo-holder-right {
+      display: block;
+      background-image: url(../../assets/images/desktop/paddleboarding/paddleboarding-1.jpg);
+      width: 100%;
+      height: 503px;
+      background-repeat: no-repeat;
+      background-size: cover; } }
+
+.postid-56 .photo-holder-left {
+  display: none; }
+  @media only screen and (min-width: 1024px) {
+    .postid-56 .photo-holder-left {
+      display: block;
+      background-image: url(../../assets/images/desktop/paddleboarding/paddleboarding-2.png);
+      width: 100%;
+      height: 503px;
+      background-repeat: no-repeat;
+      background-size: cover; } }
+
+@media only screen and (min-width: 1024px) {
+  .postid-56 .desktop-left-panel {
+    margin: 0 2rem; } }
+
+@media only screen and (min-width: 1024px) {
+  .postid-57 .desktop-bottom-panel {
+    position: relative; } }
 
 .postid-57 .hero-container {
   background-image: url(../../assets/images/mobile/life-coaching/rocky-cliff-bar.jpg); }
   @media only screen and (min-width: 1024px) {
     .postid-57 .hero-container {
-      background: linear-gradient(to bottom, rgba(0, 0, 0, 0.45) 0%, rgba(0, 0, 0, 0.45)), url(../../assets/images/desktop/life-coaching/life-coaching.jpg); } }
+      background: linear-gradient(to bottom, rgba(0, 0, 0, 0.45) 0%, rgba(0, 0, 0, 0.45)), url(../../assets/images/desktop/life-coaching/life-coaching.jpg);
+      background-size: cover; } }
   .postid-57 .hero-container .program-icon {
-    background-image: url(../../assets/icons/decision.making.white.svg); }
+    background-image: url(../../assets/icons/decision.making.white.svg);
+    top: 22px; }
+
+.postid-57 .photo-holder-right {
+  display: none; }
+  @media only screen and (min-width: 1024px) {
+    .postid-57 .photo-holder-right {
+      display: block;
+      background-image: url(../../assets/images/desktop/life-coaching/mountains-4.png);
+      width: 100%;
+      height: 503px;
+      background-repeat: no-repeat;
+      background-size: cover; } }
+
+.postid-57 .photo-holder-left {
+  display: none; }
+  @media only screen and (min-width: 1024px) {
+    .postid-57 .photo-holder-left {
+      display: block;
+      background-image: url(../../assets/images/desktop/life-coaching/Camping.png);
+      width: 100%;
+      height: 578px;
+      background-repeat: no-repeat;
+      background-size: cover; } }
+
+@media only screen and (min-width: 1024px) {
+  .postid-57 .program-info-container .info-wrapper:nth-of-type(2) {
+    background: #F6F6F7;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 59.5%;
+    -moz-column-count: 2;
+         column-count: 2;
+    height: 35%;
+    padding: 1rem;
+    border-radius: 15px;
+    overflow: scroll; } }
+
+@media only screen and (min-width: 1024px) {
+  .postid-57 .desktop-left-panel {
+    margin: 0 2rem; } }
+
+@media only screen and (min-width: 1024px) {
+  .life-quest-box {
+    width: 68%; } }
+
+@media only screen and (min-width: 1024px) {
+  .program-info-container {
+    -ms-flex-preferred-size: 70%;
+        flex-basis: 70%; } }
+
+@media only screen and (min-width: 1024px) {
+  .travel-info-box {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around; } }
 
 .postid-58 .hero-container {
   background-image: url(../../assets/images/mobile/travel/maps-bar.jpg); }
@@ -1611,7 +2044,57 @@ object {
     .postid-58 .hero-container {
       background-image: url(../../assets/images/desktop/travel/Maps.jpg); } }
   .postid-58 .hero-container .program-icon {
-    background-image: url(../../assets/icons/destination.white.svg); }
+    background-image: url(../../assets/icons/destination.white.svg);
+    top: 22px; }
+
+.postid-58 .reverse-photo-holder-right {
+  display: none; }
+  @media only screen and (min-width: 1024px) {
+    .postid-58 .reverse-photo-holder-right {
+      display: block;
+      background-image: url(../../assets/images/desktop/travel/kayaking-3.png);
+      width: 100%;
+      height: 543px;
+      background-repeat: no-repeat;
+      background-size: cover;
+      -ms-flex-preferred-size: 30%;
+          flex-basis: 30%; } }
+
+.postid-58 .reverse-photo-holder-left {
+  display: none; }
+  @media only screen and (min-width: 1024px) {
+    .postid-58 .reverse-photo-holder-left {
+      display: block;
+      background-image: url(../../assets/images/desktop/travel/kayaking-4.png);
+      width: 100%;
+      height: 342px;
+      background-repeat: no-repeat;
+      -ms-flex-preferred-size: 65%;
+          flex-basis: 65%;
+      background-size: cover; } }
+
+@media only screen and (min-width: 1024px) {
+  .postid-58 .desktop-left-panel {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%; } }
+
+@media only screen and (min-width: 1024px) {
+  .postid-58 .intro-box {
+    -ms-flex-preferred-size: 40%;
+        flex-basis: 40%;
+    margin: 0 0.5rem; }
+    .postid-58 .intro-box h2 {
+      margin: 0; } }
+
+@media only screen and (min-width: 1024px) {
+  .postid-58 .info-wrapper {
+    background-color: #F6F6F7;
+    border-radius: 15px;
+    padding: 1rem;
+    margin: 0 0.5rem;
+    width: 450px; } }
 
 .postid-59 .hero-container {
   background-image: url(../../assets/images/mobile/hiking/hiking-background.png); }
@@ -1619,26 +2102,71 @@ object {
     .postid-59 .hero-container {
       background: linear-gradient(to bottom, rgba(0, 0, 0, 0.45) 0%, rgba(0, 0, 0, 0.45)), url(../../assets/images/desktop/hiking/hiking-bar.jpg); } }
   .postid-59 .hero-container .program-icon {
-    background-image: url(../../assets/icons/hiking.white.svg); }
+    background-image: url(../../assets/icons/hiking.white.svg);
+    top: 22px; }
+
+.postid-59 .photo-holder-right {
+  display: none; }
+  @media only screen and (min-width: 1024px) {
+    .postid-59 .photo-holder-right {
+      display: block;
+      background-image: url(../../assets/images/desktop/hiking/hiking.png);
+      width: 100%;
+      height: 403px;
+      background-repeat: no-repeat;
+      background-size: cover; } }
+
+.postid-59 .desktop-tips {
+  display: none; }
+
+@media only screen and (min-width: 1024px) {
+  .postid-59 .desktop-left-panel {
+    margin: 0 2rem; } }
 
 .postid-60 .hero-container {
   background-image: url(../../assets/images/mobile/backcountry/backcountry-bar.jpg); }
   @media only screen and (min-width: 1024px) {
     .postid-60 .hero-container {
-      background-image: url(../../assets/images/desktop/backcountry/backcountry-bar.jpg);
-      background-position-x: 77%; } }
+      background: linear-gradient(to bottom, rgba(0, 0, 0, 0.45) 0%, rgba(0, 0, 0, 0.45)), url(../../assets/images/desktop/backcountry/backcountry-bar.jpg);
+      background-position-x: 77%;
+      background-size: cover; } }
   .postid-60 .hero-container .program-icon {
-    background-image: url(../../assets/icons/skiing.white.svg); }
+    background-image: url(../../assets/icons/skiing.white.svg);
+    top: 22px; }
+
+.postid-60 .photo-holder-left {
+  display: none; }
+  @media only screen and (min-width: 1024px) {
+    .postid-60 .photo-holder-left {
+      display: block;
+      background-image: url(../../assets/images/desktop/backcountry/backcountry-1.png);
+      width: 59.4%;
+      height: 503px;
+      background-repeat: no-repeat;
+      background-size: cover; } }
 
 @media only screen and (min-width: 1024px) {
-  .page-id-28 a {
+  .postid-60 .desktop-left-panel {
+    margin: 0 2rem; } }
+
+.postid-55 h2, .postid-56 h2, .postid-57 h2, .postid-58 h2, .postid-59 h2, .postid-60 h2 {
+  top: 100px; }
+  @media only screen and (min-width: 1024px) {
+    .postid-55 h2, .postid-56 h2, .postid-57 h2, .postid-58 h2, .postid-59 h2, .postid-60 h2 {
+      top: 0;
+      font-size: 35px;
+      letter-spacing: 6px; } }
+
+@media only screen and (min-width: 1024px) {
+  .page-id-28 .main-navigation a {
     color: #fff;
     text-transform: uppercase;
     text-decoration: none;
     font-family: "Arimo", "Arial", sans-serif;
     font-size: 15px;
-    font-weight: bold; }
-    .page-id-28 a:visited {
+    font-weight: bold;
+    letter-spacing: 3px; }
+    .page-id-28 .main-navigation a:visited {
       color: #fff; } }
 
 @media only screen and (min-width: 1024px) {
@@ -1707,14 +2235,15 @@ object {
   color: #4c5a75; }
 
 @media only screen and (min-width: 1024px) {
-  .error404 a {
+  .error404 .main-navigation a {
     color: #fff;
     text-transform: uppercase;
     text-decoration: none;
     font-family: "Arimo", "Arial", sans-serif;
     font-size: 15px;
-    font-weight: bold; }
-    .error404 a:visited {
+    font-weight: bold;
+    letter-spacing: 3px; }
+    .error404 .main-navigation a:visited {
       color: #fff; } }
 
 .error-container {

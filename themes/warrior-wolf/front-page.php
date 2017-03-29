@@ -16,14 +16,14 @@ get_header(); ?>
 						<h3>Outdoor Adventure Guide &amp; Life Coach</h3>
 					</div>
 					<p>'fight within yourself to be the best person you can be.'</p>
-					<button>Let's begin</button>
+					<button class='bio-skip-button'>Let's begin</button>
 				</div>
 
 				<!--INFO SECTION-->
 				<div class='info-section-container'>
 					<h2>Warrior Wolf</h2>
 					<h4>Guide Services</h4>
-					<div class='homepage-credentials-container'>
+					<div id='bio-section' class='homepage-credentials-container'>
 						<div class='location-container credentials-container'>
 							<div class='avatar-picture'></div>
 							<p>Bruce Wilson</p>
@@ -34,7 +34,7 @@ get_header(); ?>
 							<p>As a certified outdoor specialist, I provide avalanche skills training, backcountry tours, sea kayaking trips, life coaching, and much more.</p>
 						</div>
 
-						<div class='credentials-widgets-container credentials-container'>
+						<div id='widget-section' class='credentials-widgets-container credentials-container'>
 							<?php get_sidebar(); ?>
 						</div>
 

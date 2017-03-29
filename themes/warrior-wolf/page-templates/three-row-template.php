@@ -6,17 +6,18 @@ Template Post Type: programs
 
 get_header(); ?>
 	<?php $programs = get_posts(array( 'post_type' => 'programs', 'order' => 'ASC', 'numberposts' => '-1')); ?>
-        	<div class="programs-container">
+        	<nav class="program-menu-container">
+				<ul>
             	<?php foreach ( $programs as $program ): ?>
-					<div>
+					<li class='desktop-program'>
 						<a href='<?php echo get_permalink($program);?>'>
-                    		<div>
-                    			<p><?php echo get_the_title($program); ?></p>
-							</div>
+							<p><?php echo get_the_title($program); ?></p>
+                    		<div class='desktop-program-icon'></div>
 						</a>
-                	</div>
+                	</li>
             	<?php endforeach; ?>
-        	</div>
+				</ul>
+        	</nav>
 
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
@@ -27,13 +28,14 @@ get_header(); ?>
 			<div class="loop-nav-container"><?php wolf_infinite_navigation(); ?></div>
 		</div>
 		<div class="full-program-container">
+			<div class='desktop-left-panel'>
 			<h2>Overview</h2>
 
 			<?php $avalanche_duration_info = CFS()->get( 'avalanche_program_duration' );
 				if(!empty($avalanche_duration_info)) { ?>
 				<div class="short-overview-container">
-					<p>Duration: <?php echo $avalanche_duration_info; ?></p>
-					<p>Location: <?php echo CFS()->get('avalanche_program_location'); ?></p>
+					<p><span>Duration:</span> <?php echo $avalanche_duration_info; ?></p>
+					<p><span>Location:</span> <?php echo CFS()->get('avalanche_program_location'); ?></p>
 				</div>
 			<?php } ?>
 
@@ -56,7 +58,7 @@ get_header(); ?>
 								<?php } ?>
 							</ul>
 						</div>
-                		<p><?php echo CFS()->get('avalanche_program_price'); ?></p>
+                		<p><span class='desktop-cost-title'>cost: </span><?php echo CFS()->get('avalanche_program_price'); ?></p>
 					</div>
 				<?php } ?>
 
@@ -73,10 +75,14 @@ get_header(); ?>
 						</div>
 					</div>
 				<?php } ?>
+			</div> <!-- .desktop-left-panel -->
+
+			<div class='desktop-right-panel'>
 
 			<?php $photos = CFS()->get( 'equipment' );
 			if(!empty($photos)) { ?>
 				<h2>required equipment</h2>
+				<p class='desktop-tips'>(rental equipment not included)</p>
 
 				<div class="equipment-container">
 					<?php $count = count($photos);
@@ -88,6 +94,9 @@ get_header(); ?>
 					} ?>
 				</div>
 			<?php } ?>
+
+			<div class='photo-holder-right'></div>
+			</div> <!-- .desktop-right-panel -->
 		</div> <!-- .full-program-container -->
 
 		<div class="full-important-container">
@@ -99,24 +108,30 @@ get_header(); ?>
 					<div class="number-circle">
 						<h3>1</h3>
 					</div>
-					<h4>skills requirements</h4>
-					<p><?php echo $skills_requirement_info; ?></p>
+					<div class='container-right-content'>
+						<h4>skills requirements</h4>
+						<div class='container-content'><?php echo $skills_requirement_info; ?></div>
+					</div>
 				</div>
 
 				<div class="conditions-container container">
 					<div class="number-circle">
 						<h3>2</h3>
 					</div>
+					<div class='container-right-content'>
 					<h4>snow conditions</h4>
-					<p><?php echo CFS()->get('avalanche_program_conditions'); ?></p>
+						<div class='container-content'><?php echo CFS()->get('avalanche_program_conditions'); ?></div>
+					</div>
 				</div>
 
 				<div class="location-info-container container">
 					<div class="number-circle">
 						<h3>3</h3>
 					</div>
-					<h4>location</h4>
-					<p><?php echo CFS()->get('avalanche_location_info'); ?></p>
+					<div class='container-right-content'>
+						<h4>location</h4>
+						<div class='container-content'><?php echo CFS()->get('avalanche_location_info'); ?></div>
+					</div>
 				</div>
 			<?php }?>
 		</div>

@@ -54,7 +54,7 @@
         }
 
 	}
-	a {
+	.main-navigation a {
         @include media($desktop) {
             @include desktop-nav-style;
         }
@@ -496,7 +496,7 @@
         display: block;
         background-image: url(../../assets/images/desktop/homepage/beach-sunset.jpg);
         background-size: cover;
-        height: 120vh;
+        height: 124vh;
         position: relative;
         h2 {
             margin: 0;
