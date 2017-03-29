@@ -20,10 +20,10 @@ get_header(); ?>
 				</div>
 
 				<!--INFO SECTION-->
-				<div class='info-section-container'>
+				<div id='info-section' class='info-section-container'>
 					<h2>Warrior Wolf</h2>
 					<h4>Guide Services</h4>
-					<div id='bio-section' class='homepage-credentials-container'>
+					<div class='homepage-credentials-container'>
 						<div class='location-container credentials-container'>
 							<div class='avatar-picture'></div>
 							<p>Bruce Wilson</p>
@@ -34,7 +34,7 @@ get_header(); ?>
 							<p>As a certified outdoor specialist, I provide avalanche skills training, backcountry tours, sea kayaking trips, life coaching, and much more.</p>
 						</div>
 
-						<div id='widget-section' class='credentials-widgets-container credentials-container'>
+						<div class='credentials-widgets-container credentials-container'>
 							<?php get_sidebar(); ?>
 						</div>
 

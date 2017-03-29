@@ -113,7 +113,7 @@ get_header(); ?>
 					</div>
 					<div class='container-right-content'>
 						<h4>skills requirements</h4>
-						<div class='container-content'><?php echo $skills_requirement_info; ?></div>
+						<div class='container-content'><?php echo wp_kses_post($skills_requirement_info); ?></div>
 					</div>
 				</div>
 
@@ -123,7 +123,7 @@ get_header(); ?>
 					</div>
 					<div class='container-right-content'>
 					<h4>snow conditions</h4>
-						<div class='container-content'><?php echo CFS()->get('avalanche_program_conditions'); ?></div>
+						<div class='container-content'><?php echo wp_kses_post(CFS()->get('avalanche_program_conditions')); ?></div>
 					</div>
 				</div>
 

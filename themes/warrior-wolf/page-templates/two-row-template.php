@@ -40,13 +40,13 @@ get_header(); ?>
 						<?php $lifecoach_description = CFS()->get( 'lifecoach_description' );
 						if(!empty($lifecoach_description)) : ?>
 							<h4>What is life coaching anyway?</h4>
-							<div><?php echo $lifecoach_description; ?></div>
+							<div><?php echo wp_kses_post($lifecoach_description); ?></div>
 						<?php endif; ?>
 
 						<?php $lifecoach_approach = CFS()->get( 'warrior_wolf_approach' );
 						if(!empty($lifecoach_approach)) : ?>
 							<h4>The Warrior Wolf Approach</h4>
-							<div><?php echo $lifecoach_approach; ?></div>
+							<div><?php echo wp_kses_post($lifecoach_approach); ?></div>
 						<?php endif; ?>	
                 	</div>
             	<?php endwhile; // End of the loop. ?>
@@ -83,13 +83,13 @@ get_header(); ?>
 					<h2>Programs</h2>
 					<div class='day-programs-container'>
 						<h3><?php echo esc_html($full_day); ?></h3>
-                		<div class='full-day-info'><?php echo CFS()->get('full_day'); ?></div>
+                		<div class='full-day-info'><?php echo wp_kses_post(CFS()->get('full_day')); ?></div>
                 		<p class='price-title'>cost: <?php echo esc_html(CFS()->get('full_day_price')); ?></p>
 
 						<?php $half_day = CFS()->get( 'half_day_title' );
 						if(!empty($half_day)) : ?>
                 			<h3><?php echo esc_html($half_day); ?></h3>
-                			<div class='half-day-info'><?php echo CFS()->get('half_day'); ?></div>
+                			<div class='half-day-info'><?php echo wp_kses_post(CFS()->get('half_day')); ?></div>
                 			<p class='price-title'>cost: <?php echo esc_html(CFS()->get('half_day_price')); ?></p>
 						<?php endif; ?>
 					</div>
@@ -107,7 +107,7 @@ get_header(); ?>
 								echo '<h3>' . esc_html($travel_expeditions[$i]['travel_location']) . '</h3>';
 								echo '<div class="travel-info-wrapper"><h3>( ' . esc_html($travel_expeditions[$i]['travel_duration']) . ' )</h3><h3>' . esc_html($travel_expeditions[$i]['expedition_availability']) . '</h3></div>';
 								echo '<h4>' . esc_html($travel_expeditions[$i]['travel_timeframe']) . '</h4>';
-								echo '<div>' . $travel_expeditions[$i]['destination_info'] . '</div></div>';
+								echo '<div>' . wp_kses_post($travel_expeditions[$i]['destination_info']) . '</div></div>';
 								if($i < ($count - 1)) :
 									echo '<p class="container-separator">_________________</p>';
 								endif;
@@ -128,7 +128,7 @@ get_header(); ?>
 							echo '<div class="info-wrapper">';
 							echo '<h3>' . esc_html($lifecoach_quests[$i]['lifecoach_quest_name']) . '</h3>';
 							echo '<h3>( ' . esc_html($lifecoach_quests[$i]['quest_duration']) . ' )</h3>';
-							echo '<div>' . $lifecoach_quests[$i]['quest_description'] . '</div></div>';
+							echo '<div>' . wp_kses_post($lifecoach_quests[$i]['quest_description']) . '</div></div>';
 							if($i < ($count - 1)) :
 								echo '<p class="container-separator">_________________</p>';
 							endif;

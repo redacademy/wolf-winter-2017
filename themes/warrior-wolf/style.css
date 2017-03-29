@@ -608,22 +608,34 @@ textarea {
 .button-color-change {
   background-color: rgba(0, 0, 0, 0.7);
   border-bottom: 1px solid grey; }
+  @media only screen and (min-width: 1024px) {
+    .button-color-change {
+      background-color: transparent;
+      border: none; } }
 
 .header-border-change {
   border-bottom: 1px solid grey; }
+  @media only screen and (min-width: 1024px) {
+    .header-border-change {
+      border: none; } }
 
-.menu-click {
+.main-navigation .menu-click {
   position: fixed;
   top: 60px;
   right: 0;
   background-color: rgba(0, 0, 0, 0.9);
   height: 100vh;
   width: 100%; }
-  .menu-click .menu-main-menu-container {
+  @media only screen and (min-width: 1024px) {
+    .main-navigation .menu-click {
+      background-color: transparent;
+      width: initial;
+      position: initial; } }
+  .main-navigation .menu-click .menu-main-menu-container {
     margin-bottom: 3rem; }
-  .menu-click .menu-social-menu-container {
+  .main-navigation .menu-click .menu-social-menu-container {
     margin: 0 1rem; }
-    .menu-click .menu-social-menu-container ul {
+    .main-navigation .menu-click .menu-social-menu-container ul {
       -ms-flex-direction: row;
           flex-direction: row;
       -ms-flex-wrap: wrap;
@@ -631,22 +643,38 @@ textarea {
       -ms-flex-pack: distribute;
           justify-content: space-around; }
 
-.nav-overlay {
-  display: -ms-flexbox !important;
-  display: flex !important;
+.site-header .main-navigation .nav-overlay {
+  display: -ms-flexbox;
+  display: flex;
   -ms-flex-direction: column;
       flex-direction: column;
   height: 100%;
   line-height: 2.5; }
-  .nav-overlay a {
+  @media only screen and (min-width: 1024px) {
+    .site-header .main-navigation .nav-overlay {
+      display: block;
+      line-height: initial; } }
+  .site-header .main-navigation .nav-overlay a {
     font-size: 1.5rem;
     color: white;
     padding-left: 1.5rem; }
-    .nav-overlay a:hover {
+    .site-header .main-navigation .nav-overlay a:hover {
       background: #4C5A75;
       color: white; }
-    .nav-overlay a:visited {
+    .site-header .main-navigation .nav-overlay a:visited {
       color: white; }
+    @media only screen and (min-width: 1024px) {
+      .site-header .main-navigation .nav-overlay a {
+        font-size: 15px;
+        padding-left: 0; }
+        .site-header .main-navigation .nav-overlay a:hover {
+          background: transparent; } }
+
+.single-programs .site-header .main-navigation .nav-overlay a:visited {
+  color: #FFF; }
+  @media only screen and (min-width: 1024px) {
+    .single-programs .site-header .main-navigation .nav-overlay a:visited {
+      color: #172944; } }
 
 .social-icon-menu-item {
   display: block;
@@ -1419,7 +1447,8 @@ a {
     right: 0; } }
 
 .button-container {
-  text-align: center; }
+  text-align: center;
+  margin: 3rem 0; }
   .button-container a {
     width: 150px;
     height: 45px;

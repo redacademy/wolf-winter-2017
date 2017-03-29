@@ -34,7 +34,6 @@
 
 			<nav id='site-navigation' class='main-navigation' role='navigation'>
 				<div class='mobile-menu'>
-					<a href="#openModal">Contact</a>
 					<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
 					<?php wp_nav_menu( array( 'theme_location' => 'social', 'menu_id' => 'social-menu' ) ); ?>
 				</div>

@@ -82,19 +82,32 @@
 .button-color-change {
     background-color: rgba(0, 0, 0, 0.7);
     border-bottom: 1px solid grey;
+    @include media($desktop) {
+        background-color: transparent;
+        border: none;
+    }
 }
 
 .header-border-change {
     border-bottom: 1px solid grey;
+    @include media($desktop) {
+        border: none;
+    }
 }
 
-.menu-click {
+.main-navigation .menu-click {
     position: fixed;
     top: 60px;
     right: 0;
     background-color: rgba(0, 0, 0, 0.9);
     height: 100vh;
     width: 100%;
+    @include media($desktop) {
+        background-color: transparent;
+        width: initial;
+        position: initial;
+        // width: 645.891px;
+    }
     .menu-main-menu-container {
         margin-bottom: 3rem;
     }
@@ -108,11 +121,16 @@
     }
 }
 
+.site-header .main-navigation {
 .nav-overlay {
-    display: flex !important;
+    display: flex;
     flex-direction: column;
     height: 100%;
     line-height: 2.5;
+    @include media($desktop) {
+        display: block;
+        line-height: initial;
+    }
     a {
         font-size: 1.5rem;
         color: white;
@@ -123,6 +141,25 @@
         }
         &:visited {
             color: white;
+        }
+        @include media($desktop) {
+            font-size: 15px;
+            padding-left: 0;
+            &:hover {
+                background: transparent;
+            }
+        }
+    }
+}
+}
+
+.single-programs .site-header .main-navigation {
+    .nav-overlay {
+        a:visited {
+            color: #FFF;
+            @include media($desktop) {
+                color: #172944;
+            }
         }
     }
 }

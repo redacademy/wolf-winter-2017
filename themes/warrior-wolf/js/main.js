@@ -15,7 +15,7 @@
     function bioScroll() {
         $('.bio-skip-button').click(function() {
             $('html, body').animate({
-                scrollTop: $('#bio-section').offset().top - 80
+                scrollTop: $('#info-section').offset().top - 60
             }, 1000);
         });
     }
