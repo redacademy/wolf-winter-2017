@@ -74,7 +74,7 @@ get_header(); ?>
 				</div> <!-- desktop-right-panel -->
 
 				<div class='desktop-bottom-panel'>
-				
+
 				<div class='photo-holder-left'></div>
 
 				<?php $full_day = CFS()->get( 'full_day_title' );
@@ -85,7 +85,7 @@ get_header(); ?>
 						<h3><?php echo esc_html($full_day); ?></h3>
                 		<div class='full-day-info'><?php echo CFS()->get('full_day'); ?></div>
                 		<p class='price-title'>cost: <?php echo esc_html(CFS()->get('full_day_price')); ?></p>
-            
+
 						<?php $half_day = CFS()->get( 'half_day_title' );
 						if(!empty($half_day)) : ?>
                 			<h3><?php echo esc_html($half_day); ?></h3>
@@ -138,11 +138,10 @@ get_header(); ?>
 				<?php endif; ?>
 				</div> <!-- desktop-bottom-panel -->
         	</div> <!-- .full-program-container -->
-
-			<div class='button-container'>
-				<a href=''>Register Here</a>
+			<div class="button-container">
+				<a href="#openModal3">Register Here</a>
 			</div>
-			
+
 		</main><!-- #main -->
 	</div><!-- #primary -->
 <?php get_footer(); ?>

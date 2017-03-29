@@ -419,6 +419,7 @@ textarea {
 .modalDialog {
   position: fixed;
   font-family: Arial, Helvetica, sans-serif;
+  color: #CCCCCC;
   top: 0;
   right: 0;
   bottom: 0;
@@ -428,6 +429,56 @@ textarea {
   opacity: 0;
   transition: opacity 400ms ease-in;
   pointer-events: none; }
+  .modalDialog .modal-text-content {
+    text-align: center;
+    margin-top: 1.5rem;
+    margin-bottom: .5rem; }
+  .modalDialog h3 {
+    margin-bottom: 0.5rem; }
+  .modalDialog p {
+    margin: 0;
+    font-size: 0.9rem; }
+    .modalDialog p span {
+      text-align: left; }
+  .modalDialog form {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+        flex-direction: column;
+    -ms-flex-pack: center;
+        justify-content: center; }
+    .modalDialog form p {
+      margin-top: 0.8rem;
+      margin-bottom: 0.3rem;
+      font-size: 0.8rem; }
+    .modalDialog form input {
+      background: transparent;
+      border: 1px solid #CCCCCC; }
+    .modalDialog form textarea {
+      background: transparent;
+      border: 1px solid #CCCCCC;
+      height: 6rem; }
+  .modalDialog button {
+    margin-left: 15%;
+    margin-right: auto;
+    text-transform: uppercase; }
+    .modalDialog button a {
+      text-decoration: none; }
+  .modalDialog .submit-button {
+    width: 70%;
+    padding: 0.7rem 2.5rem;
+    border: 3px solid #B9CAD8;
+    background: rgba(184, 202, 216, 0.36);
+    color: #fff;
+    margin-top: 2rem; }
+  .modalDialog .faq-button {
+    width: 70%;
+    padding: 0.7rem 2.5rem;
+    border: 1px solid #fff;
+    color: #fff;
+    background: transparent;
+    margin-top: 1rem;
+    margin-bottom: 2rem; }
 
 .modalDialog:target {
   opacity: 1;
@@ -438,25 +489,47 @@ textarea {
   position: relative;
   margin: 10% auto;
   padding: 5px 20px 13px 20px;
-  border-radius: 10px;
+  border: 1px solid #CCCCCC;
   background: #000; }
 
 .close {
-  background: #606061;
   color: #FFFFFF;
   line-height: 25px;
   position: absolute;
-  right: -12px;
+  right: 0;
   text-align: center;
-  top: -10px;
-  width: 24px;
+  font-size: 20px;
+  top: 20;
+  width: 50px;
   text-decoration: none;
-  font-weight: bold;
   border-radius: 12px;
   box-shadow: 1px 1px 3px #000; }
 
 .close:hover {
   background: rgba(0, 0, 0, 0.7); }
+
+#openModal2 {
+  text-align: center;
+  letter-spacing: 2px;
+  font-size: 1.2rem; }
+  #openModal2 .modalDialog {
+    margin: 5rem; }
+  #openModal2 .confirmation-modal-wrapper {
+    margin-top: 4rem;
+    margin-bottom: 4rem; }
+  #openModal2 .modalDialog > div {
+    width: 400px;
+    position: relative;
+    margin: 10% auto;
+    padding: 5px 20px 13px 20px;
+    border: 1px solid #CCCCCC;
+    background: #000; }
+
+#openModal3 .registration-steps-wrapper {
+  border: 1px solid #6DB0FF; }
+
+#openModal3 .step {
+  color: #6DB0FF; }
 
 .site-header {
   height: 60px;
@@ -2674,7 +2747,7 @@ ul {
         justify-content: center; }
     .site-footer .button-wrapper .faq-button {
       text-align: center;
-      width: 30%;
+      width: 60%;
       border: 1px solid #fff;
       color: #fff;
       background: transparent;

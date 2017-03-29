@@ -139,9 +139,8 @@ get_header(); ?>
 				</div>
 			<?php endif; ?>
 		</div>
-
-		<div class='button-container'>
-			<a href=''>Register Here</a>
+		<div class="button-container">
+			<a href="#openModal3">Register Here</a>
 		</div>
 
 		</main><!-- #main -->
