@@ -57,7 +57,7 @@ get_header(); ?>
 				<h2>My Programs</h2>
 				<div class='pie'></div>
 				<div class='thumbnails-wrapper'>
-				<?php foreach ( $programs as $program ): ?>
+				<?php foreach( $programs as $program ): ?>
 					<div class='program-wrapper'>
 						<a href='<?php echo get_permalink($program);?>'>
                     		<div class='desktop-thumbnail-container'>
@@ -72,7 +72,7 @@ get_header(); ?>
 			<!-- PROGRAMS PANEL -->
 			<h2 class='programs-header'>My Programs</h2>
         	<div class='programs-container'>
-            	<?php foreach ( $programs as $program ): ?>
+            	<?php foreach( $programs as $program ): ?>
 					<div class='program-wrapper'>
 						<a href='<?php echo get_permalink($program);?>'>
                     		<div class='thumbnail-container'>

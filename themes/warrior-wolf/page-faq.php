@@ -4,7 +4,7 @@
  *
  * @package RED_Starter_Theme
  */
-
+$allowed_html = array('br' => array());
 get_header(); ?>
 
 	<div id='primary' class='content-area'>
@@ -16,17 +16,17 @@ get_header(); ?>
 
 			<div class='faq-container'>
 				<?php $faq_items = CFS()->get( 'faq_items' );
-				if(!empty($faq_items)) { 
-					foreach ( $faq_items as $item ) { ?>
+				if(!empty($faq_items)) : 
+					foreach( $faq_items as $item ) : ?>
     					<div class='question-wrapper'>
 							<span>+</span>
-							<p><?php echo $item['faq_question'];?></p>
+							<p><?php echo wp_kses($item['faq_question'], $allowed_html);?></p>
 						</div>
 						<div class='answer-wrapper'>
-							<p><?php echo $item['faq_answer'];?></p>
+							<p><?php echo wp_kses($item['faq_answer'], $allowed_html);?></p>
 						</div>
-					<?php } 
-				} ?>
+					<?php endforeach; 
+				endif; ?>
 			</div>
 
 			<div class='button-container'>
