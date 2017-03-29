@@ -13,9 +13,9 @@
 
     //Scroll to credentials section when clicked
     function bioScroll() {
-        $(".bio-skip-button").click(function() {
+        $('.bio-skip-button').click(function() {
             $('html, body').animate({
-                scrollTop: $("#bio-section").offset().top - 80
+                scrollTop: $('#bio-section').offset().top - 80
             }, 1000);
         });
     }
