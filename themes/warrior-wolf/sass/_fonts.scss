@@ -1,3 +1,7 @@
+/*--------------------------------------------------------------
+# Fonts
+--------------------------------------------------------------*/
+
 @font-face {
     font-family: 'Archivo Black';
     src: url('./../../assets/fonts/archivoblack-regular-webfont.eot');
@@ -7,7 +11,6 @@
          url('./../../assets/fonts/archivoblack-regular-webfont.svg#archivo_blackregular') format('svg');
     font-weight: normal;
     font-style: normal;
-
 }
 
 @font-face {
@@ -19,7 +22,6 @@
          url('./../../arimo-regular-webfont.svg#arimoregular') format('svg');
     font-weight: normal;
     font-style: normal;
-
 }
 
 @font-face {
@@ -31,9 +33,7 @@
          url('./../../assets/fonts/arimo-bold-webfont.svg#arimobold') format('svg');
     font-weight: bold;
     font-style: normal;
-
 }
-
 
 @font-face {
     font-family: 'Crimson Text Roman';
@@ -44,11 +44,7 @@
          url('./../../assets/fonts/crimsontext-roman-webfont.svg#crimson_textroman') format('svg');
     font-weight: normal;
     font-style: normal;
-
 }
-
-
-
 
 @font-face {
     font-family: 'Crimson Text Semibold';
@@ -59,5 +55,4 @@
          url('./../../assets/fonts/crimsontext-semibold-webfont.svg#crimson_textsemibold') format('svg');
     font-weight: normal;
     font-style: normal;
-
 }

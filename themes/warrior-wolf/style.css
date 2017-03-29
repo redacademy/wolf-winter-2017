@@ -219,6 +219,9 @@ td,
 th {
   padding: 0; }
 
+/*--------------------------------------------------------------
+# Fonts
+--------------------------------------------------------------*/
 @font-face {
   font-family: 'Archivo Black';
   src: url("./../../assets/fonts/archivoblack-regular-webfont.eot");
@@ -259,7 +262,6 @@ th {
 --------------------------------------------------------------*/
 body,
 button,
-input,
 select,
 textarea {
   color: #404040;
@@ -374,51 +376,29 @@ table {
 /*--------------------------------------------------------------
 # Forms
 --------------------------------------------------------------*/
-/* Buttons */
-input[type="reset"],
-input[type="submit"] {
-  border: 1px solid;
-  border-color: #ccc #ccc #bbb;
-  background: #e6e6e6;
-  color: rgba(0, 0, 0, 0.8);
-  font-size: 12px;
-  font-size: 0.75rem;
-  line-height: 1;
-  padding: .6rem 1rem .4rem; }
-
 /* Fields */
 input[type="text"],
-input[type="email"],
-input[type="url"],
-input[type="password"],
-input[type="search"],
-textarea {
-  color: #666;
-  border: 1px solid #ccc;
-  border-radius: 3px; }
-  input[type="text"]:focus,
-  input[type="email"]:focus,
-  input[type="url"]:focus,
-  input[type="password"]:focus,
-  input[type="search"]:focus,
-  textarea:focus {
-    color: #111; }
-
-input[type="text"],
-input[type="email"],
 input[type="url"],
 input[type="password"],
 input[type="search"] {
-  padding: 3px; }
+  color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 3px; }
+  input[type="text"]:focus,
+  input[type="url"]:focus,
+  input[type="password"]:focus,
+  input[type="search"]:focus {
+    color: #fff; }
 
-textarea {
-  padding-left: 3px;
-  width: 100%; }
+input[type="url"],
+input[type="password"],
+input[type="search"] {
+  padding: 3px;
+  color: #fff; }
 
 /* Contact Forms */
 .modalDialog {
   position: fixed;
-  font-family: Arial, Helvetica, sans-serif;
   color: #CCCCCC;
   top: 0;
   right: 0;
@@ -433,31 +413,45 @@ textarea {
     text-align: center;
     margin-top: 1.5rem;
     margin-bottom: .5rem; }
+  .modalDialog .contact-info-wrapper {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left; }
   .modalDialog h3 {
-    margin-bottom: 0.5rem; }
+    margin-bottom: 0.5rem;
+    text-transform: uppercase;
+    font-weight: 300;
+    letter-spacing: 2px; }
   .modalDialog p {
     margin: 0;
-    font-size: 0.9rem; }
-    .modalDialog p span {
-      text-align: left; }
+    font-size: 0.9rem;
+    font-weight: 300;
+    letter-spacing: 1px; }
   .modalDialog form {
     display: -ms-flexbox;
     display: flex;
     -ms-flex-direction: column;
         flex-direction: column;
     -ms-flex-pack: center;
-        justify-content: center; }
+        justify-content: center;
+    color: #fff; }
     .modalDialog form p {
       margin-top: 0.8rem;
       margin-bottom: 0.3rem;
       font-size: 0.8rem; }
     .modalDialog form input {
+      padding: 0.5rem;
       background: transparent;
       border: 1px solid #CCCCCC; }
+      .modalDialog form input:focus {
+        color: #fff;
+        outline: none; }
     .modalDialog form textarea {
       background: transparent;
       border: 1px solid #CCCCCC;
-      height: 6rem; }
+      height: 6rem;
+      outline: none; }
   .modalDialog button {
     margin-left: 15%;
     margin-right: auto;
@@ -487,7 +481,7 @@ textarea {
 .modalDialog > div {
   width: 400px;
   position: relative;
-  margin: 10% auto;
+  margin: 6% auto;
   padding: 5px 20px 13px 20px;
   border: 1px solid #CCCCCC;
   background: #000; }
@@ -530,6 +524,32 @@ textarea {
 
 #openModal3 .step {
   color: #6DB0FF; }
+
+#openModal3 .step-one-wrapper {
+  background-color: rgba(0, 0, 0, 0.3); }
+
+#openModal3 .step-two-wrapper {
+  background-color: rgba(0, 0, 0, 0.1); }
+
+#openModal4 {
+  text-align: center;
+  letter-spacing: 2px;
+  font-size: 1.2rem; }
+  #openModal4 .modalDialog {
+    margin: 5rem; }
+  #openModal4 .confirmation-modal-wrapper {
+    margin-top: 4rem;
+    margin-bottom: 2rem; }
+  #openModal4 .modalDialog > div {
+    width: 400px;
+    position: relative;
+    margin: 10% auto;
+    padding: 5px 20px 13px 20px;
+    border: 1px solid #CCCCCC;
+    background: #000; }
+  #openModal4 .confirmation-email-text {
+    color: #6DB0FF;
+    margin-top: 2rem; }
 
 .site-header {
   height: 60px;
@@ -2377,6 +2397,9 @@ object {
   .answer-wrapper p {
     display: table-cell; }
 
+/*--------------------------------------------------------------
+# 404 Page
+--------------------------------------------------------------*/
 @media only screen and (min-width: 1024px) {
   .error404 .main-navigation a {
     color: #fff;
@@ -2731,6 +2754,9 @@ ul {
     .page-template-about-mission .mission-statement .p1 {
       max-width: 75%; } }
 
+/*--------------------------------------------------------------
+# Footer
+--------------------------------------------------------------*/
 /* Footer template */
 .site-footer {
   display: -ms-flexbox;

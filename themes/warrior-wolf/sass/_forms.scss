@@ -2,62 +2,30 @@
 # Forms
 --------------------------------------------------------------*/
 
-/* Buttons */
-
-input[type="reset"],
-input[type="submit"] {
-	border: 1px solid;
-	border-color: #ccc #ccc #bbb;
-	background: #e6e6e6;
-	color: rgba(0, 0, 0, .8);
-	@include font-size(0.75);
-	line-height: 1;
-	padding: .6rem 1rem .4rem;
-
-	&:hover {
-		// border-color: #ccc #bbb #aaa;
-		// box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.8), inset 0 15px 17px rgba(255, 255, 255, 0.8), inset 0 -5px 12px rgba(0, 0, 0, 0.02);
-	}
-
-	&:active,
-	&:focus {
-		// border-color: #aaa #bbb #bbb;
-		// box-shadow: inset 0 -1px 0 rgba(255, 255, 255, 0.5), inset 0 2px 5px rgba(0, 0, 0, 0.15);
-	}
-}
-
 /* Fields */
 
 input[type="text"],
-input[type="email"],
 input[type="url"],
 input[type="password"],
-input[type="search"],
-textarea {
-	color: #666;
+input[type="search"] {
+	color: #fff;
 	border: 1px solid #ccc;
 	border-radius: 3px;
 	&:focus {
-		color: #111;
+		color: #fff;
 	}
 }
-input[type="text"],
-input[type="email"],
 input[type="url"],
 input[type="password"],
 input[type="search"] {
 	padding: 3px;
-}
-textarea {
-	padding-left: 3px;
-	width: 100%;
+    color: #fff
 }
 
 /* Contact Forms */
 
 .modalDialog {
     position: fixed;
-    font-family: Arial, Helvetica, sans-serif;
     color: #CCCCCC;
     top: 0;
     right: 0;
@@ -75,33 +43,50 @@ textarea {
         margin-top: 1.5rem;
         margin-bottom: .5rem;
     }
+    .contact-info-wrapper {
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: left;
+    }
     h3 {
         margin-bottom: 0.5rem;
+        text-transform: uppercase;
+        font-weight: 300;
+        letter-spacing: 2px;
     }
     p {
         margin: 0;
         font-size: 0.9rem;
-        span {
-            text-align: left;
-        }
+        font-weight: 300;
+        letter-spacing: 1px;
+
     }
     form {
         display: flex;
         flex-direction: column;
         justify-content: center;
+        color: #fff;
+
         p {
             margin-top: 0.8rem;
             margin-bottom: 0.3rem;
             font-size: 0.8rem;
         }
         input {
+            padding: 0.5rem;
             background: transparent;
             border: 1px solid #CCCCCC;
+            &:focus {
+                color: #fff;
+                outline: none;
+            }
         }
         textarea {
             background: transparent;
             border: 1px solid #CCCCCC;
             height: 6rem;
+            outline: none;
         }
     }
     button {
@@ -138,7 +123,7 @@ textarea {
 .modalDialog > div {
     width: 400px;
     position: relative;
-    margin: 10% auto;
+    margin: 6% auto;
     padding: 5px 20px 13px 20px;
     border: 1px solid #CCCCCC;
     background: #000;
@@ -192,6 +177,34 @@ textarea {
         color: #6DB0FF;
     }
     .step-one-wrapper {
+        background-color: rgba(0, 0, 0, 0.3);
+    }
+    .step-two-wrapper {
+        background-color: rgba(0, 0, 0, 0.1);
+    }
+}
+#openModal4 {
+    text-align: center;
+    letter-spacing: 2px;
+    font-size: 1.2rem;
 
+    .modalDialog {
+        margin: 5rem;
+    }
+    .confirmation-modal-wrapper {
+        margin-top: 4rem;
+        margin-bottom: 2rem;
+    }
+    .modalDialog > div {
+        width: 400px;
+        position: relative;
+        margin: 10% auto;
+        padding: 5px 20px 13px 20px;
+        border: 1px solid #CCCCCC;
+        background: #000;
+    }
+    .confirmation-email-text {
+        color: #6DB0FF;
+        margin-top: 2rem;
     }
 }
