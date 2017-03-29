@@ -77,25 +77,28 @@
 <div id='openModal3' class='modalDialog'>
     <div>
 		<a href='#close' title='Close' class='close'>X</a>
-			<div class='modal-text-content'>
-				<div>
-					<h2>Step 2</h2>
+		<div class='modal-text-content'>
+			<h3>Registration Request</h3>
+			<div class='registration-steps-wrapper'>
+				<div class='step-one-wrapper'>
+					<p class='step'>Step 1</p>
 					<p>Provide me with your group size and contact info.</p>
 				</div>
-				<div>
-					<h2>Step 2</h2>
+				<div class='step-two-wrapper'>
+					<p class='step'>Step 2</p>
 					<p>I’ll get back to you within 2 business days with further instructions regarding course availability, payment and next steps.</p>
 				</div>
 			</div>
+			</div>
 			<form>
 				<p>Group Size</p>
-				<input type='email'>
+				<input type='number'>
 				<p>Your Name</p>
-				<input type='subject'>
+				<input type='text'>
 				<p>Your Email</p>
-				<textarea value='Message'></textarea>
+				<input type='email'>
 			</form>
-			<button class='submit-button'><a href='#openModal4'>Submit</a></button>
+			<button type='submit' class='submit-button'><a href='#openModal4'>Submit</a></button>
 	</div>
 </div>
 <div id="openModal4" class="modalDialog">

@@ -520,10 +520,16 @@ textarea {
   #openModal2 .modalDialog > div {
     width: 400px;
     position: relative;
-    margin: 15% auto;
+    margin: 10% auto;
     padding: 5px 20px 13px 20px;
     border: 1px solid #CCCCCC;
     background: #000; }
+
+#openModal3 .registration-steps-wrapper {
+  border: 1px solid #6DB0FF; }
+
+#openModal3 .step {
+  color: #6DB0FF; }
 
 .site-header {
   height: 60px;
