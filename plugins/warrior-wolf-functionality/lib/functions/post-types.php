@@ -41,7 +41,7 @@ function testimonial_post_type() {
 		'label'                 => 'Testimonial Post Type',
 		'description'           => 'Testimonial Description',
 		'labels'                => $labels,
-		'supports'              => array( 'title', 'editor'),
+		'supports'              => array( 'title', 'editor', 'custom-fields'),
 		'hierarchical'          => false,
 		'public'                => true,
 		'show_ui'               => true,

@@ -1898,8 +1898,8 @@ object {
       .full-program-container .equipment-container, .full-important-container .equipment-container {
         display: -ms-flexbox;
         display: flex;
-        -ms-flex-pack: distribute;
-            justify-content: space-around;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
         margin-bottom: 1rem; } }
     .full-program-container .equipment-container p, .full-important-container .equipment-container p {
       font-family: "Crimson Text Roman", "Times New Roman", serif;
@@ -2045,10 +2045,10 @@ object {
   display: none; }
   @media only screen and (min-width: 1024px) {
     .postid-53 .photo-holder-right {
-      display: block;
       background-image: url(../../assets/images/desktop/ast-1/mountain-3.jpg);
+      display: block;
       width: 100%;
-      height: 403px;
+      height: 503px;
       background-repeat: no-repeat;
       background-size: cover; } }
 
@@ -2059,10 +2059,10 @@ object {
   display: none; }
   @media only screen and (min-width: 1024px) {
     .postid-54 .photo-holder-right {
-      display: block;
       background-image: url(../../assets/images/desktop/ast-2/Mountain-1.jpg);
+      display: block;
       width: 100%;
-      height: 403px;
+      height: 503px;
       background-repeat: no-repeat;
       background-size: cover; } }
 
@@ -2080,8 +2080,8 @@ object {
   display: none; }
   @media only screen and (min-width: 1024px) {
     .postid-55 .photo-holder-right {
-      display: block;
       background-image: url(../../assets/images/desktop/kayaking/sea-kayaking-2.png);
+      display: block;
       width: 100%;
       height: 503px;
       background-repeat: no-repeat;
@@ -2091,12 +2091,13 @@ object {
   display: none; }
   @media only screen and (min-width: 1024px) {
     .postid-55 .photo-holder-left {
-      display: block;
       background-image: url(../../assets/images/desktop/kayaking/sea-kayaking-1.png);
+      display: block;
       width: 100%;
       height: 503px;
       background-repeat: no-repeat;
-      background-size: cover; } }
+      background-size: cover;
+      background-position-x: 100%; } }
 
 @media only screen and (min-width: 1024px) {
   .postid-55 .day-programs-box {
@@ -2120,8 +2121,8 @@ object {
   display: none; }
   @media only screen and (min-width: 1024px) {
     .postid-56 .photo-holder-right {
-      display: block;
       background-image: url(../../assets/images/desktop/paddleboarding/paddleboarding-1.jpg);
+      display: block;
       width: 100%;
       height: 503px;
       background-repeat: no-repeat;
@@ -2131,12 +2132,13 @@ object {
   display: none; }
   @media only screen and (min-width: 1024px) {
     .postid-56 .photo-holder-left {
-      display: block;
       background-image: url(../../assets/images/desktop/paddleboarding/paddleboarding-2.png);
+      display: block;
       width: 100%;
       height: 503px;
       background-repeat: no-repeat;
-      background-size: cover; } }
+      background-size: cover;
+      background-position-x: 100%; } }
 
 @media only screen and (min-width: 1024px) {
   .postid-56 .desktop-left-panel {
@@ -2160,8 +2162,8 @@ object {
   display: none; }
   @media only screen and (min-width: 1024px) {
     .postid-57 .photo-holder-right {
-      display: block;
       background-image: url(../../assets/images/desktop/life-coaching/mountains-4.png);
+      display: block;
       width: 100%;
       height: 503px;
       background-repeat: no-repeat;
@@ -2171,12 +2173,13 @@ object {
   display: none; }
   @media only screen and (min-width: 1024px) {
     .postid-57 .photo-holder-left {
-      display: block;
       background-image: url(../../assets/images/desktop/life-coaching/Camping.png);
+      display: block;
       width: 100%;
-      height: 578px;
       background-repeat: no-repeat;
-      background-size: cover; } }
+      background-size: cover;
+      background-position-x: 100%;
+      height: 578px; } }
 
 @media only screen and (min-width: 1024px) {
   .postid-57 .program-info-container .info-wrapper:nth-of-type(2) {
@@ -2225,12 +2228,12 @@ object {
   display: none; }
   @media only screen and (min-width: 1024px) {
     .postid-58 .reverse-photo-holder-right {
-      display: block;
       background-image: url(../../assets/images/desktop/travel/kayaking-3.png);
-      width: 100%;
-      height: 543px;
       background-repeat: no-repeat;
       background-size: cover;
+      display: block;
+      width: 100%;
+      height: 543px;
       -ms-flex-preferred-size: 30%;
           flex-basis: 30%; } }
 
@@ -2238,14 +2241,15 @@ object {
   display: none; }
   @media only screen and (min-width: 1024px) {
     .postid-58 .reverse-photo-holder-left {
-      display: block;
       background-image: url(../../assets/images/desktop/travel/kayaking-4.png);
+      display: block;
       width: 100%;
-      height: 342px;
       background-repeat: no-repeat;
+      background-size: cover;
+      background-position-x: 100%;
+      height: 388px;
       -ms-flex-preferred-size: 65%;
-          flex-basis: 65%;
-      background-size: cover; } }
+          flex-basis: 65%; } }
 
 @media only screen and (min-width: 1024px) {
   .postid-58 .desktop-left-panel {
@@ -2283,10 +2287,10 @@ object {
   display: none; }
   @media only screen and (min-width: 1024px) {
     .postid-59 .photo-holder-right {
-      display: block;
       background-image: url(../../assets/images/desktop/hiking/hiking.png);
+      display: block;
       width: 100%;
-      height: 403px;
+      height: 503px;
       background-repeat: no-repeat;
       background-size: cover; } }
 
@@ -2317,7 +2321,8 @@ object {
       width: 59.4%;
       height: 503px;
       background-repeat: no-repeat;
-      background-size: cover; } }
+      background-size: cover;
+      background-position-x: 100%; } }
 
 @media only screen and (min-width: 1024px) {
   .postid-60 .desktop-left-panel {

@@ -312,7 +312,7 @@
             text-align: center;
             @include media($desktop) {
                 display: flex;
-                justify-content: space-around;
+                justify-content: space-between;
                 margin-bottom: 1rem;
             }
             p {
@@ -492,12 +492,9 @@
     .photo-holder-right {
         display: none;
         @include media($desktop) {
-            display: block;
             background-image: url(../../assets/images/desktop/ast-1/mountain-3.jpg);
-            width: 100%;
-            height: 403px;
-            background-repeat: no-repeat;
-            background-size: cover;
+            @include desktop-photo-panel-dimension;
+            @include desktop-photo-panel-standard;
         }
     }
 }
@@ -509,12 +506,9 @@
     .photo-holder-right {
         display: none;
         @include media($desktop) {
-            display: block;
             background-image: url(../../assets/images/desktop/ast-2/Mountain-1.jpg);
-            width: 100%;
-            height: 403px;
-            background-repeat: no-repeat;
-            background-size: cover;
+            @include desktop-photo-panel-dimension;
+            @include desktop-photo-panel-standard;
         }
     }
 }
@@ -534,23 +528,17 @@
     .photo-holder-right {
         display: none;
         @include media($desktop) {
-            display: block;
             background-image: url(../../assets/images/desktop/kayaking/sea-kayaking-2.png);
-            width: 100%;
-            height: 503px;
-            background-repeat: no-repeat;
-            background-size: cover;
+            @include desktop-photo-panel-dimension;
+            @include desktop-photo-panel-standard;
         }
     }
     .photo-holder-left {
         display: none;
         @include media($desktop) {
-            display: block;
             background-image: url(../../assets/images/desktop/kayaking/sea-kayaking-1.png);
-            width: 100%;
-            height: 503px;
-            background-repeat: no-repeat;
-            background-size: cover;
+            @include desktop-photo-panel-dimension;
+            @include desktop-left-photo-panel-position;
         }
     }
     .day-programs-box {
@@ -580,23 +568,17 @@
     .photo-holder-right {
         display: none;
         @include media($desktop) {
-            display: block;
             background-image: url(../../assets/images/desktop/paddleboarding/paddleboarding-1.jpg);
-            width: 100%;
-            height: 503px;
-            background-repeat: no-repeat;
-            background-size: cover;
+            @include desktop-photo-panel-dimension;
+            @include desktop-photo-panel-standard;
         }
     }
     .photo-holder-left {
         display: none;
         @include media($desktop) {
-            display: block;
             background-image: url(../../assets/images/desktop/paddleboarding/paddleboarding-2.png);
-            width: 100%;
-            height: 503px;
-            background-repeat: no-repeat;
-            background-size: cover;
+            @include desktop-photo-panel-dimension;
+            @include desktop-left-photo-panel-position;
         }
     }
     .desktop-left-panel {
@@ -626,23 +608,18 @@
     .photo-holder-right {
         display: none;
         @include media($desktop) {
-            display: block;
             background-image: url(../../assets/images/desktop/life-coaching/mountains-4.png);
-            width: 100%;
-            height: 503px;
-            background-repeat: no-repeat;
-            background-size: cover;
+            @include desktop-photo-panel-dimension;
+            @include desktop-photo-panel-standard;
         }
     }
     .photo-holder-left {
         display: none;
         @include media($desktop) {
-            display: block;
             background-image: url(../../assets/images/desktop/life-coaching/Camping.png);
-            width: 100%;
+            @include desktop-photo-panel-standard-dimension;
+            @include desktop-left-photo-panel-position;
             height: 578px;
-            background-repeat: no-repeat;
-            background-size: cover;
         }
     }
     .program-info-container {
@@ -701,25 +678,21 @@
     .reverse-photo-holder-right {
         display: none;
         @include media($desktop) {
-            display: block;
             background-image: url(../../assets/images/desktop/travel/kayaking-3.png);
-            width: 100%;
+            @include desktop-photo-panel-standard;
+            @include desktop-photo-panel-standard-dimension;
             height: 543px;
-            background-repeat: no-repeat;
-            background-size: cover;
             flex-basis: 30%;
         }
     }
     .reverse-photo-holder-left {
         display: none;
         @include media($desktop) {
-            display: block;
             background-image: url(../../assets/images/desktop/travel/kayaking-4.png);
-            width: 100%;
-            height: 342px;
-            background-repeat: no-repeat;
+            @include desktop-photo-panel-standard-dimension;
+            @include desktop-left-photo-panel-position;
+            height: 388px;
             flex-basis: 65%;
-            background-size: cover;
         }
     }
     .desktop-left-panel {
@@ -762,12 +735,9 @@
     .photo-holder-right {
         display: none;
         @include media($desktop) {
-            display: block;
             background-image: url(../../assets/images/desktop/hiking/hiking.png);
-            width: 100%;
-            height: 403px;
-            background-repeat: no-repeat;
-            background-size: cover;
+            @include desktop-photo-panel-dimension;
+            @include desktop-photo-panel-standard;
         }
     }
     .desktop-tips {
@@ -800,8 +770,7 @@
             background-image: url(../../assets/images/desktop/backcountry/backcountry-1.png);
             width: 59.4%;
             height: 503px;
-            background-repeat: no-repeat;
-            background-size: cover;
+            @include desktop-left-photo-panel-position;
         }
     }
     .desktop-left-panel {
