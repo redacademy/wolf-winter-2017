@@ -38,10 +38,12 @@
 		<a href='#close' title='Close' class='close'>X</a>
 			<div class='modal-text-content'>
 				<h3>Contact Bruce Wilson</h3>
-				<p><span>e:</span>	b.wilson@gmail.com</p>
-				<p><span>p:</span>	(604) 275-6649</p>
-				<p><span>ig:</span>	@warriorwolfguide</p>
-				<p><span>fb:</span>	Warrior Wolf Guide</p>
+				<div class="contact-info-wrapper">
+					<p>e:	b.wilson@gmail.com</p>
+					<p>p:	(604) 275-6649</p>
+					<p>ig:	@warriorwolfguide</p>
+					<p>fb:	Warrior Wolf Guide</p>
+				</div>
 			</div>
 			<form>
 				<p>Your Email</p>
@@ -118,7 +120,7 @@
 			<p>Thanks warrior,</p>
 			<p>your message was delivered.</p>
 			<div class="confirmation-email-text">
-				<p>An email confirmation was sent to you. I will get back to you with further instructions within 2 business days.</p>
+			<p>An email confirmation was sent to you. I will get back to you with further instructions within 2 business days.</p>
 			</div>
 		</div>
 	</div>
