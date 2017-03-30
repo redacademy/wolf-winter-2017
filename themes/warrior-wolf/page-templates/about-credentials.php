@@ -54,7 +54,7 @@ foreach ( $fields as $field ) {?>
 <?php } ?>
 </ul>
 	<div class='about-button-container'>
-		<button href=''>view programs</button>
+		<button href='<?php echo get_page_link(53); ?>'>view programs</button>
 	</div>
   </div>
 </section>
