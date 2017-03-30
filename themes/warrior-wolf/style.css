@@ -374,7 +374,8 @@ table {
   width: 100%; }
 
 h1, h2, h3 {
-  font-family: 'Archivo Black', sans-serif; }
+  font-family: 'Arimo', sans-serif;
+  font-weight: 100; }
 
 a {
   text-decoration: none; }
@@ -2618,43 +2619,9 @@ ul {
       margin-top: 1rem;
       padding-right: 1.5rem;
       padding-left: 1.5rem; }
-  @media only screen and (min-width: 1024px) {
-    .page-template-page-templatesabout-php .about-text-wrapper {
-      display: -ms-flexbox;
-      display: flex;
-      -ms-flex-flow: row wrap;
-          flex-flow: row wrap;
-      margin-left: 0;
-      margin-right: 0;
-      font-size: 11px;
-      background: transparent;
-      max-width: 1280px;
-      height: 900px;
-      margin-top: 0; }
-      .page-template-page-templatesabout-php .about-text-wrapper h2 {
-        text-align: left; }
-      .page-template-page-templatesabout-php .about-text-wrapper p {
-        padding-right: 0;
-        padding-left: 0;
-        margin-right: 0;
-        line-height: 1.1rem; }
-      .page-template-page-templatesabout-php .about-text-wrapper .overview-wrapper {
-        width: 250px; }
-      .page-template-page-templatesabout-php .about-text-wrapper .my-story-wrapper {
-        max-height: 1000px;
-        overflow-wrap: normal; }
-        .page-template-page-templatesabout-php .about-text-wrapper .my-story-wrapper h2 {
-          margin-left: 1rem; }
-        .page-template-page-templatesabout-php .about-text-wrapper .my-story-wrapper .my-story-entry {
-          display: -ms-flexbox;
-          display: flex;
-          -ms-flex-flow: row wrap;
-              flex-flow: row wrap;
-          width: 250px;
-          max-height: 100%; }
-          .page-template-page-templatesabout-php .about-text-wrapper .my-story-wrapper .my-story-entry p.p1 {
-            width: 100%;
-            margin: 0 0 1rem 1rem; } }
+  .page-template-page-templatesabout-php .about-text-wrapper {
+    background: transparent;
+    margin-top: 0; }
 
 /* Credential Template */
 .credential-wrapper {

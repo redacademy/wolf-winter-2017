@@ -138,50 +138,37 @@ ul {
         padding-left: 1.5rem;
     }
 }
-    @include media($desktop) {
-        .about-text-wrapper {
-            display: flex;
-            flex-flow: row wrap;
-            margin-left: 0;
-            margin-right: 0;
-            font-size: 11px;
-            background: transparent;
-            max-width: 1280px;
-            height: 900px;
-            margin-top: 0;
-            h2 {
-                text-align: left;
-            }
-            p {
-                padding-right: 0;
-                padding-left: 0;
-                margin-right: 0;
-                line-height: 1.1rem;
-            }
-            .overview-wrapper {
-                width: 250px;
-                // margin-left: 13%;
-            }
-            .my-story-wrapper {
-                max-height: 1000px;
-                overflow-wrap: normal;
-                // margin-right: auto;
-                h2 {
-                    margin-left: 1rem;
-                }
-                .my-story-entry {
-                    display: flex;
-                    flex-flow: row wrap;
-                    width: 250px;
-                    max-height: 100%;
-                    p.p1 {
-                        width: 100%;
-                        margin: 0 0 1rem 1rem;
-                    }
-                }
-            }
-        }
-    }
+    // @include media($desktop) {
+         .about-text-wrapper {
+    //         display: block;
+    //         font-size: 11px;
+                background: transparent;
+    //         width: 900px;
+                margin-top: 0;
+    //         max-width: 0;
+    //         h2 {
+    //             text-align: left;
+    //         }
+    //         p {
+    //             padding-right: 0;
+    //             padding-left: 0;
+    //             margin-right: 0;
+    //             line-height: 1.1rem;
+    //         }
+    //         .overview-wrapper {
+    //             width: 250px;
+    //             // margin-left: 13%;
+    //         }
+    //         .my-story-wrapper {
+    //             h2 {
+    //                 margin-left: 1rem;
+    //             }
+    //             .my-story-entry {
+    //                 width: 100%;
+    //             }
+    //         }
+    //     }
+     }
 }
 
 /* Credential Template */
