@@ -45,7 +45,7 @@
 					<p>fb:	Warrior Wolf Guide</p>
 				</div>
 			</div>
-			<form>
+			<form action="mailto:b.wilson@gmail.com">
 				<p>Your Email</p>
 				<input type='email'>
 				<p>Subject</p>
