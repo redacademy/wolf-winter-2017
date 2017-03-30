@@ -6,32 +6,40 @@
 
 .site-footer {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     background-color: $color__background-templates;
-        .footer-wrapper {
-            max-width: 275px;
-            margin: 0 auto;
-        }
+    margin-left: auto;
+    margin-right: auto;
         .newsletter-info-wrapper {
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
             padding-top: 2rem;
-            margin-bottom: 2rem;
+            margin-bottom: 1rem;
+            margin-right: auto;
+            margin-left: auto;
+            width: 325px;
         .inner-form-wrapper {
             position: relative;
-            width: 250px;
+            width: 325px;
+            height: 3rem;
         .newsletter-form {
                 border-radius: 0;
+                height: 2.5rem;
+                width: 70%;
+                border: none;
             }
         .newsletter-submit-button {
             position: absolute;
             right: 0;
             top: 0;
-            width: 6rem;
-            height: 2rem;
+            width: 6.55rem;
+            height: 2.5rem;
             background: #b9cad8;
+            border: none;
             color: $color__background-templates;
+            text-transform: uppercase;
         }
         }
             a {
@@ -45,24 +53,35 @@
         .button-wrapper {
             display: flex;
             justify-content: center;
+            width: 325px;
+            margin-right: auto;
+            margin-left: auto;
         .faq-button {
             text-align: center;
             @include faq-button;
             background: transparent;
-            box-shadow: 0;
             text-transform: uppercase;
             margin-bottom: 2rem;
             font-size: 1.25rem;
+            height: 2.5rem;
+            width: 100%;
+            a {
+                text-decoration: none;
+            }
             }
         }
         .social-media-icons-wrapper {
             display: flex;
             justify-content: space-around;
+            width: 325px;
             padding-bottom: 2rem;
+            margin-right: auto;
+            margin-left: auto;
         }
         img {
-            height: 50px;
-            width: 50px;
+            height: 48px;
+            width: 48px;
+            border-radius: 100%;
         }
         .instagram-icon {
             background: url(../../assets/icons/social-media/instagram.svg) no-repeat;
@@ -73,8 +92,13 @@
         .vimeo-icon {
             background: url(../../assets/icons/social-media/vimeo.svg) no-repeat;
         }
-        @include media($tablet) {
-            display: flex;
-            justify-content: space-between;
+        @include media($desktop) {
+        .footer-wrapper {
+            width: 80%;
+        }
+        .social-media-icons-wrapper {
+                height: 48px;
+                width: 48px;
+            }
         }
     }
