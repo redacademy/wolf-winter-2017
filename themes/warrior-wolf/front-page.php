@@ -21,6 +21,8 @@ get_header(); ?>
 
 				<!--INFO SECTION-->
 				<div id='info-section' class='info-section-container'>
+					<div class='homepage-white-border'></div>
+					<div class='homepage-center-info-section'>
 					<h2>Warrior Wolf</h2>
 					<h4>Guide Services</h4>
 					<div class='homepage-credentials-container'>
@@ -42,7 +44,9 @@ get_header(); ?>
 							<a href='<?php echo get_page_link(30); ?>'>learn more</a>
 						</div>
 						
+					</div> <!-- .homepage-credentials-container -->
 					</div>
+					<div class='homepage-white-border'></div>
 				</div> <!-- .info-section-container -->
 
 

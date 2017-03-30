@@ -35,13 +35,6 @@
 	right: 0;
 }
 
-// Homepage white border
-@mixin corner-border-style {
-  background-image: linear-gradient(to right, #fff 20%, rgba(255, 255, 255, 0) 20%);
-  background-size: 1205px 2.5px;
-  background-repeat: repeat-x;
-}
-
 // Button template
 @mixin button-template {
     text-align: center;

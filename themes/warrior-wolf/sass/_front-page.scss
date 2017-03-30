@@ -32,6 +32,9 @@
         }
     .banner-container {
 		text-transform: $font__text-uppercase-style;
+        @include media($desktop) {
+            margin-bottom: 4rem;
+        }
 		h2, p {
 			color: $color__white-text;
 		}
@@ -161,7 +164,21 @@
 // CREDENTIALS SECTION
 .info-section-container {
     @include media($desktop) {
-        @include corner-border-style;
+        display: flex;
+    }
+}
+
+.homepage-center-info-section {
+    @include media($desktop) {
+        width: 80%;
+    }
+}
+
+.homepage-white-border {
+    @include media($desktop) {
+        border-top: 3px solid #FFF;
+        border-bottom: 3px solid #FFF;
+        width: 10%;
     }
 }
 
@@ -178,7 +195,7 @@
         background-color: transparent;
         max-width: none;
         color: $color__white-text;
-
+        width: 100%;
     }
     .credentials-container {
         margin-bottom: 2rem;
@@ -346,7 +363,6 @@
         font-weight: 100;
         text-align: center;
         font-size: 46px;
-        @include corner-border-style;
     }
     .quote-author {
         font-weight: normal;

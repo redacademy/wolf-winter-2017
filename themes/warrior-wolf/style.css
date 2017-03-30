@@ -918,6 +918,9 @@ a {
 
 .home .banner-container {
   text-transform: uppercase; }
+  @media only screen and (min-width: 1024px) {
+    .home .banner-container {
+      margin-bottom: 4rem; } }
   .home .banner-container h2, .home .banner-container p {
     color: #fff; }
   .home .banner-container h2 {
@@ -1050,9 +1053,18 @@ a {
 
 @media only screen and (min-width: 1024px) {
   .info-section-container {
-    background-image: linear-gradient(to right, #fff 20%, rgba(255, 255, 255, 0) 20%);
-    background-size: 1205px 2.5px;
-    background-repeat: repeat-x; } }
+    display: -ms-flexbox;
+    display: flex; } }
+
+@media only screen and (min-width: 1024px) {
+  .homepage-center-info-section {
+    width: 80%; } }
+
+@media only screen and (min-width: 1024px) {
+  .homepage-white-border {
+    border-top: 3px solid #FFF;
+    border-bottom: 3px solid #FFF;
+    width: 10%; } }
 
 .homepage-credentials-container {
   background-color: #F4F5F6;
@@ -1067,7 +1079,8 @@ a {
       border: none;
       background-color: transparent;
       max-width: none;
-      color: #fff; } }
+      color: #fff;
+      width: 100%; } }
   .homepage-credentials-container .credentials-container {
     margin-bottom: 2rem; }
 
@@ -1233,10 +1246,7 @@ a {
       color: #fff;
       font-weight: 100;
       text-align: center;
-      font-size: 46px;
-      background-image: linear-gradient(to right, #fff 20%, rgba(255, 255, 255, 0) 20%);
-      background-size: 1205px 2.5px;
-      background-repeat: repeat-x; } }
+      font-size: 46px; } }
   .quote-container .quote-author {
     font-weight: normal;
     font-style: normal;
@@ -2382,18 +2392,21 @@ object {
     color: #8796a4; }
 
 .question-wrapper {
-  display: table;
+  display: -ms-flexbox;
+  display: flex;
   margin-bottom: 1rem; }
   .question-wrapper:hover {
     cursor: pointer; }
   .question-wrapper p {
-    display: table-cell; }
+    margin: 0;
+    margin-top: 1rem; }
 
 .answer-wrapper {
   display: none;
-  padding-left: 1.6rem;
+  padding-left: 2rem;
   font-style: italic;
-  color: #4c5a75; }
+  color: #4c5a75;
+  margin-bottom: 1rem; }
   .answer-wrapper p {
     display: table-cell; }
 
