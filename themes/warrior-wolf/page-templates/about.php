@@ -52,7 +52,7 @@ if ( $children ) : ?>
         </div>
     </div>
     <div class='about-button-container'>
-      <button href='<?php echo get_page_link(53); ?>'>view programs</button>
+		<button><a href='<?php echo get_page_link(53); ?>'>view programs</a></button>
     </div>
   </div>
 </section>

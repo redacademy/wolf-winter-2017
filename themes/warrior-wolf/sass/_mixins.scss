@@ -16,7 +16,6 @@
 	width: 60%;
 	border: 1px solid #fff;
 	color: #fff;
-
 }
 
 // Media query
@@ -38,6 +37,7 @@
 // Button template
 @mixin button-template {
     text-align: center;
+    outline: none;
     button {
     	padding: 0.7rem 2.5rem;
       border: 3px solid #172944 ;
@@ -47,6 +47,10 @@
       color: #fff;
       margin-bottom: 3rem;
       margin-top: 3rem;
+      outline: none;
+    }
+    &::focus {
+      outline: none;
     }
 }
 

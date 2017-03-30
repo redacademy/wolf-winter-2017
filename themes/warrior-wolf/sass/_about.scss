@@ -5,6 +5,10 @@
 
 .about-button-container {
     @include button-template;
+    outline: none;
+    &:focus {
+        outline: none;
+    }
 }
 @include media($desktop) {
     .wolf-background {
