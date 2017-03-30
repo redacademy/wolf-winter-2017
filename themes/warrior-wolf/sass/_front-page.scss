@@ -52,12 +52,6 @@
                 width: 71%;
             }
         }
-
-	}
-	.main-navigation a {
-        @include media($desktop) {
-            @include desktop-nav-style;
-        }
 	}
 }
 

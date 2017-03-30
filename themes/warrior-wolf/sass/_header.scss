@@ -106,7 +106,6 @@
         background-color: transparent;
         width: initial;
         position: initial;
-        // width: 645.891px;
     }
     .menu-main-menu-container {
         margin-bottom: 3rem;
@@ -201,4 +200,12 @@
     content: "\f27d";
     right: 5px;
     bottom: -20px;
+}
+
+.page-template-about,.page-template-about-bio, .page-template-about-method, .page-template-about-mission, .page-template-about-credentials, .home {
+    .main-navigation a {
+        @include media($desktop) {
+            @include desktop-nav-style;
+        }
+	}
 }

@@ -707,6 +707,18 @@ textarea {
   right: 5px;
   bottom: -20px; }
 
+@media only screen and (min-width: 1024px) {
+  .page-template-about .main-navigation a, .page-template-about-bio .main-navigation a, .page-template-about-method .main-navigation a, .page-template-about-mission .main-navigation a, .page-template-about-credentials .main-navigation a, .home .main-navigation a {
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-family: "Arimo", "Arial", sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    letter-spacing: 3px; }
+    .page-template-about .main-navigation a:visited, .page-template-about-bio .main-navigation a:visited, .page-template-about-method .main-navigation a:visited, .page-template-about-mission .main-navigation a:visited, .page-template-about-credentials .main-navigation a:visited, .home .main-navigation a:visited {
+      color: #fff; } }
+
 /*--------------------------------------------------------------
 # Navigation
 --------------------------------------------------------------*/
@@ -902,18 +914,6 @@ a {
         color: #fff;
         font-size: 22px;
         width: 71%; } }
-
-@media only screen and (min-width: 1024px) {
-  .home .main-navigation a {
-    color: #fff;
-    text-transform: uppercase;
-    text-decoration: none;
-    font-family: "Arimo", "Arial", sans-serif;
-    font-size: 15px;
-    font-weight: bold;
-    letter-spacing: 3px; }
-    .home .main-navigation a:visited {
-      color: #fff; } }
 
 @media only screen and (min-width: 1024px) {
   .desktop-parallax-container {
