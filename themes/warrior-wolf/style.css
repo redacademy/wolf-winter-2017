@@ -373,6 +373,13 @@ table {
   margin: 0 0 1.5rem;
   width: 100%; }
 
+h1, h2, h3 {
+  font-family: 'Arimo', sans-serif;
+  font-weight: 100; }
+
+a {
+  text-decoration: none; }
+
 /*--------------------------------------------------------------
 # Forms
 --------------------------------------------------------------*/
@@ -2468,7 +2475,9 @@ object {
 --------------------------------------------------------------*/
 /* Globals */
 .about-button-container {
-  text-align: center; }
+  text-align: center;
+  outline: none;
+  outline: none; }
   .about-button-container button {
     padding: 0.7rem 2.5rem;
     border: 3px solid #172944;
@@ -2477,7 +2486,12 @@ object {
     text-transform: uppercase;
     color: #fff;
     margin-bottom: 3rem;
-    margin-top: 3rem; }
+    margin-top: 3rem;
+    outline: none; }
+  .about-button-container::focus {
+    outline: none; }
+  .about-button-container:focus {
+    outline: none; }
 
 @media only screen and (min-width: 1024px) {
   .wolf-background {
@@ -2605,43 +2619,9 @@ ul {
       margin-top: 1rem;
       padding-right: 1.5rem;
       padding-left: 1.5rem; }
-  @media only screen and (min-width: 1024px) {
-    .page-template-page-templatesabout-php .about-text-wrapper {
-      display: -ms-flexbox;
-      display: flex;
-      -ms-flex-flow: row wrap;
-          flex-flow: row wrap;
-      margin-left: 0;
-      margin-right: 0;
-      font-size: 11px;
-      background: transparent;
-      max-width: 1280px;
-      height: 900px;
-      margin-top: 0; }
-      .page-template-page-templatesabout-php .about-text-wrapper h2 {
-        text-align: left; }
-      .page-template-page-templatesabout-php .about-text-wrapper p {
-        padding-right: 0;
-        padding-left: 0;
-        margin-right: 0;
-        line-height: 1.1rem; }
-      .page-template-page-templatesabout-php .about-text-wrapper .overview-wrapper {
-        width: 250px; }
-      .page-template-page-templatesabout-php .about-text-wrapper .my-story-wrapper {
-        max-height: 1000px;
-        overflow-wrap: normal; }
-        .page-template-page-templatesabout-php .about-text-wrapper .my-story-wrapper h2 {
-          margin-left: 1rem; }
-        .page-template-page-templatesabout-php .about-text-wrapper .my-story-wrapper .my-story-entry {
-          display: -ms-flexbox;
-          display: flex;
-          -ms-flex-flow: row wrap;
-              flex-flow: row wrap;
-          width: 250px;
-          max-height: 100%; }
-          .page-template-page-templatesabout-php .about-text-wrapper .my-story-wrapper .my-story-entry p.p1 {
-            width: 100%;
-            margin: 0 0 1rem 1rem; } }
+  .page-template-page-templatesabout-php .about-text-wrapper {
+    background: transparent;
+    margin-top: 0; }
 
 /* Credential Template */
 .credential-wrapper {
@@ -2800,6 +2780,12 @@ ul {
     padding-top: 2rem;
     margin-bottom: 1rem;
     width: 325px; }
+    .site-footer .newsletter-info-wrapper a {
+      color: #fff;
+      font-size: 0.5rem;
+      text-decoration: none;
+      text-transform: uppercase;
+      letter-spacing: 1px; }
     .site-footer .newsletter-info-wrapper .inner-form-wrapper {
       position: relative;
       width: 325px;
@@ -2819,12 +2805,6 @@ ul {
         border: none;
         color: #4C5A75;
         text-transform: uppercase; }
-    .site-footer .newsletter-info-wrapper a {
-      color: #fff;
-      font-size: 0.5rem;
-      text-decoration: none;
-      text-transform: uppercase;
-      letter-spacing: 1px; }
   .site-footer .faq-button-wrapper {
     display: -ms-flexbox;
     display: flex;
@@ -2841,7 +2821,10 @@ ul {
       text-transform: uppercase;
       margin-bottom: 2rem;
       height: 2.5rem;
-      width: 100%; }
+      width: 100%;
+      outline: none; }
+      .site-footer .faq-button-wrapper .faq-button:focus {
+        outline: none; }
       .site-footer .faq-button-wrapper .faq-button a {
         text-decoration: none;
         font-size: 1.25rem; }
