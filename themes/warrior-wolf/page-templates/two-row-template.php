@@ -15,7 +15,7 @@ get_header(); ?>
                     		<div class='desktop-program-icon'></div>
 						</a>
                 	</li>
-            	<?php endforeach; ?>
+            	<?php endforeach; wp_reset_postdata(); ?>
 				</ul>
         	</nav>
 

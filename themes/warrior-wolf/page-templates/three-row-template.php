@@ -15,7 +15,7 @@ get_header(); ?>
                     		<div class='desktop-program-icon'></div>
 						</a>
                 	</li>
-            	<?php endforeach; ?>
+            	<?php endforeach; wp_reset_postdata(); ?>
 				</ul>
         	</nav>
 
@@ -57,7 +57,7 @@ get_header(); ?>
 							<ul>
 								<?php foreach( $goals as $goal ) : ?>
     								<li> <?php echo esc_html($goal['goals']);?> </li>
-								<?php endforeach; ?>
+								<?php endforeach; wp_reset_postdata(); ?>
 							</ul>
 						</div>
                 		<p><span class='desktop-cost-title'>cost: </span><?php echo esc_html(CFS()->get('avalanche_program_price')); ?></p>
@@ -72,7 +72,7 @@ get_header(); ?>
 							<ul>
 								<?php foreach( $hiking_tips as $tip ) : ?>
     								<li> <?php echo esc_html($tip['hiking_list']);?> </li>
-								<?php endforeach; ?>
+								<?php endforeach; wp_reset_postdata(); ?>
 							</ul>
 						</div>
 						<p><span class='desktop-cost-title'>cost: </span><?php echo esc_html(CFS()->get('hiking_price')); ?></p>

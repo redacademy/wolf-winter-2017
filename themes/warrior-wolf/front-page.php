@@ -70,12 +70,8 @@ get_header(); ?>
 								</div>
 							</a>
                 		</div>
-            		<?php endforeach; ?>
+            		<?php endforeach; wp_reset_postdata(); ?>
 				</div>
-				
-				<!-- DESKTOP TESTIMONIALS PANEL -->
-				
-
 			</div>
 
 			<!-- PROGRAMS PANEL -->
@@ -89,7 +85,7 @@ get_header(); ?>
 							</div>
 						</a>
                 	</div>
-            	<?php endforeach; ?>
+            	<?php endforeach; wp_reset_postdata(); ?>
         	</div>
 
 			<div class='button-container programs-button'>
