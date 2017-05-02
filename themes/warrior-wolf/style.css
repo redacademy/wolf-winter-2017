@@ -746,6 +746,9 @@ input[type="search"] {
     .page-template-about .main-navigation a:visited, .page-template-about-bio .main-navigation a:visited, .page-template-about-method .main-navigation a:visited, .page-template-about-mission .main-navigation a:visited, .page-template-about-credentials .main-navigation a:visited, .home .main-navigation a:visited {
       color: #fff; } }
 
+.logged-in {
+  margin-top: 200px; }
+
 /*--------------------------------------------------------------
 # Navigation
 --------------------------------------------------------------*/

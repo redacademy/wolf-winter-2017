@@ -52,7 +52,7 @@
     <?php echo CFS()->get('method'); ?>
     </div>
 	<div class='about-button-container'>
-		<button><a href='<?php echo get_page_link(53); ?>'>view programs</a></button>
+		<button><a href='<?php echo home_url('/programs/avalanche-skills-training-level-1' )?>'>view programs</a></button>
 	</div>
   </div>
 </section>
