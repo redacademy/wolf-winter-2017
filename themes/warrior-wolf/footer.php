@@ -20,7 +20,7 @@
 							</div>
 						</form>
 					<div class='faq-button-wrapper'>
-					<button class='faq-button'><a href='<?php echo get_page_link(28); ?>'>faq</a></button>
+					<a href='<?php echo get_page_link(28); ?>'><button class='faq-button'><span>faq</span></button></a>
 					</div>
 				</div>
 				<div class='social-media-icons-wrapper'>

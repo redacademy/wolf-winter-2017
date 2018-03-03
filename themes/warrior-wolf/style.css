@@ -681,6 +681,9 @@ input[type="search"] {
     .site-header .main-navigation .nav-overlay {
       display: block;
       line-height: initial; } }
+  .site-header .main-navigation .nav-overlay .social-icon-menu-item a:hover {
+    background: none;
+    color: transparent; }
   .site-header .main-navigation .nav-overlay a {
     font-size: 1.5rem;
     color: white;
@@ -745,9 +748,6 @@ input[type="search"] {
     letter-spacing: 3px; }
     .page-template-about .main-navigation a:visited, .page-template-about-bio .main-navigation a:visited, .page-template-about-method .main-navigation a:visited, .page-template-about-mission .main-navigation a:visited, .page-template-about-credentials .main-navigation a:visited, .home .main-navigation a:visited {
       color: #fff; } }
-
-.logged-in {
-  margin-top: 200px; }
 
 /*--------------------------------------------------------------
 # Navigation
@@ -2198,8 +2198,7 @@ object {
     left: 0;
     bottom: 0;
     width: 59.5%;
-    -moz-column-count: 2;
-         column-count: 2;
+    column-count: 2;
     height: 35%;
     padding: 1rem;
     border-radius: 15px;
@@ -2481,16 +2480,18 @@ object {
   text-align: center;
   outline: none;
   outline: none; }
-  .about-button-container button {
-    padding: 0.7rem 2.5rem;
-    border: 3px solid #172944;
-    background: rgba(23, 41, 68, 0.36);
-    text-decoration: none;
-    text-transform: uppercase;
-    color: #fff;
-    margin-bottom: 3rem;
-    margin-top: 3rem;
-    outline: none; }
+  .about-button-container a {
+    text-decoration: none; }
+    .about-button-container a button {
+      padding: 0.7rem 2.5rem;
+      border: 3px solid #172944;
+      background: rgba(23, 41, 68, 0.36);
+      text-decoration: none;
+      text-transform: uppercase;
+      color: #fff;
+      margin-bottom: 3rem;
+      margin-top: 3rem;
+      outline: none; }
   .about-button-container::focus {
     outline: none; }
   .about-button-container:focus {
@@ -2799,7 +2800,8 @@ ul {
         border-radius: 0;
         height: 2.5rem;
         width: 70%;
-        border: none; }
+        border: none;
+        outline: none; }
       .site-footer .newsletter-info-wrapper .inner-form-wrapper .newsletter-submit-button {
         position: absolute;
         right: 0;
@@ -2809,7 +2811,8 @@ ul {
         background: #b9cad8;
         border: none;
         color: #4C5A75;
-        text-transform: uppercase; }
+        text-transform: uppercase;
+        outline: none; }
   .site-footer .faq-button-wrapper {
     display: -ms-flexbox;
     display: flex;
@@ -2826,7 +2829,7 @@ ul {
       text-transform: uppercase;
       margin-bottom: 2rem;
       height: 2.5rem;
-      width: 100%;
+      width: 327px;
       outline: none; }
       .site-footer .faq-button-wrapper .faq-button:focus {
         outline: none; }

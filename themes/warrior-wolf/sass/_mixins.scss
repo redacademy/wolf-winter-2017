@@ -38,7 +38,9 @@
 @mixin button-template {
     text-align: center;
     outline: none;
-    button {
+    a {
+      text-decoration: none;
+      button {
     	padding: 0.7rem 2.5rem;
       border: 3px solid #172944 ;
       background: rgba(23, 41, 68, 0.36);
@@ -47,9 +49,7 @@
       color: #fff;
       margin-bottom: 3rem;
       margin-top: 3rem;
-      outline: none;
-      a {
-        text-decoration: none;
+      outline: none;    
       }
     }
     &::focus {

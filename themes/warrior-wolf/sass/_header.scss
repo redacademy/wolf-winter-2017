@@ -130,6 +130,10 @@
         display: block;
         line-height: initial;
     }
+    .social-icon-menu-item a:hover {
+        background: none;
+        color: transparent;
+    }
     a {
         font-size: 1.5rem;
         color: white;
@@ -174,7 +178,7 @@
     border-radius: 50%;
     background: white;
     a:hover {
-            background: white;
+         background: white;
     }
 }
 
@@ -209,6 +213,6 @@
 	}
 }
 
-.logged-in {
-    margin-top: 200px;
-}
+// .logged-in {
+//     margin-top: 200px;
+// }

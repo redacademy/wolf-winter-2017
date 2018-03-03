@@ -36,6 +36,7 @@
                 height: 2.5rem;
                 width: 70%;
                 border: none;
+                outline: none;
             }
         .newsletter-submit-button {
             position: absolute;
@@ -47,6 +48,7 @@
             border: none;
             color: $color__background-templates;
             text-transform: uppercase;
+            outline: none;
         }
     }
 
@@ -63,7 +65,7 @@
             text-transform: uppercase;
             margin-bottom: 2rem;
             height: 2.5rem;
-            width: 100%;
+            width: 327px;
             outline: none;
             &:focus {
                 outline: none;
