@@ -746,6 +746,9 @@ input[type="search"] {
     .page-template-about .main-navigation a:visited, .page-template-about-bio .main-navigation a:visited, .page-template-about-method .main-navigation a:visited, .page-template-about-mission .main-navigation a:visited, .page-template-about-credentials .main-navigation a:visited, .home .main-navigation a:visited {
       color: #fff; } }
 
+.logged-in {
+  margin-top: 200px; }
+
 /*--------------------------------------------------------------
 # Navigation
 --------------------------------------------------------------*/
@@ -2517,7 +2520,9 @@ object {
   margin: auto 0;
   text-transform: uppercase; }
   .name-wrapper h1 {
-    margin-top: 5.4rem; }
+    margin-top: 5.4rem;
+    letter-spacing: 2px;
+    font-size: 37px; }
 
 .about-background-image {
   background: url("../../assets/images/desktop/about/background-about-me.jpg") no-repeat bottom;
