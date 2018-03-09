@@ -39,22 +39,27 @@ if ( $children ) : ?>
 </div>
 <section class='content-wrapper'>
   <div class='wolf-background'>
+
     <div class='featured-content'>
       <div class='featured-image'>
         <?php the_post_thumbnail(); ?>
       </div>
+
       <div class='featured-text'>
         <?php echo CFS()->get('featured_quote'); ?>
       </div>
     </div>
+
     <h2><?php echo CFS()->get('mission_title'); ?></h2>
-      <div class='mission-statement'>
+
+    <div class='mission-statement'>
         <?php echo CFS()->get('mission_statement'); ?>
-      </div>
     </div>
-	<div class='about-button-container'>
-		<a href='<?php echo home_url('/programs/avalanche-skills-training-level-1')?>'><button><span>view programs</span></button></a>
+
+    <div class='about-button-container'>
+		  <a href='<?php echo home_url('/programs/avalanche-skills-training-level-1')?>'><button><span>view programs</span></button></a>
+    </div>
+
 	</div>
-  </div>
 </section>
 <?php get_footer(); ?>
