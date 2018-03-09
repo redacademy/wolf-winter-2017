@@ -39,7 +39,7 @@ if ( $children ) : ?>
 </div>
 <section class="credential-wrapper">
 <div class="wolf-background">
-<ul>
+<ul class="credentials-list">
 <?php
 $fields = CFS()->get( 'credential' );
 foreach ( $fields as $field ) {?>

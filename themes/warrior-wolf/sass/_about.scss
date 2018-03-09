@@ -179,7 +179,6 @@ ul {
     margin-left: auto;
     margin-right: auto;
     max-width: 895px;
-    padding-top: 4rem;
     li {
         display: flex;
         justify-content: space-between;
@@ -199,6 +198,10 @@ ul {
             margin: auto 0;
         }
     }
+}
+
+.credentials-list {
+    padding-top: 4rem;
 }
 
 
